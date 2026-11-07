@@ -1,5 +1,7 @@
 {
   "agent": "Codex",
+  "model_label": "GPT-6.1 Sol",
+  "model_label_source": "user-confirmed",
   "exact_model_id": "unknown; no separately invoked model API",
   "visual_goal": "fidelity",
   "provenance": "independent",

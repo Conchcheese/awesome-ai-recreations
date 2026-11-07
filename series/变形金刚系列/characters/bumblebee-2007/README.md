@@ -1,6 +1,6 @@
 # 大黄蜂 / Bumblebee
 
-目标版本：Transformers (2007)。本目录保留来源研究档案；已有[Codex 独立程序化研究实现](../../models/codex/bumblebee-2007/README.md)。拆分候选仍不是已证实的电影机构。
+目标版本为 Transformers (2007)。本档案整理原始来源和待核对的拆分候选。已有成果见 [GPT-6.1 Sol 的独立程序化研究](../../models/gpt-6.1-sol/bumblebee-2007/README.md)。
 
 [来源与实际样例元数据](sources.json) · [计划拆分结构](structure.json) · [角色库](../README.md) · [制作协议](../../工作流协议.md)
 

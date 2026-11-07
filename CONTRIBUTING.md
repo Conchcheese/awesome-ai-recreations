@@ -8,7 +8,7 @@
 2. 原始参考逐文件登记路径、来源完整度和 SHA-256；原始视频等不分发时留 local，并提供可获取的原始来源。媒体不能用已有成品截图替代。
 3. 就绪任务登记 tasks/index.json，input_version 从 1 开始；无需先有模型成果。此时 recreate 可发现任务，show 不会伪造实现。
 4. 相同输入包交给不同智能体，允许各自在资源约定内选择框架与方法。输出写独立目录；迭代、参数、测量和代码都是成果侧记录。
-5. 完成可运行实现后，在 catalog.json 的 cases 增加案例或版本，填写对应 task_manifest，再更新首页截图/简介/演示、系列索引与 NOTICE。新系列同样遵循这套路径，不另建一套输入规则。
+5. 完成可运行实现后，在 `catalog.json` 登记案例或版本及其 `task_manifest`，更新首页截图、简介、演示链接、系列索引、模型索引与 `NOTICE.md`。变形金刚新增公开媒体时一并登记系列 `publication.json`。
 
 已有作品路径保持稳定，允许历史目录。新成果在 series 下按系列与模型分目录；具体内部技术结构由执行者决定。改进已有实现明确 derived，不能冒充新独立执行。
 
@@ -16,7 +16,7 @@
 
 catalog schema 2 只保存成果信息，输入由 task_manifest 指向 tasks/<id>/input.json。catalog 工具加载时提供兼容的 prompt/recreation 查询字段，维护者不要手工复制这些字段回成果索引。tasks/index.json 是任务入口；同一任务可以有多个实现，也可以尚无实现。
 
-每个成果版本填写 id、model_label、visual_goal、provenance、readme/live/film/source/spec/record/references、cwd、commands、build_outputs 和 notes。路径相对仓库根；命令使用参数数组，必须能实际运行。模型署名与未知记录如实说明；新执行的输入包摘要记录在成果 records 中，不反写成历史版本已采用当前任务。
+每个成果版本填写 id、model_label、visual_goal、provenance、readme/live/film/source/spec/record/references、cwd、commands、build_outputs 和 notes。路径相对仓库根，命令使用可实际运行的参数数组。成果记录分别填写模型署名及其来源、精确模型 ID 和执行工具。新执行的输入包摘要保存在成果 `records/`。
 
 修改共同输入时增加 input_version，保存旧包与摘要，并检查所有任务使用者。新增框架约束、参考、原始资产或研究候选都是输入条件变化；不要默默替换媒体。
 

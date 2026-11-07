@@ -23,6 +23,23 @@ class RepositoryToolsTests(unittest.TestCase):
             get_case(data, 'oc8', 'missing')
         self.assertEqual('hy4-direct', get_case(data, 'oc8', 'hy4-direct')[1]['id'])
 
+    def test_bumblebee_resolves_to_the_sol_implementation(self):
+        case, variant = get_case(load_catalog(), '大黄蜂', 'gpt-6-1-sol')
+        self.assertEqual('tasks/bumblebee-2007/input.json', case['task_manifest'])
+        base = Path('series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007')
+        self.assertEqual(base, Path(variant['cwd']))
+        record = json.loads((ROOT / base / 'records/provenance.json').read_text())
+        self.assertEqual('GPT-6.1 Sol', record['model_label'])
+        self.assertEqual('Codex', record['agent'])
+        self.assertTrue(variant['model_label'].startswith(record['model_label']))
+        for field in ('live', 'film'):
+            with self.subTest(field=field):
+                self.assertEqual(base, Path(variant[field]).parent)
+                self.assertEqual(
+                    'https://topmindspace.github.io/awesome-ai-recreations/' + variant[field],
+                    variant['online_' + field],
+                )
+
     def test_case_names_and_aliases_resolve_without_version_selection(self):
         data = load_catalog()
         queries = {'机械章鱼': 'oc8', 'Ｐｅｌａｇｏｓ ＯＣ－８': 'oc8', 'V8 发动机': 'v8',

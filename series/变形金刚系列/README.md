@@ -2,25 +2,26 @@
 
 围绕同一角色版本、原始参考与目标要求，由不同智能体、模型和工具分别尝试实现，观察造型、变形、交互与成片效果，并改进可复用的制作流程。
 
-当前有 **2 个案例、4 个实现、4 个执行署名**。沿用机械系列的组织方式：先选案例，再选模型版本，最后进入具体作品与运行方法。
+当前有 **2 个案例、4 个实现、3 个模型**。按案例选择演示，或从模型索引查找对应实现。
+
+[返回首页](../../README.md) · [模型目录](models/README.md) · [角色研究库](characters/README.md) · [快速开始](../../docs/快速开始.md)
 
 ## 全部案例
 
-演示入口包含已上线的页面和可在本地打开的离线 HTML。仓库文档提供源码、规格和重建方法。
+在线演示使用 GitHub Pages。案例文档提供离线 HTML、源码、规格和重建方法。
 
-| 案例 | 案例 ID | 模型版本 | 演示入口 | 仓库文档 |
+| 案例 | 案例 ID | 模型版本 | 在线演示 | 仓库文档 |
 |---|---|---|---|---|
 | 擎天柱·2007真人电影版 | `optimus-prime-2007` | GPT-6.1 Sol | [互动](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/01-擎天柱-电影版/index.html) · [巡览](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/01-擎天柱-电影版/film.html) | [说明与源码](01-擎天柱-电影版/README.md) |
 | 擎天柱·2007真人电影版 | `optimus-prime-2007` | HY4 | [互动](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/hy4/optimus-prime-2007/index.html) · [巡览](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/hy4/optimus-prime-2007/film.html) | [说明与源码](models/hy4/optimus-prime-2007/README.md) |
 | 擎天柱·2007真人电影版 | `optimus-prime-2007` | GLM-5.3-Flash | [互动](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/index.html) · [巡览](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/film.html) | [说明与源码](models/glm-5.3-flash/optimus-prime-2007/README.md) |
-| 大黄蜂·2007真人电影版外观研究 | `bumblebee-2007` | Codex | [离线互动](models/codex/bumblebee-2007/index.html) · [巡览](models/codex/bumblebee-2007/film.html) | [说明、源码与本地视频](models/codex/bumblebee-2007/README.md) |
+| 大黄蜂·2007真人电影版外观研究 | `bumblebee-2007` | GPT-6.1 Sol | [互动](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007/index.html) · [巡览](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007/film.html) | [说明、源码与本地视频](models/gpt-6.1-sol/bumblebee-2007/README.md) |
 
 ## 选择版本
 
 | 模型版本 | 实现与呈现特点 | 版本说明 |
 |---|---|---|
-| Codex | 大黄蜂外观研究、离线互动、同源 Cycles 管线与原创声音 | [实现与用法](models/codex/README.md) |
-| GPT-6.1 Sol | 电影版：分层装配、组合展开、同源 Cycles 短片 | [实现与用法](models/gpt-6.1-sol/README.md) |
+| GPT-6.1 Sol | 擎天柱与大黄蜂，分层装配、连续变形与同源 Cycles 短片 | [实现与用法](models/gpt-6.1-sol/README.md) |
 | HY4 | 2007 电影版：Three.js PBR、连续变形及逐帧渲染短片 | [实现与用法](models/hy4/README.md) |
 | GLM-5.3-Flash | 2007 电影版：程序化装配、连续变形、灰模与拆解研究 | [实现与用法](models/glm-5.3-flash/README.md) |
 
@@ -34,7 +35,8 @@
 python3 scripts/catalog.py show optimus-prime-2007 --variant cinematic-v2
 python3 scripts/catalog.py show optimus-prime-2007 --variant hy4
 python3 scripts/catalog.py show optimus-prime-2007 --variant glm-5-3-flash
-python3 scripts/catalog.py recreate optimus-prime-2007
+python3 scripts/catalog.py show bumblebee-2007 --variant gpt-6-1-sol
+python3 scripts/catalog.py recreate bumblebee-2007
 ```
 
 安装和 Agent 用法见[快速开始](../../docs/快速开始.md)。新增模型或角色先建立研究草稿，达到运行与验证要求后再登记为实现；目录约定见[模型版本说明](models/README.md)。
@@ -49,5 +51,3 @@ python3 scripts/catalog.py recreate optimus-prime-2007
 | [经验与实践](经验与实践.md) | 从已做案例提炼可复用方法及适用限制 |
 | [视频制作方法](01-擎天柱-电影版/视频工作流.md) | 同源电影渲染、网页功能演示及动作音效 |
 | [发布说明](发布说明.md) | 素材、生成文件与版权参考的公开边界 |
-
-[返回仓库首页](../../README.md)。
