@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "hatchet-2011",
+    "title": "短柄斧",
+    "english": "Hatchet",
+    "year": 2011,
+    "faction": "decepticon",
+    "form": "beast"
+  },
+  "targetEdition": "Dark of the Moon (2011)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers-dark-of-the-moon",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "ss-144",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-144",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/ss-144-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-144_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-144",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "d3813c4894694d3eccfe2fcbca717700a4258aedaf07eda82f4b125b4fe0a93d",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 276746,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-144-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-144_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-144",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "405203e38ccc51336c719164f8dbd3fe110dab2f410eb676763bfea00808424a",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 231786,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。"
+  ]
+}

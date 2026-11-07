@@ -1,0 +1,12 @@
+import {chromium} from 'playwright';
+import {pathToFileURL} from 'node:url';
+import {DIST} from '../paths.mjs';
+const browser = await chromium.launch({args: ['--use-angle=metal']});
+const page = await browser.newPage({viewport: {width: 1700, height: 1000}});
+page.on('console', (m) => { if (m.type() === 'error' || m.type() === 'warning') console.log('[' + m.type() + ']', m.text().slice(0, 500)); });
+page.on('pageerror', (e) => console.log('[pageerror]', String(e).slice(0, 800)));
+await page.goto(pathToFileURL(DIST + '/sandworm-live.html').href);
+await page.waitForTimeout(8000);
+await page.screenshot({path: 'teardown-out/sandworm-live-smoke.png'});
+await browser.close();
+console.log('done');

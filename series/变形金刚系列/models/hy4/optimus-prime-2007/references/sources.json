@@ -1,0 +1,167 @@
+{
+  "retrievedDate": "2026-11-06",
+  "timezone": "Asia/Shanghai",
+  "target": "Transformers (2007), Michael Bay；排除 2009/2011/2014/2018 造型与 G1 平头玩具外形",
+  "rights": "原始影片与剧照归 Paramount / DreamWorks / Hasbro 及 ILM / Lucasfilm 等权利人；公开可访问不等于可再分发。仅本地研究，不提交、不发布。",
+  "mediaDistribution": "local-only",
+  "selectedFrames": [
+    {
+      "file": "local/paramount-006s-truck-front.jpg",
+      "sourceUrl": "https://www.youtube.com/watch?v=wT-Hnv7RlSs",
+      "sourceTimestampSeconds": 6,
+      "sha256": "afc497af6a29116fde107490e5baa28acfce66222f35177939ac3c9c4087f810",
+      "kind": "original-frame",
+      "owner": "Paramount / DreamWorks / Hasbro",
+      "observed": "低机位正面：镀铬竖条格栅、银色保险杠带一排蓝色小灯、两侧方形前灯、双竖烟囱、黑色驾驶室；夜间反光。",
+      "evidence": "observed"
+    },
+    {
+      "file": "local/paramount-018s-transform-chest.jpg",
+      "sourceUrl": "https://www.youtube.com/watch?v=wT-Hnv7RlSs",
+      "sourceTimestampSeconds": 18,
+      "sha256": "f3b90ed7912ffbc5f23e5a2fd6c73fd7a738d0ebecbc112baecf1887d0ee047d",
+      "kind": "original-frame",
+      "owner": "Paramount / DreamWorks / Hasbro",
+      "observed": "变形中段：胸腹内部密集机械层与活塞、绿色/银色连接件外露，两侧深色装甲向内收拢。",
+      "evidence": "observed"
+    },
+    {
+      "file": "local/paramount-029s-head-chest.jpg",
+      "sourceUrl": "https://www.youtube.com/watch?v=wT-Hnv7RlSs",
+      "sourceTimestampSeconds": 29,
+      "sha256": "089fb220ead7a2c22806b41b597b344c664d416724c84137f2d4ed072182cec3",
+      "kind": "original-frame",
+      "owner": "Paramount / DreamWorks / Hasbro",
+      "observed": "头胸特写：蓝色冠盔与中央面罩、蓝色眼、两侧竖翼片；两片倾斜挡风玻璃形成胸窗，中间露出机械核心与博派标记。",
+      "evidence": "observed"
+    },
+    {
+      "file": "local/paramount-048s-abdomen.jpg",
+      "sourceUrl": "https://www.youtube.com/watch?v=wT-Hnv7RlSs",
+      "sourceTimestampSeconds": 48,
+      "sha256": "41f4359ebb6f73f28b63d4eeedd6e15ffd41f36e496486a7c4d2e4f387b55010",
+      "kind": "original-frame",
+      "owner": "Paramount / DreamWorks / Hasbro",
+      "observed": "腹部近景：黑色层叠甲片、竖向管线与活塞、金色/钢色内构、蓝色高光。",
+      "evidence": "observed"
+    },
+    {
+      "file": "local/paramount-102s-truck-side.jpg",
+      "sourceUrl": "https://www.youtube.com/watch?v=wT-Hnv7RlSs",
+      "sourceTimestampSeconds": 102,
+      "sha256": "c50dea53a8dfb3d5ba771132efadc4567701f16b9b93d66316df576da8f10278",
+      "kind": "original-frame",
+      "owner": "Paramount / DreamWorks / Hasbro",
+      "observed": "长头卡车侧面：红色引擎盖带蓝橙火焰纹、深蓝驾驶室后段、双竖烟囱、银色侧油箱、六轮布局可见。",
+      "evidence": "observed"
+    },
+    {
+      "file": "local/paramount-123s-near-full-body.jpg",
+      "sourceUrl": "https://www.youtube.com/watch?v=wT-Hnv7RlSs",
+      "sourceTimestampSeconds": 123,
+      "sha256": "afca63def0cc559e9b54240eec53fedb9a76c9d89ec0c9b30159cc9ff280ece4",
+      "kind": "original-frame",
+      "owner": "Paramount / DreamWorks / Hasbro",
+      "observed": "人形近全身（仰视、运动中）：红蓝分色、外扩肩甲、抬起的手臂与层叠下肢；动态模糊，不作为精确比例依据。",
+      "evidence": "observed"
+    },
+    {
+      "file": "local/ilm-080s-shoulder-material.jpg",
+      "sourceUrl": "https://www.youtube.com/watch?v=RMoChbnx-LE",
+      "sourceTimestampSeconds": 80,
+      "sha256": "cf3618ca7b2fe67985f58c3eeb8e620fe1a0f52dcfed8d4959e031fb775e664f",
+      "kind": "original-frame",
+      "owner": "ILM / Lucasfilm",
+      "observed": "ILM 制作资料：蓝色大曲面肩甲带红白火焰纹、红色弧形翼片、银色面罩与头冠、磨损与划痕尺度。",
+      "evidence": "observed"
+    },
+    {
+      "file": "local/ilm-088s-head-material.jpg",
+      "sourceUrl": "https://www.youtube.com/watch?v=RMoChbnx-LE",
+      "sourceTimestampSeconds": 88,
+      "sha256": "61c9fddcbd07510d5dd7d29a346d78989e9a5b833131c9fe2b0622e89ecb04c9",
+      "kind": "original-frame",
+      "owner": "ILM / Lucasfilm",
+      "observed": "ILM 制作资料：头冠分片、两侧竖天线/翼片、耳部圆形机构、银色分段面罩、蓝色眼部与蓝色颈侧。",
+      "evidence": "observed"
+    },
+    {
+      "file": "local/mpm4-official-01.jpg",
+      "sourceUrl": "https://tf.takaratomy.co.jp/products-lineup/tf_mp/mpm-4",
+      "sourceTimestampSeconds": null,
+      "sha256": "630adc5486d22a980ef853f1afc2227f810d3d6a39f509617c6328c7d2e21ffa",
+      "kind": "product",
+      "owner": "Takara Tomy / Hasbro",
+      "observed": "官方 MPM-4 正面产品图：双斜置胸窗带银红框、中央红色火焰胸甲、肩侧大红甲片与球形关节、轮子留在腰侧、窄腰层叠骨架、蓝大腿甲与分趾脚。仅补表面细节，不证明电影机构。",
+      "evidence": "derived-ref"
+    },
+    {
+      "file": "local/mpm4-official-04.jpg",
+      "sourceUrl": "https://tf.takaratomy.co.jp/products-lineup/tf_mp/mpm-4",
+      "sourceTimestampSeconds": null,
+      "sha256": "2c3ce2a86321ebe5c21641666f92e0958e613cc4bf3bfb7f3a0bea21bda629cc",
+      "kind": "product",
+      "owner": "Takara Tomy / Hasbro",
+      "observed": "官方 MPM-4 斜侧产品图：肩甲曲面、红色翼片、前臂甲片、背部轮组与烟囱位置、装甲分件缝隙。仅补表面细节。",
+      "evidence": "derived-ref"
+    },
+    {
+      "file": "local/ilm-100s.jpg",
+      "sourceUrl": "https://www.youtube.com/watch?v=RMoChbnx-LE",
+      "sourceTimestampSeconds": null,
+      "sha256": "ddad86cfbbafb227ca4f6104526731e1ba0440180d7dd563bd79679358940e87",
+      "kind": "frame",
+      "owner": "ILM / Lucasfilm",
+      "observed": "ILM 官方幕后 100s 日光头胸腹：头盔弧壳、深眼眶、胸窗带框、红色下胸甲、中央深色机械通道、蓝红漆与裸金属反光。",
+      "evidence": "observed"
+    },
+    {
+      "file": "local/paramount-2007-061s.jpg",
+      "sourceUrl": "https://www.youtube.com/watch?v=wT-Hnv7RlSs",
+      "sourceTimestampSeconds": null,
+      "sha256": "bc5661deae53d36370bfe8b772edf37a132862b876c2cb0d4148094ab1e6bd74",
+      "kind": "frame",
+      "owner": "Paramount / DreamWorks / Hasbro",
+      "observed": "Paramount 61s 未戴面罩头部：蓝色冠盔、金色面部内构、侧鳍与耳部机构、蓝色眼。",
+      "evidence": "observed"
+    },
+    {
+      "file": "local/paramount-2007-transform-8-32s-halfsecond.jpg",
+      "sourceUrl": "https://www.youtube.com/watch?v=wT-Hnv7RlSs",
+      "sourceTimestampSeconds": null,
+      "sha256": "6f473b4ed8d50121446c90926220cd6b0ce9832efd9f6ec4e3f27185e9981a42",
+      "kind": "contact",
+      "owner": "Paramount / DreamWorks / Hasbro",
+      "observed": "Paramount 8–32s 变形段 0.5s 间隔接触表：夜景下格栅与车灯特写 → 零件密集分离旋转 → 26–31s 红色胸甲与头胸构型出现。用于动作节奏，不是逐帧解算。",
+      "evidence": "observed"
+    },
+    {
+      "file": "local/ilm-080s.jpg",
+      "sourceUrl": "https://www.youtube.com/watch?v=RMoChbnx-LE",
+      "sourceTimestampSeconds": null,
+      "sha256": "ac94b29762712830244d79718d9abd4aadf9532d8b9636161455dcada05d86fd",
+      "kind": "frame",
+      "owner": "ILM / Lucasfilm",
+      "observed": "ILM 80s 肩胸材质：蓝色大曲面肩甲、红色弧形翼片、银色分段面罩、玻璃胸窗反光、不同尺度的划痕与掉漆。",
+      "evidence": "observed"
+    },
+    {
+      "file": "local/tomy-2007-board.jpg",
+      "sourceUrl": "https://tf.takaratomy.co.jp/products-lineup/tf_mp/",
+      "sourceTimestampSeconds": null,
+      "sha256": "3305171b6ee21435a9c9c15cae21fa1c88a1ed743abbeab32f44f7285b44da66",
+      "kind": "board",
+      "owner": "Takara Tomy / Hasbro",
+      "observed": "2007 官方产品研究板：同期角色外形谱系与配色语境；不是擎天柱单体的建模依据。",
+      "evidence": "derived-ref"
+    }
+  ],
+  "unknown": [
+    "未观看完整连续片段，不能称逐帧还原",
+    "背面藏件、内部铰链尺寸与真实世界尺度不可由静帧确定，标 guess",
+    "人形全身帧为仰视运动镜头，比例需与头胸/材质特写交叉判断，不作为唯一标尺",
+    "MPM-4 为授权玩具，仅作表面细节参考，不能冒充电影变形拓扑或比例",
+    "2007 研究板为产品图拼板，不是电影静帧；未用于轮廓测量"
+  ],
+  "supplementalReads": "本轮重做时额外精读以上 7 份官方素材；仍只本地研究，不提交、不发布。"
+}

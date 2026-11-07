@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "dropkick-2018",
+    "title": "反弹球",
+    "english": "Dropkick",
+    "year": 2018,
+    "faction": "decepticon",
+    "form": "triple"
+  },
+  "targetEdition": "Bumblebee (2018)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/bumblebee",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "ss-36",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-36",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "code": "ss-28",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-28",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/ss-36-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-36_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-36",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "17ee95e4e8d4f4fdcf44f6472fd2aa019d8f282e7c69a2d69d8caabfc0c95606",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 109134,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-36-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-36_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-36",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "471a78527afcd3022abe07d8c27528aaac89244d2fc826ebb4df5751afbc6950",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 121890,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-28-03.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-28_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-28",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "91a82cf4815ed4245f02b7112b38bc7218a447282c7ea77d1fb3d599eb0e85b4",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 143792,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-28-04.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-28_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-28",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "c4feef4284e8e12aa24a5990ebec063ac2aa8b581d552e21bf2ea9f04be8c9d2",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 116963,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。"
+  ]
+}

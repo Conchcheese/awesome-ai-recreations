@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-05",
+  "timezone": "Asia/Shanghai",
+  "model_label": "GPT-6.1 Sol",
+  "label_source": "user-specified display name",
+  "model_checks": {
+    "passed": 12,
+    "command": "node tools/check.mjs"
+  },
+  "browser_qa": {
+    "passed": 19,
+    "command": "node tools/qa.mjs",
+    "notes": "macOS local Chromium; fonts.ready awaited; same-environment pixel replay"
+  },
+  "repository_tool_tests": 8,
+  "video": {
+    "path": "artifacts/机械章鱼OC-8-GPT-6.1-Sol-1080p.mp4",
+    "git_ignored": true,
+    "bytes": 38577182,
+    "sha256": "685a63e505ee3e791e47b6b5d0e0cc91c56a7da123b3bb2a327d8febd21cb279",
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "frames": 750,
+    "duration_seconds": 25.0,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_sample_rate": 48000,
+    "audio_channels": 2,
+    "black_intervals": 0,
+    "integrated_lufs": -17.9,
+    "true_peak_dbfs": -9.1
+  },
+  "limitations": [
+    "not a blind or controlled model benchmark",
+    "not pixel-matched to reference",
+    "no seamless-loop claim; audio fades at both ends"
+  ]
+}

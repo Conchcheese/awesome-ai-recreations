@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "status": "draft",
+  "character": {"id": "replace-me", "title": "待填写", "edition": "待冻结具体版本"},
+  "provenance": "derived",
+  "visualGoal": "fidelity",
+  "paths": {"references": "references/sources.json", "assemblies": "records/assembly-catalog.json", "source": "src", "web": "index.html", "film": "film.html"},
+  "rig": {"rootId": "", "requiredPorts": ["head", "torso", "left_hand", "right_hand", "left_foot", "right_foot"], "ports": {}},
+  "timeline": {"sourceDuration": null, "fps": 24, "transform": [], "movieDuration": null, "edit": []},
+  "unknown": ["原始参考未登记", "几何与双形态端点未实现", "变形拓扑未实现", "所有世界尺度未测量"]
+}

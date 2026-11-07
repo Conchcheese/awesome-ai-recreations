@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "unicron-2023",
+    "title": "宇宙大帝",
+    "english": "Unicron",
+    "year": 2023,
+    "faction": "independent",
+    "form": "planet"
+  },
+  "targetEdition": "Rise of the Beasts (2023)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers-rise-of-the-beasts",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [],
+  "sources": [],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。",
+    "已有片段/图证入口，但尚未冻结单帧样例、视图标注与本地哈希。",
+    "现有素材未验证机器人形态，不得直接套用G1人形或按电影精确还原署名。"
+  ],
+  "linkedExamples": [
+    {
+      "url": "https://www.youtube.com/watch?v=OANHe5GJ_AI",
+      "type": "official-film-promotion",
+      "publisher": "Paramount Pictures International",
+      "verifiedDate": "2026-11-06",
+      "note": "Unicron is coming；官方宣传片段，尚未抽帧测量。",
+      "distribution": "link-only; copyright retained by original owner",
+      "verification": "Publisher/title/role correspondence checked in indexed source metadata; live playback and frame extraction not yet verified."
+    }
+  ]
+}

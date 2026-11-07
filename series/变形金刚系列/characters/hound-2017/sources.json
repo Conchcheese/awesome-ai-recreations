@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "hound-2017",
+    "title": "探长",
+    "english": "Hound",
+    "year": 2017,
+    "faction": "autobot",
+    "form": "truck"
+  },
+  "targetEdition": "The Last Knight (2017)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers-the-last-knight",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "mb-19",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mb/mb-19",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/mb-19-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mb/item_tf_mb-19_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mb/mb-19",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "a85d51e3af65f75e0c2b1a62445b89629d4bb88c577c00814130fe8a53e676ec",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 129556,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/mb-19-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mb/item_tf_mb-19_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mb/mb-19",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "8faae8742e339844b97a7c56b7e93ee424bfde4d15c06f5d06750e583dd0fc74",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 120670,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。"
+  ]
+}

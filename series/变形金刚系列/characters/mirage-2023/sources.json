@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "mirage-2023",
+    "title": "幻影",
+    "english": "Mirage",
+    "year": 2023,
+    "faction": "autobot",
+    "form": "car"
+  },
+  "targetEdition": "Rise of the Beasts (2023)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers-rise-of-the-beasts",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "ss-141",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-141",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/ss-141-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-141_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-141",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "a3ab64a4b6f1e3bea0830671f2bff179c488692e6f6169eb8ae96e7aad04cb0a",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 119914,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-141-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-141_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-141",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "a71f86e8608f04a3cc010d978c7b80eb91699b0d0c2cef1dc6f98314abaefe32",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 114829,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。"
+  ]
+}

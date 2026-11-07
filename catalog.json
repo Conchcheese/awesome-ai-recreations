@@ -1,0 +1,881 @@
+{
+  "schema_version": 2,
+  "description": "路径相对于仓库根目录。命令数组仅供查询，不由查询工具执行。模型名称是历史署名，不证明模型身份或公平对照。",
+  "cases": [
+    {
+      "id": "oc8",
+      "title": "机械章鱼OC-8",
+      "aliases": [
+        "机械章鱼",
+        "章鱼",
+        "OC-8",
+        "Pelagos OC-8",
+        "octopus"
+      ],
+      "series": "mechanical",
+      "variants": [
+        {
+          "id": "gpt-6-1-sol",
+          "model_label": "GPT-6.1 Sol（本轮用户指定展示名；未另行调用 API）",
+          "provenance": "independent",
+          "visual_goal": "fidelity",
+          "readme": "series/机械复刻系列/gpt-6.1-sol复刻/README.md",
+          "live": "series/机械复刻系列/gpt-6.1-sol复刻/00-机械章鱼OC-8/机械章鱼OC-8-互动页.html",
+          "film": "series/机械复刻系列/gpt-6.1-sol复刻/00-机械章鱼OC-8/机械章鱼OC-8-影片页.html",
+          "source": "series/机械复刻系列/gpt-6.1-sol复刻/src",
+          "spec": "series/机械复刻系列/gpt-6.1-sol复刻/spec.md",
+          "record": "series/机械复刻系列/gpt-6.1-sol复刻/records/提示词与过程.md",
+          "references": [
+            "series/机械复刻系列/deepseek复刻/references/00-机械章鱼"
+          ],
+          "cwd": "series/机械复刻系列/gpt-6.1-sol复刻",
+          "commands": {
+            "build": [
+              [
+                "node",
+                "tools/build.mjs",
+                "all"
+              ]
+            ],
+            "check": [
+              [
+                "node",
+                "tools/check.mjs"
+              ]
+            ],
+            "qa": [
+              [
+                "node",
+                "tools/qa.mjs"
+              ]
+            ],
+            "video": [
+              [
+                "node",
+                "tools/video.mjs"
+              ]
+            ]
+          },
+          "build_outputs": [
+            "series/机械复刻系列/gpt-6.1-sol复刻/00-机械章鱼OC-8/机械章鱼OC-8-互动页.html",
+            "series/机械复刻系列/gpt-6.1-sol复刻/00-机械章鱼OC-8/机械章鱼OC-8-影片页.html"
+          ],
+          "notes": "首版从零编写，V2为本版本衍生改进；此前审计接触旧实现，不称隔离盲测。当前64秒/1080p60动作完整版，补齐倾转喷进、八臂错相游动、虹膜、泵核、喷口尾流、双颚、拆解复位与离站。几何与动作仍为程序化近似。视频留在 artifacts/，不提交Git。"
+        },
+        {
+          "id": "deepseek",
+          "model_label": "DeepSeek（精确模型 ID 未归档）",
+          "provenance": "independent",
+          "visual_goal": "reinterpretation",
+          "readme": "series/机械复刻系列/deepseek复刻/README.md",
+          "live": "series/机械复刻系列/deepseek复刻/00-机械章鱼OC-8/机械章鱼OC-8-互动页.html",
+          "film": "series/机械复刻系列/deepseek复刻/00-机械章鱼OC-8/机械章鱼OC-8-影片页.html",
+          "source": "series/机械复刻系列/deepseek复刻/src/00-机械章鱼OC-8",
+          "spec": "series/机械复刻系列/deepseek复刻/src/00-机械章鱼OC-8/spec.md",
+          "record": "series/机械复刻系列/deepseek复刻/records/实现与验证.md",
+          "references": [
+            "series/机械复刻系列/deepseek复刻/references/00-机械章鱼"
+          ],
+          "cwd": "series/机械复刻系列/deepseek复刻/src/kit",
+          "commands": {
+            "build": [
+              [
+                "node",
+                "build.mjs",
+                "00"
+              ]
+            ],
+            "check": [
+              [
+                "node",
+                "../00-机械章鱼OC-8/shared/check.mjs"
+              ]
+            ],
+            "qa": [
+              [
+                "node",
+                "qa.mjs",
+                "00"
+              ]
+            ]
+          },
+          "build_outputs": [
+            "series/机械复刻系列/deepseek复刻/00-机械章鱼OC-8/机械章鱼OC-8-互动页.html",
+            "series/机械复刻系列/deepseek复刻/00-机械章鱼OC-8/机械章鱼OC-8-影片页.html"
+          ],
+          "notes": "独立重写为历史声明；中文、宝石紫与原作有设计偏差。build 会覆盖本版本的交付 HTML。"
+        },
+        {
+          "id": "glm",
+          "model_label": "GLM 5.3-Flash（沿用仓库历史署名；精确调用记录未归档）",
+          "provenance": "independent",
+          "visual_goal": "reinterpretation",
+          "readme": "series/机械复刻系列/glm5.3-flash复刻/README.md",
+          "live": "series/机械复刻系列/glm5.3-flash复刻/pages/00-机械章鱼OC-8/机械章鱼OC-8-互动页.html",
+          "film": "series/机械复刻系列/glm5.3-flash复刻/pages/00-机械章鱼OC-8/机械章鱼OC-8-影片页.html",
+          "source": "series/机械复刻系列/glm5.3-flash复刻/src/kit/sims/octopus-shared",
+          "spec": "series/机械复刻系列/glm5.3-flash复刻/references/00-机械章鱼OC-8/spec.md",
+          "record": "series/机械复刻系列/glm5.3-flash复刻/records/00-机械章鱼OC-8.md",
+          "references": [
+            "series/机械复刻系列/glm5.3-flash复刻/references/00-机械章鱼OC-8"
+          ],
+          "cwd": "series/机械复刻系列/glm5.3-flash复刻/src/kit",
+          "commands": {
+            "build": [
+              [
+                "node",
+                "sims/build.mjs",
+                "octopus-live",
+                "octopus-film"
+              ]
+            ],
+            "check": [
+              [
+                "node",
+                "sims/octopus-shared/check.mjs"
+              ]
+            ]
+          },
+          "build_outputs": [
+            "series/机械复刻系列/glm5.3-flash复刻/src/kit/teardown-out/dist/octopus-live.html",
+            "series/机械复刻系列/glm5.3-flash复刻/src/kit/teardown-out/dist/octopus-film.html"
+          ],
+          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。"
+        },
+        {
+          "id": "hy4-direct",
+          "model_label": "HY4 / Tencent Hunyuan Hy（仓库展示名；精确 API 模型 ID 未归档）",
+          "provenance": "independent",
+          "visual_goal": "reinterpretation",
+          "readme": "series/机械复刻系列/hunyuan直出版/README.md",
+          "live": "series/机械复刻系列/hunyuan直出版/00-机械章鱼OC-8/机械章鱼OC-8-互动页.html",
+          "film": "series/机械复刻系列/hunyuan直出版/00-机械章鱼OC-8/机械章鱼OC-8-影片页.html",
+          "source": "series/机械复刻系列/hunyuan直出版/src",
+          "spec": "series/机械复刻系列/hunyuan直出版/spec.md",
+          "record": "series/机械复刻系列/hunyuan直出版/records/实现与验证.md",
+          "references": [
+            "series/机械复刻系列/deepseek复刻/references/00-机械章鱼"
+          ],
+          "cwd": "series/机械复刻系列/hunyuan直出版",
+          "commands": {
+            "build": [
+              [
+                "node",
+                "tools/build.mjs",
+                "all"
+              ]
+            ],
+            "check": [
+              [
+                "node",
+                "tools/check.mjs"
+              ]
+            ],
+            "qa": [
+              [
+                "node",
+                "tools/qa.mjs"
+              ]
+            ]
+          },
+          "build_outputs": [
+            "series/机械复刻系列/hunyuan直出版/00-机械章鱼OC-8/机械章鱼OC-8-互动页.html",
+            "series/机械复刻系列/hunyuan直出版/00-机械章鱼OC-8/机械章鱼OC-8-影片页.html"
+          ],
+          "notes": "独立重写为历史声明；HUD/色板/镜头改编，低代码相似度不能证明创作过程。 build 会覆盖本版本的交付 HTML。"
+        },
+        {
+          "id": "hy-derived",
+          "model_label": "HY4 / Tencent Hunyuan Hy（仓库展示名；精确 API 模型 ID 未归档）",
+          "provenance": "derived",
+          "visual_goal": "reinterpretation",
+          "readme": "series/机械复刻系列/hunyuan复刻/README.md",
+          "live": "series/机械复刻系列/hunyuan复刻/00-机械章鱼OC-8/机械章鱼OC-8-互动页.html",
+          "film": "series/机械复刻系列/hunyuan复刻/00-机械章鱼OC-8/机械章鱼OC-8-影片页.html",
+          "source": "series/机械复刻系列/hunyuan复刻/src",
+          "spec": "series/机械复刻系列/hunyuan复刻/src/00-机械章鱼OC-8/spec.md",
+          "record": "series/机械复刻系列/hunyuan复刻/records/实现与验证.md",
+          "references": [
+            "series/机械复刻系列/deepseek复刻/references/00-机械章鱼"
+          ],
+          "cwd": "series/机械复刻系列/hunyuan复刻/src/kit",
+          "commands": {
+            "build": [
+              [
+                "node",
+                "build.mjs",
+                "all"
+              ]
+            ],
+            "check": [
+              [
+                "node",
+                "../00-机械章鱼OC-8/shared/check.mjs"
+              ]
+            ],
+            "qa": [
+              [
+                "node",
+                "qa.mjs",
+                "all"
+              ]
+            ]
+          },
+          "build_outputs": [
+            "series/机械复刻系列/hunyuan复刻/00-机械章鱼OC-8/机械章鱼OC-8-互动页.html",
+            "series/机械复刻系列/hunyuan复刻/00-机械章鱼OC-8/机械章鱼OC-8-影片页.html"
+          ],
+          "notes": "基于 DeepSeek 实现改色和重写部分几何，不作为独立模型对照。 build 会覆盖本版本的交付 HTML。"
+        }
+      ],
+      "task_manifest": "tasks/oc8/input.json"
+    },
+    {
+      "id": "v8",
+      "title": "V8发动机",
+      "aliases": [
+        "V8",
+        "V8 发动机"
+      ],
+      "series": "mechanical",
+      "variants": [
+        {
+          "id": "deepseek",
+          "model_label": "DeepSeek（精确模型 ID 未归档）",
+          "provenance": "independent",
+          "visual_goal": "reinterpretation",
+          "readme": "series/机械复刻系列/deepseek复刻/README.md",
+          "live": "series/机械复刻系列/deepseek复刻/01-V8发动机/V8发动机-互动页.html",
+          "film": "series/机械复刻系列/deepseek复刻/01-V8发动机/V8发动机-影片页.html",
+          "source": "series/机械复刻系列/deepseek复刻/src/01-V8发动机",
+          "spec": "series/机械复刻系列/deepseek复刻/src/01-V8发动机/spec.md",
+          "record": "series/机械复刻系列/deepseek复刻/records/实现与验证.md",
+          "references": [
+            "series/机械复刻系列/deepseek复刻/references/01-V8发动机"
+          ],
+          "cwd": "series/机械复刻系列/deepseek复刻/src/kit",
+          "commands": {
+            "build": [
+              [
+                "node",
+                "build.mjs",
+                "01"
+              ]
+            ],
+            "check": [
+              [
+                "node",
+                "../01-V8发动机/shared/check.mjs"
+              ]
+            ],
+            "qa": [
+              [
+                "node",
+                "qa.mjs",
+                "01"
+              ]
+            ]
+          },
+          "build_outputs": [
+            "series/机械复刻系列/deepseek复刻/01-V8发动机/V8发动机-互动页.html",
+            "series/机械复刻系列/deepseek复刻/01-V8发动机/V8发动机-影片页.html"
+          ],
+          "notes": "独立重写为历史声明；中文、宝石紫与原作有设计偏差。build 会覆盖本版本的交付 HTML。"
+        },
+        {
+          "id": "glm",
+          "model_label": "GLM 5.3-Flash（沿用仓库历史署名；精确调用记录未归档）",
+          "provenance": "derived",
+          "visual_goal": "reinterpretation",
+          "readme": "series/机械复刻系列/glm5.3-flash复刻/README.md",
+          "live": "series/机械复刻系列/glm5.3-flash复刻/pages/01-V8发动机/V8发动机-互动页.html",
+          "film": "series/机械复刻系列/glm5.3-flash复刻/pages/01-V8发动机/V8发动机-影片页.html",
+          "source": "series/机械复刻系列/glm5.3-flash复刻/src/kit/sims/v8-shared",
+          "spec": "series/机械复刻系列/glm5.3-flash复刻/references/01-V8发动机/spec.md",
+          "record": "series/机械复刻系列/glm5.3-flash复刻/records/01-V8发动机.md",
+          "references": [
+            "series/机械复刻系列/glm5.3-flash复刻/references/01-V8发动机"
+          ],
+          "cwd": "series/机械复刻系列/glm5.3-flash复刻/src/kit",
+          "commands": {
+            "build": [
+              [
+                "node",
+                "sims/build.mjs",
+                "v8-live",
+                "v8-film"
+              ]
+            ],
+            "check": [
+              [
+                "node",
+                "sims/v8-shared/check.mjs"
+              ]
+            ]
+          },
+          "build_outputs": [
+            "series/机械复刻系列/glm5.3-flash复刻/src/kit/teardown-out/dist/v8-live.html",
+            "series/机械复刻系列/glm5.3-flash复刻/src/kit/teardown-out/dist/v8-film.html"
+          ],
+          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。"
+        }
+      ],
+      "task_manifest": "tasks/v8/input.json"
+    },
+    {
+      "id": "cessna337",
+      "title": "塞斯纳337起落架",
+      "aliases": [
+        "塞斯纳337",
+        "塞斯纳起落架",
+        "起落架",
+        "Cessna 337"
+      ],
+      "series": "mechanical",
+      "variants": [
+        {
+          "id": "glm",
+          "model_label": "GLM 5.3-Flash（沿用仓库历史署名；精确调用记录未归档）",
+          "provenance": "derived",
+          "visual_goal": "reinterpretation",
+          "readme": "series/机械复刻系列/glm5.3-flash复刻/README.md",
+          "live": "series/机械复刻系列/glm5.3-flash复刻/pages/02-塞斯纳337起落架/塞斯纳337起落架-互动页.html",
+          "film": "series/机械复刻系列/glm5.3-flash复刻/pages/02-塞斯纳337起落架/塞斯纳337起落架-影片页.html",
+          "source": "series/机械复刻系列/glm5.3-flash复刻/src/kit/sims/cessna-shared",
+          "spec": "series/机械复刻系列/glm5.3-flash复刻/references/02-塞斯纳337起落架/spec.md",
+          "record": "series/机械复刻系列/glm5.3-flash复刻/records/02-塞斯纳337起落架.md",
+          "references": [
+            "series/机械复刻系列/glm5.3-flash复刻/references/02-塞斯纳337起落架"
+          ],
+          "cwd": "series/机械复刻系列/glm5.3-flash复刻/src/kit",
+          "commands": {
+            "build": [
+              [
+                "node",
+                "sims/build.mjs",
+                "cessna-live",
+                "cessna-film"
+              ]
+            ],
+            "check": [
+              [
+                "node",
+                "sims/cessna-shared/check.mjs"
+              ]
+            ]
+          },
+          "build_outputs": [
+            "series/机械复刻系列/glm5.3-flash复刻/src/kit/teardown-out/dist/cessna-live.html",
+            "series/机械复刻系列/glm5.3-flash复刻/src/kit/teardown-out/dist/cessna-film.html"
+          ],
+          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。"
+        }
+      ],
+      "task_manifest": "tasks/cessna337/input.json"
+    },
+    {
+      "id": "strandbeest",
+      "title": "海滩兽Strandbeest",
+      "aliases": [
+        "海滩兽",
+        "Strandbeest"
+      ],
+      "series": "mechanical",
+      "variants": [
+        {
+          "id": "glm",
+          "model_label": "GLM 5.3-Flash（沿用仓库历史署名；精确调用记录未归档）",
+          "provenance": "derived",
+          "visual_goal": "reinterpretation",
+          "readme": "series/机械复刻系列/glm5.3-flash复刻/README.md",
+          "live": "series/机械复刻系列/glm5.3-flash复刻/pages/03-海滩兽Strandbeest/海滩兽Strandbeest-互动页.html",
+          "film": "series/机械复刻系列/glm5.3-flash复刻/pages/03-海滩兽Strandbeest/海滩兽Strandbeest-影片页.html",
+          "source": "series/机械复刻系列/glm5.3-flash复刻/src/kit/sims/strandbeest-shared",
+          "spec": "series/机械复刻系列/glm5.3-flash复刻/references/03-海滩兽Strandbeest/spec.md",
+          "record": "series/机械复刻系列/glm5.3-flash复刻/records/03-海滩兽Strandbeest.md",
+          "references": [
+            "series/机械复刻系列/glm5.3-flash复刻/references/03-海滩兽Strandbeest"
+          ],
+          "cwd": "series/机械复刻系列/glm5.3-flash复刻/src/kit",
+          "commands": {
+            "build": [
+              [
+                "node",
+                "sims/build.mjs",
+                "strandbeest-live",
+                "strandbeest-film"
+              ]
+            ],
+            "check": [
+              [
+                "node",
+                "sims/strandbeest-shared/check.mjs"
+              ]
+            ]
+          },
+          "build_outputs": [
+            "series/机械复刻系列/glm5.3-flash复刻/src/kit/teardown-out/dist/strandbeest-live.html",
+            "series/机械复刻系列/glm5.3-flash复刻/src/kit/teardown-out/dist/strandbeest-film.html"
+          ],
+          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。"
+        }
+      ],
+      "task_manifest": "tasks/strandbeest/input.json"
+    },
+    {
+      "id": "sandworm",
+      "title": "仿生沙虫MK-X",
+      "aliases": [
+        "仿生沙虫",
+        "机械沙虫",
+        "沙虫",
+        "MK-X"
+      ],
+      "series": "mechanical",
+      "variants": [
+        {
+          "id": "glm",
+          "model_label": "GLM 5.3-Flash（沿用仓库历史署名；精确调用记录未归档）",
+          "provenance": "independent",
+          "visual_goal": "reinterpretation",
+          "readme": "series/机械复刻系列/glm5.3-flash复刻/README.md",
+          "live": "series/机械复刻系列/glm5.3-flash复刻/pages/04-仿生沙虫MK-X/仿生沙虫MK-X-互动页.html",
+          "film": "series/机械复刻系列/glm5.3-flash复刻/pages/04-仿生沙虫MK-X/仿生沙虫MK-X-影片页.html",
+          "source": "series/机械复刻系列/glm5.3-flash复刻/src/kit/sims/sandworm-shared",
+          "spec": "series/机械复刻系列/glm5.3-flash复刻/references/04-仿生沙虫MK-X/spec.md",
+          "record": "series/机械复刻系列/glm5.3-flash复刻/records/04-仿生沙虫MK-X.md",
+          "references": [
+            "series/机械复刻系列/glm5.3-flash复刻/references/04-仿生沙虫MK-X"
+          ],
+          "cwd": "series/机械复刻系列/glm5.3-flash复刻/src/kit",
+          "commands": {
+            "build": [
+              [
+                "node",
+                "sims/build.mjs",
+                "sandworm-live",
+                "sandworm-film"
+              ]
+            ],
+            "check": [
+              [
+                "node",
+                "sims/sandworm-shared/check.mjs"
+              ]
+            ]
+          },
+          "build_outputs": [
+            "series/机械复刻系列/glm5.3-flash复刻/src/kit/teardown-out/dist/sandworm-live.html",
+            "series/机械复刻系列/glm5.3-flash复刻/src/kit/teardown-out/dist/sandworm-film.html"
+          ],
+          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。"
+        }
+      ],
+      "task_manifest": "tasks/sandworm/input.json"
+    },
+    {
+      "id": "jellyfish",
+      "title": "机械水母MJ-9",
+      "aliases": [
+        "机械水母",
+        "水母",
+        "MJ-9"
+      ],
+      "series": "mechanical",
+      "variants": [
+        {
+          "id": "glm",
+          "model_label": "GLM 5.3-Flash（沿用仓库历史署名；精确调用记录未归档）",
+          "provenance": "independent",
+          "visual_goal": "reinterpretation",
+          "readme": "series/机械复刻系列/glm5.3-flash复刻/README.md",
+          "live": "series/机械复刻系列/glm5.3-flash复刻/pages/05-机械水母MJ-9/机械水母MJ-9-互动页.html",
+          "film": "series/机械复刻系列/glm5.3-flash复刻/pages/05-机械水母MJ-9/机械水母MJ-9-影片页.html",
+          "source": "series/机械复刻系列/glm5.3-flash复刻/src/kit/sims/jellyfish-shared",
+          "spec": "series/机械复刻系列/glm5.3-flash复刻/references/05-机械水母MJ-9/spec.md",
+          "record": "series/机械复刻系列/glm5.3-flash复刻/records/05-机械水母MJ-9.md",
+          "references": [
+            "series/机械复刻系列/glm5.3-flash复刻/references/05-机械水母MJ-9"
+          ],
+          "cwd": "series/机械复刻系列/glm5.3-flash复刻/src/kit",
+          "commands": {
+            "build": [
+              [
+                "node",
+                "sims/build.mjs",
+                "jellyfish-live",
+                "jellyfish-film"
+              ]
+            ],
+            "check": [
+              [
+                "node",
+                "sims/jellyfish-shared/check.mjs"
+              ]
+            ]
+          },
+          "build_outputs": [
+            "series/机械复刻系列/glm5.3-flash复刻/src/kit/teardown-out/dist/jellyfish-live.html",
+            "series/机械复刻系列/glm5.3-flash复刻/src/kit/teardown-out/dist/jellyfish-film.html"
+          ],
+          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。"
+        }
+      ],
+      "task_manifest": "tasks/jellyfish/input.json"
+    },
+    {
+      "id": "hexapod",
+      "title": "六足机器人HX-18",
+      "aliases": [
+        "六足机器人",
+        "六足",
+        "HX-18"
+      ],
+      "series": "mechanical",
+      "variants": [
+        {
+          "id": "glm",
+          "model_label": "GLM 5.3-Flash（沿用仓库历史署名；精确调用记录未归档）",
+          "provenance": "independent",
+          "visual_goal": "reinterpretation",
+          "readme": "series/机械复刻系列/glm5.3-flash复刻/README.md",
+          "live": "series/机械复刻系列/glm5.3-flash复刻/pages/06-六足机器人HX-18/六足机器人HX-18-互动页.html",
+          "film": "series/机械复刻系列/glm5.3-flash复刻/pages/06-六足机器人HX-18/六足机器人HX-18-影片页.html",
+          "source": "series/机械复刻系列/glm5.3-flash复刻/src/kit/sims/hexapod-shared",
+          "spec": "series/机械复刻系列/glm5.3-flash复刻/references/06-六足机器人HX-18/spec.md",
+          "record": "series/机械复刻系列/glm5.3-flash复刻/records/06-六足机器人HX-18.md",
+          "references": [
+            "series/机械复刻系列/glm5.3-flash复刻/references/06-六足机器人HX-18"
+          ],
+          "cwd": "series/机械复刻系列/glm5.3-flash复刻/src/kit",
+          "commands": {
+            "build": [
+              [
+                "node",
+                "sims/build.mjs",
+                "hexapod-live",
+                "hexapod-film"
+              ]
+            ],
+            "check": [
+              [
+                "node",
+                "sims/hexapod-shared/check.mjs"
+              ]
+            ]
+          },
+          "build_outputs": [
+            "series/机械复刻系列/glm5.3-flash复刻/src/kit/teardown-out/dist/hexapod-live.html",
+            "series/机械复刻系列/glm5.3-flash复刻/src/kit/teardown-out/dist/hexapod-film.html"
+          ],
+          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。"
+        }
+      ],
+      "task_manifest": "tasks/hexapod/input.json"
+    },
+    {
+      "id": "bee",
+      "title": "机械蜜蜂HB-7",
+      "aliases": [
+        "机械蜜蜂",
+        "蜜蜂",
+        "HB-7"
+      ],
+      "series": "mechanical",
+      "variants": [
+        {
+          "id": "glm",
+          "model_label": "GLM 5.3-Flash（沿用仓库历史署名；精确调用记录未归档）",
+          "provenance": "independent",
+          "visual_goal": "reinterpretation",
+          "readme": "series/机械复刻系列/glm5.3-flash复刻/README.md",
+          "live": "series/机械复刻系列/glm5.3-flash复刻/pages/07-机械蜜蜂HB-7/机械蜜蜂HB-7-互动页.html",
+          "film": "series/机械复刻系列/glm5.3-flash复刻/pages/07-机械蜜蜂HB-7/机械蜜蜂HB-7-影片页.html",
+          "source": "series/机械复刻系列/glm5.3-flash复刻/src/kit/sims/bee-shared",
+          "spec": "series/机械复刻系列/glm5.3-flash复刻/references/07-机械蜜蜂HB-7/spec.md",
+          "record": "series/机械复刻系列/glm5.3-flash复刻/records/07-机械蜜蜂HB-7.md",
+          "references": [
+            "series/机械复刻系列/glm5.3-flash复刻/references/07-机械蜜蜂HB-7"
+          ],
+          "cwd": "series/机械复刻系列/glm5.3-flash复刻/src/kit",
+          "commands": {
+            "build": [
+              [
+                "node",
+                "sims/build.mjs",
+                "bee-live",
+                "bee-film"
+              ]
+            ],
+            "check": [
+              [
+                "node",
+                "sims/bee-shared/check.mjs"
+              ]
+            ]
+          },
+          "build_outputs": [
+            "series/机械复刻系列/glm5.3-flash复刻/src/kit/teardown-out/dist/bee-live.html",
+            "series/机械复刻系列/glm5.3-flash复刻/src/kit/teardown-out/dist/bee-film.html"
+          ],
+          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。"
+        }
+      ],
+      "task_manifest": "tasks/bee/input.json"
+    },
+    {
+      "id": "scorpion",
+      "title": "机械蝎子SC-8",
+      "aliases": [
+        "机械蝎子",
+        "蝎子",
+        "SC-8"
+      ],
+      "series": "mechanical",
+      "variants": [
+        {
+          "id": "glm",
+          "model_label": "GLM 5.3-Flash（沿用仓库历史署名；精确调用记录未归档）",
+          "provenance": "independent",
+          "visual_goal": "reinterpretation",
+          "readme": "series/机械复刻系列/glm5.3-flash复刻/README.md",
+          "live": "series/机械复刻系列/glm5.3-flash复刻/pages/08-机械蝎子SC-8/机械蝎子SC-8-互动页.html",
+          "film": "series/机械复刻系列/glm5.3-flash复刻/pages/08-机械蝎子SC-8/机械蝎子SC-8-影片页.html",
+          "source": "series/机械复刻系列/glm5.3-flash复刻/src/kit/sims/scorpion-shared",
+          "spec": "series/机械复刻系列/glm5.3-flash复刻/references/08-机械蝎子SC-8/spec.md",
+          "record": "series/机械复刻系列/glm5.3-flash复刻/records/08-机械蝎子SC-8.md",
+          "references": [
+            "series/机械复刻系列/glm5.3-flash复刻/references/08-机械蝎子SC-8"
+          ],
+          "cwd": "series/机械复刻系列/glm5.3-flash复刻/src/kit",
+          "commands": {
+            "build": [
+              [
+                "node",
+                "sims/build.mjs",
+                "scorpion-live",
+                "scorpion-film"
+              ]
+            ],
+            "check": [
+              [
+                "node",
+                "sims/scorpion-shared/check.mjs"
+              ]
+            ]
+          },
+          "build_outputs": [
+            "series/机械复刻系列/glm5.3-flash复刻/src/kit/teardown-out/dist/scorpion-live.html",
+            "series/机械复刻系列/glm5.3-flash复刻/src/kit/teardown-out/dist/scorpion-film.html"
+          ],
+          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。"
+        }
+      ],
+      "task_manifest": "tasks/scorpion/input.json"
+    },
+    {
+      "id": "optimus-prime-2007",
+      "title": "擎天柱·2007真人电影版",
+      "aliases": [
+        "擎天柱",
+        "Optimus Prime",
+        "电影擎天柱",
+        "2007擎天柱",
+        "真人版擎天柱"
+      ],
+      "series": "transformers",
+      "variants": [
+        {
+          "id": "cinematic-v2",
+          "model_label": "GPT-6.1 Sol（用户提供；会话未暴露精确模型 ID）",
+          "provenance": "derived",
+          "visual_goal": "fidelity",
+          "readme": "series/变形金刚系列/01-擎天柱-电影版/README.md",
+          "live": "series/变形金刚系列/01-擎天柱-电影版/index.html",
+          "film": "series/变形金刚系列/01-擎天柱-电影版/film.html",
+          "source": "series/变形金刚系列/01-擎天柱-电影版/src",
+          "spec": "series/变形金刚系列/01-擎天柱-电影版/spec.md",
+          "record": "series/变形金刚系列/01-擎天柱-电影版/records/实现与验证.md",
+          "references": [
+            "series/变形金刚系列/01-擎天柱-电影版/references"
+          ],
+          "cwd": "series/变形金刚系列/01-擎天柱-电影版",
+          "commands": {
+            "build": [
+              [
+                "node",
+                "tools/build.mjs"
+              ]
+            ],
+            "check": [
+              [
+                "node",
+                "tools/check.mjs"
+              ]
+            ],
+            "qa": [
+              [
+                "node",
+                "tools/qa.mjs"
+              ]
+            ],
+            "export": [
+              [
+                "node",
+                "tools/export.mjs"
+              ]
+            ],
+            "video": [
+              [
+                "node",
+                "tools/render.mjs"
+              ]
+            ],
+            "video-check": [
+              [
+                "python3",
+                "tools/video-check.py"
+              ]
+            ],
+            "trace": [
+              [
+                "node",
+                "tools/trace-parts.mjs"
+              ]
+            ]
+          },
+          "build_outputs": [
+            "series/变形金刚系列/01-擎天柱-电影版/index.html",
+            "series/变形金刚系列/01-擎天柱-电影版/film.html"
+          ],
+          "notes": "电影版几何/装配/材质/摄影重写，沿用C-01构建与确定性导出方法，标derived。172活动装配节点/2200视觉分件/438渲染网格，不代表真实自由度。实时50秒巡览与28秒Cycles剪辑同源；完整碰撞、隐藏机构及原片同机位量化误差未验证。源码/演示开放发布，原始媒体不分发。",
+          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/01-擎天柱-电影版/index.html",
+          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/01-擎天柱-电影版/film.html"
+        },
+        {
+          "id": "hy4",
+          "model_label": "HY4 / Tencent Hunyuan Hy（用户指定标注；会话未暴露精确模型 ID）",
+          "provenance": "independent",
+          "visual_goal": "fidelity",
+          "readme": "series/变形金刚系列/models/hy4/optimus-prime-2007/README.md",
+          "live": "series/变形金刚系列/models/hy4/optimus-prime-2007/index.html",
+          "film": "series/变形金刚系列/models/hy4/optimus-prime-2007/film.html",
+          "source": "series/变形金刚系列/models/hy4/optimus-prime-2007/src",
+          "spec": "series/变形金刚系列/models/hy4/optimus-prime-2007/spec.md",
+          "record": "series/变形金刚系列/models/hy4/optimus-prime-2007/records/实现与验证.md",
+          "references": [
+            "series/变形金刚系列/models/hy4/optimus-prime-2007/references"
+          ],
+          "cwd": "series/变形金刚系列/models/hy4/optimus-prime-2007",
+          "commands": {
+            "build": [
+              [
+                "node",
+                "tools/build.mjs"
+              ]
+            ],
+            "audio": [
+              [
+                "node",
+                "tools/audio.mjs"
+              ]
+            ],
+            "render": [
+              [
+                "node",
+                "tools/render.mjs"
+              ]
+            ],
+            "video": [
+              [
+                "node",
+                "tools/video.mjs"
+              ]
+            ],
+            "contact": [
+              [
+                "python3",
+                "tools/contact.py"
+              ]
+            ],
+            "check": [
+              [
+                "node",
+                "tools/check.mjs"
+              ]
+            ],
+            "qa": [
+              [
+                "node",
+                "tools/qa.mjs"
+              ]
+            ]
+          },
+          "build_outputs": [
+            "series/变形金刚系列/models/hy4/optimus-prime-2007/index.html",
+            "series/变形金刚系列/models/hy4/optimus-prime-2007/film.html"
+          ],
+          "notes": "HY4 独立精细复刻（用户指定标注 HY4 / Tencent Hunyuan Hy；会话未单独调用带版本号的 HY4 模型 API，精确模型 ID 未归档）。依据 15 份登记官方素材（8 张 Paramount/ILM 原帧 + MPM-4 官方产品图、ILM 100s/080s、Paramount 61s、8–32s 接触表、2007 研究板）建立 37 个可动装配 / 490 个命名视觉分件 / 974 Mesh 的 Three.js PBR 三维；程序化环境反射、9 类材质分区、ACES 调色与机库尺度。50 秒源时间线、8–19 秒错峰连续变形；7 镜头 / 28 秒成片时间线，其中 4–15 秒为 1:1 连续镜头完整覆盖变形。成片为同源模型按 cameraAt(i/24) 逐帧离线渲染 672 帧 PNG → 原创 48kHz 双声道 WAV → FFmpeg H.264/AAC 封装，1920×804 / 24fps / 28s；已做完整解码、黑帧与电平验收，非网页录屏、非 Cycles 路径追踪。index.html / film.html 同源自包含单文件，可离线双击运行。未验证：原片同机位量化误差、完整碰撞与拓扑真实性、GLB/Blend、Cycles、逐帧运动模糊、跨 GPU 像素一致性、窄屏与竖版；展甲/分层拆解/重组/机库/配乐为本轮 designed。原始媒体、逐帧缓存与成片仅本地保留，不分发。",
+          "movie": "series/变形金刚系列/models/hy4/optimus-prime-2007/artifacts/HY4-擎天柱-2007-电影版.mp4",
+          "score": "series/变形金刚系列/models/hy4/optimus-prime-2007/artifacts/HY4-original-score.wav"
+        },
+        {
+          "id": "glm-5-3-flash",
+          "model_label": "GLM-5.3-Flash（ZCode 会话执行；账号计划 bigmodel-individual-coding-plan，会话未暴露精确快照 ID）",
+          "provenance": "independent",
+          "visual_goal": "fidelity",
+          "readme": "series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/README.md",
+          "live": "series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/index.html",
+          "film": "series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/film.html",
+          "source": "series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/src",
+          "spec": "series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/spec.md",
+          "record": "series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/records/实现与验证.md",
+          "references": [
+            "series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/references"
+          ],
+          "cwd": "series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007",
+          "commands": {
+            "build": [
+              [
+                "node",
+                "tools/build.mjs"
+              ]
+            ],
+            "check": [
+              [
+                "node",
+                "tools/check.mjs"
+              ]
+            ],
+            "qa": [
+              [
+                "node",
+                "tools/qa.mjs"
+              ]
+            ],
+            "stills": [
+              [
+                "node",
+                "tools/stills.mjs"
+              ]
+            ],
+            "catalog": [
+              [
+                "node",
+                "tools/gen-catalog.mjs"
+              ]
+            ]
+          },
+          "build_outputs": [
+            "series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/index.html",
+            "series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/film.html"
+          ],
+          "notes": "从登记的 8 帧官方画面独立编写（未读取既有案例源码）；构建管线复用仓库 C-01 方法工具。72 装配/339 分件，世界尺寸 guess，变形单路径演示；完整连续片段未逐帧观看、无碰撞检测、无编码 MP4。用户最初要求标注 HY4，因 models/hy4 同案例由另一并行会话实现，按署名规则如实标执行模型。",
+          "online_live": null,
+          "online_film": null
+        }
+      ],
+      "task_manifest": "tasks/optimus-prime-2007/input.json"
+    }
+  ]
+}

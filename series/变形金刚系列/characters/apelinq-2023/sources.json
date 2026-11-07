@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "apelinq-2023",
+    "title": "Apelinq",
+    "english": "Apelinq",
+    "year": 2023,
+    "faction": "maximal",
+    "form": "beast"
+  },
+  "targetEdition": "Rise of the Beasts (2023)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers-rise-of-the-beasts",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "ss-146",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-146",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/ss-146-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-146_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-146",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "64a17eda673eace5e326f67e79690c70d180b2e06a92810ba612aa7c8de4a5c3",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 308126,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-146-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-146_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-146",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "a4e23d5551faf9cee2d03d76e2a4f8e3dc0c20e9736708b4194a49614d54ed19",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 260632,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。"
+  ]
+}

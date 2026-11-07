@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "mudflap-2009",
+    "title": "挡泥板",
+    "english": "Mudflap",
+    "year": 2009,
+    "faction": "autobot",
+    "form": "car"
+  },
+  "targetEdition": "Revenge of the Fallen (2009)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers-revenge-of-the-fallen",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [],
+  "sources": [],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。",
+    "已有片段/图证入口，但尚未冻结单帧样例、视图标注与本地哈希。"
+  ],
+  "linkedExamples": [
+    {
+      "url": "https://www.youtube.com/watch?v=P_hrKTavCOg",
+      "type": "original-film-clip-published-by-movieclips",
+      "publisher": "Movieclips",
+      "verifiedDate": "2026-11-06",
+      "note": "Devastator’s Assault；片段简介明确包含Skids与Mudflap，尚未抽帧测量。",
+      "distribution": "link-only; copyright retained by original owner",
+      "verification": "Publisher/title/role correspondence checked in indexed source metadata; live playback and frame extraction not yet verified."
+    }
+  ]
+}

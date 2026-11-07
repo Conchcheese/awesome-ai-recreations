@@ -1,0 +1,12 @@
+import {chromium} from 'playwright';
+import {pathToFileURL} from 'node:url';
+import {CHROMIUM, CHROMIUM_ARGS, DIST} from '../paths.mjs';
+const browser = await chromium.launch({executablePath: CHROMIUM, args: CHROMIUM_ARGS});
+const page = await browser.newPage({viewport: {width: 1600, height: 900}});
+page.on('console', (m) => m.type() === 'error' && console.log('[console]', m.text().slice(0, 300)));
+page.on('pageerror', (e) => console.log('[pageerror]', e.message.slice(0, 500)));
+await page.goto(pathToFileURL(DIST + '/bee-live.html').href);
+await page.waitForTimeout(5000);
+const has = await page.evaluate(() => ({shown: !!window.SIM_SHOWN, tier: window.LIVE?.tier, T: window.LIVE?.T}));
+console.log('live?', has);
+await browser.close();

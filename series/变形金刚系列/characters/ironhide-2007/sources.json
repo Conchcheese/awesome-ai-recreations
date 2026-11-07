@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "ironhide-2007",
+    "title": "铁皮",
+    "english": "Ironhide",
+    "year": 2007,
+    "faction": "autobot",
+    "form": "truck"
+  },
+  "targetEdition": "Transformers (2007)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "mpm-6",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-6",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/mpm-6-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-6_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-6",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "deb99c607ca63b5fddb92384a42c10710ba7755df1c0fad38aa260b7c4b3835e",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 155241,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/mpm-6-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-6_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-6",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "8856eb2ff8cebce8d54cb2faf0cfe1b3a0c25543904e1ecc1d5ac58d2daaac46",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 157868,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。"
+  ]
+}

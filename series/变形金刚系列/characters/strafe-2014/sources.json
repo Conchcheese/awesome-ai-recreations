@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "strafe-2014",
+    "title": "飞镖",
+    "english": "Strafe",
+    "year": 2014,
+    "faction": "autobot",
+    "form": "avian"
+  },
+  "targetEdition": "Age of Extinction (2014)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers-age-of-extinction",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "mb-10",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mb/mb-10",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/mb-10-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mb/item_tf_mb-10_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mb/mb-10",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "b28bed7a0456c36131d01ee77ca3960b39a8bc598427f7361fd375d6e15976ef",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 132637,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/mb-10-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mb/item_tf_mb-10_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mb/mb-10",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "89aaf1605b255ca8bc4e1a84d93bc57b9a1ac4fcf5aca7b326ddb8300e32fceb",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 156906,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。"
+  ]
+}

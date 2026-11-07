@@ -1,0 +1,179 @@
+{
+  "date": "2026-11-06",
+  "htmlSha256": "512bbd74a24adefefaa81ad5c792c7b81b608fd8f7caddedee4fe63585e0dd5d",
+  "browser": {
+    "result": "passed_with_raster_limit",
+    "htmlSha256": "512bbd74a24adefefaa81ad5c792c7b81b608fd8f7caddedee4fe63585e0dd5d",
+    "rasterReplay": {
+      "meanAbsoluteChannelDifference": 0.18403657407407406,
+      "maxChannelDifference": 144
+    },
+    "stats": {
+      "assemblies": 172,
+      "parts": 2200,
+      "renderMeshes": 438,
+      "triangles": 368372
+    },
+    "reentrantPose": true,
+    "reentrantCamera": true,
+    "rasterExactMatch": false,
+    "systems": [
+      "chest",
+      "arms",
+      "shoulders",
+      "legs",
+      "back",
+      "explode",
+      "assemble"
+    ],
+    "mobileNoOverflow": true,
+    "sideVisibility": {
+      "redArmorPixels": 1613
+    },
+    "consoleErrors": [],
+    "limits": [
+      "真实碰撞和官方精确运动误差尚未完成",
+      "逐镜头人工视觉检查另行记录"
+    ]
+  },
+  "limitations": [
+    "未完成与原片同机位叠图量化",
+    "未完成完整碰撞、承重或实体可制造验证",
+    "程序化纹理并非扫描纹理",
+    "正式电影8spp/OIDN，非高采样电影生产资产"
+  ],
+  "film": {
+    "result": "passed",
+    "file": "擎天柱-2007-电影版-Cycles.mp4",
+    "checks": {
+      "resolution": true,
+      "frameRate": true,
+      "frameCount": true,
+      "duration": true,
+      "h264": true,
+      "pixelFormat": true,
+      "audio": true,
+      "bt709": true,
+      "currentWeb": true,
+      "currentGLB": true,
+      "currentExportMetadata": true,
+      "currentRenderer": true,
+      "currentEdit": true,
+      "captions": true,
+      "noBlackIntervals": true,
+      "audioFinite": true,
+      "audioNotClippedOrSilent": true,
+      "audioDC": true,
+      "loudness": true,
+      "truePeak": true,
+      "noLongIdenticalPixelRun": true
+    },
+    "errors": [],
+    "videoSha256": "82445096ea2b46ad09f9289e0e5b1368759eb84098f2de9ec441c7ea6ef3c93e",
+    "duration": 28.0,
+    "audioMeasurements": {
+      "peakLinear": 0.8273067474365234,
+      "rmsLinear": 0.14608441293239594,
+      "dcOffset": 0.0009675606270320714,
+      "integratedLUFS": -16.6,
+      "truePeakDBFS": -1.6
+    },
+    "blackIntervals": [],
+    "duplicateSourceFrameIndices": [],
+    "longestIdenticalPixelRun": 1,
+    "humanReview": "逐镜头视觉评审与人工试听须另行记录；自动检查不评价真实感或电影感。",
+    "endpoint": "本片是有开场与英雄落幅的短片，不是无缝循环；首尾无需相同。",
+    "render": {
+      "frames": 672,
+      "fps": 24,
+      "duration": 28,
+      "resolution": [
+        1920,
+        804
+      ],
+      "samples": 8,
+      "engine": "Blender 4.5.4 / Cycles / Metal / OIDN",
+      "glbSha256": "c05459da4c599e0006c4810627b744db1f35efcdbc3e75452febe7860975ec40",
+      "exportMetaSha256": "c37f256a4af033726519fa268de27e5b9d08f1ea3a6a35cff25052422923045d",
+      "htmlSha256": "0dfee2a574a7582b71f709dd5fc8438b3326b285bbdf1515fa4aab29aaaeedd8",
+      "sourceDuration": 50,
+      "edit": [
+        [
+          0,
+          2,
+          0,
+          2,
+          "IGNITION"
+        ],
+        [
+          2,
+          4,
+          5,
+          7,
+          "ARRIVAL"
+        ],
+        [
+          4,
+          11,
+          8,
+          19,
+          "TRANSFORMATION"
+        ],
+        [
+          11,
+          13.5,
+          19,
+          23,
+          "REVEAL"
+        ],
+        [
+          13.5,
+          16,
+          24,
+          28,
+          "REACTOR"
+        ],
+        [
+          16,
+          18.5,
+          29,
+          33,
+          "DEPLOYMENT"
+        ],
+        [
+          18.5,
+          20,
+          34,
+          37,
+          "ARTICULATION"
+        ],
+        [
+          20,
+          23,
+          38,
+          42,
+          "DISASSEMBLY"
+        ],
+        [
+          23,
+          25,
+          43,
+          46,
+          "REASSEMBLY"
+        ],
+        [
+          25,
+          28,
+          46,
+          50,
+          "OPTIMUS PRIME"
+        ]
+      ],
+      "result": "complete"
+    },
+    "bytes": 19442996,
+    "renderHtmlSha256": "0dfee2a574a7582b71f709dd5fc8438b3326b285bbdf1515fa4aab29aaaeedd8",
+    "scope": "Frozen v0.1 Cycles film; current webpage additionally fixes the manual side inspection camera."
+  },
+  "note": "Case validation summary. Detailed diagnostics and current reruns remain in artifacts; see 实现与验证.md."
+}

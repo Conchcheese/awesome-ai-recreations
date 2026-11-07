@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "nitro-zeus-2017",
+    "title": "氮气宙斯",
+    "english": "Nitro Zeus",
+    "year": 2017,
+    "faction": "decepticon",
+    "form": "aircraft"
+  },
+  "targetEdition": "The Last Knight (2017)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers-the-last-knight",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "tlk-25",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_tlk/tlk-25",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/tlk-25-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_tlk/item_tf_tlk-25_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_tlk/tlk-25",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "29ecda6aa4869e892c465bf56bc9f3e184a5bb960bb63bc2148d1d8f90199de5",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 126165,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/tlk-25-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_tlk/item_tf_tlk-25_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_tlk/tlk-25",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "06e3e643b389b1a7ed544038e94bf8d56f746d179cb201b74137bdc802ef04af",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 102409,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。"
+  ]
+}

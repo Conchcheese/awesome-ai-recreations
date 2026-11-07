@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "status": "study",
+  "character": {
+    "id": "optimus-prime-2007",
+    "title": "擎天柱",
+    "edition": "Transformers (2007), Michael Bay 真人电影版"
+  },
+  "model": {
+    "slug": "hy4",
+    "label": "HY4 / Tencent Hunyuan Hy",
+    "attribution": "用户指定标注；沿用仓库历史署名口径",
+    "execution": "本次 WorkBuddy 会话内独立编写几何、状态机、渲染、镜头与音轨；未另行调用带版本号的 HY4 模型 API；精确模型 ID、完整提示词与迭代轮次未归档",
+    "tools": [
+      "Node.js 22（构建 / 逐帧渲染 / 音轨合成）",
+      "Three.js 0.186.1（WebGL PBR / ACES / PMREM）",
+      "Playwright Chromium 1.58.2（确定性逐帧离线渲染）",
+      "FFmpeg（H.264 / AAC 封装与解码检查）",
+      "Pillow（接触表 / 原作对照）"
+    ],
+    "runDate": "2026-11-06"
+  },
+  "provenance": "independent",
+  "visualGoal": "fidelity",
+  "paths": {
+    "references": "references/sources.json",
+    "assemblies": "records/assembly-catalog.json",
+    "source": "src",
+    "web": "index.html",
+    "film": "film.html",
+    "movie": "artifacts/HY4-擎天柱-2007-电影版.mp4",
+    "score": "artifacts/HY4-original-score.wav",
+    "frames": "artifacts/frames"
+  },
+  "rig": {
+    "rootId": "scene",
+    "requiredPorts": [
+      "head",
+      "torso",
+      "left_hand",
+      "right_hand",
+      "left_foot",
+      "right_foot"
+    ],
+    "ports": {
+      "head": "head",
+      "torso": "cab",
+      "left_hand": "hand_l",
+      "right_hand": "hand_r",
+      "left_foot": "foot_l",
+      "right_foot": "foot_r"
+    }
+  },
+  "timeline": {
+    "sourceDuration": 50,
+    "fps": 24,
+    "transform": [
+      8,
+      19
+    ],
+    "movieDuration": 28,
+    "edit": [
+      {
+        "in": 0,
+        "out": 4,
+        "sourceIn": 0,
+        "sourceOut": 8,
+        "purpose": "establish"
+      },
+      {
+        "in": 4,
+        "out": 15,
+        "sourceIn": 8,
+        "sourceOut": 19,
+        "purpose": "transformation"
+      },
+      {
+        "in": 15,
+        "out": 19,
+        "sourceIn": 19,
+        "sourceOut": 23,
+        "purpose": "reveal"
+      },
+      {
+        "in": 19,
+        "out": 22,
+        "sourceIn": 23,
+        "sourceOut": 26,
+        "purpose": "detail"
+      },
+      {
+        "in": 22,
+        "out": 24.5,
+        "sourceIn": 26,
+        "sourceOut": 28.5,
+        "purpose": "detail"
+      },
+      {
+        "in": 24.5,
+        "out": 26.5,
+        "sourceIn": 28.5,
+        "sourceOut": 30.5,
+        "purpose": "study"
+      },
+      {
+        "in": 26.5,
+        "out": 28,
+        "sourceIn": 30.5,
+        "sourceOut": 32,
+        "purpose": "closing"
+      }
+    ]
+  },
+  "unknown": [
+    "未做原片同机位量化轮廓误差测量；并排与 50% 叠图仅为不同机位的定性对照",
+    "未观看完整连续片段，机构路径、中段避让与分层拆解为 inferred / designed",
+    "没有完整碰撞与拓扑真实性检测，不能写「无穿模」或「机构可制造」",
+    "世界尺度、隐藏面、背面藏件、真实铰链角与材料参数未知；PBR 数值是实现推断",
+    "材质与光照为实时 WebGL PBR + 程序化环境，不等同电影资产或 Cycles 路径追踪",
+    "未导出 GLB / Blend、未生成 MP4 音画同步的逐帧运动模糊、未测窄屏与跨 GPU 像素一致性",
+    "成片为 1920×804 宽银幕，未重构竖屏机位，不交付伪竖版"
+  ],
+  "render": {
+    "pipeline": "同一 Three.js 模型按 cameraAt(i/24) 求源时间与镜头，逐帧确定性重绘并截图 → PNG 序列 → FFmpeg 编码",
+    "resolution": [
+      1920,
+      804
+    ],
+    "fps": 24,
+    "frames": 672,
+    "durationSeconds": 28,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "sampleRate": 48000,
+    "channels": 2,
+    "environment": "程序化 equirectangular 环境贴图经 PMREM 生成反射；非外部 HDRI 文件",
+    "materialMode": "MeshPhysicalMaterial 分区（清漆 / 铬 / 拉丝铝 / 钢 / 焦黑关节 / 橡胶 / 玻璃 / 发光）",
+    "notCycles": "本轮成片是同源模型逐帧 WebGL PBR 渲染，不是 Blender Cycles 路径追踪；不冒充离线物理渲染",
+    "music": "原创程序化合成，9 个与镜头对齐的声音事件；无电影配乐采样"
+  }
+}

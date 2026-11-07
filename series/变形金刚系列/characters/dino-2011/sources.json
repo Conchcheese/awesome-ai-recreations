@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "dino-2011",
+    "title": "迪诺",
+    "english": "Dino",
+    "year": 2011,
+    "faction": "autobot",
+    "form": "car"
+  },
+  "targetEdition": "Dark of the Moon (2011)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers-dark-of-the-moon",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "ss-66",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-66",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/ss-66-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-66_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-66",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "bbec31f364f7579d0fc981b3840317884b00ece9edccf8bd759538b58443ffa7",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 131438,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-66-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-66_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-66",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "ada75d14c733aff141b383d20e5fe520f9ee8ea74cd1c992c662c0cbab0e1670",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 105983,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。"
+  ]
+}

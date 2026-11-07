@@ -1,0 +1,3 @@
+// A diagnostic framing gate for this shot recipe, not an aesthetic score.
+import {root,dep,dependency} from './deps.mjs';import path from 'node:path';import {pathToFileURL} from 'node:url';
+const {build}=await dep('esbuild');const outfile=path.join(root,'artifacts/composition-check-bundle.mjs');await build({entryPoints:[path.join(root,'tools/composition-logic.mjs')],bundle:true,platform:'node',format:'esm',outfile,alias:{'three/addons':path.resolve(path.dirname(dependency('three')),'../examples/jsm'),three:path.dirname(dependency('three'))+'/three.module.js'}});const {check}=await import(pathToFileURL(outfile));await check(root);

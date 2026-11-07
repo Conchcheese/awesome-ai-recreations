@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "megatron-2007",
+    "title": "威震天",
+    "english": "Megatron",
+    "year": 2007,
+    "faction": "decepticon",
+    "form": "aircraft"
+  },
+  "targetEdition": "Transformers (2007)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "mpm-8",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-8",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/mpm-8-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-8_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-8",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "805c40283fdf9821d8b932937678502cd442a0f5b1d50d935c1b139c4d26bd80",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 113020,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/mpm-8-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-8_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-8",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "6c24c65acc2309d62c45095a6e242e3339e38b237155fca769dfb2bbb48a0a26",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 106265,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。"
+  ]
+}

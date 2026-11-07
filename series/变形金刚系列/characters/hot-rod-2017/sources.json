@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "hot-rod-2017",
+    "title": "热破",
+    "english": "Hot Rod",
+    "year": 2017,
+    "faction": "autobot",
+    "form": "car"
+  },
+  "targetEdition": "The Last Knight (2017)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers-the-last-knight",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "ss-96",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-96",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/ss-96-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-96_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-96",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "389ce1ac069149f78bdd88dcc4bd1cdfd4bcf8cfbff7fd13ab54e268fe89cc1b",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 104943,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-96-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-96_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-96",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "24807a483f805b4b6ba25aaa3846184abfc9a8190ddf45422c7dfe87b2faf69c",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 108942,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。"
+  ]
+}

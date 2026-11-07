@@ -1,0 +1,32 @@
+import {root,dep} from './deps.mjs';
+import path from 'node:path';
+import fs from 'node:fs/promises';
+import {pathToFileURL} from 'node:url';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+const at=p=>path.join(root,p);
+const showcase=process.argv.includes('--showcase');
+const edit=showcase?JSON.parse(await fs.readFile(at('artifacts/showcase/edit.json'),'utf8')):null;
+const duration=showcase?edit.duration:28,height=showcase?1080:804,fps=showcase?25:24;
+const reportPath=at(showcase?'artifacts/showcase/playback-check.json':'artifacts/playback-check.json');
+const previewPath=at(showcase?'artifacts/showcase/video-preview.html':'artifacts/video-preview.html');
+const movie=at(showcase?'artifacts/'+edit.output:'artifacts/擎天柱-2007-电影版-Cycles.mp4');
+await fs.access(movie);
+await fs.writeFile(previewPath,'<!doctype html><meta charset="utf-8"><title>擎天柱 · 本地审片</title><style>html,body{margin:0;height:100%;background:#090c10}video{width:100%;height:100%;object-fit:contain}</style><video controls muted playsinline src="'+pathToFileURL(movie).href+'"></video>');
+const {chromium}=await dep('playwright');
+const browser=await chromium.launch({headless:true,channel:process.platform==='darwin'?'chromium':undefined,args:['--allow-file-access-from-files',...(process.platform==='darwin'?['--use-angle=metal']:[])]});
+const errors=[];
+try{
+ const page=await browser.newPage({viewport:{width:1280,height:720}});page.on('pageerror',e=>errors.push(String(e)));
+ await page.goto(pathToFileURL(previewPath).href);
+ await page.waitForFunction(()=>document.querySelector('video').readyState>=2,{}, {timeout:30000});
+ const info=await page.evaluate(()=>{const v=document.querySelector('video');return {width:v.videoWidth,height:v.videoHeight,duration:v.duration}});
+ assert.equal(info.width,1920);assert.equal(info.height,height);assert(Math.abs(info.duration-duration)<.06);
+ await page.evaluate(async()=>{const v=document.querySelector('video');v.currentTime=0;v.muted=true;await v.play()});
+ await page.waitForFunction(()=>document.querySelector('video').ended,{}, {timeout:(duration+17)*1000});
+ const quality=await page.evaluate(()=>{const v=document.querySelector('video'),q=v.getVideoPlaybackQuality();return {ended:v.ended,currentTime:v.currentTime,error:v.error?.message||null,totalFrames:q.totalVideoFrames,droppedFrames:q.droppedVideoFrames}});
+ assert.equal(quality.error,null);assert.equal(errors.length,0);assert(quality.currentTime>duration-.1);assert(quality.totalFrames>duration*fps*.95);
+ const droppedRatio=quality.droppedFrames/Math.max(1,quality.totalFrames);assert(droppedRatio<.03,`掉帧比例 ${droppedRatio}`);
+ const report={result:'passed',...info,...quality,droppedRatio,consoleErrors:errors,videoSha256:createHash('sha256').update(await fs.readFile(movie)).digest('hex'),note:'Chromium本地完整静音播放；核验解码/播放流畅性，不等于人工试听或艺术质量验收。'};
+ await fs.writeFile(reportPath,JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));
+}catch(e){await fs.writeFile(reportPath,JSON.stringify({result:'failed',error:String(e),consoleErrors:errors},null,2));throw e}finally{await browser.close()}

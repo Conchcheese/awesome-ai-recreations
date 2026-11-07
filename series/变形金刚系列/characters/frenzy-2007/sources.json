@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "frenzy-2007",
+    "title": "迷乱",
+    "english": "Frenzy",
+    "year": 2007,
+    "faction": "decepticon",
+    "form": "device"
+  },
+  "targetEdition": "Transformers (2007)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [],
+  "sources": [],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。",
+    "已有片段/图证入口，但尚未冻结单帧样例、视图标注与本地哈希。"
+  ],
+  "linkedExamples": [
+    {
+      "url": "https://ueaeprints.uea.ac.uk/id/eprint/47858/1/2013UnderwoodDWMAbyResearch.pdf",
+      "type": "secondary-reproduced-film-figure",
+      "publisher": "University of East Anglia repository / David William Underwood",
+      "verifiedDate": "2026-11-06",
+      "note": "Figure 2.3, printed page 48：原片Frenzy从音响变形的四格图证；学术二次转载，不冒充制片方直接原始文件。",
+      "distribution": "link-only; copyright retained by original owner",
+      "verification": "Publisher/title/role correspondence checked in indexed source metadata; live playback and frame extraction not yet verified."
+    }
+  ]
+}

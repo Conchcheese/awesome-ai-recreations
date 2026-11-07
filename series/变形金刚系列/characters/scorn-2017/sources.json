@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "scorn-2017",
+    "title": "嚎叫",
+    "english": "Scorn",
+    "year": 2017,
+    "faction": "autobot",
+    "form": "dinosaur"
+  },
+  "targetEdition": "The Last Knight (2017)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers-the-last-knight",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "tlk-24",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_tlk/tlk-24",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/tlk-24-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_tlk/item_tf_tlk-24_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_tlk/tlk-24",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "05b6a4bbed9c763fd601a239e06e46b12f684b04ea6902eb77a7cac4da5be8c7",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 159929,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/tlk-24-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_tlk/item_tf_tlk-24_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_tlk/tlk-24",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "666a61af9e372a163bb4ef6a5b3f4d7af8a513ba3e3845b21844049585b328e5",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 145743,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。",
+    "版本按2017授权产品线登记；不得据产品线名称推断角色在电影中的出场、变形或具体镜头。"
+  ]
+}

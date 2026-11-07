@@ -1,0 +1,201 @@
+/* ============================================================================
+   01 · V8 发动机 — 专属样式（叠加在 kit/style.css 之后）
+   画布 1920×1080；版式照原作 teardown v8 的 1600×900 ×1.2。
+   宝石紫只用于强调：转速条/缸压条/做功冲程/激活按钮/图表游标/跟踪高亮。
+   ============================================================================ */
+
+/* 顶栏不使用（V8 用原作标题块）——由 sim 隐藏 .topbar */
+
+/* ---------------------------------------------------------------- 标题块 */
+.v8-title {
+  margin: 0; font-family: var(--font-ui); font-size: 30px; font-weight: 700;
+  letter-spacing: -0.012em; line-height: 1.05; color: var(--fg);
+}
+.v8-title .slash { color: var(--accent); font-weight: 500; margin: 0 2px; }
+.v8-sub {
+  font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.16em;
+  color: var(--dim); margin-top: 7px; white-space: nowrap;
+}
+
+/* ---------------------------------------------------------------- 转速表 */
+.v8-rpm {
+  font-family: var(--font-mono); font-size: 68px; font-weight: 600; line-height: 0.9;
+  letter-spacing: -0.045em; color: var(--accent); font-variant-numeric: tabular-nums;
+  text-shadow: 0 14px 34px rgba(124, 58, 237, 0.14);
+}
+.v8-rpm-max, .v8-min {
+  font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.1em; color: var(--dim);
+}
+.v8-bracket {
+  border-left: 1px solid var(--line); border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line); border-radius: 0 0 2px 2px;
+}
+.v8-track {
+  height: 9px; background: rgba(74, 45, 132, 0.09); border-radius: 1px; overflow: hidden;
+}
+.v8-track.sm { height: 6px; margin-top: 9px; }
+.v8-fill {
+  height: 100%; width: 0%;
+  background: linear-gradient(90deg, #a78bfa 0%, #7c3aed 88%);
+  border-radius: 1px;
+}
+.v8-unit {
+  font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.18em; color: var(--dim);
+}
+.v8-hr { height: 1px; background: var(--line-soft); }
+.v8-crank { font-size: 13.5px; font-weight: 500; letter-spacing: 0.02em; color: var(--fg); }
+
+/* ---------------------------------------------------------------- 图例 / 巡览条 */
+.v8-legend {
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; color: var(--dim);
+}
+.v8-leg { display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; }
+.v8-leg i { display: block; width: 18px; height: 3px; border-radius: 1px; }
+.v8-chip {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 4.5px 12px; border: 1px solid var(--line); border-radius: 2px;
+  background: rgba(255, 255, 255, 0.88);
+  font-family: var(--font-ui); font-size: 11px; font-weight: 600; letter-spacing: 0.04em;
+  color: var(--dim); box-shadow: 0 6px 18px rgba(63, 34, 122, 0.06);
+  white-space: nowrap; transition: border-color 0.15s, color 0.15s;
+}
+.v8-chip:hover { border-color: rgba(124, 58, 237, 0.4); color: var(--fg); }
+.v8-chip i {
+  width: 7px; height: 7px; border-radius: 50%; background: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-wash);
+}
+.v8-chip.on i { animation: breathe 1.6s ease-in-out infinite; }
+
+/* ---------------------------------------------------------------- 面板徽标 */
+.v8-badge {
+  font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.1em;
+  color: var(--mute); white-space: nowrap;
+}
+
+/* ---------------------------------------------------------------- 曲柄滑块 / 十字曲轴 */
+.v8-svg svg { display: block; width: 100%; height: auto; }
+.v8-formula {
+  margin-top: 7px; padding-top: 7px; border-top: 1px solid var(--line-soft);
+  font-family: var(--font-mono); font-size: 9.5px; line-height: 1.62; color: var(--dim);
+}
+.v8-formula b { color: var(--fg); font-weight: 600; }
+.v8-hint2 {
+  margin-top: 7px; padding-top: 7px; border-top: 1px solid var(--line-soft);
+  font-family: var(--font-mono); font-size: 9.5px; line-height: 1.6; color: var(--dim);
+}
+.v8-hint2 span { color: var(--mute); font-size: 9px; letter-spacing: 0.06em; }
+
+/* ---------------------------------------------------------------- 播放控制 */
+.v8-transpanel { padding: 10px 14px 12px; }
+.v8-tbtnrow { display: flex; gap: 6px; }
+.v8-tbtnrow .btn { height: 27px; }
+.v8-pause {
+  background: var(--accent) !important; border-color: var(--accent) !important; color: #fff !important;
+  box-shadow: 0 6px 16px rgba(124, 58, 237, 0.26); min-width: 112px;
+}
+.v8-trow {
+  display: flex; justify-content: space-between; align-items: baseline;
+  margin-top: 8px; font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.1em;
+}
+.v8-tlab { color: var(--mute); text-transform: uppercase; }
+.v8-tval { color: var(--fg); font-weight: 600; }
+.v8range { width: 100%; margin: 6px 0 0; pointer-events: auto; }
+
+/* range 原生控件 → 原作细线 + 方形紫钮 */
+input.v8range {
+  appearance: none; -webkit-appearance: none; background: transparent; height: 12px;
+  --track: rgba(74, 45, 132, 0.10);
+}
+input.v8range::-webkit-slider-runnable-track {
+  height: 2px; background: var(--track); border-radius: 1px;
+}
+input.v8range::-webkit-slider-thumb {
+  -webkit-appearance: none; width: 9px; height: 12px; margin-top: -5px;
+  background: var(--accent); border-radius: 1px; cursor: pointer;
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.3);
+}
+input.v8range::-moz-range-track { height: 2px; background: var(--track); border-radius: 1px; }
+input.v8range::-moz-range-thumb {
+  width: 9px; height: 12px; background: var(--accent); border: 0; border-radius: 1px; cursor: pointer;
+}
+input.v8range:focus { outline: none; }
+
+/* ---------------------------------------------------------------- 气缸面板 */
+.v8-stroke {
+  font-size: 32px; font-weight: 700; line-height: 1; letter-spacing: 0.01em;
+  color: var(--fg); margin-top: 2px; transition: color 0.15s;
+}
+.v8-stroke.on { color: var(--accent); }
+.v8-strokes { margin-top: 9px; }
+.v8-stroke-row {
+  display: flex; align-items: center; gap: 10px; height: 19px;
+  font-size: 11px; letter-spacing: 0.06em; color: var(--mute);
+}
+.v8-stroke-row i { width: 32px; height: 2px; background: var(--line); border-radius: 1px; }
+.v8-pressrow { display: flex; align-items: flex-end; gap: 9px; margin-top: 9px; }
+.v8-press {
+  font-family: var(--font-mono); font-size: 46px; font-weight: 600; line-height: 0.88;
+  letter-spacing: -0.04em; color: var(--accent); font-variant-numeric: tabular-nums;
+}
+.v8-pressu {
+  font-family: var(--font-mono); font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em;
+  color: var(--fg); line-height: 1.3;
+}
+.v8-pressu span { font-size: 9px; font-weight: 400; letter-spacing: 0.16em; color: var(--mute); }
+
+/* ---------------------------------------------------------------- 气门正时 */
+.v8-vt-legend {
+  display: flex; gap: 12px; align-items: center;
+  font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.04em; color: var(--dim);
+}
+.v8-vt-legend i { display: inline-block; width: 12px; height: 2px; margin-right: 5px; vertical-align: middle; }
+.v8-vt-legend b { color: var(--fg); font-weight: 600; }
+.v8-vt-seg {
+  display: flex; justify-content: space-between; padding: 1px 16px 0 16px;
+  font-family: var(--font-mono); font-size: 8.5px; letter-spacing: 0.12em; color: var(--mute);
+}
+.v8-vt-seg span.on { color: var(--accent); font-weight: 600; }
+#v8vtchart canvas, #v8idchart canvas { display: block; }
+.v8-axis {
+  display: flex; justify-content: space-between;
+  font-family: var(--font-mono); font-size: 8.5px; letter-spacing: 0.1em; color: var(--mute);
+  margin-top: 1px;
+}
+
+/* ---------------------------------------------------------------- 右下控制组 */
+.v8-ctrlpanel { padding: 10px 14px 10px; display: flex; flex-direction: column; gap: 6px; }
+.v8-glab {
+  font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.2em;
+  color: var(--mute); text-transform: uppercase; margin-bottom: 3px;
+}
+.v8-ctrlpanel .btnrow { gap: 5px; }
+.v8-ctrlpanel .btn { font-size: 10px; padding: 3.5px 8px; }
+
+/* ---------------------------------------------------------------- 点火顺序 */
+.v8-fo-h {
+  font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.12em; color: var(--dim);
+}
+.v8-fo-h b { color: var(--fg); font-weight: 600; letter-spacing: 0.18em; }
+.v8-fo-h span { color: var(--mute); }
+.v8-fo-n {
+  font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.1em; color: var(--mute);
+  margin-top: 1px;
+}
+.v8-fo-hint {
+  font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.18em;
+  color: rgba(27, 20, 40, 0.26); margin-top: 3px;
+}
+
+/* ---------------------------------------------------------------- 影片光标 */
+.v8-cursor { position: absolute; left: 0; top: 0; z-index: 60; pointer-events: none; filter: drop-shadow(0 2px 5px rgba(23, 20, 31, 0.28)); }
+.v8-clickring {
+  position: absolute; z-index: 59; width: 34px; height: 34px; border-radius: 50%;
+  border: 1.5px solid var(--accent); pointer-events: none; margin: -17px 0 0 -17px;
+}
+.hud.film .btn, .hud.film input, .hud.film .v8-chip, .hud.film #v8fosvg { pointer-events: none !important; }
+
+.v8-vt-state { color: var(--accent); font-weight: 600; letter-spacing: 0.06em; }
+
+.v8-pause { display: inline-flex; align-items: center; justify-content: center; gap: 6px; }
+.v8-pause .v8-pico { display: inline-flex; width: 11px; height: 11px; }
+.v8-pause .v8-pico svg { width: 11px; height: 11px; display: block; }

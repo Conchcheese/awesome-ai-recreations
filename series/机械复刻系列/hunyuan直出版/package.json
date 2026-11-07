@@ -1,0 +1,17 @@
+{
+  "name": "oc8-hy4-direct",
+  "private": true,
+  "type": "module",
+  "description": "00 机械章鱼 OC-8 · HY4 独立直出版",
+  "engines": {"node": ">=20"},
+  "scripts": {
+    "build": "node tools/build.mjs all",
+    "check": "node tools/check.mjs",
+    "qa": "node tools/qa.mjs"
+  },
+  "dependencies": {
+    "esbuild": "0.28.1",
+    "playwright": "1.58.2",
+    "three": "0.186.1"
+  }
+}

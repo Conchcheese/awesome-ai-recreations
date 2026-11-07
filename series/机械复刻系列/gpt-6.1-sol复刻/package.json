@@ -1,0 +1,20 @@
+{
+  "name": "oc8-gpt-6-1-sol",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node tools/build.mjs all",
+    "check": "node tools/check.mjs",
+    "qa": "node tools/qa.mjs",
+    "assets": "node tools/capture.mjs",
+    "video": "node tools/video.mjs"
+  },
+  "dependencies": {
+    "esbuild": "0.28.1",
+    "playwright": "1.58.2",
+    "three": "0.186.1"
+  }
+}

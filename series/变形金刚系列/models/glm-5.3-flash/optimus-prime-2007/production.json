@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "status": "study",
+  "character": {
+    "id": "optimus-prime-2007",
+    "title": "擎天柱",
+    "edition": "Transformers (2007), Michael Bay 真人电影版"
+  },
+  "model": {
+    "slug": "glm-5.3-flash",
+    "label": "GLM-5.3-Flash",
+    "attribution": "执行环境为 ZCode，会话署名 GLM-5.3-Flash；精确快照 ID 未归档，未另行调用其他模型 API。",
+    "tools": [
+      "Node.js 22+（构建/断言）",
+      "Three.js 0.186.1（渲染）",
+      "esbuild 0.28.1（打包）",
+      "Playwright 1.58.2（浏览器 QA）",
+      "Python 3 + NumPy/Pillow（静帧接触表）"
+    ],
+    "runDate": "2026-11-06"
+  },
+  "provenance": "independent",
+  "visualGoal": "fidelity",
+  "provenanceNote": "几何/机构/材质/摄影从 references/sources.json 登记的 8 帧自建，未读取既有案例几何源码与规格；构建管线（依赖回退、esbuild 内联、断言+QA 模式）复用仓库 C-01 方法工具，方法复用已在 README 署名",
+  "paths": {
+    "references": "references/sources.json",
+    "assemblies": "records/assembly-catalog.json",
+    "source": "src",
+    "web": "index.html",
+    "film": "film.html"
+  },
+  "rig": {
+    "rootId": "scene",
+    "requiredPorts": [
+      "head",
+      "torso",
+      "left_hand",
+      "right_hand",
+      "left_foot",
+      "right_foot"
+    ],
+    "ports": {
+      "head": "head",
+      "torso": "chest",
+      "left_hand": "hand_l",
+      "right_hand": "hand_r",
+      "left_foot": "foot_l",
+      "right_foot": "foot_r"
+    }
+  },
+  "timeline": {
+    "sourceDuration": 9,
+    "fps": 24,
+    "transform": [
+      0,
+      1
+    ],
+    "movieDuration": 50,
+    "edit": [
+      {
+        "in": 0,
+        "out": 50,
+        "purpose": "50s 网页巡览：车辆建立→细节→完整连续变形一镜→亮相→头胸→前臂→下肢→拆解（研究设计）→重组→落幅"
+      }
+    ]
+  },
+  "unknown": [
+    "全部世界尺寸 guess（无标尺）；未做原片同机位量化轮廓误差测量",
+    "完整连续变形片段未逐帧观看；机构路径与中段避让 inferred/designed",
+    "无碰撞检测与拓扑真实性验证，不声明『无穿模』『机构可制造』",
+    "背视图证据不足，背包布局 inferred+designed；手/足细节 designed",
+    "未渲染编码 MP4（网页巡览 film.html 为交付影片形态）；无音轨"
+  ]
+}

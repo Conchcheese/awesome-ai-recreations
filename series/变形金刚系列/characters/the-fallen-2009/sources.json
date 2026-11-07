@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "the-fallen-2009",
+    "title": "堕落金刚",
+    "english": "The Fallen",
+    "year": 2009,
+    "faction": "decepticon",
+    "form": "alien"
+  },
+  "targetEdition": "Revenge of the Fallen (2009)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers-revenge-of-the-fallen",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "ss-100",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-100",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/ss-100-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-100_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-100",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "ef49733b6afb266387ccfbafafa02f459aefea2a495bf78b4af7e203b6f58e53",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 113197,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-100-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-100_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-100",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "c27b3508ef37295b5a5fb08725c93735e666e6949892b0fd74482401f8997e43",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 96301,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。"
+  ]
+}

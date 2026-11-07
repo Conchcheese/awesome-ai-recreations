@@ -1,0 +1,25 @@
+import assert from 'node:assert/strict';
+import {stateAt,armChain,PARAM,SHOTS,DURATION,cameraAt,linkLength} from '../src/model.js';
+let checks=0;
+function test(name,fn){fn();checks++;console.log('✓ '+name);}
+test('64 秒 / 11 个动作章节，拍点与样本合法',()=>{assert.equal(DURATION,64);assert.equal(SHOTS.length,11);assert.equal(new Set(SHOTS.map(s=>s.key)).size,11);for(let i=0;i<SHOTS.length;i++){assert(SHOTS[i].sample>=SHOTS[i].at);assert(SHOTS[i].sample<(SHOTS[i+1]?.at??DURATION));if(i)assert(SHOTS[i].at>SHOTS[i-1].at);}});
+test('t1→t2→t1 状态重入确定性',()=>{const a=stateAt(22);stateAt(52);assert.deepEqual(a,stateAt(22));});
+test('176 腕节 / 352 轮配置保持',()=>{assert.equal(PARAM.arms*PARAM.links,176);assert.equal(PARAM.arms*PARAM.links*2,352);});
+test('腕链安装圆与 23 个端点',()=>{for(let i=0;i<8;i++){const pts=armChain(i,9,.6);assert.equal(pts.length,23);assert(Math.abs(Math.hypot(pts[0][0],pts[0][2])-.385)<1e-12);}});
+test('非均匀链长 1.36 m，近端大于末端五倍',()=>{assert(Math.abs(Array.from({length:22},(_,j)=>linkLength(j)).reduce((a,b)=>a+b)-1.36)<1e-12);assert(linkLength(0)>linkLength(21)*5);});
+test('全部动作中每段三维链长严格守恒',()=>{for(let t=0;t<=DURATION;t+=.25)for(const chain of stateAt(t).arms)for(let j=1;j<chain.length;j++){const d=Math.hypot(...chain[j].map((v,k)=>v-chain[j-1][k]));assert(Math.abs(d-linkLength(j-1))<1e-12);}});
+test('数值全程有限、无 NaN 或丢失值',()=>{for(let t=0;t<=DURATION;t+=.1)assert(!/null|NaN|Infinity/.test(JSON.stringify(stateAt(t))));});
+test('喷进与离站有相反的大幅倾转',()=>{assert(stateAt(1).motion.rotation[2]>.9);assert(stateAt(62).motion.rotation[2]<-.9);assert(Math.abs(stateAt(62).motion.position[0]-stateAt(1).motion.position[0])>.7);});
+test('喷进收臂、巡游舒展包络明显不同',()=>{const width=s=>Math.max(...s.arms.flat().map(p=>Math.hypot(p[0],p[2])));assert(width(stateAt(9))>width(stateAt(1))+.3);});
+test('八臂交替卷曲有明确幅度与相位差',()=>{const a=stateAt(7),b=stateAt(8.6);const tip=(s,i)=>s.arms[i].at(-1);assert(Math.hypot(...tip(a,1).map((v,k)=>v-tip(b,1)[k]))>.25);assert(Math.max(...a.motion.curls)-Math.min(...a.motion.curls)>.45);});
+test('镜组与虹膜有独立运动',()=>{assert(stateAt(15.8).optics>.99);assert(Math.abs(stateAt(15.2).iris-stateAt(15.7).iris)>.15);assert.equal(stateAt(18).optics,0);});
+test('外套膜完整开合、泵核随相位活动',()=>{assert(stateAt(22).shell>1);assert.equal(stateAt(25).shell,0);assert(Math.abs(stateAt(22).pumpStroke-stateAt(22.27).pumpStroke)>.3);});
+test('R2 隔离与回装时间窗',()=>{assert(stateAt(28.6).isolate>.99);assert.equal(stateAt(32).isolate,0);});
+test('推进器叶瓣与尾流确实激活',()=>{assert(stateAt(35).jet>.8);assert(Math.abs(stateAt(35).nozzleOpen-stateAt(35.5).nozzleOpen)>.3);assert(stateAt(36).rotorAngle>stateAt(35).rotorAngle);});
+test('悬停段有俯仰和横滚补偿',()=>{const a=stateAt(40),b=stateAt(41);assert(Math.abs(a.motion.rotation[0]-b.motion.rotation[0])>.1);assert(Math.abs(a.motion.rotation[2]-b.motion.rotation[2])>.2);});
+test('双颚重复活动且翻身展示腹侧',()=>{assert(stateAt(46).motion.rotation[0]<-.8);assert(Math.abs(stateAt(45.25).beak-stateAt(45.85).beak)>.4);assert.equal(stateAt(48).beak,0);});
+test('分解完整展开、所有总成复位',()=>{assert(stateAt(52).expansion>.99);assert.equal(stateAt(57).expansion,0);assert.equal(stateAt(57).shell,0);assert.equal(stateAt(57).isolate,0);});
+test('相机 60 fps 连续，距离与换位上限不退化',()=>{let last=cameraAt(0);for(let t=1/60;t<=DURATION;t+=1/60){const c=cameraAt(t);assert(Math.hypot(...c.eye.map((v,i)=>v-c.target[i]))>2.8);assert(Math.hypot(...c.eye.map((v,i)=>v-last.eye[i]))<.14);last=c;}});
+test('模拟压力与推力保留单位和范围',()=>{for(let t=0;t<=DURATION;t+=.04){const m=stateAt(t).telemetry;assert(m.pressure>=20&&m.pressure<=76);assert(m.thrust>=6&&m.thrust<=172);}});
+test('外部逐帧接口钳制时间边界',()=>{assert.equal(stateAt(-1).t,0);assert.equal(stateAt(100).t,DURATION);});
+console.log(`${checks} 项检查通过`);

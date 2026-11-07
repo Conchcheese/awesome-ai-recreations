@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "drift-2017",
+    "title": "漂移",
+    "english": "Drift",
+    "year": 2017,
+    "faction": "autobot",
+    "form": "triple"
+  },
+  "targetEdition": "The Last Knight (2017)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers-the-last-knight",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "ss-38",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-38",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "code": "tlk-10",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_tlk/tlk-10",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/ss-38-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-38_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-38",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "00a11885db8114fd1b2a768513d3114c88d894bc2f5925f43071eaea086eeade",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 111804,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-38-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-38_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-38",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "8b61fe4737f74ccc98bcd8986e5640bcd59a703d26ae3f7c6a9afc564c8a400e",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 96790,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/tlk-10-03.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_tlk/item_tf_tlk-10_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_tlk/tlk-10",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "3ad37279e9df1e8e17384665162a91e0c351d35c2e4265aa0dd62ef772467bef",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 113452,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/tlk-10-04.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_tlk/item_tf_tlk-10_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_tlk/tlk-10",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "c95620c467cc22b5b50fea08d4e4aa507a1f670410889e21b11ef35cee8040e7",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 107168,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。"
+  ]
+}

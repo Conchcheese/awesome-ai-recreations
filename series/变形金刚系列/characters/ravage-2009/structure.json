@@ -1,0 +1,310 @@
+{
+  "schemaVersion": 1,
+  "status": "planned-not-modeled",
+  "formFamily": "beast",
+  "units": "unset / guess until measured",
+  "modules": [
+    {
+      "id": "ravage-2009/head",
+      "status": "planned",
+      "originInAltMode": null,
+      "targetRegion": "head",
+      "evidence": "unresolved",
+      "finePartsToResolve": [
+        "outer-shell",
+        "inner-brace",
+        "pivot-or-slide",
+        "actuator",
+        "cable-or-hose",
+        "fasteners"
+      ],
+      "transform": null
+    },
+    {
+      "id": "ravage-2009/optics",
+      "status": "planned",
+      "originInAltMode": null,
+      "targetRegion": "optics",
+      "evidence": "unresolved",
+      "finePartsToResolve": [
+        "outer-shell",
+        "inner-brace",
+        "pivot-or-slide",
+        "actuator",
+        "cable-or-hose",
+        "fasteners"
+      ],
+      "transform": null
+    },
+    {
+      "id": "ravage-2009/jaw-upper",
+      "status": "planned",
+      "originInAltMode": null,
+      "targetRegion": "jaw-upper",
+      "evidence": "unresolved",
+      "finePartsToResolve": [
+        "outer-shell",
+        "inner-brace",
+        "pivot-or-slide",
+        "actuator",
+        "cable-or-hose",
+        "fasteners"
+      ],
+      "transform": null
+    },
+    {
+      "id": "ravage-2009/jaw-lower",
+      "status": "planned",
+      "originInAltMode": null,
+      "targetRegion": "jaw-lower",
+      "evidence": "unresolved",
+      "finePartsToResolve": [
+        "outer-shell",
+        "inner-brace",
+        "pivot-or-slide",
+        "actuator",
+        "cable-or-hose",
+        "fasteners"
+      ],
+      "transform": null
+    },
+    {
+      "id": "ravage-2009/neck-chain",
+      "status": "planned",
+      "originInAltMode": null,
+      "targetRegion": "neck-chain",
+      "evidence": "unresolved",
+      "finePartsToResolve": [
+        "outer-shell",
+        "inner-brace",
+        "pivot-or-slide",
+        "actuator",
+        "cable-or-hose",
+        "fasteners"
+      ],
+      "transform": null
+    },
+    {
+      "id": "ravage-2009/thorax",
+      "status": "planned",
+      "originInAltMode": null,
+      "targetRegion": "thorax",
+      "evidence": "unresolved",
+      "finePartsToResolve": [
+        "outer-shell",
+        "inner-brace",
+        "pivot-or-slide",
+        "actuator",
+        "cable-or-hose",
+        "fasteners"
+      ],
+      "transform": null
+    },
+    {
+      "id": "ravage-2009/abdomen",
+      "status": "planned",
+      "originInAltMode": null,
+      "targetRegion": "abdomen",
+      "evidence": "unresolved",
+      "finePartsToResolve": [
+        "outer-shell",
+        "inner-brace",
+        "pivot-or-slide",
+        "actuator",
+        "cable-or-hose",
+        "fasteners"
+      ],
+      "transform": null
+    },
+    {
+      "id": "ravage-2009/front-leg-left",
+      "status": "planned",
+      "originInAltMode": null,
+      "targetRegion": "front-leg-left",
+      "evidence": "unresolved",
+      "finePartsToResolve": [
+        "outer-shell",
+        "inner-brace",
+        "pivot-or-slide",
+        "actuator",
+        "cable-or-hose",
+        "fasteners"
+      ],
+      "transform": null
+    },
+    {
+      "id": "ravage-2009/front-leg-right",
+      "status": "planned",
+      "originInAltMode": null,
+      "targetRegion": "front-leg-right",
+      "evidence": "unresolved",
+      "finePartsToResolve": [
+        "outer-shell",
+        "inner-brace",
+        "pivot-or-slide",
+        "actuator",
+        "cable-or-hose",
+        "fasteners"
+      ],
+      "transform": null
+    },
+    {
+      "id": "ravage-2009/hind-leg-left",
+      "status": "planned",
+      "originInAltMode": null,
+      "targetRegion": "hind-leg-left",
+      "evidence": "unresolved",
+      "finePartsToResolve": [
+        "outer-shell",
+        "inner-brace",
+        "pivot-or-slide",
+        "actuator",
+        "cable-or-hose",
+        "fasteners"
+      ],
+      "transform": null
+    },
+    {
+      "id": "ravage-2009/hind-leg-right",
+      "status": "planned",
+      "originInAltMode": null,
+      "targetRegion": "hind-leg-right",
+      "evidence": "unresolved",
+      "finePartsToResolve": [
+        "outer-shell",
+        "inner-brace",
+        "pivot-or-slide",
+        "actuator",
+        "cable-or-hose",
+        "fasteners"
+      ],
+      "transform": null
+    },
+    {
+      "id": "ravage-2009/paw-petals",
+      "status": "planned",
+      "originInAltMode": null,
+      "targetRegion": "paw-petals",
+      "evidence": "unresolved",
+      "finePartsToResolve": [
+        "outer-shell",
+        "inner-brace",
+        "pivot-or-slide",
+        "actuator",
+        "cable-or-hose",
+        "fasteners"
+      ],
+      "transform": null
+    },
+    {
+      "id": "ravage-2009/spine",
+      "status": "planned",
+      "originInAltMode": null,
+      "targetRegion": "spine",
+      "evidence": "unresolved",
+      "finePartsToResolve": [
+        "outer-shell",
+        "inner-brace",
+        "pivot-or-slide",
+        "actuator",
+        "cable-or-hose",
+        "fasteners"
+      ],
+      "transform": null
+    },
+    {
+      "id": "ravage-2009/dorsal-shells",
+      "status": "planned",
+      "originInAltMode": null,
+      "targetRegion": "dorsal-shells",
+      "evidence": "unresolved",
+      "finePartsToResolve": [
+        "outer-shell",
+        "inner-brace",
+        "pivot-or-slide",
+        "actuator",
+        "cable-or-hose",
+        "fasteners"
+      ],
+      "transform": null
+    },
+    {
+      "id": "ravage-2009/tail-or-rear-frame",
+      "status": "planned",
+      "originInAltMode": null,
+      "targetRegion": "tail-or-rear-frame",
+      "evidence": "unresolved",
+      "finePartsToResolve": [
+        "outer-shell",
+        "inner-brace",
+        "pivot-or-slide",
+        "actuator",
+        "cable-or-hose",
+        "fasteners"
+      ],
+      "transform": null
+    },
+    {
+      "id": "ravage-2009/ground-contact",
+      "status": "planned",
+      "originInAltMode": null,
+      "targetRegion": "ground-contact",
+      "evidence": "unresolved",
+      "finePartsToResolve": [
+        "outer-shell",
+        "inner-brace",
+        "pivot-or-slide",
+        "actuator",
+        "cable-or-hose",
+        "fasteners"
+      ],
+      "transform": null
+    }
+  ],
+  "parametricDetailPatterns": [
+    {
+      "path": "segment-{i}/joint-{j}",
+      "counts": null,
+      "rule": "按该非人形原始近景与动作确认，不默认套用人形指节或车辆轮胎。"
+    }
+  ],
+  "motionStudy": [
+    "两端同机位灰模",
+    "解锁与机构依赖",
+    "25/50/75%中段避让",
+    "局部甲片/指节/背甲展开",
+    "分层拆解与重组（展示设计）"
+  ],
+  "cameraRecipe": [
+    "双形态全景",
+    "连续变形中景",
+    "头/核心局部",
+    "手/足或兽肢特写",
+    "系统展开",
+    "拆解重组",
+    "最终落幅"
+  ],
+  "limits": "这些是开工拆分候选与验收结构，不是已恢复的电影装配、实际rig或可运行模型。",
+  "materialStudy": [
+    "按该版本划分外甲车漆/裸露机械/玻璃/橡胶与热金属",
+    "兽形羽毛、皮肤或毛发仅在原作可见时建立，不能统一套用汽车清漆",
+    "材质参数与世界尺度均为待测/guess，先用无HUD近景核对"
+  ],
+  "characterSpecificStudy": {
+    "status": "research-candidates-not-confirmed-film-facts",
+    "focus": [
+      "四足",
+      "颌部",
+      "背甲与尾链"
+    ],
+    "rule": "逐项用所列版本的原片/制作资料确认；商品特性不自动成为原片能力。"
+  },
+  "requiredSemanticPorts": [
+    "head",
+    "torso",
+    "left_forepaw",
+    "right_forepaw",
+    "left_hindpaw",
+    "right_hindpaw"
+  ]
+}

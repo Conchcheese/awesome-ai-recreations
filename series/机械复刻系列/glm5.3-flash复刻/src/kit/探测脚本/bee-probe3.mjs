@@ -1,0 +1,11 @@
+import {chromium} from 'playwright';
+import {pathToFileURL} from 'node:url';
+import {CHROMIUM, CHROMIUM_ARGS, DIST} from '../paths.mjs';
+const browser = await chromium.launch({executablePath: CHROMIUM, args: CHROMIUM_ARGS});
+const page = await browser.newPage({viewport: {width: 1600, height: 900}, deviceScaleFactor: 1});
+page.on('pageerror', (e) => console.log('[pageerror]', e.message.slice(0, 400)));
+await page.goto(pathToFileURL(DIST + '/bee-live.html').href);
+await page.waitForTimeout(3500);
+await page.screenshot({path: 'teardown-out/bee-live-still.png'});
+await browser.close();
+console.log('shot ok');

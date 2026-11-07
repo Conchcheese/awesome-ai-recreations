@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "media_distribution": "local-only",
+  "references": [
+    {
+      "path": "series/变形金刚系列/01-擎天柱-电影版/references/local/paramount-006s-truck-front.jpg",
+      "source_url": "https://www.youtube.com/watch?v=wT-Hnv7RlSs",
+      "kind": "original-frame",
+      "sha256": "afc497af6a29116fde107490e5baa28acfce66222f35177939ac3c9c4087f810",
+      "distribution": "local-only",
+      "source_timestamp_seconds": 6
+    },
+    {
+      "path": "series/变形金刚系列/01-擎天柱-电影版/references/local/paramount-018s-transform-chest.jpg",
+      "source_url": "https://www.youtube.com/watch?v=wT-Hnv7RlSs",
+      "kind": "original-frame",
+      "sha256": "f3b90ed7912ffbc5f23e5a2fd6c73fd7a738d0ebecbc112baecf1887d0ee047d",
+      "distribution": "local-only",
+      "source_timestamp_seconds": 18
+    },
+    {
+      "path": "series/变形金刚系列/01-擎天柱-电影版/references/local/paramount-029s-head-chest.jpg",
+      "source_url": "https://www.youtube.com/watch?v=wT-Hnv7RlSs",
+      "kind": "original-frame",
+      "sha256": "089fb220ead7a2c22806b41b597b344c664d416724c84137f2d4ed072182cec3",
+      "distribution": "local-only",
+      "source_timestamp_seconds": 29
+    },
+    {
+      "path": "series/变形金刚系列/01-擎天柱-电影版/references/local/paramount-048s-abdomen.jpg",
+      "source_url": "https://www.youtube.com/watch?v=wT-Hnv7RlSs",
+      "kind": "original-frame",
+      "sha256": "41f4359ebb6f73f28b63d4eeedd6e15ffd41f36e496486a7c4d2e4f387b55010",
+      "distribution": "local-only",
+      "source_timestamp_seconds": 48
+    },
+    {
+      "path": "series/变形金刚系列/01-擎天柱-电影版/references/local/paramount-102s-truck-side.jpg",
+      "source_url": "https://www.youtube.com/watch?v=wT-Hnv7RlSs",
+      "kind": "original-frame",
+      "sha256": "c50dea53a8dfb3d5ba771132efadc4567701f16b9b93d66316df576da8f10278",
+      "distribution": "local-only",
+      "source_timestamp_seconds": 102
+    },
+    {
+      "path": "series/变形金刚系列/01-擎天柱-电影版/references/local/paramount-123s-near-full-body.jpg",
+      "source_url": "https://www.youtube.com/watch?v=wT-Hnv7RlSs",
+      "kind": "original-frame",
+      "sha256": "afca63def0cc559e9b54240eec53fedb9a76c9d89ec0c9b30159cc9ff280ece4",
+      "distribution": "local-only",
+      "source_timestamp_seconds": 123
+    },
+    {
+      "path": "series/变形金刚系列/01-擎天柱-电影版/references/local/ilm-080s-shoulder-material.jpg",
+      "source_url": "https://www.youtube.com/watch?v=RMoChbnx-LE",
+      "kind": "original-frame",
+      "sha256": "cf3618ca7b2fe67985f58c3eeb8e620fe1a0f52dcfed8d4959e031fb775e664f",
+      "distribution": "local-only",
+      "source_timestamp_seconds": 80
+    },
+    {
+      "path": "series/变形金刚系列/01-擎天柱-电影版/references/local/ilm-088s-head-material.jpg",
+      "source_url": "https://www.youtube.com/watch?v=RMoChbnx-LE",
+      "kind": "original-frame",
+      "sha256": "61c9fddcbd07510d5dd7d29a346d78989e9a5b833131c9fe2b0622e89ecb04c9",
+      "distribution": "local-only",
+      "source_timestamp_seconds": 88
+    }
+  ],
+  "instructions": "读取本清单与sources.json指定的原始来源；媒体不随仓库分发。视觉复刻前按时间点获取到列出的local路径，记录实际哈希。来源编码变化时不得伪称恢复历史哈希。"
+}

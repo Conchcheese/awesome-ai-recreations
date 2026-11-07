@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "ratchet-2007",
+    "title": "救护车",
+    "english": "Ratchet",
+    "year": 2007,
+    "faction": "autobot",
+    "form": "truck"
+  },
+  "targetEdition": "Transformers (2007)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "mpm-11",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-11",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/mpm-11-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-11_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-11",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "610cc7f0b5b6d5c7865ae3e1d34d02173a937e8f0fde6136c4d8dbaec5c12008",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 140788,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/mpm-11-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-11_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-11",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "49c0c5205eb4969d094f63e3b33cd4695a0bbf3b46fd22fc8ccf1273038fa5da",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 122086,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。"
+  ]
+}

@@ -1,0 +1,661 @@
+{
+  "assemblies": [
+    {
+      "id": "frame_hood",
+      "system": "steel",
+      "explode": [
+        0,
+        0.5,
+        0
+      ]
+    },
+    {
+      "id": "frame_cab",
+      "system": "steel",
+      "explode": [
+        0,
+        0.3,
+        -0.4
+      ]
+    },
+    {
+      "id": "frame_rear",
+      "system": "steel",
+      "explode": [
+        0,
+        -0.3,
+        -0.8
+      ]
+    },
+    {
+      "id": "crossbar",
+      "system": "dark",
+      "explode": [
+        0,
+        -0.6,
+        -1
+      ]
+    },
+    {
+      "id": "wheel_fl",
+      "system": "rubber",
+      "explode": [
+        -0.9,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "wheel_fr",
+      "system": "rubber",
+      "explode": [
+        0.9,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "wheel_rl",
+      "system": "rubber",
+      "explode": [
+        -0.9,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "wheel_rr",
+      "system": "rubber",
+      "explode": [
+        0.9,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "wheel_rl2",
+      "system": "rubber",
+      "explode": [
+        -0.9,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "wheel_rr2",
+      "system": "rubber",
+      "explode": [
+        0.9,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "tank_l",
+      "system": "chrome",
+      "explode": [
+        -0.7,
+        -0.2,
+        0.6
+      ]
+    },
+    {
+      "id": "tank_r",
+      "system": "chrome",
+      "explode": [
+        0.7,
+        -0.2,
+        0.6
+      ]
+    },
+    {
+      "id": "hood_top",
+      "system": "paint-red",
+      "explode": [
+        0,
+        0,
+        0.8
+      ]
+    },
+    {
+      "id": "hood_rear",
+      "system": "paint-red",
+      "explode": [
+        0,
+        -0.3,
+        0.9
+      ]
+    },
+    {
+      "id": "hood_front",
+      "system": "paint-red",
+      "explode": [
+        0,
+        0.4,
+        1.2
+      ]
+    },
+    {
+      "id": "chest_plate",
+      "system": "paint-red",
+      "explode": [
+        0,
+        0,
+        1.5
+      ]
+    },
+    {
+      "id": "grille",
+      "system": "chrome",
+      "explode": [
+        0,
+        0,
+        1.6
+      ]
+    },
+    {
+      "id": "bumper",
+      "system": "chrome",
+      "explode": [
+        0,
+        -0.3,
+        1.8
+      ]
+    },
+    {
+      "id": "headlight_l",
+      "system": "light",
+      "explode": [
+        -0.5,
+        0.4,
+        1.2
+      ]
+    },
+    {
+      "id": "headlight_r",
+      "system": "light",
+      "explode": [
+        0.5,
+        0.4,
+        1.2
+      ]
+    },
+    {
+      "id": "fender_l",
+      "system": "paint-red",
+      "explode": [
+        -1.3,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "fender_r",
+      "system": "paint-red",
+      "explode": [
+        1.3,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "cab",
+      "system": "paint-red",
+      "explode": [
+        0,
+        0,
+        1.1
+      ]
+    },
+    {
+      "id": "windshield_l",
+      "system": "glass",
+      "explode": [
+        -0.8,
+        0.2,
+        0.9
+      ]
+    },
+    {
+      "id": "windshield_r",
+      "system": "glass",
+      "explode": [
+        0.8,
+        0.2,
+        0.9
+      ]
+    },
+    {
+      "id": "chest_guts",
+      "system": "dark",
+      "explode": [
+        0,
+        0,
+        1.5
+      ]
+    },
+    {
+      "id": "cab_roof",
+      "system": "paint-red",
+      "explode": [
+        0,
+        0.4,
+        -1
+      ]
+    },
+    {
+      "id": "sun_visor",
+      "system": "chrome",
+      "explode": [
+        0,
+        0.5,
+        0.8
+      ]
+    },
+    {
+      "id": "mirror_l",
+      "system": "chrome",
+      "explode": [
+        -0.6,
+        0.5,
+        0
+      ]
+    },
+    {
+      "id": "mirror_r",
+      "system": "chrome",
+      "explode": [
+        0.6,
+        0.5,
+        0
+      ]
+    },
+    {
+      "id": "sleeper_side_l",
+      "system": "paint-blue",
+      "explode": [
+        -0.9,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "sleeper_side_r",
+      "system": "paint-blue",
+      "explode": [
+        0.9,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "sleeper_roof",
+      "system": "paint-blue",
+      "explode": [
+        0,
+        0.5,
+        -1.3
+      ]
+    },
+    {
+      "id": "sleeper_rear",
+      "system": "paint-blue",
+      "explode": [
+        0,
+        -0.2,
+        -1.5
+      ]
+    },
+    {
+      "id": "fairing_l",
+      "system": "paint-blue",
+      "explode": [
+        -0.5,
+        -0.3,
+        0.3
+      ]
+    },
+    {
+      "id": "fairing_r",
+      "system": "paint-blue",
+      "explode": [
+        0.5,
+        -0.3,
+        0.3
+      ]
+    },
+    {
+      "id": "stack_l",
+      "system": "chrome",
+      "explode": [
+        -0.6,
+        0.6,
+        -0.5
+      ]
+    },
+    {
+      "id": "stack_r",
+      "system": "chrome",
+      "explode": [
+        0.6,
+        0.6,
+        -0.5
+      ]
+    },
+    {
+      "id": "mudflap_l",
+      "system": "rubber",
+      "explode": [
+        -0.4,
+        -0.4,
+        -0.6
+      ]
+    },
+    {
+      "id": "toolbox_l",
+      "system": "steel",
+      "explode": [
+        -0.6,
+        -0.2,
+        0
+      ]
+    },
+    {
+      "id": "mudflap_r",
+      "system": "rubber",
+      "explode": [
+        0.4,
+        -0.4,
+        -0.6
+      ]
+    },
+    {
+      "id": "toolbox_r",
+      "system": "steel",
+      "explode": [
+        0.6,
+        -0.2,
+        0
+      ]
+    },
+    {
+      "id": "rear_cross",
+      "system": "dark",
+      "explode": [
+        0,
+        -0.5,
+        -0.8
+      ]
+    },
+    {
+      "id": "pelvis",
+      "system": "dark",
+      "explode": [
+        0,
+        -0.6,
+        0.4
+      ]
+    },
+    {
+      "id": "waist",
+      "system": "steel",
+      "explode": [
+        0,
+        0.3,
+        0.3
+      ]
+    },
+    {
+      "id": "abdomen",
+      "system": "gold",
+      "explode": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "collar",
+      "system": "steel",
+      "explode": [
+        0,
+        0.4,
+        0.5
+      ]
+    },
+    {
+      "id": "emblem",
+      "system": "silver",
+      "explode": [
+        0,
+        0,
+        1.7
+      ]
+    },
+    {
+      "id": "pauldron_l",
+      "system": "paint-blue",
+      "explode": [
+        -1.1,
+        0.5,
+        0
+      ]
+    },
+    {
+      "id": "pauldron_r",
+      "system": "paint-blue",
+      "explode": [
+        1.1,
+        0.5,
+        0
+      ]
+    },
+    {
+      "id": "upperarm_l",
+      "system": "steel",
+      "explode": [
+        -0.6,
+        0.2,
+        0
+      ]
+    },
+    {
+      "id": "elbow_l",
+      "system": "dark",
+      "explode": [
+        -0.5,
+        -0.2,
+        0.3
+      ]
+    },
+    {
+      "id": "wrist_l",
+      "system": "steel",
+      "explode": [
+        -0.5,
+        -0.2,
+        0.2
+      ]
+    },
+    {
+      "id": "hand_l",
+      "system": "silver",
+      "explode": [
+        -0.9,
+        -0.5,
+        0.3
+      ]
+    },
+    {
+      "id": "upperarm_r",
+      "system": "steel",
+      "explode": [
+        0.6,
+        0.2,
+        0
+      ]
+    },
+    {
+      "id": "elbow_r",
+      "system": "dark",
+      "explode": [
+        0.5,
+        -0.2,
+        0.3
+      ]
+    },
+    {
+      "id": "wrist_r",
+      "system": "steel",
+      "explode": [
+        0.5,
+        -0.2,
+        0.2
+      ]
+    },
+    {
+      "id": "hand_r",
+      "system": "silver",
+      "explode": [
+        0.9,
+        -0.5,
+        0.3
+      ]
+    },
+    {
+      "id": "thigh_l",
+      "system": "paint-blue",
+      "explode": [
+        -0.6,
+        0,
+        0.2
+      ]
+    },
+    {
+      "id": "knee_l",
+      "system": "silver",
+      "explode": [
+        -0.5,
+        -0.3,
+        0.4
+      ]
+    },
+    {
+      "id": "shin_l",
+      "system": "paint-blue",
+      "explode": [
+        -0.7,
+        -0.2,
+        0.2
+      ]
+    },
+    {
+      "id": "ankle_l",
+      "system": "steel",
+      "explode": [
+        -0.4,
+        -0.3,
+        0
+      ]
+    },
+    {
+      "id": "foot_l",
+      "system": "dark",
+      "explode": [
+        -0.7,
+        -0.5,
+        0.6
+      ]
+    },
+    {
+      "id": "backpiston_l",
+      "system": "chrome",
+      "explode": [
+        -0.4,
+        0.3,
+        -0.7
+      ]
+    },
+    {
+      "id": "thigh_r",
+      "system": "paint-blue",
+      "explode": [
+        0.6,
+        0,
+        0.2
+      ]
+    },
+    {
+      "id": "knee_r",
+      "system": "silver",
+      "explode": [
+        0.5,
+        -0.3,
+        0.4
+      ]
+    },
+    {
+      "id": "shin_r",
+      "system": "paint-blue",
+      "explode": [
+        0.7,
+        -0.2,
+        0.2
+      ]
+    },
+    {
+      "id": "ankle_r",
+      "system": "steel",
+      "explode": [
+        0.4,
+        -0.3,
+        0
+      ]
+    },
+    {
+      "id": "foot_r",
+      "system": "dark",
+      "explode": [
+        0.7,
+        -0.5,
+        0.6
+      ]
+    },
+    {
+      "id": "backpiston_r",
+      "system": "chrome",
+      "explode": [
+        0.4,
+        0.3,
+        -0.7
+      ]
+    },
+    {
+      "id": "head",
+      "system": "paint-blue",
+      "explode": [
+        0,
+        0.7,
+        0.5
+      ]
+    },
+    {
+      "id": "neck",
+      "system": "steel",
+      "explode": [
+        0,
+        0.3,
+        0.2
+      ]
+    }
+  ],
+  "partCount": 339,
+  "ports": {
+    "head": "head",
+    "torso": "cab",
+    "left_hand": "hand_l",
+    "right_hand": "hand_r",
+    "left_foot": "foot_l",
+    "right_foot": "foot_r"
+  }
+}

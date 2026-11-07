@@ -1,0 +1,3699 @@
+{
+  "schemaVersion": 1,
+  "rootId": "scene",
+  "status": "study",
+  "note": "装配节点与视觉分件唯一归属；位姿见 src/rig.mjs，状态由 stateAt(t) 确定性求值。ID 与 Three.js 场景内命名分件一致。",
+  "assemblies": [
+    {
+      "id": "cab",
+      "parent": "scene",
+      "system": "躯干",
+      "parts": [
+        "cab-01",
+        "cab-02",
+        "cab-03",
+        "cab-04",
+        "cab-05",
+        "cab-06",
+        "cab-07",
+        "cab-08",
+        "cab-09",
+        "cab-10",
+        "cab-11",
+        "cab-12",
+        "cab-13",
+        "cab-14"
+      ]
+    },
+    {
+      "id": "roof",
+      "parent": "cab",
+      "system": "躯干",
+      "parts": [
+        "roof-01",
+        "roof-02",
+        "roof-03",
+        "roof-04",
+        "roof-05",
+        "roof-06",
+        "roof-07",
+        "roof-08"
+      ]
+    },
+    {
+      "id": "hood",
+      "parent": "cab",
+      "system": "胸甲",
+      "parts": [
+        "hood-01",
+        "hood-02",
+        "hood-03",
+        "hood-04",
+        "hood-05",
+        "hood-06",
+        "hood-07",
+        "hood-08",
+        "hood-09",
+        "hood-10",
+        "hood-11",
+        "hood-12",
+        "hood-13",
+        "hood-14",
+        "hood-15",
+        "hood-16",
+        "hood-17",
+        "hood-18"
+      ]
+    },
+    {
+      "id": "chest_l",
+      "parent": "cab",
+      "system": "胸窗",
+      "parts": [
+        "chest_l-01",
+        "chest_l-02",
+        "chest_l-03",
+        "chest_l-04",
+        "chest_l-05",
+        "chest_l-06",
+        "chest_l-07",
+        "chest_l-08",
+        "chest_l-09",
+        "chest_l-10",
+        "chest_l-11"
+      ]
+    },
+    {
+      "id": "chest_r",
+      "parent": "cab",
+      "system": "胸窗",
+      "parts": [
+        "chest_r-01",
+        "chest_r-02",
+        "chest_r-03",
+        "chest_r-04",
+        "chest_r-05",
+        "chest_r-06",
+        "chest_r-07",
+        "chest_r-08",
+        "chest_r-09",
+        "chest_r-10",
+        "chest_r-11"
+      ]
+    },
+    {
+      "id": "core",
+      "parent": "cab",
+      "system": "胸腔",
+      "parts": [
+        "core-01",
+        "core-02",
+        "core-03",
+        "core-04",
+        "core-05",
+        "core-06",
+        "core-07",
+        "core-08",
+        "core-09",
+        "core-10",
+        "core-11",
+        "core-12",
+        "core-13",
+        "core-14",
+        "core-15",
+        "core-16"
+      ]
+    },
+    {
+      "id": "head",
+      "parent": "cab",
+      "system": "头雕",
+      "parts": [
+        "head-01",
+        "head-02",
+        "head-03",
+        "head-04",
+        "head-05",
+        "head-06",
+        "head-07",
+        "head-08",
+        "head-09",
+        "head-10",
+        "head-11",
+        "head-12",
+        "head-13",
+        "head-14",
+        "head-15",
+        "head-16",
+        "head-17",
+        "head-18",
+        "head-19",
+        "head-20",
+        "head-21",
+        "head-22",
+        "head-23"
+      ]
+    },
+    {
+      "id": "grille",
+      "parent": "cab",
+      "system": "腹部",
+      "parts": [
+        "grille-01",
+        "grille-02",
+        "grille-03",
+        "grille-04",
+        "grille-05",
+        "grille-06",
+        "grille-07",
+        "grille-08",
+        "grille-09",
+        "grille-10",
+        "grille-11",
+        "grille-12",
+        "grille-13",
+        "grille-14",
+        "grille-15",
+        "grille-16",
+        "grille-17",
+        "grille-18",
+        "grille-19",
+        "grille-20",
+        "grille-21",
+        "grille-22",
+        "grille-23",
+        "grille-24",
+        "grille-25",
+        "grille-26",
+        "grille-27",
+        "grille-28",
+        "grille-29",
+        "grille-30",
+        "grille-31",
+        "grille-32",
+        "grille-33",
+        "grille-34",
+        "grille-35"
+      ]
+    },
+    {
+      "id": "abdomen",
+      "parent": "cab",
+      "system": "腹部",
+      "parts": [
+        "abdomen-01",
+        "abdomen-02",
+        "abdomen-03",
+        "abdomen-04",
+        "abdomen-05",
+        "abdomen-06",
+        "abdomen-07",
+        "abdomen-08",
+        "abdomen-09",
+        "abdomen-10",
+        "abdomen-11",
+        "abdomen-12",
+        "abdomen-13",
+        "abdomen-14",
+        "abdomen-15",
+        "abdomen-16",
+        "abdomen-17",
+        "abdomen-18",
+        "abdomen-19",
+        "abdomen-20"
+      ]
+    },
+    {
+      "id": "shoulder_l",
+      "parent": "cab",
+      "system": "肩",
+      "parts": [
+        "shoulder_l-01",
+        "shoulder_l-02",
+        "shoulder_l-03",
+        "shoulder_l-04",
+        "shoulder_l-05",
+        "shoulder_l-06",
+        "shoulder_l-07",
+        "shoulder_l-08",
+        "shoulder_l-09",
+        "shoulder_l-10",
+        "shoulder_l-11",
+        "shoulder_l-12",
+        "shoulder_l-13"
+      ]
+    },
+    {
+      "id": "shoulder_r",
+      "parent": "cab",
+      "system": "肩",
+      "parts": [
+        "shoulder_r-01",
+        "shoulder_r-02",
+        "shoulder_r-03",
+        "shoulder_r-04",
+        "shoulder_r-05",
+        "shoulder_r-06",
+        "shoulder_r-07",
+        "shoulder_r-08",
+        "shoulder_r-09",
+        "shoulder_r-10",
+        "shoulder_r-11",
+        "shoulder_r-12",
+        "shoulder_r-13"
+      ]
+    },
+    {
+      "id": "arm_l",
+      "parent": "shoulder_l",
+      "system": "臂",
+      "parts": [
+        "arm_l-01",
+        "arm_l-02",
+        "arm_l-03",
+        "arm_l-04",
+        "arm_l-05",
+        "arm_l-06",
+        "arm_l-07",
+        "arm_l-08",
+        "arm_l-09",
+        "arm_l-10",
+        "arm_l-11",
+        "arm_l-12",
+        "arm_l-13",
+        "arm_l-14",
+        "arm_l-15",
+        "arm_l-16",
+        "arm_l-17",
+        "arm_l-18"
+      ]
+    },
+    {
+      "id": "arm_r",
+      "parent": "shoulder_r",
+      "system": "臂",
+      "parts": [
+        "arm_r-01",
+        "arm_r-02",
+        "arm_r-03",
+        "arm_r-04",
+        "arm_r-05",
+        "arm_r-06",
+        "arm_r-07",
+        "arm_r-08",
+        "arm_r-09",
+        "arm_r-10",
+        "arm_r-11",
+        "arm_r-12",
+        "arm_r-13",
+        "arm_r-14",
+        "arm_r-15",
+        "arm_r-16",
+        "arm_r-17",
+        "arm_r-18"
+      ]
+    },
+    {
+      "id": "hand_l",
+      "parent": "arm_l",
+      "system": "手",
+      "parts": [
+        "hand_l-01",
+        "hand_l-02",
+        "hand_l-03",
+        "hand_l-04",
+        "hand_l-05",
+        "hand_l-06",
+        "hand_l-07",
+        "hand_l-08",
+        "hand_l-09",
+        "hand_l-10",
+        "hand_l-11",
+        "hand_l-12",
+        "hand_l-13",
+        "hand_l-14",
+        "hand_l-15"
+      ]
+    },
+    {
+      "id": "hand_r",
+      "parent": "arm_r",
+      "system": "手",
+      "parts": [
+        "hand_r-01",
+        "hand_r-02",
+        "hand_r-03",
+        "hand_r-04",
+        "hand_r-05",
+        "hand_r-06",
+        "hand_r-07",
+        "hand_r-08",
+        "hand_r-09",
+        "hand_r-10",
+        "hand_r-11",
+        "hand_r-12",
+        "hand_r-13",
+        "hand_r-14",
+        "hand_r-15"
+      ]
+    },
+    {
+      "id": "chassis",
+      "parent": "scene",
+      "system": "骨盆",
+      "parts": [
+        "chassis-01",
+        "chassis-02",
+        "chassis-03",
+        "chassis-04",
+        "chassis-05",
+        "chassis-06",
+        "chassis-07",
+        "chassis-08",
+        "chassis-09",
+        "chassis-10",
+        "chassis-11",
+        "chassis-12"
+      ]
+    },
+    {
+      "id": "hip",
+      "parent": "chassis",
+      "system": "骨盆",
+      "parts": [
+        "hip-01",
+        "hip-02",
+        "hip-03",
+        "hip-04",
+        "hip-05",
+        "hip-06",
+        "hip-07",
+        "hip-08",
+        "hip-09",
+        "hip-10",
+        "hip-11"
+      ]
+    },
+    {
+      "id": "bumper",
+      "parent": "chassis",
+      "system": "骨盆",
+      "parts": [
+        "bumper-01",
+        "bumper-02",
+        "bumper-03",
+        "bumper-04",
+        "bumper-05",
+        "bumper-06",
+        "bumper-07",
+        "bumper-08",
+        "bumper-09",
+        "bumper-10",
+        "bumper-11",
+        "bumper-12",
+        "bumper-13",
+        "bumper-14",
+        "bumper-15",
+        "bumper-16",
+        "bumper-17",
+        "bumper-18",
+        "bumper-19",
+        "bumper-20",
+        "bumper-21",
+        "bumper-22"
+      ]
+    },
+    {
+      "id": "leg_l",
+      "parent": "hip",
+      "system": "腿",
+      "parts": [
+        "leg_l-01",
+        "leg_l-02",
+        "leg_l-03",
+        "leg_l-04",
+        "leg_l-05",
+        "leg_l-06",
+        "leg_l-07",
+        "leg_l-08",
+        "leg_l-09",
+        "leg_l-10",
+        "leg_l-11",
+        "leg_l-12",
+        "leg_l-13",
+        "leg_l-14",
+        "leg_l-15",
+        "leg_l-16",
+        "leg_l-17",
+        "leg_l-18",
+        "leg_l-19"
+      ]
+    },
+    {
+      "id": "leg_r",
+      "parent": "hip",
+      "system": "腿",
+      "parts": [
+        "leg_r-01",
+        "leg_r-02",
+        "leg_r-03",
+        "leg_r-04",
+        "leg_r-05",
+        "leg_r-06",
+        "leg_r-07",
+        "leg_r-08",
+        "leg_r-09",
+        "leg_r-10",
+        "leg_r-11",
+        "leg_r-12",
+        "leg_r-13",
+        "leg_r-14",
+        "leg_r-15",
+        "leg_r-16",
+        "leg_r-17",
+        "leg_r-18",
+        "leg_r-19"
+      ]
+    },
+    {
+      "id": "foot_l",
+      "parent": "leg_l",
+      "system": "足",
+      "parts": [
+        "foot_l-01",
+        "foot_l-02",
+        "foot_l-03",
+        "foot_l-04",
+        "foot_l-05",
+        "foot_l-06",
+        "foot_l-07",
+        "foot_l-08",
+        "foot_l-09",
+        "foot_l-10",
+        "foot_l-11",
+        "foot_l-12",
+        "foot_l-13"
+      ]
+    },
+    {
+      "id": "foot_r",
+      "parent": "leg_r",
+      "system": "足",
+      "parts": [
+        "foot_r-01",
+        "foot_r-02",
+        "foot_r-03",
+        "foot_r-04",
+        "foot_r-05",
+        "foot_r-06",
+        "foot_r-07",
+        "foot_r-08",
+        "foot_r-09",
+        "foot_r-10",
+        "foot_r-11",
+        "foot_r-12",
+        "foot_r-13"
+      ]
+    },
+    {
+      "id": "wheel_f_l",
+      "parent": "chassis",
+      "system": "轮组",
+      "parts": [
+        "wheel_f_l-01",
+        "wheel_f_l-02",
+        "wheel_f_l-03",
+        "wheel_f_l-04",
+        "wheel_f_l-05",
+        "wheel_f_l-06",
+        "wheel_f_l-07",
+        "wheel_f_l-08",
+        "wheel_f_l-09",
+        "wheel_f_l-10",
+        "wheel_f_l-11",
+        "wheel_f_l-12"
+      ]
+    },
+    {
+      "id": "wheel_f_r",
+      "parent": "chassis",
+      "system": "轮组",
+      "parts": [
+        "wheel_f_r-01",
+        "wheel_f_r-02",
+        "wheel_f_r-03",
+        "wheel_f_r-04",
+        "wheel_f_r-05",
+        "wheel_f_r-06",
+        "wheel_f_r-07",
+        "wheel_f_r-08",
+        "wheel_f_r-09",
+        "wheel_f_r-10",
+        "wheel_f_r-11",
+        "wheel_f_r-12"
+      ]
+    },
+    {
+      "id": "wheel_r_l1",
+      "parent": "chassis",
+      "system": "轮组",
+      "parts": [
+        "wheel_r_l1-01",
+        "wheel_r_l1-02",
+        "wheel_r_l1-03",
+        "wheel_r_l1-04",
+        "wheel_r_l1-05",
+        "wheel_r_l1-06",
+        "wheel_r_l1-07",
+        "wheel_r_l1-08",
+        "wheel_r_l1-09",
+        "wheel_r_l1-10",
+        "wheel_r_l1-11",
+        "wheel_r_l1-12"
+      ]
+    },
+    {
+      "id": "wheel_r_l2",
+      "parent": "chassis",
+      "system": "轮组",
+      "parts": [
+        "wheel_r_l2-01",
+        "wheel_r_l2-02",
+        "wheel_r_l2-03",
+        "wheel_r_l2-04",
+        "wheel_r_l2-05",
+        "wheel_r_l2-06",
+        "wheel_r_l2-07",
+        "wheel_r_l2-08",
+        "wheel_r_l2-09",
+        "wheel_r_l2-10",
+        "wheel_r_l2-11",
+        "wheel_r_l2-12"
+      ]
+    },
+    {
+      "id": "wheel_r_r1",
+      "parent": "chassis",
+      "system": "轮组",
+      "parts": [
+        "wheel_r_r1-01",
+        "wheel_r_r1-02",
+        "wheel_r_r1-03",
+        "wheel_r_r1-04",
+        "wheel_r_r1-05",
+        "wheel_r_r1-06",
+        "wheel_r_r1-07",
+        "wheel_r_r1-08",
+        "wheel_r_r1-09",
+        "wheel_r_r1-10",
+        "wheel_r_r1-11",
+        "wheel_r_r1-12"
+      ]
+    },
+    {
+      "id": "wheel_r_r2",
+      "parent": "chassis",
+      "system": "轮组",
+      "parts": [
+        "wheel_r_r2-01",
+        "wheel_r_r2-02",
+        "wheel_r_r2-03",
+        "wheel_r_r2-04",
+        "wheel_r_r2-05",
+        "wheel_r_r2-06",
+        "wheel_r_r2-07",
+        "wheel_r_r2-08",
+        "wheel_r_r2-09",
+        "wheel_r_r2-10",
+        "wheel_r_r2-11",
+        "wheel_r_r2-12"
+      ]
+    },
+    {
+      "id": "stack_l",
+      "parent": "cab",
+      "system": "烟囱",
+      "parts": [
+        "stack_l-01",
+        "stack_l-02",
+        "stack_l-03",
+        "stack_l-04",
+        "stack_l-05",
+        "stack_l-06",
+        "stack_l-07",
+        "stack_l-08"
+      ]
+    },
+    {
+      "id": "stack_r",
+      "parent": "cab",
+      "system": "烟囱",
+      "parts": [
+        "stack_r-01",
+        "stack_r-02",
+        "stack_r-03",
+        "stack_r-04",
+        "stack_r-05",
+        "stack_r-06",
+        "stack_r-07",
+        "stack_r-08"
+      ]
+    },
+    {
+      "id": "tank_l",
+      "parent": "chassis",
+      "system": "油箱",
+      "parts": [
+        "tank_l-01",
+        "tank_l-02",
+        "tank_l-03",
+        "tank_l-04",
+        "tank_l-05",
+        "tank_l-06",
+        "tank_l-07"
+      ]
+    },
+    {
+      "id": "tank_r",
+      "parent": "chassis",
+      "system": "油箱",
+      "parts": [
+        "tank_r-01",
+        "tank_r-02",
+        "tank_r-03",
+        "tank_r-04",
+        "tank_r-05",
+        "tank_r-06",
+        "tank_r-07"
+      ]
+    },
+    {
+      "id": "lamp_l",
+      "parent": "bumper",
+      "system": "灯",
+      "parts": [
+        "lamp_l-01",
+        "lamp_l-02",
+        "lamp_l-03",
+        "lamp_l-04",
+        "lamp_l-05"
+      ]
+    },
+    {
+      "id": "lamp_r",
+      "parent": "bumper",
+      "system": "灯",
+      "parts": [
+        "lamp_r-01",
+        "lamp_r-02",
+        "lamp_r-03",
+        "lamp_r-04",
+        "lamp_r-05"
+      ]
+    },
+    {
+      "id": "back",
+      "parent": "cab",
+      "system": "背甲",
+      "parts": [
+        "back-01",
+        "back-02",
+        "back-03",
+        "back-04",
+        "back-05",
+        "back-06",
+        "back-07",
+        "back-08",
+        "back-09"
+      ]
+    },
+    {
+      "id": "fender_f_l",
+      "parent": "chassis",
+      "system": "轮拱",
+      "parts": [
+        "fender_f_l-01",
+        "fender_f_l-02",
+        "fender_f_l-03",
+        "fender_f_l-04",
+        "fender_f_l-05",
+        "fender_f_l-06"
+      ]
+    },
+    {
+      "id": "fender_f_r",
+      "parent": "chassis",
+      "system": "轮拱",
+      "parts": [
+        "fender_f_r-01",
+        "fender_f_r-02",
+        "fender_f_r-03",
+        "fender_f_r-04",
+        "fender_f_r-05",
+        "fender_f_r-06"
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "id": "cab-01",
+      "assembly": "cab",
+      "system": "躯干",
+      "label": "躯干 · cab 分件 1"
+    },
+    {
+      "id": "cab-02",
+      "assembly": "cab",
+      "system": "躯干",
+      "label": "躯干 · cab 分件 2"
+    },
+    {
+      "id": "cab-03",
+      "assembly": "cab",
+      "system": "躯干",
+      "label": "躯干 · cab 分件 3"
+    },
+    {
+      "id": "cab-04",
+      "assembly": "cab",
+      "system": "躯干",
+      "label": "躯干 · cab 分件 4"
+    },
+    {
+      "id": "cab-05",
+      "assembly": "cab",
+      "system": "躯干",
+      "label": "躯干 · cab 分件 5"
+    },
+    {
+      "id": "cab-06",
+      "assembly": "cab",
+      "system": "躯干",
+      "label": "躯干 · cab 分件 6"
+    },
+    {
+      "id": "cab-07",
+      "assembly": "cab",
+      "system": "躯干",
+      "label": "躯干 · cab 分件 7"
+    },
+    {
+      "id": "cab-08",
+      "assembly": "cab",
+      "system": "躯干",
+      "label": "躯干 · cab 分件 8"
+    },
+    {
+      "id": "cab-09",
+      "assembly": "cab",
+      "system": "躯干",
+      "label": "躯干 · cab 分件 9"
+    },
+    {
+      "id": "cab-10",
+      "assembly": "cab",
+      "system": "躯干",
+      "label": "躯干 · cab 分件 10"
+    },
+    {
+      "id": "cab-11",
+      "assembly": "cab",
+      "system": "躯干",
+      "label": "躯干 · cab 分件 11"
+    },
+    {
+      "id": "cab-12",
+      "assembly": "cab",
+      "system": "躯干",
+      "label": "躯干 · cab 分件 12"
+    },
+    {
+      "id": "cab-13",
+      "assembly": "cab",
+      "system": "躯干",
+      "label": "躯干 · cab 分件 13"
+    },
+    {
+      "id": "cab-14",
+      "assembly": "cab",
+      "system": "躯干",
+      "label": "躯干 · cab 分件 14"
+    },
+    {
+      "id": "roof-01",
+      "assembly": "roof",
+      "system": "躯干",
+      "label": "躯干 · roof 分件 1"
+    },
+    {
+      "id": "roof-02",
+      "assembly": "roof",
+      "system": "躯干",
+      "label": "躯干 · roof 分件 2"
+    },
+    {
+      "id": "roof-03",
+      "assembly": "roof",
+      "system": "躯干",
+      "label": "躯干 · roof 分件 3"
+    },
+    {
+      "id": "roof-04",
+      "assembly": "roof",
+      "system": "躯干",
+      "label": "躯干 · roof 分件 4"
+    },
+    {
+      "id": "roof-05",
+      "assembly": "roof",
+      "system": "躯干",
+      "label": "躯干 · roof 分件 5"
+    },
+    {
+      "id": "roof-06",
+      "assembly": "roof",
+      "system": "躯干",
+      "label": "躯干 · roof 分件 6"
+    },
+    {
+      "id": "roof-07",
+      "assembly": "roof",
+      "system": "躯干",
+      "label": "躯干 · roof 分件 7"
+    },
+    {
+      "id": "roof-08",
+      "assembly": "roof",
+      "system": "躯干",
+      "label": "躯干 · roof 分件 8"
+    },
+    {
+      "id": "hood-01",
+      "assembly": "hood",
+      "system": "胸甲",
+      "label": "胸甲 · hood 分件 1"
+    },
+    {
+      "id": "hood-02",
+      "assembly": "hood",
+      "system": "胸甲",
+      "label": "胸甲 · hood 分件 2"
+    },
+    {
+      "id": "hood-03",
+      "assembly": "hood",
+      "system": "胸甲",
+      "label": "胸甲 · hood 分件 3"
+    },
+    {
+      "id": "hood-04",
+      "assembly": "hood",
+      "system": "胸甲",
+      "label": "胸甲 · hood 分件 4"
+    },
+    {
+      "id": "hood-05",
+      "assembly": "hood",
+      "system": "胸甲",
+      "label": "胸甲 · hood 分件 5"
+    },
+    {
+      "id": "hood-06",
+      "assembly": "hood",
+      "system": "胸甲",
+      "label": "胸甲 · hood 分件 6"
+    },
+    {
+      "id": "hood-07",
+      "assembly": "hood",
+      "system": "胸甲",
+      "label": "胸甲 · hood 分件 7"
+    },
+    {
+      "id": "hood-08",
+      "assembly": "hood",
+      "system": "胸甲",
+      "label": "胸甲 · hood 分件 8"
+    },
+    {
+      "id": "hood-09",
+      "assembly": "hood",
+      "system": "胸甲",
+      "label": "胸甲 · hood 分件 9"
+    },
+    {
+      "id": "hood-10",
+      "assembly": "hood",
+      "system": "胸甲",
+      "label": "胸甲 · hood 分件 10"
+    },
+    {
+      "id": "hood-11",
+      "assembly": "hood",
+      "system": "胸甲",
+      "label": "胸甲 · hood 分件 11"
+    },
+    {
+      "id": "hood-12",
+      "assembly": "hood",
+      "system": "胸甲",
+      "label": "胸甲 · hood 分件 12"
+    },
+    {
+      "id": "hood-13",
+      "assembly": "hood",
+      "system": "胸甲",
+      "label": "胸甲 · hood 分件 13"
+    },
+    {
+      "id": "hood-14",
+      "assembly": "hood",
+      "system": "胸甲",
+      "label": "胸甲 · hood 分件 14"
+    },
+    {
+      "id": "hood-15",
+      "assembly": "hood",
+      "system": "胸甲",
+      "label": "胸甲 · hood 分件 15"
+    },
+    {
+      "id": "hood-16",
+      "assembly": "hood",
+      "system": "胸甲",
+      "label": "胸甲 · hood 分件 16"
+    },
+    {
+      "id": "hood-17",
+      "assembly": "hood",
+      "system": "胸甲",
+      "label": "胸甲 · hood 分件 17"
+    },
+    {
+      "id": "hood-18",
+      "assembly": "hood",
+      "system": "胸甲",
+      "label": "胸甲 · hood 分件 18"
+    },
+    {
+      "id": "chest_l-01",
+      "assembly": "chest_l",
+      "system": "胸窗",
+      "label": "胸窗 · chest_l 分件 1"
+    },
+    {
+      "id": "chest_l-02",
+      "assembly": "chest_l",
+      "system": "胸窗",
+      "label": "胸窗 · chest_l 分件 2"
+    },
+    {
+      "id": "chest_l-03",
+      "assembly": "chest_l",
+      "system": "胸窗",
+      "label": "胸窗 · chest_l 分件 3"
+    },
+    {
+      "id": "chest_l-04",
+      "assembly": "chest_l",
+      "system": "胸窗",
+      "label": "胸窗 · chest_l 分件 4"
+    },
+    {
+      "id": "chest_l-05",
+      "assembly": "chest_l",
+      "system": "胸窗",
+      "label": "胸窗 · chest_l 分件 5"
+    },
+    {
+      "id": "chest_l-06",
+      "assembly": "chest_l",
+      "system": "胸窗",
+      "label": "胸窗 · chest_l 分件 6"
+    },
+    {
+      "id": "chest_l-07",
+      "assembly": "chest_l",
+      "system": "胸窗",
+      "label": "胸窗 · chest_l 分件 7"
+    },
+    {
+      "id": "chest_l-08",
+      "assembly": "chest_l",
+      "system": "胸窗",
+      "label": "胸窗 · chest_l 分件 8"
+    },
+    {
+      "id": "chest_l-09",
+      "assembly": "chest_l",
+      "system": "胸窗",
+      "label": "胸窗 · chest_l 分件 9"
+    },
+    {
+      "id": "chest_l-10",
+      "assembly": "chest_l",
+      "system": "胸窗",
+      "label": "胸窗 · chest_l 分件 10"
+    },
+    {
+      "id": "chest_l-11",
+      "assembly": "chest_l",
+      "system": "胸窗",
+      "label": "胸窗 · chest_l 分件 11"
+    },
+    {
+      "id": "chest_r-01",
+      "assembly": "chest_r",
+      "system": "胸窗",
+      "label": "胸窗 · chest_r 分件 1"
+    },
+    {
+      "id": "chest_r-02",
+      "assembly": "chest_r",
+      "system": "胸窗",
+      "label": "胸窗 · chest_r 分件 2"
+    },
+    {
+      "id": "chest_r-03",
+      "assembly": "chest_r",
+      "system": "胸窗",
+      "label": "胸窗 · chest_r 分件 3"
+    },
+    {
+      "id": "chest_r-04",
+      "assembly": "chest_r",
+      "system": "胸窗",
+      "label": "胸窗 · chest_r 分件 4"
+    },
+    {
+      "id": "chest_r-05",
+      "assembly": "chest_r",
+      "system": "胸窗",
+      "label": "胸窗 · chest_r 分件 5"
+    },
+    {
+      "id": "chest_r-06",
+      "assembly": "chest_r",
+      "system": "胸窗",
+      "label": "胸窗 · chest_r 分件 6"
+    },
+    {
+      "id": "chest_r-07",
+      "assembly": "chest_r",
+      "system": "胸窗",
+      "label": "胸窗 · chest_r 分件 7"
+    },
+    {
+      "id": "chest_r-08",
+      "assembly": "chest_r",
+      "system": "胸窗",
+      "label": "胸窗 · chest_r 分件 8"
+    },
+    {
+      "id": "chest_r-09",
+      "assembly": "chest_r",
+      "system": "胸窗",
+      "label": "胸窗 · chest_r 分件 9"
+    },
+    {
+      "id": "chest_r-10",
+      "assembly": "chest_r",
+      "system": "胸窗",
+      "label": "胸窗 · chest_r 分件 10"
+    },
+    {
+      "id": "chest_r-11",
+      "assembly": "chest_r",
+      "system": "胸窗",
+      "label": "胸窗 · chest_r 分件 11"
+    },
+    {
+      "id": "core-01",
+      "assembly": "core",
+      "system": "胸腔",
+      "label": "胸腔 · core 分件 1"
+    },
+    {
+      "id": "core-02",
+      "assembly": "core",
+      "system": "胸腔",
+      "label": "胸腔 · core 分件 2"
+    },
+    {
+      "id": "core-03",
+      "assembly": "core",
+      "system": "胸腔",
+      "label": "胸腔 · core 分件 3"
+    },
+    {
+      "id": "core-04",
+      "assembly": "core",
+      "system": "胸腔",
+      "label": "胸腔 · core 分件 4"
+    },
+    {
+      "id": "core-05",
+      "assembly": "core",
+      "system": "胸腔",
+      "label": "胸腔 · core 分件 5"
+    },
+    {
+      "id": "core-06",
+      "assembly": "core",
+      "system": "胸腔",
+      "label": "胸腔 · core 分件 6"
+    },
+    {
+      "id": "core-07",
+      "assembly": "core",
+      "system": "胸腔",
+      "label": "胸腔 · core 分件 7"
+    },
+    {
+      "id": "core-08",
+      "assembly": "core",
+      "system": "胸腔",
+      "label": "胸腔 · core 分件 8"
+    },
+    {
+      "id": "core-09",
+      "assembly": "core",
+      "system": "胸腔",
+      "label": "胸腔 · core 分件 9"
+    },
+    {
+      "id": "core-10",
+      "assembly": "core",
+      "system": "胸腔",
+      "label": "胸腔 · core 分件 10"
+    },
+    {
+      "id": "core-11",
+      "assembly": "core",
+      "system": "胸腔",
+      "label": "胸腔 · core 分件 11"
+    },
+    {
+      "id": "core-12",
+      "assembly": "core",
+      "system": "胸腔",
+      "label": "胸腔 · core 分件 12"
+    },
+    {
+      "id": "core-13",
+      "assembly": "core",
+      "system": "胸腔",
+      "label": "胸腔 · core 分件 13"
+    },
+    {
+      "id": "core-14",
+      "assembly": "core",
+      "system": "胸腔",
+      "label": "胸腔 · core 分件 14"
+    },
+    {
+      "id": "core-15",
+      "assembly": "core",
+      "system": "胸腔",
+      "label": "胸腔 · core 分件 15"
+    },
+    {
+      "id": "core-16",
+      "assembly": "core",
+      "system": "胸腔",
+      "label": "胸腔 · core 分件 16"
+    },
+    {
+      "id": "head-01",
+      "assembly": "head",
+      "system": "头雕",
+      "label": "头雕 · head 分件 1"
+    },
+    {
+      "id": "head-02",
+      "assembly": "head",
+      "system": "头雕",
+      "label": "头雕 · head 分件 2"
+    },
+    {
+      "id": "head-03",
+      "assembly": "head",
+      "system": "头雕",
+      "label": "头雕 · head 分件 3"
+    },
+    {
+      "id": "head-04",
+      "assembly": "head",
+      "system": "头雕",
+      "label": "头雕 · head 分件 4"
+    },
+    {
+      "id": "head-05",
+      "assembly": "head",
+      "system": "头雕",
+      "label": "头雕 · head 分件 5"
+    },
+    {
+      "id": "head-06",
+      "assembly": "head",
+      "system": "头雕",
+      "label": "头雕 · head 分件 6"
+    },
+    {
+      "id": "head-07",
+      "assembly": "head",
+      "system": "头雕",
+      "label": "头雕 · head 分件 7"
+    },
+    {
+      "id": "head-08",
+      "assembly": "head",
+      "system": "头雕",
+      "label": "头雕 · head 分件 8"
+    },
+    {
+      "id": "head-09",
+      "assembly": "head",
+      "system": "头雕",
+      "label": "头雕 · head 分件 9"
+    },
+    {
+      "id": "head-10",
+      "assembly": "head",
+      "system": "头雕",
+      "label": "头雕 · head 分件 10"
+    },
+    {
+      "id": "head-11",
+      "assembly": "head",
+      "system": "头雕",
+      "label": "头雕 · head 分件 11"
+    },
+    {
+      "id": "head-12",
+      "assembly": "head",
+      "system": "头雕",
+      "label": "头雕 · head 分件 12"
+    },
+    {
+      "id": "head-13",
+      "assembly": "head",
+      "system": "头雕",
+      "label": "头雕 · head 分件 13"
+    },
+    {
+      "id": "head-14",
+      "assembly": "head",
+      "system": "头雕",
+      "label": "头雕 · head 分件 14"
+    },
+    {
+      "id": "head-15",
+      "assembly": "head",
+      "system": "头雕",
+      "label": "头雕 · head 分件 15"
+    },
+    {
+      "id": "head-16",
+      "assembly": "head",
+      "system": "头雕",
+      "label": "头雕 · head 分件 16"
+    },
+    {
+      "id": "head-17",
+      "assembly": "head",
+      "system": "头雕",
+      "label": "头雕 · head 分件 17"
+    },
+    {
+      "id": "head-18",
+      "assembly": "head",
+      "system": "头雕",
+      "label": "头雕 · head 分件 18"
+    },
+    {
+      "id": "head-19",
+      "assembly": "head",
+      "system": "头雕",
+      "label": "头雕 · head 分件 19"
+    },
+    {
+      "id": "head-20",
+      "assembly": "head",
+      "system": "头雕",
+      "label": "头雕 · head 分件 20"
+    },
+    {
+      "id": "head-21",
+      "assembly": "head",
+      "system": "头雕",
+      "label": "头雕 · head 分件 21"
+    },
+    {
+      "id": "head-22",
+      "assembly": "head",
+      "system": "头雕",
+      "label": "头雕 · head 分件 22"
+    },
+    {
+      "id": "head-23",
+      "assembly": "head",
+      "system": "头雕",
+      "label": "头雕 · head 分件 23"
+    },
+    {
+      "id": "grille-01",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 1"
+    },
+    {
+      "id": "grille-02",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 2"
+    },
+    {
+      "id": "grille-03",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 3"
+    },
+    {
+      "id": "grille-04",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 4"
+    },
+    {
+      "id": "grille-05",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 5"
+    },
+    {
+      "id": "grille-06",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 6"
+    },
+    {
+      "id": "grille-07",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 7"
+    },
+    {
+      "id": "grille-08",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 8"
+    },
+    {
+      "id": "grille-09",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 9"
+    },
+    {
+      "id": "grille-10",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 10"
+    },
+    {
+      "id": "grille-11",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 11"
+    },
+    {
+      "id": "grille-12",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 12"
+    },
+    {
+      "id": "grille-13",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 13"
+    },
+    {
+      "id": "grille-14",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 14"
+    },
+    {
+      "id": "grille-15",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 15"
+    },
+    {
+      "id": "grille-16",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 16"
+    },
+    {
+      "id": "grille-17",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 17"
+    },
+    {
+      "id": "grille-18",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 18"
+    },
+    {
+      "id": "grille-19",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 19"
+    },
+    {
+      "id": "grille-20",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 20"
+    },
+    {
+      "id": "grille-21",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 21"
+    },
+    {
+      "id": "grille-22",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 22"
+    },
+    {
+      "id": "grille-23",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 23"
+    },
+    {
+      "id": "grille-24",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 24"
+    },
+    {
+      "id": "grille-25",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 25"
+    },
+    {
+      "id": "grille-26",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 26"
+    },
+    {
+      "id": "grille-27",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 27"
+    },
+    {
+      "id": "grille-28",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 28"
+    },
+    {
+      "id": "grille-29",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 29"
+    },
+    {
+      "id": "grille-30",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 30"
+    },
+    {
+      "id": "grille-31",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 31"
+    },
+    {
+      "id": "grille-32",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 32"
+    },
+    {
+      "id": "grille-33",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 33"
+    },
+    {
+      "id": "grille-34",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 34"
+    },
+    {
+      "id": "grille-35",
+      "assembly": "grille",
+      "system": "腹部",
+      "label": "腹部 · grille 分件 35"
+    },
+    {
+      "id": "abdomen-01",
+      "assembly": "abdomen",
+      "system": "腹部",
+      "label": "腹部 · abdomen 分件 1"
+    },
+    {
+      "id": "abdomen-02",
+      "assembly": "abdomen",
+      "system": "腹部",
+      "label": "腹部 · abdomen 分件 2"
+    },
+    {
+      "id": "abdomen-03",
+      "assembly": "abdomen",
+      "system": "腹部",
+      "label": "腹部 · abdomen 分件 3"
+    },
+    {
+      "id": "abdomen-04",
+      "assembly": "abdomen",
+      "system": "腹部",
+      "label": "腹部 · abdomen 分件 4"
+    },
+    {
+      "id": "abdomen-05",
+      "assembly": "abdomen",
+      "system": "腹部",
+      "label": "腹部 · abdomen 分件 5"
+    },
+    {
+      "id": "abdomen-06",
+      "assembly": "abdomen",
+      "system": "腹部",
+      "label": "腹部 · abdomen 分件 6"
+    },
+    {
+      "id": "abdomen-07",
+      "assembly": "abdomen",
+      "system": "腹部",
+      "label": "腹部 · abdomen 分件 7"
+    },
+    {
+      "id": "abdomen-08",
+      "assembly": "abdomen",
+      "system": "腹部",
+      "label": "腹部 · abdomen 分件 8"
+    },
+    {
+      "id": "abdomen-09",
+      "assembly": "abdomen",
+      "system": "腹部",
+      "label": "腹部 · abdomen 分件 9"
+    },
+    {
+      "id": "abdomen-10",
+      "assembly": "abdomen",
+      "system": "腹部",
+      "label": "腹部 · abdomen 分件 10"
+    },
+    {
+      "id": "abdomen-11",
+      "assembly": "abdomen",
+      "system": "腹部",
+      "label": "腹部 · abdomen 分件 11"
+    },
+    {
+      "id": "abdomen-12",
+      "assembly": "abdomen",
+      "system": "腹部",
+      "label": "腹部 · abdomen 分件 12"
+    },
+    {
+      "id": "abdomen-13",
+      "assembly": "abdomen",
+      "system": "腹部",
+      "label": "腹部 · abdomen 分件 13"
+    },
+    {
+      "id": "abdomen-14",
+      "assembly": "abdomen",
+      "system": "腹部",
+      "label": "腹部 · abdomen 分件 14"
+    },
+    {
+      "id": "abdomen-15",
+      "assembly": "abdomen",
+      "system": "腹部",
+      "label": "腹部 · abdomen 分件 15"
+    },
+    {
+      "id": "abdomen-16",
+      "assembly": "abdomen",
+      "system": "腹部",
+      "label": "腹部 · abdomen 分件 16"
+    },
+    {
+      "id": "abdomen-17",
+      "assembly": "abdomen",
+      "system": "腹部",
+      "label": "腹部 · abdomen 分件 17"
+    },
+    {
+      "id": "abdomen-18",
+      "assembly": "abdomen",
+      "system": "腹部",
+      "label": "腹部 · abdomen 分件 18"
+    },
+    {
+      "id": "abdomen-19",
+      "assembly": "abdomen",
+      "system": "腹部",
+      "label": "腹部 · abdomen 分件 19"
+    },
+    {
+      "id": "abdomen-20",
+      "assembly": "abdomen",
+      "system": "腹部",
+      "label": "腹部 · abdomen 分件 20"
+    },
+    {
+      "id": "shoulder_l-01",
+      "assembly": "shoulder_l",
+      "system": "肩",
+      "label": "肩 · shoulder_l 分件 1"
+    },
+    {
+      "id": "shoulder_l-02",
+      "assembly": "shoulder_l",
+      "system": "肩",
+      "label": "肩 · shoulder_l 分件 2"
+    },
+    {
+      "id": "shoulder_l-03",
+      "assembly": "shoulder_l",
+      "system": "肩",
+      "label": "肩 · shoulder_l 分件 3"
+    },
+    {
+      "id": "shoulder_l-04",
+      "assembly": "shoulder_l",
+      "system": "肩",
+      "label": "肩 · shoulder_l 分件 4"
+    },
+    {
+      "id": "shoulder_l-05",
+      "assembly": "shoulder_l",
+      "system": "肩",
+      "label": "肩 · shoulder_l 分件 5"
+    },
+    {
+      "id": "shoulder_l-06",
+      "assembly": "shoulder_l",
+      "system": "肩",
+      "label": "肩 · shoulder_l 分件 6"
+    },
+    {
+      "id": "shoulder_l-07",
+      "assembly": "shoulder_l",
+      "system": "肩",
+      "label": "肩 · shoulder_l 分件 7"
+    },
+    {
+      "id": "shoulder_l-08",
+      "assembly": "shoulder_l",
+      "system": "肩",
+      "label": "肩 · shoulder_l 分件 8"
+    },
+    {
+      "id": "shoulder_l-09",
+      "assembly": "shoulder_l",
+      "system": "肩",
+      "label": "肩 · shoulder_l 分件 9"
+    },
+    {
+      "id": "shoulder_l-10",
+      "assembly": "shoulder_l",
+      "system": "肩",
+      "label": "肩 · shoulder_l 分件 10"
+    },
+    {
+      "id": "shoulder_l-11",
+      "assembly": "shoulder_l",
+      "system": "肩",
+      "label": "肩 · shoulder_l 分件 11"
+    },
+    {
+      "id": "shoulder_l-12",
+      "assembly": "shoulder_l",
+      "system": "肩",
+      "label": "肩 · shoulder_l 分件 12"
+    },
+    {
+      "id": "shoulder_l-13",
+      "assembly": "shoulder_l",
+      "system": "肩",
+      "label": "肩 · shoulder_l 分件 13"
+    },
+    {
+      "id": "shoulder_r-01",
+      "assembly": "shoulder_r",
+      "system": "肩",
+      "label": "肩 · shoulder_r 分件 1"
+    },
+    {
+      "id": "shoulder_r-02",
+      "assembly": "shoulder_r",
+      "system": "肩",
+      "label": "肩 · shoulder_r 分件 2"
+    },
+    {
+      "id": "shoulder_r-03",
+      "assembly": "shoulder_r",
+      "system": "肩",
+      "label": "肩 · shoulder_r 分件 3"
+    },
+    {
+      "id": "shoulder_r-04",
+      "assembly": "shoulder_r",
+      "system": "肩",
+      "label": "肩 · shoulder_r 分件 4"
+    },
+    {
+      "id": "shoulder_r-05",
+      "assembly": "shoulder_r",
+      "system": "肩",
+      "label": "肩 · shoulder_r 分件 5"
+    },
+    {
+      "id": "shoulder_r-06",
+      "assembly": "shoulder_r",
+      "system": "肩",
+      "label": "肩 · shoulder_r 分件 6"
+    },
+    {
+      "id": "shoulder_r-07",
+      "assembly": "shoulder_r",
+      "system": "肩",
+      "label": "肩 · shoulder_r 分件 7"
+    },
+    {
+      "id": "shoulder_r-08",
+      "assembly": "shoulder_r",
+      "system": "肩",
+      "label": "肩 · shoulder_r 分件 8"
+    },
+    {
+      "id": "shoulder_r-09",
+      "assembly": "shoulder_r",
+      "system": "肩",
+      "label": "肩 · shoulder_r 分件 9"
+    },
+    {
+      "id": "shoulder_r-10",
+      "assembly": "shoulder_r",
+      "system": "肩",
+      "label": "肩 · shoulder_r 分件 10"
+    },
+    {
+      "id": "shoulder_r-11",
+      "assembly": "shoulder_r",
+      "system": "肩",
+      "label": "肩 · shoulder_r 分件 11"
+    },
+    {
+      "id": "shoulder_r-12",
+      "assembly": "shoulder_r",
+      "system": "肩",
+      "label": "肩 · shoulder_r 分件 12"
+    },
+    {
+      "id": "shoulder_r-13",
+      "assembly": "shoulder_r",
+      "system": "肩",
+      "label": "肩 · shoulder_r 分件 13"
+    },
+    {
+      "id": "arm_l-01",
+      "assembly": "arm_l",
+      "system": "臂",
+      "label": "臂 · arm_l 分件 1"
+    },
+    {
+      "id": "arm_l-02",
+      "assembly": "arm_l",
+      "system": "臂",
+      "label": "臂 · arm_l 分件 2"
+    },
+    {
+      "id": "arm_l-03",
+      "assembly": "arm_l",
+      "system": "臂",
+      "label": "臂 · arm_l 分件 3"
+    },
+    {
+      "id": "arm_l-04",
+      "assembly": "arm_l",
+      "system": "臂",
+      "label": "臂 · arm_l 分件 4"
+    },
+    {
+      "id": "arm_l-05",
+      "assembly": "arm_l",
+      "system": "臂",
+      "label": "臂 · arm_l 分件 5"
+    },
+    {
+      "id": "arm_l-06",
+      "assembly": "arm_l",
+      "system": "臂",
+      "label": "臂 · arm_l 分件 6"
+    },
+    {
+      "id": "arm_l-07",
+      "assembly": "arm_l",
+      "system": "臂",
+      "label": "臂 · arm_l 分件 7"
+    },
+    {
+      "id": "arm_l-08",
+      "assembly": "arm_l",
+      "system": "臂",
+      "label": "臂 · arm_l 分件 8"
+    },
+    {
+      "id": "arm_l-09",
+      "assembly": "arm_l",
+      "system": "臂",
+      "label": "臂 · arm_l 分件 9"
+    },
+    {
+      "id": "arm_l-10",
+      "assembly": "arm_l",
+      "system": "臂",
+      "label": "臂 · arm_l 分件 10"
+    },
+    {
+      "id": "arm_l-11",
+      "assembly": "arm_l",
+      "system": "臂",
+      "label": "臂 · arm_l 分件 11"
+    },
+    {
+      "id": "arm_l-12",
+      "assembly": "arm_l",
+      "system": "臂",
+      "label": "臂 · arm_l 分件 12"
+    },
+    {
+      "id": "arm_l-13",
+      "assembly": "arm_l",
+      "system": "臂",
+      "label": "臂 · arm_l 分件 13"
+    },
+    {
+      "id": "arm_l-14",
+      "assembly": "arm_l",
+      "system": "臂",
+      "label": "臂 · arm_l 分件 14"
+    },
+    {
+      "id": "arm_l-15",
+      "assembly": "arm_l",
+      "system": "臂",
+      "label": "臂 · arm_l 分件 15"
+    },
+    {
+      "id": "arm_l-16",
+      "assembly": "arm_l",
+      "system": "臂",
+      "label": "臂 · arm_l 分件 16"
+    },
+    {
+      "id": "arm_l-17",
+      "assembly": "arm_l",
+      "system": "臂",
+      "label": "臂 · arm_l 分件 17"
+    },
+    {
+      "id": "arm_l-18",
+      "assembly": "arm_l",
+      "system": "臂",
+      "label": "臂 · arm_l 分件 18"
+    },
+    {
+      "id": "arm_r-01",
+      "assembly": "arm_r",
+      "system": "臂",
+      "label": "臂 · arm_r 分件 1"
+    },
+    {
+      "id": "arm_r-02",
+      "assembly": "arm_r",
+      "system": "臂",
+      "label": "臂 · arm_r 分件 2"
+    },
+    {
+      "id": "arm_r-03",
+      "assembly": "arm_r",
+      "system": "臂",
+      "label": "臂 · arm_r 分件 3"
+    },
+    {
+      "id": "arm_r-04",
+      "assembly": "arm_r",
+      "system": "臂",
+      "label": "臂 · arm_r 分件 4"
+    },
+    {
+      "id": "arm_r-05",
+      "assembly": "arm_r",
+      "system": "臂",
+      "label": "臂 · arm_r 分件 5"
+    },
+    {
+      "id": "arm_r-06",
+      "assembly": "arm_r",
+      "system": "臂",
+      "label": "臂 · arm_r 分件 6"
+    },
+    {
+      "id": "arm_r-07",
+      "assembly": "arm_r",
+      "system": "臂",
+      "label": "臂 · arm_r 分件 7"
+    },
+    {
+      "id": "arm_r-08",
+      "assembly": "arm_r",
+      "system": "臂",
+      "label": "臂 · arm_r 分件 8"
+    },
+    {
+      "id": "arm_r-09",
+      "assembly": "arm_r",
+      "system": "臂",
+      "label": "臂 · arm_r 分件 9"
+    },
+    {
+      "id": "arm_r-10",
+      "assembly": "arm_r",
+      "system": "臂",
+      "label": "臂 · arm_r 分件 10"
+    },
+    {
+      "id": "arm_r-11",
+      "assembly": "arm_r",
+      "system": "臂",
+      "label": "臂 · arm_r 分件 11"
+    },
+    {
+      "id": "arm_r-12",
+      "assembly": "arm_r",
+      "system": "臂",
+      "label": "臂 · arm_r 分件 12"
+    },
+    {
+      "id": "arm_r-13",
+      "assembly": "arm_r",
+      "system": "臂",
+      "label": "臂 · arm_r 分件 13"
+    },
+    {
+      "id": "arm_r-14",
+      "assembly": "arm_r",
+      "system": "臂",
+      "label": "臂 · arm_r 分件 14"
+    },
+    {
+      "id": "arm_r-15",
+      "assembly": "arm_r",
+      "system": "臂",
+      "label": "臂 · arm_r 分件 15"
+    },
+    {
+      "id": "arm_r-16",
+      "assembly": "arm_r",
+      "system": "臂",
+      "label": "臂 · arm_r 分件 16"
+    },
+    {
+      "id": "arm_r-17",
+      "assembly": "arm_r",
+      "system": "臂",
+      "label": "臂 · arm_r 分件 17"
+    },
+    {
+      "id": "arm_r-18",
+      "assembly": "arm_r",
+      "system": "臂",
+      "label": "臂 · arm_r 分件 18"
+    },
+    {
+      "id": "hand_l-01",
+      "assembly": "hand_l",
+      "system": "手",
+      "label": "手 · hand_l 分件 1"
+    },
+    {
+      "id": "hand_l-02",
+      "assembly": "hand_l",
+      "system": "手",
+      "label": "手 · hand_l 分件 2"
+    },
+    {
+      "id": "hand_l-03",
+      "assembly": "hand_l",
+      "system": "手",
+      "label": "手 · hand_l 分件 3"
+    },
+    {
+      "id": "hand_l-04",
+      "assembly": "hand_l",
+      "system": "手",
+      "label": "手 · hand_l 分件 4"
+    },
+    {
+      "id": "hand_l-05",
+      "assembly": "hand_l",
+      "system": "手",
+      "label": "手 · hand_l 分件 5"
+    },
+    {
+      "id": "hand_l-06",
+      "assembly": "hand_l",
+      "system": "手",
+      "label": "手 · hand_l 分件 6"
+    },
+    {
+      "id": "hand_l-07",
+      "assembly": "hand_l",
+      "system": "手",
+      "label": "手 · hand_l 分件 7"
+    },
+    {
+      "id": "hand_l-08",
+      "assembly": "hand_l",
+      "system": "手",
+      "label": "手 · hand_l 分件 8"
+    },
+    {
+      "id": "hand_l-09",
+      "assembly": "hand_l",
+      "system": "手",
+      "label": "手 · hand_l 分件 9"
+    },
+    {
+      "id": "hand_l-10",
+      "assembly": "hand_l",
+      "system": "手",
+      "label": "手 · hand_l 分件 10"
+    },
+    {
+      "id": "hand_l-11",
+      "assembly": "hand_l",
+      "system": "手",
+      "label": "手 · hand_l 分件 11"
+    },
+    {
+      "id": "hand_l-12",
+      "assembly": "hand_l",
+      "system": "手",
+      "label": "手 · hand_l 分件 12"
+    },
+    {
+      "id": "hand_l-13",
+      "assembly": "hand_l",
+      "system": "手",
+      "label": "手 · hand_l 分件 13"
+    },
+    {
+      "id": "hand_l-14",
+      "assembly": "hand_l",
+      "system": "手",
+      "label": "手 · hand_l 分件 14"
+    },
+    {
+      "id": "hand_l-15",
+      "assembly": "hand_l",
+      "system": "手",
+      "label": "手 · hand_l 分件 15"
+    },
+    {
+      "id": "hand_r-01",
+      "assembly": "hand_r",
+      "system": "手",
+      "label": "手 · hand_r 分件 1"
+    },
+    {
+      "id": "hand_r-02",
+      "assembly": "hand_r",
+      "system": "手",
+      "label": "手 · hand_r 分件 2"
+    },
+    {
+      "id": "hand_r-03",
+      "assembly": "hand_r",
+      "system": "手",
+      "label": "手 · hand_r 分件 3"
+    },
+    {
+      "id": "hand_r-04",
+      "assembly": "hand_r",
+      "system": "手",
+      "label": "手 · hand_r 分件 4"
+    },
+    {
+      "id": "hand_r-05",
+      "assembly": "hand_r",
+      "system": "手",
+      "label": "手 · hand_r 分件 5"
+    },
+    {
+      "id": "hand_r-06",
+      "assembly": "hand_r",
+      "system": "手",
+      "label": "手 · hand_r 分件 6"
+    },
+    {
+      "id": "hand_r-07",
+      "assembly": "hand_r",
+      "system": "手",
+      "label": "手 · hand_r 分件 7"
+    },
+    {
+      "id": "hand_r-08",
+      "assembly": "hand_r",
+      "system": "手",
+      "label": "手 · hand_r 分件 8"
+    },
+    {
+      "id": "hand_r-09",
+      "assembly": "hand_r",
+      "system": "手",
+      "label": "手 · hand_r 分件 9"
+    },
+    {
+      "id": "hand_r-10",
+      "assembly": "hand_r",
+      "system": "手",
+      "label": "手 · hand_r 分件 10"
+    },
+    {
+      "id": "hand_r-11",
+      "assembly": "hand_r",
+      "system": "手",
+      "label": "手 · hand_r 分件 11"
+    },
+    {
+      "id": "hand_r-12",
+      "assembly": "hand_r",
+      "system": "手",
+      "label": "手 · hand_r 分件 12"
+    },
+    {
+      "id": "hand_r-13",
+      "assembly": "hand_r",
+      "system": "手",
+      "label": "手 · hand_r 分件 13"
+    },
+    {
+      "id": "hand_r-14",
+      "assembly": "hand_r",
+      "system": "手",
+      "label": "手 · hand_r 分件 14"
+    },
+    {
+      "id": "hand_r-15",
+      "assembly": "hand_r",
+      "system": "手",
+      "label": "手 · hand_r 分件 15"
+    },
+    {
+      "id": "chassis-01",
+      "assembly": "chassis",
+      "system": "骨盆",
+      "label": "骨盆 · chassis 分件 1"
+    },
+    {
+      "id": "chassis-02",
+      "assembly": "chassis",
+      "system": "骨盆",
+      "label": "骨盆 · chassis 分件 2"
+    },
+    {
+      "id": "chassis-03",
+      "assembly": "chassis",
+      "system": "骨盆",
+      "label": "骨盆 · chassis 分件 3"
+    },
+    {
+      "id": "chassis-04",
+      "assembly": "chassis",
+      "system": "骨盆",
+      "label": "骨盆 · chassis 分件 4"
+    },
+    {
+      "id": "chassis-05",
+      "assembly": "chassis",
+      "system": "骨盆",
+      "label": "骨盆 · chassis 分件 5"
+    },
+    {
+      "id": "chassis-06",
+      "assembly": "chassis",
+      "system": "骨盆",
+      "label": "骨盆 · chassis 分件 6"
+    },
+    {
+      "id": "chassis-07",
+      "assembly": "chassis",
+      "system": "骨盆",
+      "label": "骨盆 · chassis 分件 7"
+    },
+    {
+      "id": "chassis-08",
+      "assembly": "chassis",
+      "system": "骨盆",
+      "label": "骨盆 · chassis 分件 8"
+    },
+    {
+      "id": "chassis-09",
+      "assembly": "chassis",
+      "system": "骨盆",
+      "label": "骨盆 · chassis 分件 9"
+    },
+    {
+      "id": "chassis-10",
+      "assembly": "chassis",
+      "system": "骨盆",
+      "label": "骨盆 · chassis 分件 10"
+    },
+    {
+      "id": "chassis-11",
+      "assembly": "chassis",
+      "system": "骨盆",
+      "label": "骨盆 · chassis 分件 11"
+    },
+    {
+      "id": "chassis-12",
+      "assembly": "chassis",
+      "system": "骨盆",
+      "label": "骨盆 · chassis 分件 12"
+    },
+    {
+      "id": "hip-01",
+      "assembly": "hip",
+      "system": "骨盆",
+      "label": "骨盆 · hip 分件 1"
+    },
+    {
+      "id": "hip-02",
+      "assembly": "hip",
+      "system": "骨盆",
+      "label": "骨盆 · hip 分件 2"
+    },
+    {
+      "id": "hip-03",
+      "assembly": "hip",
+      "system": "骨盆",
+      "label": "骨盆 · hip 分件 3"
+    },
+    {
+      "id": "hip-04",
+      "assembly": "hip",
+      "system": "骨盆",
+      "label": "骨盆 · hip 分件 4"
+    },
+    {
+      "id": "hip-05",
+      "assembly": "hip",
+      "system": "骨盆",
+      "label": "骨盆 · hip 分件 5"
+    },
+    {
+      "id": "hip-06",
+      "assembly": "hip",
+      "system": "骨盆",
+      "label": "骨盆 · hip 分件 6"
+    },
+    {
+      "id": "hip-07",
+      "assembly": "hip",
+      "system": "骨盆",
+      "label": "骨盆 · hip 分件 7"
+    },
+    {
+      "id": "hip-08",
+      "assembly": "hip",
+      "system": "骨盆",
+      "label": "骨盆 · hip 分件 8"
+    },
+    {
+      "id": "hip-09",
+      "assembly": "hip",
+      "system": "骨盆",
+      "label": "骨盆 · hip 分件 9"
+    },
+    {
+      "id": "hip-10",
+      "assembly": "hip",
+      "system": "骨盆",
+      "label": "骨盆 · hip 分件 10"
+    },
+    {
+      "id": "hip-11",
+      "assembly": "hip",
+      "system": "骨盆",
+      "label": "骨盆 · hip 分件 11"
+    },
+    {
+      "id": "bumper-01",
+      "assembly": "bumper",
+      "system": "骨盆",
+      "label": "骨盆 · bumper 分件 1"
+    },
+    {
+      "id": "bumper-02",
+      "assembly": "bumper",
+      "system": "骨盆",
+      "label": "骨盆 · bumper 分件 2"
+    },
+    {
+      "id": "bumper-03",
+      "assembly": "bumper",
+      "system": "骨盆",
+      "label": "骨盆 · bumper 分件 3"
+    },
+    {
+      "id": "bumper-04",
+      "assembly": "bumper",
+      "system": "骨盆",
+      "label": "骨盆 · bumper 分件 4"
+    },
+    {
+      "id": "bumper-05",
+      "assembly": "bumper",
+      "system": "骨盆",
+      "label": "骨盆 · bumper 分件 5"
+    },
+    {
+      "id": "bumper-06",
+      "assembly": "bumper",
+      "system": "骨盆",
+      "label": "骨盆 · bumper 分件 6"
+    },
+    {
+      "id": "bumper-07",
+      "assembly": "bumper",
+      "system": "骨盆",
+      "label": "骨盆 · bumper 分件 7"
+    },
+    {
+      "id": "bumper-08",
+      "assembly": "bumper",
+      "system": "骨盆",
+      "label": "骨盆 · bumper 分件 8"
+    },
+    {
+      "id": "bumper-09",
+      "assembly": "bumper",
+      "system": "骨盆",
+      "label": "骨盆 · bumper 分件 9"
+    },
+    {
+      "id": "bumper-10",
+      "assembly": "bumper",
+      "system": "骨盆",
+      "label": "骨盆 · bumper 分件 10"
+    },
+    {
+      "id": "bumper-11",
+      "assembly": "bumper",
+      "system": "骨盆",
+      "label": "骨盆 · bumper 分件 11"
+    },
+    {
+      "id": "bumper-12",
+      "assembly": "bumper",
+      "system": "骨盆",
+      "label": "骨盆 · bumper 分件 12"
+    },
+    {
+      "id": "bumper-13",
+      "assembly": "bumper",
+      "system": "骨盆",
+      "label": "骨盆 · bumper 分件 13"
+    },
+    {
+      "id": "bumper-14",
+      "assembly": "bumper",
+      "system": "骨盆",
+      "label": "骨盆 · bumper 分件 14"
+    },
+    {
+      "id": "bumper-15",
+      "assembly": "bumper",
+      "system": "骨盆",
+      "label": "骨盆 · bumper 分件 15"
+    },
+    {
+      "id": "bumper-16",
+      "assembly": "bumper",
+      "system": "骨盆",
+      "label": "骨盆 · bumper 分件 16"
+    },
+    {
+      "id": "bumper-17",
+      "assembly": "bumper",
+      "system": "骨盆",
+      "label": "骨盆 · bumper 分件 17"
+    },
+    {
+      "id": "bumper-18",
+      "assembly": "bumper",
+      "system": "骨盆",
+      "label": "骨盆 · bumper 分件 18"
+    },
+    {
+      "id": "bumper-19",
+      "assembly": "bumper",
+      "system": "骨盆",
+      "label": "骨盆 · bumper 分件 19"
+    },
+    {
+      "id": "bumper-20",
+      "assembly": "bumper",
+      "system": "骨盆",
+      "label": "骨盆 · bumper 分件 20"
+    },
+    {
+      "id": "bumper-21",
+      "assembly": "bumper",
+      "system": "骨盆",
+      "label": "骨盆 · bumper 分件 21"
+    },
+    {
+      "id": "bumper-22",
+      "assembly": "bumper",
+      "system": "骨盆",
+      "label": "骨盆 · bumper 分件 22"
+    },
+    {
+      "id": "leg_l-01",
+      "assembly": "leg_l",
+      "system": "腿",
+      "label": "腿 · leg_l 分件 1"
+    },
+    {
+      "id": "leg_l-02",
+      "assembly": "leg_l",
+      "system": "腿",
+      "label": "腿 · leg_l 分件 2"
+    },
+    {
+      "id": "leg_l-03",
+      "assembly": "leg_l",
+      "system": "腿",
+      "label": "腿 · leg_l 分件 3"
+    },
+    {
+      "id": "leg_l-04",
+      "assembly": "leg_l",
+      "system": "腿",
+      "label": "腿 · leg_l 分件 4"
+    },
+    {
+      "id": "leg_l-05",
+      "assembly": "leg_l",
+      "system": "腿",
+      "label": "腿 · leg_l 分件 5"
+    },
+    {
+      "id": "leg_l-06",
+      "assembly": "leg_l",
+      "system": "腿",
+      "label": "腿 · leg_l 分件 6"
+    },
+    {
+      "id": "leg_l-07",
+      "assembly": "leg_l",
+      "system": "腿",
+      "label": "腿 · leg_l 分件 7"
+    },
+    {
+      "id": "leg_l-08",
+      "assembly": "leg_l",
+      "system": "腿",
+      "label": "腿 · leg_l 分件 8"
+    },
+    {
+      "id": "leg_l-09",
+      "assembly": "leg_l",
+      "system": "腿",
+      "label": "腿 · leg_l 分件 9"
+    },
+    {
+      "id": "leg_l-10",
+      "assembly": "leg_l",
+      "system": "腿",
+      "label": "腿 · leg_l 分件 10"
+    },
+    {
+      "id": "leg_l-11",
+      "assembly": "leg_l",
+      "system": "腿",
+      "label": "腿 · leg_l 分件 11"
+    },
+    {
+      "id": "leg_l-12",
+      "assembly": "leg_l",
+      "system": "腿",
+      "label": "腿 · leg_l 分件 12"
+    },
+    {
+      "id": "leg_l-13",
+      "assembly": "leg_l",
+      "system": "腿",
+      "label": "腿 · leg_l 分件 13"
+    },
+    {
+      "id": "leg_l-14",
+      "assembly": "leg_l",
+      "system": "腿",
+      "label": "腿 · leg_l 分件 14"
+    },
+    {
+      "id": "leg_l-15",
+      "assembly": "leg_l",
+      "system": "腿",
+      "label": "腿 · leg_l 分件 15"
+    },
+    {
+      "id": "leg_l-16",
+      "assembly": "leg_l",
+      "system": "腿",
+      "label": "腿 · leg_l 分件 16"
+    },
+    {
+      "id": "leg_l-17",
+      "assembly": "leg_l",
+      "system": "腿",
+      "label": "腿 · leg_l 分件 17"
+    },
+    {
+      "id": "leg_l-18",
+      "assembly": "leg_l",
+      "system": "腿",
+      "label": "腿 · leg_l 分件 18"
+    },
+    {
+      "id": "leg_l-19",
+      "assembly": "leg_l",
+      "system": "腿",
+      "label": "腿 · leg_l 分件 19"
+    },
+    {
+      "id": "leg_r-01",
+      "assembly": "leg_r",
+      "system": "腿",
+      "label": "腿 · leg_r 分件 1"
+    },
+    {
+      "id": "leg_r-02",
+      "assembly": "leg_r",
+      "system": "腿",
+      "label": "腿 · leg_r 分件 2"
+    },
+    {
+      "id": "leg_r-03",
+      "assembly": "leg_r",
+      "system": "腿",
+      "label": "腿 · leg_r 分件 3"
+    },
+    {
+      "id": "leg_r-04",
+      "assembly": "leg_r",
+      "system": "腿",
+      "label": "腿 · leg_r 分件 4"
+    },
+    {
+      "id": "leg_r-05",
+      "assembly": "leg_r",
+      "system": "腿",
+      "label": "腿 · leg_r 分件 5"
+    },
+    {
+      "id": "leg_r-06",
+      "assembly": "leg_r",
+      "system": "腿",
+      "label": "腿 · leg_r 分件 6"
+    },
+    {
+      "id": "leg_r-07",
+      "assembly": "leg_r",
+      "system": "腿",
+      "label": "腿 · leg_r 分件 7"
+    },
+    {
+      "id": "leg_r-08",
+      "assembly": "leg_r",
+      "system": "腿",
+      "label": "腿 · leg_r 分件 8"
+    },
+    {
+      "id": "leg_r-09",
+      "assembly": "leg_r",
+      "system": "腿",
+      "label": "腿 · leg_r 分件 9"
+    },
+    {
+      "id": "leg_r-10",
+      "assembly": "leg_r",
+      "system": "腿",
+      "label": "腿 · leg_r 分件 10"
+    },
+    {
+      "id": "leg_r-11",
+      "assembly": "leg_r",
+      "system": "腿",
+      "label": "腿 · leg_r 分件 11"
+    },
+    {
+      "id": "leg_r-12",
+      "assembly": "leg_r",
+      "system": "腿",
+      "label": "腿 · leg_r 分件 12"
+    },
+    {
+      "id": "leg_r-13",
+      "assembly": "leg_r",
+      "system": "腿",
+      "label": "腿 · leg_r 分件 13"
+    },
+    {
+      "id": "leg_r-14",
+      "assembly": "leg_r",
+      "system": "腿",
+      "label": "腿 · leg_r 分件 14"
+    },
+    {
+      "id": "leg_r-15",
+      "assembly": "leg_r",
+      "system": "腿",
+      "label": "腿 · leg_r 分件 15"
+    },
+    {
+      "id": "leg_r-16",
+      "assembly": "leg_r",
+      "system": "腿",
+      "label": "腿 · leg_r 分件 16"
+    },
+    {
+      "id": "leg_r-17",
+      "assembly": "leg_r",
+      "system": "腿",
+      "label": "腿 · leg_r 分件 17"
+    },
+    {
+      "id": "leg_r-18",
+      "assembly": "leg_r",
+      "system": "腿",
+      "label": "腿 · leg_r 分件 18"
+    },
+    {
+      "id": "leg_r-19",
+      "assembly": "leg_r",
+      "system": "腿",
+      "label": "腿 · leg_r 分件 19"
+    },
+    {
+      "id": "foot_l-01",
+      "assembly": "foot_l",
+      "system": "足",
+      "label": "足 · foot_l 分件 1"
+    },
+    {
+      "id": "foot_l-02",
+      "assembly": "foot_l",
+      "system": "足",
+      "label": "足 · foot_l 分件 2"
+    },
+    {
+      "id": "foot_l-03",
+      "assembly": "foot_l",
+      "system": "足",
+      "label": "足 · foot_l 分件 3"
+    },
+    {
+      "id": "foot_l-04",
+      "assembly": "foot_l",
+      "system": "足",
+      "label": "足 · foot_l 分件 4"
+    },
+    {
+      "id": "foot_l-05",
+      "assembly": "foot_l",
+      "system": "足",
+      "label": "足 · foot_l 分件 5"
+    },
+    {
+      "id": "foot_l-06",
+      "assembly": "foot_l",
+      "system": "足",
+      "label": "足 · foot_l 分件 6"
+    },
+    {
+      "id": "foot_l-07",
+      "assembly": "foot_l",
+      "system": "足",
+      "label": "足 · foot_l 分件 7"
+    },
+    {
+      "id": "foot_l-08",
+      "assembly": "foot_l",
+      "system": "足",
+      "label": "足 · foot_l 分件 8"
+    },
+    {
+      "id": "foot_l-09",
+      "assembly": "foot_l",
+      "system": "足",
+      "label": "足 · foot_l 分件 9"
+    },
+    {
+      "id": "foot_l-10",
+      "assembly": "foot_l",
+      "system": "足",
+      "label": "足 · foot_l 分件 10"
+    },
+    {
+      "id": "foot_l-11",
+      "assembly": "foot_l",
+      "system": "足",
+      "label": "足 · foot_l 分件 11"
+    },
+    {
+      "id": "foot_l-12",
+      "assembly": "foot_l",
+      "system": "足",
+      "label": "足 · foot_l 分件 12"
+    },
+    {
+      "id": "foot_l-13",
+      "assembly": "foot_l",
+      "system": "足",
+      "label": "足 · foot_l 分件 13"
+    },
+    {
+      "id": "foot_r-01",
+      "assembly": "foot_r",
+      "system": "足",
+      "label": "足 · foot_r 分件 1"
+    },
+    {
+      "id": "foot_r-02",
+      "assembly": "foot_r",
+      "system": "足",
+      "label": "足 · foot_r 分件 2"
+    },
+    {
+      "id": "foot_r-03",
+      "assembly": "foot_r",
+      "system": "足",
+      "label": "足 · foot_r 分件 3"
+    },
+    {
+      "id": "foot_r-04",
+      "assembly": "foot_r",
+      "system": "足",
+      "label": "足 · foot_r 分件 4"
+    },
+    {
+      "id": "foot_r-05",
+      "assembly": "foot_r",
+      "system": "足",
+      "label": "足 · foot_r 分件 5"
+    },
+    {
+      "id": "foot_r-06",
+      "assembly": "foot_r",
+      "system": "足",
+      "label": "足 · foot_r 分件 6"
+    },
+    {
+      "id": "foot_r-07",
+      "assembly": "foot_r",
+      "system": "足",
+      "label": "足 · foot_r 分件 7"
+    },
+    {
+      "id": "foot_r-08",
+      "assembly": "foot_r",
+      "system": "足",
+      "label": "足 · foot_r 分件 8"
+    },
+    {
+      "id": "foot_r-09",
+      "assembly": "foot_r",
+      "system": "足",
+      "label": "足 · foot_r 分件 9"
+    },
+    {
+      "id": "foot_r-10",
+      "assembly": "foot_r",
+      "system": "足",
+      "label": "足 · foot_r 分件 10"
+    },
+    {
+      "id": "foot_r-11",
+      "assembly": "foot_r",
+      "system": "足",
+      "label": "足 · foot_r 分件 11"
+    },
+    {
+      "id": "foot_r-12",
+      "assembly": "foot_r",
+      "system": "足",
+      "label": "足 · foot_r 分件 12"
+    },
+    {
+      "id": "foot_r-13",
+      "assembly": "foot_r",
+      "system": "足",
+      "label": "足 · foot_r 分件 13"
+    },
+    {
+      "id": "wheel_f_l-01",
+      "assembly": "wheel_f_l",
+      "system": "轮组",
+      "label": "轮组 · wheel_f_l 分件 1"
+    },
+    {
+      "id": "wheel_f_l-02",
+      "assembly": "wheel_f_l",
+      "system": "轮组",
+      "label": "轮组 · wheel_f_l 分件 2"
+    },
+    {
+      "id": "wheel_f_l-03",
+      "assembly": "wheel_f_l",
+      "system": "轮组",
+      "label": "轮组 · wheel_f_l 分件 3"
+    },
+    {
+      "id": "wheel_f_l-04",
+      "assembly": "wheel_f_l",
+      "system": "轮组",
+      "label": "轮组 · wheel_f_l 分件 4"
+    },
+    {
+      "id": "wheel_f_l-05",
+      "assembly": "wheel_f_l",
+      "system": "轮组",
+      "label": "轮组 · wheel_f_l 分件 5"
+    },
+    {
+      "id": "wheel_f_l-06",
+      "assembly": "wheel_f_l",
+      "system": "轮组",
+      "label": "轮组 · wheel_f_l 分件 6"
+    },
+    {
+      "id": "wheel_f_l-07",
+      "assembly": "wheel_f_l",
+      "system": "轮组",
+      "label": "轮组 · wheel_f_l 分件 7"
+    },
+    {
+      "id": "wheel_f_l-08",
+      "assembly": "wheel_f_l",
+      "system": "轮组",
+      "label": "轮组 · wheel_f_l 分件 8"
+    },
+    {
+      "id": "wheel_f_l-09",
+      "assembly": "wheel_f_l",
+      "system": "轮组",
+      "label": "轮组 · wheel_f_l 分件 9"
+    },
+    {
+      "id": "wheel_f_l-10",
+      "assembly": "wheel_f_l",
+      "system": "轮组",
+      "label": "轮组 · wheel_f_l 分件 10"
+    },
+    {
+      "id": "wheel_f_l-11",
+      "assembly": "wheel_f_l",
+      "system": "轮组",
+      "label": "轮组 · wheel_f_l 分件 11"
+    },
+    {
+      "id": "wheel_f_l-12",
+      "assembly": "wheel_f_l",
+      "system": "轮组",
+      "label": "轮组 · wheel_f_l 分件 12"
+    },
+    {
+      "id": "wheel_f_r-01",
+      "assembly": "wheel_f_r",
+      "system": "轮组",
+      "label": "轮组 · wheel_f_r 分件 1"
+    },
+    {
+      "id": "wheel_f_r-02",
+      "assembly": "wheel_f_r",
+      "system": "轮组",
+      "label": "轮组 · wheel_f_r 分件 2"
+    },
+    {
+      "id": "wheel_f_r-03",
+      "assembly": "wheel_f_r",
+      "system": "轮组",
+      "label": "轮组 · wheel_f_r 分件 3"
+    },
+    {
+      "id": "wheel_f_r-04",
+      "assembly": "wheel_f_r",
+      "system": "轮组",
+      "label": "轮组 · wheel_f_r 分件 4"
+    },
+    {
+      "id": "wheel_f_r-05",
+      "assembly": "wheel_f_r",
+      "system": "轮组",
+      "label": "轮组 · wheel_f_r 分件 5"
+    },
+    {
+      "id": "wheel_f_r-06",
+      "assembly": "wheel_f_r",
+      "system": "轮组",
+      "label": "轮组 · wheel_f_r 分件 6"
+    },
+    {
+      "id": "wheel_f_r-07",
+      "assembly": "wheel_f_r",
+      "system": "轮组",
+      "label": "轮组 · wheel_f_r 分件 7"
+    },
+    {
+      "id": "wheel_f_r-08",
+      "assembly": "wheel_f_r",
+      "system": "轮组",
+      "label": "轮组 · wheel_f_r 分件 8"
+    },
+    {
+      "id": "wheel_f_r-09",
+      "assembly": "wheel_f_r",
+      "system": "轮组",
+      "label": "轮组 · wheel_f_r 分件 9"
+    },
+    {
+      "id": "wheel_f_r-10",
+      "assembly": "wheel_f_r",
+      "system": "轮组",
+      "label": "轮组 · wheel_f_r 分件 10"
+    },
+    {
+      "id": "wheel_f_r-11",
+      "assembly": "wheel_f_r",
+      "system": "轮组",
+      "label": "轮组 · wheel_f_r 分件 11"
+    },
+    {
+      "id": "wheel_f_r-12",
+      "assembly": "wheel_f_r",
+      "system": "轮组",
+      "label": "轮组 · wheel_f_r 分件 12"
+    },
+    {
+      "id": "wheel_r_l1-01",
+      "assembly": "wheel_r_l1",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_l1 分件 1"
+    },
+    {
+      "id": "wheel_r_l1-02",
+      "assembly": "wheel_r_l1",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_l1 分件 2"
+    },
+    {
+      "id": "wheel_r_l1-03",
+      "assembly": "wheel_r_l1",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_l1 分件 3"
+    },
+    {
+      "id": "wheel_r_l1-04",
+      "assembly": "wheel_r_l1",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_l1 分件 4"
+    },
+    {
+      "id": "wheel_r_l1-05",
+      "assembly": "wheel_r_l1",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_l1 分件 5"
+    },
+    {
+      "id": "wheel_r_l1-06",
+      "assembly": "wheel_r_l1",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_l1 分件 6"
+    },
+    {
+      "id": "wheel_r_l1-07",
+      "assembly": "wheel_r_l1",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_l1 分件 7"
+    },
+    {
+      "id": "wheel_r_l1-08",
+      "assembly": "wheel_r_l1",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_l1 分件 8"
+    },
+    {
+      "id": "wheel_r_l1-09",
+      "assembly": "wheel_r_l1",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_l1 分件 9"
+    },
+    {
+      "id": "wheel_r_l1-10",
+      "assembly": "wheel_r_l1",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_l1 分件 10"
+    },
+    {
+      "id": "wheel_r_l1-11",
+      "assembly": "wheel_r_l1",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_l1 分件 11"
+    },
+    {
+      "id": "wheel_r_l1-12",
+      "assembly": "wheel_r_l1",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_l1 分件 12"
+    },
+    {
+      "id": "wheel_r_l2-01",
+      "assembly": "wheel_r_l2",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_l2 分件 1"
+    },
+    {
+      "id": "wheel_r_l2-02",
+      "assembly": "wheel_r_l2",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_l2 分件 2"
+    },
+    {
+      "id": "wheel_r_l2-03",
+      "assembly": "wheel_r_l2",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_l2 分件 3"
+    },
+    {
+      "id": "wheel_r_l2-04",
+      "assembly": "wheel_r_l2",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_l2 分件 4"
+    },
+    {
+      "id": "wheel_r_l2-05",
+      "assembly": "wheel_r_l2",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_l2 分件 5"
+    },
+    {
+      "id": "wheel_r_l2-06",
+      "assembly": "wheel_r_l2",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_l2 分件 6"
+    },
+    {
+      "id": "wheel_r_l2-07",
+      "assembly": "wheel_r_l2",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_l2 分件 7"
+    },
+    {
+      "id": "wheel_r_l2-08",
+      "assembly": "wheel_r_l2",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_l2 分件 8"
+    },
+    {
+      "id": "wheel_r_l2-09",
+      "assembly": "wheel_r_l2",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_l2 分件 9"
+    },
+    {
+      "id": "wheel_r_l2-10",
+      "assembly": "wheel_r_l2",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_l2 分件 10"
+    },
+    {
+      "id": "wheel_r_l2-11",
+      "assembly": "wheel_r_l2",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_l2 分件 11"
+    },
+    {
+      "id": "wheel_r_l2-12",
+      "assembly": "wheel_r_l2",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_l2 分件 12"
+    },
+    {
+      "id": "wheel_r_r1-01",
+      "assembly": "wheel_r_r1",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_r1 分件 1"
+    },
+    {
+      "id": "wheel_r_r1-02",
+      "assembly": "wheel_r_r1",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_r1 分件 2"
+    },
+    {
+      "id": "wheel_r_r1-03",
+      "assembly": "wheel_r_r1",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_r1 分件 3"
+    },
+    {
+      "id": "wheel_r_r1-04",
+      "assembly": "wheel_r_r1",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_r1 分件 4"
+    },
+    {
+      "id": "wheel_r_r1-05",
+      "assembly": "wheel_r_r1",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_r1 分件 5"
+    },
+    {
+      "id": "wheel_r_r1-06",
+      "assembly": "wheel_r_r1",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_r1 分件 6"
+    },
+    {
+      "id": "wheel_r_r1-07",
+      "assembly": "wheel_r_r1",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_r1 分件 7"
+    },
+    {
+      "id": "wheel_r_r1-08",
+      "assembly": "wheel_r_r1",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_r1 分件 8"
+    },
+    {
+      "id": "wheel_r_r1-09",
+      "assembly": "wheel_r_r1",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_r1 分件 9"
+    },
+    {
+      "id": "wheel_r_r1-10",
+      "assembly": "wheel_r_r1",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_r1 分件 10"
+    },
+    {
+      "id": "wheel_r_r1-11",
+      "assembly": "wheel_r_r1",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_r1 分件 11"
+    },
+    {
+      "id": "wheel_r_r1-12",
+      "assembly": "wheel_r_r1",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_r1 分件 12"
+    },
+    {
+      "id": "wheel_r_r2-01",
+      "assembly": "wheel_r_r2",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_r2 分件 1"
+    },
+    {
+      "id": "wheel_r_r2-02",
+      "assembly": "wheel_r_r2",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_r2 分件 2"
+    },
+    {
+      "id": "wheel_r_r2-03",
+      "assembly": "wheel_r_r2",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_r2 分件 3"
+    },
+    {
+      "id": "wheel_r_r2-04",
+      "assembly": "wheel_r_r2",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_r2 分件 4"
+    },
+    {
+      "id": "wheel_r_r2-05",
+      "assembly": "wheel_r_r2",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_r2 分件 5"
+    },
+    {
+      "id": "wheel_r_r2-06",
+      "assembly": "wheel_r_r2",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_r2 分件 6"
+    },
+    {
+      "id": "wheel_r_r2-07",
+      "assembly": "wheel_r_r2",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_r2 分件 7"
+    },
+    {
+      "id": "wheel_r_r2-08",
+      "assembly": "wheel_r_r2",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_r2 分件 8"
+    },
+    {
+      "id": "wheel_r_r2-09",
+      "assembly": "wheel_r_r2",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_r2 分件 9"
+    },
+    {
+      "id": "wheel_r_r2-10",
+      "assembly": "wheel_r_r2",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_r2 分件 10"
+    },
+    {
+      "id": "wheel_r_r2-11",
+      "assembly": "wheel_r_r2",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_r2 分件 11"
+    },
+    {
+      "id": "wheel_r_r2-12",
+      "assembly": "wheel_r_r2",
+      "system": "轮组",
+      "label": "轮组 · wheel_r_r2 分件 12"
+    },
+    {
+      "id": "stack_l-01",
+      "assembly": "stack_l",
+      "system": "烟囱",
+      "label": "烟囱 · stack_l 分件 1"
+    },
+    {
+      "id": "stack_l-02",
+      "assembly": "stack_l",
+      "system": "烟囱",
+      "label": "烟囱 · stack_l 分件 2"
+    },
+    {
+      "id": "stack_l-03",
+      "assembly": "stack_l",
+      "system": "烟囱",
+      "label": "烟囱 · stack_l 分件 3"
+    },
+    {
+      "id": "stack_l-04",
+      "assembly": "stack_l",
+      "system": "烟囱",
+      "label": "烟囱 · stack_l 分件 4"
+    },
+    {
+      "id": "stack_l-05",
+      "assembly": "stack_l",
+      "system": "烟囱",
+      "label": "烟囱 · stack_l 分件 5"
+    },
+    {
+      "id": "stack_l-06",
+      "assembly": "stack_l",
+      "system": "烟囱",
+      "label": "烟囱 · stack_l 分件 6"
+    },
+    {
+      "id": "stack_l-07",
+      "assembly": "stack_l",
+      "system": "烟囱",
+      "label": "烟囱 · stack_l 分件 7"
+    },
+    {
+      "id": "stack_l-08",
+      "assembly": "stack_l",
+      "system": "烟囱",
+      "label": "烟囱 · stack_l 分件 8"
+    },
+    {
+      "id": "stack_r-01",
+      "assembly": "stack_r",
+      "system": "烟囱",
+      "label": "烟囱 · stack_r 分件 1"
+    },
+    {
+      "id": "stack_r-02",
+      "assembly": "stack_r",
+      "system": "烟囱",
+      "label": "烟囱 · stack_r 分件 2"
+    },
+    {
+      "id": "stack_r-03",
+      "assembly": "stack_r",
+      "system": "烟囱",
+      "label": "烟囱 · stack_r 分件 3"
+    },
+    {
+      "id": "stack_r-04",
+      "assembly": "stack_r",
+      "system": "烟囱",
+      "label": "烟囱 · stack_r 分件 4"
+    },
+    {
+      "id": "stack_r-05",
+      "assembly": "stack_r",
+      "system": "烟囱",
+      "label": "烟囱 · stack_r 分件 5"
+    },
+    {
+      "id": "stack_r-06",
+      "assembly": "stack_r",
+      "system": "烟囱",
+      "label": "烟囱 · stack_r 分件 6"
+    },
+    {
+      "id": "stack_r-07",
+      "assembly": "stack_r",
+      "system": "烟囱",
+      "label": "烟囱 · stack_r 分件 7"
+    },
+    {
+      "id": "stack_r-08",
+      "assembly": "stack_r",
+      "system": "烟囱",
+      "label": "烟囱 · stack_r 分件 8"
+    },
+    {
+      "id": "tank_l-01",
+      "assembly": "tank_l",
+      "system": "油箱",
+      "label": "油箱 · tank_l 分件 1"
+    },
+    {
+      "id": "tank_l-02",
+      "assembly": "tank_l",
+      "system": "油箱",
+      "label": "油箱 · tank_l 分件 2"
+    },
+    {
+      "id": "tank_l-03",
+      "assembly": "tank_l",
+      "system": "油箱",
+      "label": "油箱 · tank_l 分件 3"
+    },
+    {
+      "id": "tank_l-04",
+      "assembly": "tank_l",
+      "system": "油箱",
+      "label": "油箱 · tank_l 分件 4"
+    },
+    {
+      "id": "tank_l-05",
+      "assembly": "tank_l",
+      "system": "油箱",
+      "label": "油箱 · tank_l 分件 5"
+    },
+    {
+      "id": "tank_l-06",
+      "assembly": "tank_l",
+      "system": "油箱",
+      "label": "油箱 · tank_l 分件 6"
+    },
+    {
+      "id": "tank_l-07",
+      "assembly": "tank_l",
+      "system": "油箱",
+      "label": "油箱 · tank_l 分件 7"
+    },
+    {
+      "id": "tank_r-01",
+      "assembly": "tank_r",
+      "system": "油箱",
+      "label": "油箱 · tank_r 分件 1"
+    },
+    {
+      "id": "tank_r-02",
+      "assembly": "tank_r",
+      "system": "油箱",
+      "label": "油箱 · tank_r 分件 2"
+    },
+    {
+      "id": "tank_r-03",
+      "assembly": "tank_r",
+      "system": "油箱",
+      "label": "油箱 · tank_r 分件 3"
+    },
+    {
+      "id": "tank_r-04",
+      "assembly": "tank_r",
+      "system": "油箱",
+      "label": "油箱 · tank_r 分件 4"
+    },
+    {
+      "id": "tank_r-05",
+      "assembly": "tank_r",
+      "system": "油箱",
+      "label": "油箱 · tank_r 分件 5"
+    },
+    {
+      "id": "tank_r-06",
+      "assembly": "tank_r",
+      "system": "油箱",
+      "label": "油箱 · tank_r 分件 6"
+    },
+    {
+      "id": "tank_r-07",
+      "assembly": "tank_r",
+      "system": "油箱",
+      "label": "油箱 · tank_r 分件 7"
+    },
+    {
+      "id": "lamp_l-01",
+      "assembly": "lamp_l",
+      "system": "灯",
+      "label": "灯 · lamp_l 分件 1"
+    },
+    {
+      "id": "lamp_l-02",
+      "assembly": "lamp_l",
+      "system": "灯",
+      "label": "灯 · lamp_l 分件 2"
+    },
+    {
+      "id": "lamp_l-03",
+      "assembly": "lamp_l",
+      "system": "灯",
+      "label": "灯 · lamp_l 分件 3"
+    },
+    {
+      "id": "lamp_l-04",
+      "assembly": "lamp_l",
+      "system": "灯",
+      "label": "灯 · lamp_l 分件 4"
+    },
+    {
+      "id": "lamp_l-05",
+      "assembly": "lamp_l",
+      "system": "灯",
+      "label": "灯 · lamp_l 分件 5"
+    },
+    {
+      "id": "lamp_r-01",
+      "assembly": "lamp_r",
+      "system": "灯",
+      "label": "灯 · lamp_r 分件 1"
+    },
+    {
+      "id": "lamp_r-02",
+      "assembly": "lamp_r",
+      "system": "灯",
+      "label": "灯 · lamp_r 分件 2"
+    },
+    {
+      "id": "lamp_r-03",
+      "assembly": "lamp_r",
+      "system": "灯",
+      "label": "灯 · lamp_r 分件 3"
+    },
+    {
+      "id": "lamp_r-04",
+      "assembly": "lamp_r",
+      "system": "灯",
+      "label": "灯 · lamp_r 分件 4"
+    },
+    {
+      "id": "lamp_r-05",
+      "assembly": "lamp_r",
+      "system": "灯",
+      "label": "灯 · lamp_r 分件 5"
+    },
+    {
+      "id": "back-01",
+      "assembly": "back",
+      "system": "背甲",
+      "label": "背甲 · back 分件 1"
+    },
+    {
+      "id": "back-02",
+      "assembly": "back",
+      "system": "背甲",
+      "label": "背甲 · back 分件 2"
+    },
+    {
+      "id": "back-03",
+      "assembly": "back",
+      "system": "背甲",
+      "label": "背甲 · back 分件 3"
+    },
+    {
+      "id": "back-04",
+      "assembly": "back",
+      "system": "背甲",
+      "label": "背甲 · back 分件 4"
+    },
+    {
+      "id": "back-05",
+      "assembly": "back",
+      "system": "背甲",
+      "label": "背甲 · back 分件 5"
+    },
+    {
+      "id": "back-06",
+      "assembly": "back",
+      "system": "背甲",
+      "label": "背甲 · back 分件 6"
+    },
+    {
+      "id": "back-07",
+      "assembly": "back",
+      "system": "背甲",
+      "label": "背甲 · back 分件 7"
+    },
+    {
+      "id": "back-08",
+      "assembly": "back",
+      "system": "背甲",
+      "label": "背甲 · back 分件 8"
+    },
+    {
+      "id": "back-09",
+      "assembly": "back",
+      "system": "背甲",
+      "label": "背甲 · back 分件 9"
+    },
+    {
+      "id": "fender_f_l-01",
+      "assembly": "fender_f_l",
+      "system": "轮拱",
+      "label": "轮拱 · fender_f_l 分件 1"
+    },
+    {
+      "id": "fender_f_l-02",
+      "assembly": "fender_f_l",
+      "system": "轮拱",
+      "label": "轮拱 · fender_f_l 分件 2"
+    },
+    {
+      "id": "fender_f_l-03",
+      "assembly": "fender_f_l",
+      "system": "轮拱",
+      "label": "轮拱 · fender_f_l 分件 3"
+    },
+    {
+      "id": "fender_f_l-04",
+      "assembly": "fender_f_l",
+      "system": "轮拱",
+      "label": "轮拱 · fender_f_l 分件 4"
+    },
+    {
+      "id": "fender_f_l-05",
+      "assembly": "fender_f_l",
+      "system": "轮拱",
+      "label": "轮拱 · fender_f_l 分件 5"
+    },
+    {
+      "id": "fender_f_l-06",
+      "assembly": "fender_f_l",
+      "system": "轮拱",
+      "label": "轮拱 · fender_f_l 分件 6"
+    },
+    {
+      "id": "fender_f_r-01",
+      "assembly": "fender_f_r",
+      "system": "轮拱",
+      "label": "轮拱 · fender_f_r 分件 1"
+    },
+    {
+      "id": "fender_f_r-02",
+      "assembly": "fender_f_r",
+      "system": "轮拱",
+      "label": "轮拱 · fender_f_r 分件 2"
+    },
+    {
+      "id": "fender_f_r-03",
+      "assembly": "fender_f_r",
+      "system": "轮拱",
+      "label": "轮拱 · fender_f_r 分件 3"
+    },
+    {
+      "id": "fender_f_r-04",
+      "assembly": "fender_f_r",
+      "system": "轮拱",
+      "label": "轮拱 · fender_f_r 分件 4"
+    },
+    {
+      "id": "fender_f_r-05",
+      "assembly": "fender_f_r",
+      "system": "轮拱",
+      "label": "轮拱 · fender_f_r 分件 5"
+    },
+    {
+      "id": "fender_f_r-06",
+      "assembly": "fender_f_r",
+      "system": "轮拱",
+      "label": "轮拱 · fender_f_r 分件 6"
+    }
+  ]
+}

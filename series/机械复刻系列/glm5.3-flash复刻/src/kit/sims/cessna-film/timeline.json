@@ -1,0 +1,19 @@
+{
+  "duration": 26.2,
+  "takeoff": 0,
+  "fuselage": 2.4,
+  "landing": 5.4,
+  "gearbox": 5.9,
+  "labels": 6.5,
+  "sidetube": 8.7,
+  "front": 10.9,
+  "xray": 11.5,
+  "labelsOff": 12.7,
+  "takeoff2": 13.0,
+  "plan": 13.4,
+  "exploded": 16.2,
+  "explodedOff": 17.8,
+  "hero": 18.3,
+  "orbit": 18.7,
+  "landing2": 19.1
+}

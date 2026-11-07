@@ -1,0 +1,11 @@
+{
+  "duration": 25,
+  "cruise": 0,
+  "pump": 3,
+  "bell": 6,
+  "tentacle": 9,
+  "profile": 12,
+  "explode": 15,
+  "reassemble": 19,
+  "depart": 22
+}

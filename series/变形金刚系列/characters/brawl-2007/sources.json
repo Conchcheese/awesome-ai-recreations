@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "brawl-2007",
+    "title": "吵闹",
+    "english": "Brawl",
+    "year": 2007,
+    "faction": "decepticon",
+    "form": "tank"
+  },
+  "targetEdition": "Transformers (2007)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "mpm-15",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-15",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/mpm-15-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-15_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-15",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "1f1a6de443610902de6166900db78a2c3e4755249d530cf8cced1a2f7a970e6f",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 139650,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/mpm-15-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-15_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-15",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "2ec634c31bc3ea11d55bc479b93945c8beededbed22048c9b751b672535ee726",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 105815,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。"
+  ]
+}

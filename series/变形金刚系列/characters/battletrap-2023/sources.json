@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "battletrap-2023",
+    "title": "圈套",
+    "english": "Battletrap",
+    "year": 2023,
+    "faction": "terrorcon",
+    "form": "truck"
+  },
+  "targetEdition": "Rise of the Beasts (2023)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers-rise-of-the-beasts",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "ss-104",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-104",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/ss-104-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-104_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-104",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "d8808217fb8d5df4ad06151d1ae1c52137c418ae908243333a8f153e1cae4697",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 115920,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-104-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-104_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-104",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "cb24e4e4f3d850b744ae15a966173cecfc2a87b1db93ef9e63d2aec1719726d8",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 108088,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。"
+  ]
+}

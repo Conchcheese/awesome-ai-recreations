@@ -1,0 +1,11 @@
+{
+  "duration": 25,
+  "hover": 0,
+  "wing": 3,
+  "drive": 6,
+  "lift": 9,
+  "ballast": 12,
+  "explode": 15,
+  "reassemble": 19,
+  "depart": 22
+}

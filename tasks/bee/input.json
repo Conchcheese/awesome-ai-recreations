@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "id": "bee",
+  "title": "机械蜜蜂HB-7",
+  "aliases": [
+    "机械蜜蜂",
+    "蜜蜂",
+    "HB-7"
+  ],
+  "series": "mechanical",
+  "input_version": 2,
+  "status": "ready",
+  "brief": "tasks/bee/brief.md",
+  "method": "docs/精细复刻流程.md",
+  "resources": "docs/共同输入与资源.md",
+  "source_notes": "docs/参考素材与许可.md",
+  "defaults": {
+    "visual_goal": "fidelity",
+    "provenance": "independent"
+  },
+  "notes": "上游 teardown 演示帧/GIF 与实物参考；只看媒体，不读取同目录代码或已有规格。",
+  "references": [
+    {
+      "path": "tasks/bee/references/01-bee-参考帧-1.png",
+      "sha256": "b0f01698539b130b466bb6ad1963696742fa305e76764c22b00f281d904b1b3f",
+      "kind": "original-reference",
+      "source_url": null,
+      "source_status": "historical-source-incomplete"
+    },
+    {
+      "path": "tasks/bee/references/02-bee-参考帧-2.png",
+      "sha256": "b61e6cff6f0bab6ceffeb2fbb98249319e3fdf4a3db38e34ce378266bcbff195",
+      "kind": "original-reference",
+      "source_url": null,
+      "source_status": "historical-source-incomplete"
+    },
+    {
+      "path": "tasks/bee/references/03-bee-参考帧-3.png",
+      "sha256": "e3e92570864c352bb381891981b5273a93f1d92a49f1864b75f7c760dbfb85b4",
+      "kind": "original-reference",
+      "source_url": null,
+      "source_status": "historical-source-incomplete"
+    },
+    {
+      "path": "tasks/bee/references/04-参考-代尔夫特DelFlyMicro-扑翼机.jpg",
+      "sha256": "49e5919808eeefa4a949f2d0fdcb6ec57936c782b044665415bff9f3d7d6befe",
+      "kind": "original-reference",
+      "source_url": null,
+      "source_status": "historical-source-incomplete"
+    },
+    {
+      "path": "tasks/bee/references/05-参考-哈佛RoboBee-扑翼微飞行器.jpg",
+      "sha256": "6f7281b528c30d86685c029fd4c5ca16cf7fead9121dc2907f3f3a9a28e6d683",
+      "kind": "original-reference",
+      "source_url": null,
+      "source_status": "historical-source-incomplete"
+    },
+    {
+      "path": "tasks/bee/references/06-参考-扑翼微型飞行器论文图.jpg",
+      "sha256": "8733bba805e447d96aa7bb351bfc77e4f344a216020e9d72ea939472bc03b90b",
+      "kind": "original-reference",
+      "source_url": null,
+      "source_status": "historical-source-incomplete"
+    },
+    {
+      "path": "tasks/bee/references/07-bee.gif",
+      "sha256": "0f6bffd140e82a246709d260fb5bcd1df103e3fe8b8124b30f61c14a27c99acd",
+      "kind": "original-reference",
+      "source_url": null,
+      "source_status": "historical-source-incomplete"
+    }
+  ]
+}

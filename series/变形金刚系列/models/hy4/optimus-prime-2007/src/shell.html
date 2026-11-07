@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>擎天柱 · 2007 电影版 / HY4 精细复刻</title>
+<style>
+  :root { --ink:#e8eef6; --dim:#93a4ba; --line:rgba(160,190,225,.22); --panel:rgba(10,16,24,.78); }
+  * { box-sizing:border-box; }
+  html,body { margin:0; height:100%; overflow:hidden; background:#0c1119; color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; }
+  #stage { position:fixed; inset:0; width:100%; height:100%; display:block; }
+  .vignette { position:fixed; inset:0; pointer-events:none;
+    background:radial-gradient(ellipse 78% 72% at 50% 48%,transparent 42%,rgba(4,8,14,.62) 100%); }
+  .grain { position:fixed; inset:0; pointer-events:none; opacity:.055; mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/></filter><rect width='120' height='120' filter='url(%23n)' opacity='.7'/></svg>"); }
+  header { position:fixed; left:26px; top:22px; pointer-events:none; }
+  .title { font-size:15px; letter-spacing:.18em; font-weight:600; }
+  .sub { font-size:11px; color:var(--dim); letter-spacing:.12em; margin-top:5px; }
+  .hy4 { position:fixed; right:26px; top:22px; text-align:right; pointer-events:none;
+    border-right:2px solid #4da3ff; padding-right:12px; }
+  .hy4 b { font-size:19px; letter-spacing:.14em; color:#8ec8ff; }
+  .hy4 span { display:block; font-size:10px; color:var(--dim); letter-spacing:.08em; margin-top:3px; }
+  .hy4 em { display:block; font-size:9px; color:#7089a6; font-style:normal; margin-top:3px; }
+  #hud { position:fixed; left:26px; bottom:86px; pointer-events:none; font-size:11px;
+    line-height:1.9; color:var(--dim); letter-spacing:.06em; }
+  #form-label { color:var(--ink); font-size:13px; letter-spacing:.1em; }
+  #caption { position:fixed; left:26px; bottom:30px; font-size:16px; letter-spacing:.12em;
+    pointer-events:none; text-shadow:0 2px 12px rgba(0,0,0,.8); }
+  #shot-label { position:fixed; right:26px; bottom:30px; font-size:11px; color:var(--dim);
+    letter-spacing:.12em; pointer-events:none; font-variant-numeric:tabular-nums; }
+  .controls { position:fixed; right:26px; bottom:72px; width:280px; padding:14px 16px;
+    background:var(--panel); border:1px solid var(--line); border-radius:8px;
+    backdrop-filter:blur(8px); font-size:11px; }
+  .controls .row { display:flex; align-items:center; gap:8px; margin:8px 0; }
+  .controls label { color:var(--dim); min-width:52px; }
+  input[type=range] { flex:1; accent-color:#4da3ff; }
+  button { background:rgba(77,163,255,.10); color:var(--ink); border:1px solid var(--line);
+    border-radius:4px; padding:5px 9px; font-size:10px; cursor:pointer; letter-spacing:.04em; }
+  button:hover { background:rgba(77,163,255,.24); }
+  .btns { display:flex; flex-wrap:wrap; gap:5px; margin-top:6px; }
+  .note { position:fixed; left:26px; top:78px; font-size:10px; color:#7089a6;
+    letter-spacing:.05em; pointer-events:none; max-width:420px; line-height:1.7; }
+  body.capture .controls, body.capture .note, body.capture #hud { display:none; }
+  body.capture #caption { bottom:34px; font-size:17px; }
+  body.capture header { opacity:.85; }
+</style>
+</head>
+<body>
+<canvas id="stage"></canvas>
+<div class="vignette"></div><div class="grain"></div>
+<header>
+  <div class="title">OPTIMUS PRIME / 2007</div>
+  <div class="sub">程序化三维复刻 · 同源连续变形 · 逐帧离线成片</div>
+</header>
+<div class="hy4"><b>HY4</b><span>Tencent Hunyuan Hy</span><em>用户指定署名 · 非模型能力排名</em></div>
+<div class="note">37 个可动装配 / 490 个命名视觉分件；参考 Paramount 与 ILM 官方 2007 原帧、MPM-4 官方产品图。原始媒体仅本地研究，不随页面分发。</div>
+<div id="hud">
+  <div id="form-label">车辆形态 / VEHICLE</div>
+  <div id="time-label">源时间 0.00s</div>
+  <div id="stat-label"></div>
+  <div id="part-label">点击实体查看分件</div>
+</div>
+<div id="caption"></div>
+<div id="shot-label"></div>
+<div class="controls">
+  <div class="row"><label>源时间</label><input id="range" type="range" min="0" max="50" step="0.05" value="0"></div>
+  <div class="row"><label>拆解</label><input id="range-explode" type="range" min="0" max="1" step="0.01" value="0"></div>
+  <div class="btns">
+    <button id="btn-play">播放</button>
+    <button id="btn-mode">材质</button>
+    <button data-t="0">车辆</button><button data-t="10.75">25%</button>
+    <button data-t="13.5">50%</button><button data-t="16.25">75%</button>
+    <button data-t="19">人形</button>
+  </div>
+  <div class="btns">
+    <button data-yaw="0.62">正¾</button><button data-yaw="1.5708">正侧</button>
+    <button data-yaw="2.6">侧背</button><button data-yaw="3.6">背¾</button>
+  </div>
+</div>
+<script>
+/*__HY4_INLINE__*/
+</script>
+</body>
+</html>

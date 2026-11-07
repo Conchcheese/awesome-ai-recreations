@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "shatter-2018",
+    "title": "粉碎",
+    "english": "Shatter",
+    "year": 2018,
+    "faction": "decepticon",
+    "form": "triple"
+  },
+  "targetEdition": "Bumblebee (2018)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/bumblebee",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "ss-52",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-52",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "code": "ss-29",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-29",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/ss-52-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-52_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-52",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "30322fde45b806223578f9c20a18416b745c5760c60198ca5cd181e9af9dab81",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 122298,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-52-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-52_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-52",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "c8648a41016e24c7040558b3daeaadb95187c68135bca282ac6342b901b042ec",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 121599,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-29-03.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-29_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-29",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "79dd3421fa8b66affdaddedac84184c399e33520ba3430aebb74ed5f2351c7e3",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 134916,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-29-04.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-29_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-29",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "812cfe56d9ecbea1ed0711ae81930469a451fae813b1ec09fa3cad99b2a18a19",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 126524,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。"
+  ]
+}

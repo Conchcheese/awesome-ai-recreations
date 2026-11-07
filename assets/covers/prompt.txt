@@ -1,0 +1,8 @@
+Use case: ads-marketing / stylized-concept.
+Create one exceptionally polished panoramic landscape banner for the open source GitHub repository awesome-ai-recreations. Wide 8:3 composition, target 2400x900. Warm ivory industrial design editorial cover, meticulous premium mechanical 3D illustration meets architectural blueprint. Left 45 percent quiet negative space and strong dark charcoal typography, right 55 percent spectacular exploded white ceramic robotic octopus with eight intricate segmented tentacles, small exposed gears and orange electrical accents. Behind it tasteful subtle wireframe outlines of an engine and a floating browser window, suggesting a broad collection of recreations, not just one robot. Soft studio contact shadows, clean layered depth, fine graphite drafting lines, sparse orange fiducials and tiny orange registration marks. Color palette ivory #f7f4ed, graphite #202622, safety orange #ff642d, muted green details. Sophisticated and spacious, no neon, no purple gradients, no crowded cards, no people, no fake brand logos. Everything strictly within generous 7% safety margins.
+Text must be exact and crystal clear:
+small upper-left "TOPMINDSPACE / OPEN LAB"
+large bold editorial left title on two lines "AWESOME AI" and "RECREATIONS"
+smaller lower-left subtitle "拆解 · 复刻 · 开源"
+small bottom-left "CODE / PROCESS / REPRODUCE"
+The typography and machine are one coherent designed cover. The conceptual generated robot must look highly detailed and elegant, but this is a conceptual repository illustration, not a screenshot or claim of an actual output. Deliver a finished full-bleed landscape image with an opaque background.

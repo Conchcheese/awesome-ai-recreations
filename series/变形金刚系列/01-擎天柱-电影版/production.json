@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "status": "study",
+  "character": {
+    "id": "optimus-prime-2007",
+    "title": "擎天柱",
+    "edition": "Transformers (2007), Michael Bay / long-nose tractor"
+  },
+  "provenance": "derived",
+  "visualGoal": "fidelity",
+  "paths": {
+    "references": "references/sources.json",
+    "assemblies": "records/assembly-catalog.json",
+    "source": "src",
+    "web": "index.html",
+    "film": "film.html"
+  },
+  "rig": {
+    "rootId": "optimus-2007",
+    "requiredPorts": [
+      "head",
+      "torso",
+      "left_hand",
+      "right_hand",
+      "left_foot",
+      "right_foot"
+    ],
+    "ports": {
+      "head": "head-cranial-frame",
+      "torso": "thorax-frame",
+      "left_hand": "palm--1",
+      "right_hand": "palm-1",
+      "left_foot": "foot-chassis--1",
+      "right_foot": "foot-chassis-1"
+    }
+  },
+  "timeline": {
+    "sourceDuration": 50,
+    "fps": 24,
+    "transform": [
+      8,
+      19
+    ],
+    "movieDuration": 28,
+    "edit": [
+      {
+        "in": 0,
+        "out": 2,
+        "sourceIn": 0,
+        "sourceOut": 2,
+        "purpose": "ignition",
+        "name": "IGNITION"
+      },
+      {
+        "in": 2,
+        "out": 4,
+        "sourceIn": 5,
+        "sourceOut": 7,
+        "purpose": "arrival",
+        "name": "ARRIVAL"
+      },
+      {
+        "in": 4,
+        "out": 11,
+        "sourceIn": 8,
+        "sourceOut": 19,
+        "purpose": "transformation",
+        "name": "TRANSFORMATION"
+      },
+      {
+        "in": 11,
+        "out": 13.5,
+        "sourceIn": 19,
+        "sourceOut": 23,
+        "purpose": "reveal",
+        "name": "REVEAL"
+      },
+      {
+        "in": 13.5,
+        "out": 16,
+        "sourceIn": 24,
+        "sourceOut": 28,
+        "purpose": "reactor",
+        "name": "REACTOR"
+      },
+      {
+        "in": 16,
+        "out": 18.5,
+        "sourceIn": 29,
+        "sourceOut": 33,
+        "purpose": "deployment",
+        "name": "DEPLOYMENT"
+      },
+      {
+        "in": 18.5,
+        "out": 20,
+        "sourceIn": 34,
+        "sourceOut": 37,
+        "purpose": "articulation",
+        "name": "ARTICULATION"
+      },
+      {
+        "in": 20,
+        "out": 23,
+        "sourceIn": 38,
+        "sourceOut": 42,
+        "purpose": "disassembly",
+        "name": "DISASSEMBLY"
+      },
+      {
+        "in": 23,
+        "out": 25,
+        "sourceIn": 43,
+        "sourceOut": 46,
+        "purpose": "reassembly",
+        "name": "REASSEMBLY"
+      },
+      {
+        "in": 25,
+        "out": 28,
+        "sourceIn": 46,
+        "sourceOut": 50,
+        "purpose": "optimus prime",
+        "name": "OPTIMUS PRIME"
+      }
+    ]
+  },
+  "unknown": [
+    "世界单位是guess，未测定真实尺寸",
+    "隐藏机构、避让和运动部分推断",
+    "完整碰撞、承重、同机位地标误差未验证"
+  ],
+  "qualityEvidence": {
+    "model": "records/assembly-catalog.json",
+    "sourceObservations": "records/参考测量与差异合同.md",
+    "execution": "records/实现与验证.md"
+  }
+}

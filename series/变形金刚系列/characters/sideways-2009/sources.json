@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "sideways-2009",
+    "title": "横行",
+    "english": "Sideways",
+    "year": 2009,
+    "faction": "decepticon",
+    "form": "car"
+  },
+  "targetEdition": "Revenge of the Fallen (2009)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers-revenge-of-the-fallen",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "ss-91",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-91",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/ss-91-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-91_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-91",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "89b4611e06d4414d94fe8fa6090c2a2e2773e228a20c784883a594f277dadc77",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 124323,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-91-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-91_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-91",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "3b30b19002c0f3ca77af2ac9679b3da6433442661025598daef264b6970eb31f",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 127546,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。"
+  ]
+}

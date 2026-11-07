@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "dragonstorm-2017",
+    "title": "龙风暴",
+    "english": "Dragonstorm",
+    "year": 2017,
+    "faction": "knight",
+    "form": "combiner"
+  },
+  "targetEdition": "The Last Knight (2017)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers-the-last-knight",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "tlk-30",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_tlk/tlk-30",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/tlk-30-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_tlk/item_tf_tlk-30_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_tlk/tlk-30",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "a5374f2b116a339bc95fc94b4777bb227a50b676cc35ef2be6b64bd2b12980d3",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 109285,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/tlk-30-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_tlk/item_tf_tlk-30_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_tlk/tlk-30",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "3d69ec7960816dcf0c59546ce7b63451847e43c61c0c9447928008dd1f180e73",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 100523,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。",
+    "合体成员与连接仅为待研究结构；不同玩具的7/8体方案不能当作电影唯一拓扑。"
+  ]
+}

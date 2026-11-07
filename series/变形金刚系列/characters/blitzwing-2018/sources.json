@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "blitzwing-2018",
+    "title": "闪电",
+    "english": "Blitzwing",
+    "year": 2018,
+    "faction": "decepticon",
+    "form": "aircraft"
+  },
+  "targetEdition": "Bumblebee (2018)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/bumblebee",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "ss-57",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-57",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/ss-57-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-57_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-57",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "dbcb6c010578ee018fadb5e061c25ee802aab17fe70e4cf1abf0a070b336a290",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 103603,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-57-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-57_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-57",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "9457543300402528f829ce00f8b86ada203feee13b32472a23b9266b683d94c6",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 89278,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。"
+  ]
+}

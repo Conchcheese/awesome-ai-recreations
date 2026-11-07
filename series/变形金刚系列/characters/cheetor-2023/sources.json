@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "cheetor-2023",
+    "title": "黄豹",
+    "english": "Cheetor",
+    "year": 2023,
+    "faction": "maximal",
+    "form": "beast"
+  },
+  "targetEdition": "Rise of the Beasts (2023)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers-rise-of-the-beasts",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "ss-108",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-108",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/ss-108-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-108_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-108",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "94a04ae5010438b6542f9e94e8463e0c673b45264fe0d245ffb28086d1792a91",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 136368,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-108-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-108_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-108",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "efa1b2f97f8a0d46e04178e1b99d7e16d130cd6628baded9a9584ca9a5e44772",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 126341,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。"
+  ]
+}

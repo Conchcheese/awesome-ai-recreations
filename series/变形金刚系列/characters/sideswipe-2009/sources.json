@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "sideswipe-2009",
+    "title": "横炮",
+    "english": "Sideswipe",
+    "year": 2009,
+    "faction": "autobot",
+    "form": "car"
+  },
+  "targetEdition": "Revenge of the Fallen (2009)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers-revenge-of-the-fallen",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "ss-77",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-77",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/ss-77-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-77_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-77",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "6da0c44aac1678b51f5ee212c517e59a1c8224e2f2a52196bdc6b10ee0fb4cdd",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 117594,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-77-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-77_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-77",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "d4637d0483be871c18c484e7b90332503164befcc67da6519deb3bde38083734",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 104442,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。"
+  ]
+}

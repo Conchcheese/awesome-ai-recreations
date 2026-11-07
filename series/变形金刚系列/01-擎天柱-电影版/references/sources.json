@@ -1,0 +1,304 @@
+{
+  "retrievedDate": "2026-11-06",
+  "timezone": "Asia/Shanghai",
+  "target": "Transformers (2007), Michael Bay; exclude 2009/2011/2014/2018 assets for primary shape",
+  "rights": "Original footage and imagery remain copyright Paramount / DreamWorks / Hasbro and ILM / Lucasfilm as applicable. Public accessibility is not redistribution permission. Local reference study only; no submission or publication.",
+  "media": {
+    "paramount-optimus-transformations.mp4": {
+      "url": "https://www.youtube.com/watch?v=wT-Hnv7RlSs",
+      "file": "local/references/paramount-optimus-transformations.mp4",
+      "sha256": "6eb3227fbfda4560bb82145ed4e7fa8cf5215b9e5537e1965934be0acaf0e737",
+      "durationSeconds": 297.614,
+      "bytes": 56879694,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 1280,
+          "height": 720,
+          "avg_frame_rate": "30000/1001",
+          "sample_rate": null,
+          "channels": null
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "opus",
+          "width": null,
+          "height": null,
+          "avg_frame_rate": "0/0",
+          "sample_rate": "48000",
+          "channels": 2
+        }
+      ]
+    },
+    "ilm-bringing-transformers-to-life.mp4": {
+      "url": "https://www.youtube.com/watch?v=RMoChbnx-LE",
+      "file": "local/references/ilm-bringing-transformers-to-life.mp4",
+      "sha256": "396d9593002e2dea96bf89350cc9db6918d3dfb0dcbb47e9b1274315de86d00a",
+      "durationSeconds": 125.834042,
+      "bytes": 14974733,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 854,
+          "height": 480,
+          "avg_frame_rate": "24000/1001",
+          "sample_rate": null,
+          "channels": null
+        }
+      ]
+    }
+  },
+  "selectedFrames": [
+    {
+      "file": "local/paramount-006s-truck-front.jpg",
+      "sourceVideo": "paramount-optimus-transformations.mp4",
+      "sourceUrl": "https://www.youtube.com/watch?v=wT-Hnv7RlSs",
+      "sourceTimestampSeconds": 6,
+      "sourceFrameDimensions": [
+        1280,
+        720
+      ],
+      "storedDimensions": [
+        1200,
+        675
+      ],
+      "derivation": "full-frame uniform resize and JPEG compression; no crop, no redraw; official watermarks and letterbox preserved",
+      "sha256": "afc497af6a29116fde107490e5baa28acfce66222f35177939ac3c9c4087f810",
+      "observation": "长头卡车正前¾，夜景，真人尺度",
+      "evidenceType": "original film / original VFX creator behind-the-scenes"
+    },
+    {
+      "file": "local/paramount-102s-truck-side.jpg",
+      "sourceVideo": "paramount-optimus-transformations.mp4",
+      "sourceUrl": "https://www.youtube.com/watch?v=wT-Hnv7RlSs",
+      "sourceTimestampSeconds": 102,
+      "sourceFrameDimensions": [
+        1280,
+        720
+      ],
+      "storedDimensions": [
+        1200,
+        675
+      ],
+      "derivation": "full-frame uniform resize and JPEG compression; no crop, no redraw; official watermarks and letterbox preserved",
+      "sha256": "c50dea53a8dfb3d5ba771132efadc4567701f16b9b93d66316df576da8f10278",
+      "observation": "白天卡车侧¾，发动机罩/驾驶室/长后架与火焰涂装",
+      "evidenceType": "original film / original VFX creator behind-the-scenes"
+    },
+    {
+      "file": "local/paramount-018s-transform-chest.jpg",
+      "sourceVideo": "paramount-optimus-transformations.mp4",
+      "sourceUrl": "https://www.youtube.com/watch?v=wT-Hnv7RlSs",
+      "sourceTimestampSeconds": 18,
+      "sourceFrameDimensions": [
+        1280,
+        720
+      ],
+      "storedDimensions": [
+        1200,
+        675
+      ],
+      "derivation": "full-frame uniform resize and JPEG compression; no crop, no redraw; official watermarks and letterbox preserved",
+      "sha256": "f3b90ed7912ffbc5f23e5a2fd6c73fd7a738d0ebecbc112baecf1887d0ee047d",
+      "observation": "胸窗和内侧骨架展开中间态，画面快速运动",
+      "evidenceType": "original film / original VFX creator behind-the-scenes"
+    },
+    {
+      "file": "local/paramount-029s-head-chest.jpg",
+      "sourceVideo": "paramount-optimus-transformations.mp4",
+      "sourceUrl": "https://www.youtube.com/watch?v=wT-Hnv7RlSs",
+      "sourceTimestampSeconds": 29,
+      "sourceFrameDimensions": [
+        1280,
+        720
+      ],
+      "storedDimensions": [
+        1200,
+        675
+      ],
+      "derivation": "full-frame uniform resize and JPEG compression; no crop, no redraw; official watermarks and letterbox preserved",
+      "sha256": "089fb220ead7a2c22806b41b597b344c664d416724c84137f2d4ed072182cec3",
+      "observation": "头胸近正面仰拍，分体胸窗和脸部细分",
+      "evidenceType": "original film / original VFX creator behind-the-scenes"
+    },
+    {
+      "file": "local/paramount-048s-abdomen.jpg",
+      "sourceVideo": "paramount-optimus-transformations.mp4",
+      "sourceUrl": "https://www.youtube.com/watch?v=wT-Hnv7RlSs",
+      "sourceTimestampSeconds": 48,
+      "sourceFrameDimensions": [
+        1280,
+        720
+      ],
+      "storedDimensions": [
+        1200,
+        675
+      ],
+      "derivation": "full-frame uniform resize and JPEG compression; no crop, no redraw; official watermarks and letterbox preserved",
+      "sha256": "41f4359ebb6f73f28b63d4eeedd6e15ffd41f36e496486a7c4d2e4f387b55010",
+      "observation": "俯身姿态的机械腹部和骨架，不是中立站姿",
+      "evidenceType": "original film / original VFX creator behind-the-scenes"
+    },
+    {
+      "file": "local/paramount-123s-near-full-body.jpg",
+      "sourceVideo": "paramount-optimus-transformations.mp4",
+      "sourceUrl": "https://www.youtube.com/watch?v=wT-Hnv7RlSs",
+      "sourceTimestampSeconds": 123,
+      "sourceFrameDimensions": [
+        1280,
+        720
+      ],
+      "storedDimensions": [
+        1200,
+        675
+      ],
+      "derivation": "full-frame uniform resize and JPEG compression; no crop, no redraw; official watermarks and letterbox preserved",
+      "sha256": "afca63def0cc559e9b54240eec53fedb9a76c9d89ec0c9b30159cc9ff280ece4",
+      "observation": "城市战斗接近全身的动态仰拍，透视和动作模糊限制比例读数",
+      "evidenceType": "original film / original VFX creator behind-the-scenes"
+    },
+    {
+      "file": "local/ilm-080s-shoulder-material.jpg",
+      "sourceVideo": "ilm-bringing-transformers-to-life.mp4",
+      "sourceUrl": "https://www.youtube.com/watch?v=RMoChbnx-LE",
+      "sourceTimestampSeconds": 80,
+      "sourceFrameDimensions": [
+        854,
+        480
+      ],
+      "storedDimensions": [
+        854,
+        480
+      ],
+      "derivation": "full-frame uniform resize and JPEG compression; no crop, no redraw; official watermarks and letterbox preserved",
+      "sha256": "cf3618ca7b2fe67985f58c3eeb8e620fe1a0f52dcfed8d4959e031fb775e664f",
+      "observation": "ILM原始CG渲染肩甲/胸窗/铰接与表面磨损",
+      "evidenceType": "original film / original VFX creator behind-the-scenes"
+    },
+    {
+      "file": "local/ilm-088s-head-material.jpg",
+      "sourceVideo": "ilm-bringing-transformers-to-life.mp4",
+      "sourceUrl": "https://www.youtube.com/watch?v=RMoChbnx-LE",
+      "sourceTimestampSeconds": 88,
+      "sourceFrameDimensions": [
+        854,
+        480
+      ],
+      "storedDimensions": [
+        854,
+        480
+      ],
+      "derivation": "full-frame uniform resize and JPEG compression; no crop, no redraw; official watermarks and letterbox preserved",
+      "sha256": "61c9fddcbd07510d5dd7d29a346d78989e9a5b833131c9fe2b0622e89ecb04c9",
+      "observation": "日光头雕侧¾，盔壳/侧鳍/分片面罩/耳部轴和划痕",
+      "evidenceType": "original film / original VFX creator behind-the-scenes"
+    }
+  ],
+  "supplemental": {
+    "officialPage": "https://tf.takaratomy.co.jp/products-lineup/tf_mp/mpm-4",
+    "images": [
+      {
+        "localFile": "local/references/mpm4-official-01.jpg",
+        "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-4_01.jpg",
+        "dimensions": [
+          1460,
+          1000
+        ],
+        "sha256": "630adc5486d22a980ef853f1afc2227f810d3d6a39f509617c6328c7d2e21ffa"
+      },
+      {
+        "localFile": "local/references/mpm4-official-02.jpg",
+        "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-4_02.jpg",
+        "dimensions": [
+          1460,
+          1000
+        ],
+        "sha256": "c97dbb19fb6e3c30b6da30c99fe67f08a821d8f86b5f6f3de1338866e32bed44"
+      },
+      {
+        "localFile": "local/references/mpm4-official-03.jpg",
+        "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-4_03.jpg",
+        "dimensions": [
+          1460,
+          1000
+        ],
+        "sha256": "0c18f2df694559c953428ce720b0c7bde914bacdeb8360d9da900ff6b344a71e"
+      },
+      {
+        "localFile": "local/references/mpm4-official-04.jpg",
+        "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-4_04.jpg",
+        "dimensions": [
+          1460,
+          1000
+        ],
+        "sha256": "2c3ce2a86321ebe5c21641666f92e0958e613cc4bf3bfb7f3a0bea21bda629cc"
+      },
+      {
+        "localFile": "local/references/mpm4-official-05.jpg",
+        "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-4_05.jpg",
+        "dimensions": [
+          1460,
+          1000
+        ],
+        "sha256": "0178a4ab6d6e8458be71a547d8576d0c90053032456032e875ead961b7b149c7"
+      },
+      {
+        "localFile": "local/references/mpm4-official-06.jpg",
+        "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-4_06.jpg",
+        "dimensions": [
+          1460,
+          1000
+        ],
+        "sha256": "81abac095f4f6e9e3fa820c98cf3c15cb3f561e732f021f1b58a00b4f2940c56"
+      },
+      {
+        "localFile": "local/references/mpm4-official-07.jpg",
+        "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-4_07.jpg",
+        "dimensions": [
+          1460,
+          1000
+        ],
+        "sha256": "937fd46924be87d4f81188be6c825019df43f961add62a54ba7d3094fe6850b2"
+      },
+      {
+        "localFile": "local/references/mpm4-official-08.jpg",
+        "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-4_08.jpg",
+        "dimensions": [
+          1460,
+          1000
+        ],
+        "sha256": "75a0b0d915345c55b3f9eaa43f8fea396e742bd68c814e3db6d0f5586351c1c2"
+      },
+      {
+        "localFile": "local/references/mpm4-official-09.jpg",
+        "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-4_09.jpg",
+        "dimensions": [
+          1460,
+          1000
+        ],
+        "sha256": "75a0b0d915345c55b3f9eaa43f8fea396e742bd68c814e3db6d0f5586351c1c2"
+      },
+      {
+        "localFile": "local/references/mpm4-official-10.jpg",
+        "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-4_10.jpg",
+        "dimensions": [
+          1460,
+          1000
+        ],
+        "sha256": "75a0b0d915345c55b3f9eaa43f8fea396e742bd68c814e3db6d0f5586351c1c2"
+      }
+    ],
+    "boundary": "Takara Tomy licensed 2007-inspired toy, supplemental surface/part reference only. Not original movie geometry or movie transformation topology."
+  },
+  "limitations": [
+    "No clean orthographic front/side/back full-body film turnaround was found in these two primary videos.",
+    "Selected 123s full-body view is a dynamic low-angle shot, not a calibrated proportion reference.",
+    "Videos were visually inspected through sampled frames and 0.5-second action contact sheets, not an exhaustive frame-by-frame reconstruction.",
+    "Hidden joints, internal routes, exact dimensions, contact forces and speeds cannot be recovered from these edited images.",
+    "YouTube chapter labels are coarse: actual 2007 clips were visually checked, do not assume the entire compilation shares the target design."
+  ],
+  "mediaDistribution": "local-only",
+  "publicationNote": "公开来源/时间点/哈希，原始媒体、查阅副本、含原作对照图不随Git分发。"
+}

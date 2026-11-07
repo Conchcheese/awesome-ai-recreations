@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "devastator-2009",
+    "title": "大力神",
+    "english": "Devastator",
+    "year": 2009,
+    "faction": "decepticon",
+    "form": "combiner"
+  },
+  "targetEdition": "Revenge of the Fallen (2009)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers-revenge-of-the-fallen",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "ss-37",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-37",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "code": "ss-32",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-32",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "code": "ss-34",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-34",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "code": "ss-43",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-43",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "code": "ss-47",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-47",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "code": "ss-51",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-51",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "code": "ss-54",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-54",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "code": "ss-ex",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-ex",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/ss-37-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-37_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-37",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "75c0ed3debf2b58fcae4d846c7289b01dc319385ebee458207cd3870ecd9d9bd",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 96600,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-37-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-37_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-37",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "3a39df5e2238a168d3d94c3a9a688b0502f09d9fd188e8d5fec4947ca2029a6d",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 103896,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-32-03.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-32_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-32",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "38c7f494a01895394fc6e92a4026a9e6770139cbcfe1ea52dd0e81ca0bca4c3d",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 125999,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-32-04.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-32_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-32",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "efc7c246f1e9d748a4ab0ba9b40a6b6f935006e7c9ad8a555ba413f2b25c6f4a",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 123188,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-34-05.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-34_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-34",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "fee329efe4a2ac24113dda267231a45e99c58970e5b2f3442df934f6a96451b2",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 122332,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-34-06.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-34_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-34",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "1922741d1975670b4644a38ab607ba879eddd5e85c8e3900f13d1d9909ff553e",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 122898,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-43-07.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-43_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-43",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "71cb362ccd6dcd7067157d4ef07b3139d83f7be7caba594924b1fb57e8564df2",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 135016,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-43-08.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-43_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-43",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "bb01f4eecef6793d1fe127b0dd7646e4652d6ec1d054b4561f5c910242805cbe",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 116778,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-47-09.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-47_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-47",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "110c1fbffaabb8d1a4a7dfaf28e315f8374b84f0845aaa055e6416a40b06c05b",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 146492,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-47-10.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-47_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-47",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "553ff235f7023fc0c3be8d43292a593d9ae4fddc3e8b75555b82575d09563b97",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 119771,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-51-11.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-51_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-51",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "c94192568502f6504991506039cf65bb3fcdcb1470cab5a39d857b573e27767a",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 141412,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-51-12.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-51_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-51",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "3258ad7dd6e303cfe0d8b28478a2ff622490ab4317d06950d1ceef41e4819887",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 135198,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-54-13.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-54_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-54",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "9d5f214dab8c9ee9bff7b12fea810b0359f67bf48e8421ac116e91659d70fbf3",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 142032,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-54-14.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-54_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-54",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "72cadd13e436e1f4ccfa618d578adc0fdd4918178cd91230779186bb97a4a71e",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 136129,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-ex-15.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-ex_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-ex",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "52c93b1d1d911b4b6fb43491ff5e4e616496828b6e877192b02706e0e84ca0b7",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 127561,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-ex-16.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-ex_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-ex",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "8a21db618d5db173e0853a3ed5beaae33305f7f0f0b4593a183f2c243ee3b47e",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 106697,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。",
+    "合体成员与连接仅为待研究结构；不同玩具的7/8体方案不能当作电影唯一拓扑。"
+  ]
+}

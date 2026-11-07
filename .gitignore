@@ -1,0 +1,71 @@
+# 依赖
+node_modules/
+.pnpm-store/
+
+# 构建产物（可由 src/kit 重新生成）
+src/kit/teardown-out/
+teardown-out/
+dist/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 系统
+.DS_Store
+Thumbs.db
+*.swp
+
+# 编辑器
+.vscode/
+.idea/
+*.log
+
+# 非公开素材与可再生成的导出（保留本地文件）
+local/
+private/
+artifacts/
+原视频/
+**/截图/验收/
+**/hunyuan直出版/stills/
+*.mp4
+*.mov
+*.webm
+*.mkv
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.aac
+*.aiff
+*.ogg
+!**/src/kit/sfx/samples/*.ogg
+!**/src/upstream-teardown/sfx/samples/*.ogg
+*.blend
+*.glb
+*.gltf
+*.dmg
+*.7z
+*.zip
+*.tar
+*.tar.gz
+.cache/
+playwright-report/
+test-results/
+
+# 凭据与机器配置
+.env
+.env.*
+!.env.example
+.npmrc
+.pypirc
+*.pem
+*.key
+*.p12
+credentials.json
+id_rsa
+id_ed25519
+.codex/
+.claude/settings.local.json

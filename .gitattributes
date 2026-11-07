@@ -1,0 +1,20 @@
+# 文本统一 LF
+* text=auto eol=lf
+
+# 二进制
+*.gif binary
+*.mp4 binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.woff2 binary
+*.ogg binary
+*.wav binary
+*.hdr binary
+
+# 单文件页面：保留内联第三方着色器字符串的原始空白，不按手写源码修剪
+**/*-互动页.html -text -whitespace
+**/*-影片页.html -text -whitespace
+pages/**/*.html -text
+series/变形金刚系列/**/index.html -text -whitespace
+series/变形金刚系列/**/film.html -text -whitespace

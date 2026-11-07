@@ -1,0 +1,11 @@
+{
+  "duration": 25,
+  "hero": 0,
+  "xray": 3,
+  "head": 6,
+  "wave": 9,
+  "map": 12,
+  "explode": 15,
+  "reassemble": 19,
+  "depart": 22
+}

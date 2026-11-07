@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "galvatron-2014",
+    "title": "惊破天",
+    "english": "Galvatron",
+    "year": 2014,
+    "faction": "decepticon",
+    "form": "truck"
+  },
+  "targetEdition": "Age of Extinction (2014)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers-age-of-extinction",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "ss-93",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-93",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/ss-93-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-93_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-93",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "ab727ceb1c0df3981fff78dcbaaec9fce41233a7c992fbcb5e9c320d597ce80c",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 113584,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-93-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-93_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-93",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "d898212c68555da598e85b37f73f869c9b0c4bc0adb69ffa8270f9d968717c10",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 118423,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。"
+  ]
+}

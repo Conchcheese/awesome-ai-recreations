@@ -1,0 +1,14 @@
+{
+  "duration": 25,
+  "walk": 0,
+  "gait": 3,
+  "leg": 6,
+  "joint": 9,
+  "top": 12,
+  "explode": 15,
+  "reassemble": 19,
+  "depart": 22,
+  "gait_stop": 15.2,
+  "gait_resume": 20.9,
+  "step_period": 0.75
+}

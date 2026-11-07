@@ -1,0 +1,278 @@
+{
+  "assessedAt": "2026-11-06T12:01:43+08:00",
+  "target": "Transformers (2007), Michael Bay; original film/VFX sources only for primary shape",
+  "method": "Manual approximate pixel read-offs on unmodified decoded original frames. Coordinates include original letterbox/watermarks. X right, Y down; normalized=(x/W,y/H). Pixel uncertainty is not a calibrated confidence interval.",
+  "frames": [
+    {
+      "id": "P29",
+      "sourceFile": "local/references/paramount-2007-029s.jpg",
+      "archivedPublicCopy": "references/local/paramount-029s-head-chest.jpg",
+      "sourceUrl": "https://www.youtube.com/watch?v=wT-Hnv7RlSs",
+      "sourceTimestampSeconds": 29,
+      "sourceDimensions": [
+        1280,
+        720
+      ],
+      "sourceSha256": "1dd4066f6144fc7e767d28f20885c4e6b345a8f13486352ab1da3ea00694a126",
+      "annotationFile": "local/原帧标注-Paramount-029s.png",
+      "annotationDimensions": [
+        1280,
+        870
+      ],
+      "annotationMethod": "full original raster preserved at original size; only point/label overlays plus a footer legend appended; no rescale, crop or redraw",
+      "points": [
+        {
+          "id": "P1",
+          "landmark": "头盔蓝色中冠可见最高点",
+          "sourceType": "frame",
+          "pixel": [
+            603,
+            44
+          ],
+          "normalized": [
+            0.4711,
+            0.0611
+          ],
+          "approxPixelUncertainty": 10
+        },
+        {
+          "id": "P2",
+          "landmark": "下巴中央蓝色构件下端",
+          "sourceType": "frame",
+          "pixel": [
+            614,
+            274
+          ],
+          "normalized": [
+            0.4797,
+            0.3806
+          ],
+          "approxPixelUncertainty": 10
+        },
+        {
+          "id": "P3",
+          "landmark": "图像左胸窗外上角",
+          "sourceType": "frame",
+          "pixel": [
+            229,
+            370
+          ],
+          "normalized": [
+            0.1789,
+            0.5139
+          ],
+          "approxPixelUncertainty": 10
+        },
+        {
+          "id": "P4",
+          "landmark": "图像左胸窗内上角",
+          "sourceType": "frame",
+          "pixel": [
+            488,
+            241
+          ],
+          "normalized": [
+            0.3812,
+            0.3347
+          ],
+          "approxPixelUncertainty": 10
+        },
+        {
+          "id": "P5",
+          "landmark": "图像左胸窗外下角",
+          "sourceType": "frame",
+          "pixel": [
+            261,
+            503
+          ],
+          "normalized": [
+            0.2039,
+            0.6986
+          ],
+          "approxPixelUncertainty": 10
+        },
+        {
+          "id": "P6",
+          "landmark": "图像右胸窗内上角",
+          "sourceType": "frame",
+          "pixel": [
+            773,
+            213
+          ],
+          "normalized": [
+            0.6039,
+            0.2958
+          ],
+          "approxPixelUncertainty": 10
+        },
+        {
+          "id": "P7",
+          "landmark": "图像右胸窗外上角",
+          "sourceType": "frame",
+          "pixel": [
+            1122,
+            285
+          ],
+          "normalized": [
+            0.8766,
+            0.3958
+          ],
+          "approxPixelUncertainty": 10
+        },
+        {
+          "id": "P8",
+          "landmark": "图像右胸窗外下角",
+          "sourceType": "frame",
+          "pixel": [
+            1099,
+            431
+          ],
+          "normalized": [
+            0.8586,
+            0.5986
+          ],
+          "approxPixelUncertainty": 10
+        },
+        {
+          "id": "P9",
+          "landmark": "中央徽记可见中心",
+          "sourceType": "frame",
+          "pixel": [
+            675,
+            494
+          ],
+          "normalized": [
+            0.5273,
+            0.6861
+          ],
+          "approxPixelUncertainty": 10
+        }
+      ]
+    },
+    {
+      "id": "I88",
+      "sourceFile": "local/references/ilm-088s.jpg",
+      "archivedPublicCopy": "references/local/ilm-088s-head-material.jpg",
+      "sourceUrl": "https://www.youtube.com/watch?v=RMoChbnx-LE",
+      "sourceTimestampSeconds": 88,
+      "sourceDimensions": [
+        854,
+        480
+      ],
+      "sourceSha256": "4d36c878a0a0039c3c5fdeafb4426ec1375a9140934e9f0992dbc7a2bc3604ba",
+      "annotationFile": "local/原帧标注-ILM-088s.png",
+      "annotationDimensions": [
+        854,
+        612
+      ],
+      "annotationMethod": "full original raster preserved at original size; only point/label overlays plus a footer legend appended; no rescale, crop or redraw",
+      "points": [
+        {
+          "id": "I1",
+          "landmark": "蓝色盔壳可见最高点",
+          "sourceType": "frame",
+          "pixel": [
+            551,
+            76
+          ],
+          "normalized": [
+            0.6452,
+            0.1583
+          ],
+          "approxPixelUncertainty": 6
+        },
+        {
+          "id": "I2",
+          "landmark": "图像左侧后鳍可见尖端",
+          "sourceType": "frame",
+          "pixel": [
+            376,
+            84
+          ],
+          "normalized": [
+            0.4403,
+            0.175
+          ],
+          "approxPixelUncertainty": 6
+        },
+        {
+          "id": "I3",
+          "landmark": "图像左侧圆形耳轴中心",
+          "sourceType": "frame",
+          "pixel": [
+            429,
+            251
+          ],
+          "normalized": [
+            0.5023,
+            0.5229
+          ],
+          "approxPixelUncertainty": 6
+        },
+        {
+          "id": "I4",
+          "landmark": "可见眼眶亮带中心",
+          "sourceType": "frame",
+          "pixel": [
+            545,
+            195
+          ],
+          "normalized": [
+            0.6382,
+            0.4062
+          ],
+          "approxPixelUncertainty": 6
+        },
+        {
+          "id": "I5",
+          "landmark": "面罩前凸折角",
+          "sourceType": "frame",
+          "pixel": [
+            625,
+            241
+          ],
+          "normalized": [
+            0.7319,
+            0.5021
+          ],
+          "approxPixelUncertainty": 6
+        },
+        {
+          "id": "I6",
+          "landmark": "蓝色下巴可见最低点",
+          "sourceType": "frame",
+          "pixel": [
+            611,
+            380
+          ],
+          "normalized": [
+            0.7155,
+            0.7917
+          ],
+          "approxPixelUncertainty": 6
+        }
+      ]
+    }
+  ],
+  "prohibitedInterpretations": [
+    "No 3D physical dimensions can be inferred without calibration.",
+    "Dynamic low-angle frames are not orthographic front/side/back views.",
+    "No registered same-camera error, fidelity percentage, topology reconstruction or collision proof is claimed."
+  ],
+  "frameDerivedReadings": [
+    {
+      "name": "P29 image-left chest window top edge angle",
+      "degrees": -26.5,
+      "sourceType": "calc",
+      "basis": "atan2(P4.y-P3.y,P4.x-P3.x)",
+      "limitation": "2D image slope under perspective, NOT a 3D hinge angle; approximate uncertainty about 5 degrees"
+    },
+    {
+      "name": "P29 image-right chest window top edge angle",
+      "degrees": 11.7,
+      "sourceType": "calc",
+      "basis": "atan2(P7.y-P6.y,P7.x-P6.x)",
+      "limitation": "2D image slope under perspective, NOT a 3D hinge angle; approximate uncertainty about 5 degrees"
+    }
+  ]
+}

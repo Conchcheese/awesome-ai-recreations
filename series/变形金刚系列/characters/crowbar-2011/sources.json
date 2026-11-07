@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-draft",
+  "character": {
+    "id": "crowbar-2011",
+    "title": "撬棍",
+    "english": "Crowbar",
+    "year": 2011,
+    "faction": "decepticon",
+    "form": "car"
+  },
+  "targetEdition": "Dark of the Moon (2011)",
+  "mediaDistribution": "local-only",
+  "movieSources": [
+    {
+      "url": "https://www.paramount.com/movies/transformers-dark-of-the-moon",
+      "type": "official-film-entry",
+      "status": "not-a-frame-measurement"
+    }
+  ],
+  "galleries": [
+    {
+      "code": "ss-03",
+      "url": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-03",
+      "type": "licensed-product-gallery",
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "sources": [
+    {
+      "file": "local/ss-03-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-03_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-03",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "be6e67338f895240035edadcf0ddf6336e4709f3cf421939b26328dabe6ca19f",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 119167,
+      "verifiedDate": "2026-11-06"
+    },
+    {
+      "file": "local/ss-03-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-03_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-03",
+      "evidenceType": "licensed-product-supplement",
+      "owner": "TOMY / Hasbro and respective film licensors",
+      "redistribution": "not-established / local-only",
+      "sha256": "8450976a0cb37db30fd95897f4a17bd8248243ade56afe28253050d9a268b281",
+      "dimensions": [
+        1460,
+        1000
+      ],
+      "bytes": 129966,
+      "verifiedDate": "2026-11-06"
+    }
+  ],
+  "unknown": [
+    "电影原始逐帧素材尚未采样；官方产品图只作外观补充，不证明电影内部机构。",
+    "指节数、轮数、尺度、零件去向与避让轨迹均需原始画面确认。"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "duration": 25,
+  "walk": 0,
+  "gait": 3,
+  "leg": 6,
+  "claw": 9,
+  "tail": 12,
+  "explode": 15,
+  "reassemble": 19,
+  "alert": 22
+}

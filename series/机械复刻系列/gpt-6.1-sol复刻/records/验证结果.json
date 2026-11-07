@@ -1,0 +1,62 @@
+{
+  "version": "v2-action-film",
+  "date": "2026-11-05",
+  "timezone": "Asia/Shanghai",
+  "model_label": "GPT-6.1 Sol",
+  "model_checks": {
+    "passed": 20,
+    "command": "node tools/check.mjs"
+  },
+  "browser_qa": {
+    "passed": 33,
+    "command": "node tools/qa.mjs",
+    "sampled_times_per_page": 129,
+    "canvas_replay": "exact pixels",
+    "dom_antialias_tolerance": {
+      "max_changed_pixels": 20,
+      "max_channel_difference": 4,
+      "observed_pixels": 7,
+      "observed_max_channel_difference": 3
+    },
+    "actual_transform_checks": [
+      "body tilt",
+      "arm matrices",
+      "iris leaves",
+      "nozzle flaps and wake",
+      "beak jaws"
+    ],
+    "layout_extreme_times": [
+      1.2,
+      2.36,
+      35.8,
+      46,
+      62
+    ]
+  },
+  "video": {
+    "path": "artifacts/机械章鱼OC-8-GPT-6.1-Sol-动作完整版-64s-1080p60.mp4",
+    "git_ignored": true,
+    "bytes": 109201666,
+    "sha256": "ef570978adf9c899b14582245808796d9aea4180c32138046dfb05e8ff31b31f",
+    "width": 1920,
+    "height": 1080,
+    "fps": "60/1",
+    "frames": 3840,
+    "duration_seconds": 64.0,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_sample_rate": 48000,
+    "audio_channels": 2,
+    "black_intervals": 0,
+    "integrated_lufs": -18.1,
+    "true_peak_dbfs": -8.1
+  },
+  "v1_video_preserved": true,
+  "limitations": [
+    "motion types referenced from original; not frame-matched trajectory reconstruction",
+    "64-second retiming and added holds are editorial adaptation",
+    "audio fades at both ends; not a seamless loop",
+    "programmatic geometry and mechanisms remain approximations"
+  ],
+  "repository_tool_tests": 8
+}

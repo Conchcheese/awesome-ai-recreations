@@ -1,0 +1,738 @@
+{
+  "purpose": "noncommercial-reference-research",
+  "rightsStatus": "redistribution-permission-not-established",
+  "transformation": "Whole-frame reduced-resolution contact sheets; added labels only.",
+  "boards": [
+    {
+      "year": 2007,
+      "board": "boards/2007.jpg",
+      "characters": 12,
+      "samples": [
+        {
+          "characterId": "bumblebee-2007",
+          "manifest": "series/变形金刚系列/characters/bumblebee-2007/sources.json",
+          "sha256": "93780d650a2703cabf52b50a47e519279dc8c89cbe130c370d5f7a503f8943c5",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-3_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-3",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "jazz-2007",
+          "manifest": "series/变形金刚系列/characters/jazz-2007/sources.json",
+          "sha256": "0a77184e1797b125183e23fc3e74916c95d23b0d483854e8b707d560c65330b2",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-9_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-9",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "ironhide-2007",
+          "manifest": "series/变形金刚系列/characters/ironhide-2007/sources.json",
+          "sha256": "deb99c607ca63b5fddb92384a42c10710ba7755df1c0fad38aa260b7c4b3835e",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-6_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-6",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "ratchet-2007",
+          "manifest": "series/变形金刚系列/characters/ratchet-2007/sources.json",
+          "sha256": "610cc7f0b5b6d5c7865ae3e1d34d02173a937e8f0fde6136c4d8dbaec5c12008",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-11_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-11",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "megatron-2007",
+          "manifest": "series/变形金刚系列/characters/megatron-2007/sources.json",
+          "sha256": "805c40283fdf9821d8b932937678502cd442a0f5b1d50d935c1b139c4d26bd80",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-8_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-8",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "starscream-2007",
+          "manifest": "series/变形金刚系列/characters/starscream-2007/sources.json",
+          "sha256": "cfe95d2bb768fbdc83ae7ae62b98a0541478f4166a05a65f58b966d56f5b216d",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-10_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-10",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "barricade-2007",
+          "manifest": "series/变形金刚系列/characters/barricade-2007/sources.json",
+          "sha256": "5d87d8c150c11de790ff76adf65b290b2aa45735454a285c058878cedab5d2b2",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-5_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-5",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "blackout-2007",
+          "manifest": "series/变形金刚系列/characters/blackout-2007/sources.json",
+          "sha256": "a8c4946ab7c4c50b577055181b2671c134be1f939e4f3c302c75d5db62bab4d9",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-13_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-13",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "bonecrusher-2007",
+          "manifest": "series/变形金刚系列/characters/bonecrusher-2007/sources.json",
+          "sha256": "72dd2940eabc9cd9e6e8c36a1f04be0e0d5e5350fa31234f3e13d1671db4e0f6",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-14_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-14",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "brawl-2007",
+          "manifest": "series/变形金刚系列/characters/brawl-2007/sources.json",
+          "sha256": "1f1a6de443610902de6166900db78a2c3e4755249d530cf8cced1a2f7a970e6f",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-15_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-15",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "scorponok-2007",
+          "manifest": "series/变形金刚系列/characters/scorponok-2007/sources.json",
+          "sha256": "a8c4946ab7c4c50b577055181b2671c134be1f939e4f3c302c75d5db62bab4d9",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-13_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-13",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "配套产品图；非该角色独立近景"
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "board": "boards/2009.jpg",
+      "characters": 9,
+      "samples": [
+        {
+          "characterId": "sideswipe-2009",
+          "manifest": "series/变形金刚系列/characters/sideswipe-2009/sources.json",
+          "sha256": "6da0c44aac1678b51f5ee212c517e59a1c8224e2f2a52196bdc6b10ee0fb4cdd",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-77_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-77",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "jetfire-2009",
+          "manifest": "series/变形金刚系列/characters/jetfire-2009/sources.json",
+          "sha256": "9eb222e5454e5b47fc31ee13599b3c5b14bcdd8c66e4dbb3656ad1c196043418",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-26_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-26",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "the-fallen-2009",
+          "manifest": "series/变形金刚系列/characters/the-fallen-2009/sources.json",
+          "sha256": "ef49733b6afb266387ccfbafafa02f459aefea2a495bf78b4af7e203b6f58e53",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-100_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-100",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "devastator-2009",
+          "manifest": "series/变形金刚系列/characters/devastator-2009/sources.json",
+          "sha256": "75c0ed3debf2b58fcae4d846c7289b01dc319385ebee458207cd3870ecd9d9bd",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-37_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-37",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "合体成员样例；非大力神整体"
+        },
+        {
+          "characterId": "jolt-2009",
+          "manifest": "series/变形金刚系列/characters/jolt-2009/sources.json",
+          "sha256": "ac7989ee5a38d57646ade388d9b9399f2ee262de686637de14deb1c32f3d46fe",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-74_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-74",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "sideways-2009",
+          "manifest": "series/变形金刚系列/characters/sideways-2009/sources.json",
+          "sha256": "89b4611e06d4414d94fe8fa6090c2a2e2773e228a20c784883a594f277dadc77",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-91_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-91",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "board": "boards/2011.jpg",
+      "characters": 14,
+      "samples": [
+        {
+          "characterId": "soundwave-2011",
+          "manifest": "series/变形金刚系列/characters/soundwave-2011/sources.json",
+          "sha256": "775803ccd8de8140af743413a2ab46a6b8ee9ee3b6cf83b37dcdfc6387960bb3",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-42_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-42",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "laserbeak-2011",
+          "manifest": "series/变形金刚系列/characters/laserbeak-2011/sources.json",
+          "sha256": "775803ccd8de8140af743413a2ab46a6b8ee9ee3b6cf83b37dcdfc6387960bb3",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-42_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-42",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "配套产品图；非该角色独立近景"
+        },
+        {
+          "characterId": "shockwave-2011",
+          "manifest": "series/变形金刚系列/characters/shockwave-2011/sources.json",
+          "sha256": "8f80143d72e5f811ff96f6d7479fa0e0118ead3b3223113df37b2bf75342cd26",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-45_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-45",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "sentinel-prime-2011",
+          "manifest": "series/变形金刚系列/characters/sentinel-prime-2011/sources.json",
+          "sha256": "9b87f4bd30c781ce02a0a4c7a6fbc51e4d670e06fc4cd24f1d45376073d0cbe2",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-49_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-49",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "wheeljack-que-2011",
+          "manifest": "series/变形金刚系列/characters/wheeljack-que-2011/sources.json",
+          "sha256": "40c05d62aa2a94b605720adb32478b289dd3f76fd94dd0026e15035b44c4c14b",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ts-21_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ts-21",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "dino-2011",
+          "manifest": "series/变形金刚系列/characters/dino-2011/sources.json",
+          "sha256": "bbec31f364f7579d0fc981b3840317884b00ece9edccf8bd759538b58443ffa7",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-66_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-66",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "roadbuster-2011",
+          "manifest": "series/变形金刚系列/characters/roadbuster-2011/sources.json",
+          "sha256": "d2fbb9ba1b793b0b338aea04c3053b739e5697bf51a4f7c30badcc6ff8127720",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-50_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-50",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "leadfoot-2011",
+          "manifest": "series/变形金刚系列/characters/leadfoot-2011/sources.json",
+          "sha256": "670c6e039f23e792c3044b721e202e34a0f7b1c2d6499bb0e28586fd9dcc2d98",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-58_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-58",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "topspin-2011",
+          "manifest": "series/变形金刚系列/characters/topspin-2011/sources.json",
+          "sha256": "c0560cab73773c548778e99780782ae28087ce9f21ad71ab5d5ef17ca99f268c",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-56_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-56",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "crowbar-2011",
+          "manifest": "series/变形金刚系列/characters/crowbar-2011/sources.json",
+          "sha256": "be6e67338f895240035edadcf0ddf6336e4709f3cf421939b26328dabe6ca19f",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-03_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-03",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "crankcase-2011",
+          "manifest": "series/变形金刚系列/characters/crankcase-2011/sources.json",
+          "sha256": "072c5fe06ee9046cd5d13c53d0920cb91a31d4b3ee9d8dc3814784e909d512a3",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-22_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-22",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "hatchet-2011",
+          "manifest": "series/变形金刚系列/characters/hatchet-2011/sources.json",
+          "sha256": "d3813c4894694d3eccfe2fcbca717700a4258aedaf07eda82f4b125b4fe0a93d",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-144_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-144",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "wheelie-2011",
+          "manifest": "series/变形金刚系列/characters/wheelie-2011/sources.json",
+          "sha256": "8f80143d72e5f811ff96f6d7479fa0e0118ead3b3223113df37b2bf75342cd26",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-45_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-45",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "配套产品图；非该角色独立近景"
+        },
+        {
+          "characterId": "brains-2011",
+          "manifest": "series/变形金刚系列/characters/brains-2011/sources.json",
+          "sha256": "8f80143d72e5f811ff96f6d7479fa0e0118ead3b3223113df37b2bf75342cd26",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-45_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-45",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "配套产品图；非该角色独立近景"
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "board": "boards/2014.jpg",
+      "characters": 5,
+      "samples": [
+        {
+          "characterId": "grimlock-2014",
+          "manifest": "series/变形金刚系列/characters/grimlock-2014/sources.json",
+          "sha256": "4cffa15f04cf568738789686add0c4bfc319b18f9e110f76914df54f750ff31c",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-07_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-07",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "strafe-2014",
+          "manifest": "series/变形金刚系列/characters/strafe-2014/sources.json",
+          "sha256": "b28bed7a0456c36131d01ee77ca3960b39a8bc598427f7361fd375d6e15976ef",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mb/item_tf_mb-10_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mb/mb-10",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "lockdown-2014",
+          "manifest": "series/变形金刚系列/characters/lockdown-2014/sources.json",
+          "sha256": "11961f96133ab3f130f15304606542475a3396c457d141888fb0641084c01c8e",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-10_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-10",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "galvatron-2014",
+          "manifest": "series/变形金刚系列/characters/galvatron-2014/sources.json",
+          "sha256": "ab727ceb1c0df3981fff78dcbaaec9fce41233a7c992fbcb5e9c320d597ce80c",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-93_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-93",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "stinger-2014",
+          "manifest": "series/变形金刚系列/characters/stinger-2014/sources.json",
+          "sha256": "85adff25a2f08fba6b35c40343084fd4152bcb11419dec28d11b78b5bd0f21ca",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-02_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-02",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "board": "boards/2017.jpg",
+      "characters": 11,
+      "samples": [
+        {
+          "characterId": "hound-2017",
+          "manifest": "series/变形金刚系列/characters/hound-2017/sources.json",
+          "sha256": "a85d51e3af65f75e0c2b1a62445b89629d4bb88c577c00814130fe8a53e676ec",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mb/item_tf_mb-19_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mb/mb-19",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "drift-2017",
+          "manifest": "series/变形金刚系列/characters/drift-2017/sources.json",
+          "sha256": "00a11885db8114fd1b2a768513d3114c88d894bc2f5925f43071eaea086eeade",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-38_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-38",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "crosshairs-2017",
+          "manifest": "series/变形金刚系列/characters/crosshairs-2017/sources.json",
+          "sha256": "35148dcce763abab89998e5cb0b0b7132b0f6de0aa3064a6a93d3bd16167be32",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-95_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-95",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "slug-2017",
+          "manifest": "series/变形金刚系列/characters/slug-2017/sources.json",
+          "sha256": "b81eb8834187f80e50e326d1c5efefded6b7e290714b31ad19c56733450fa90a",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_tlk/item_tf_tlk-12_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_tlk/tlk-12",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "2017 产品线；非出场年份证明"
+        },
+        {
+          "characterId": "scorn-2017",
+          "manifest": "series/变形金刚系列/characters/scorn-2017/sources.json",
+          "sha256": "05b6a4bbed9c763fd601a239e06e46b12f684b04ea6902eb77a7cac4da5be8c7",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_tlk/item_tf_tlk-24_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_tlk/tlk-24",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "2017 产品线；非出场年份证明"
+        },
+        {
+          "characterId": "hot-rod-2017",
+          "manifest": "series/变形金刚系列/characters/hot-rod-2017/sources.json",
+          "sha256": "389ce1ac069149f78bdd88dcc4bd1cdfd4bcf8cfbff7fd13ab54e268fe89cc1b",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-96_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-96",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "cogman-2017",
+          "manifest": "series/变形金刚系列/characters/cogman-2017/sources.json",
+          "sha256": "c671fc64e4051f476b7f48e46ca004607ad6d63aae80d7ac35a50a42adfd04eb",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-31_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-31",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "nitro-zeus-2017",
+          "manifest": "series/变形金刚系列/characters/nitro-zeus-2017/sources.json",
+          "sha256": "29ecda6aa4869e892c465bf56bc9f3e184a5bb960bb63bc2148d1d8f90199de5",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_tlk/item_tf_tlk-25_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_tlk/tlk-25",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "sqweeks-2017",
+          "manifest": "series/变形金刚系列/characters/sqweeks-2017/sources.json",
+          "sha256": "daa05069c45cc9f76496676938283d55319e130def24b9f2776258c9176fa674",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_tlk/item_tf_tlk-13_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_tlk/tlk-13",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "dragonstorm-2017",
+          "manifest": "series/变形金刚系列/characters/dragonstorm-2017/sources.json",
+          "sha256": "a5374f2b116a339bc95fc94b4777bb227a50b676cc35ef2be6b64bd2b12980d3",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_tlk/item_tf_tlk-30_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_tlk/tlk-30",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "berserker-2017",
+          "manifest": "series/变形金刚系列/characters/berserker-2017/sources.json",
+          "sha256": "ffc744f3f342c5637773d998bd70673b1fef55a4804bfb657a491fababdeabc1",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_tlk/item_tf_tlk-03_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_tlk/tlk-03",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "board": "boards/2018.jpg",
+      "characters": 3,
+      "samples": [
+        {
+          "characterId": "shatter-2018",
+          "manifest": "series/变形金刚系列/characters/shatter-2018/sources.json",
+          "sha256": "30322fde45b806223578f9c20a18416b745c5760c60198ca5cd181e9af9dab81",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-52_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-52",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "dropkick-2018",
+          "manifest": "series/变形金刚系列/characters/dropkick-2018/sources.json",
+          "sha256": "17ee95e4e8d4f4fdcf44f6472fd2aa019d8f282e7c69a2d69d8caabfc0c95606",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-36_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-36",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "blitzwing-2018",
+          "manifest": "series/变形金刚系列/characters/blitzwing-2018/sources.json",
+          "sha256": "dbcb6c010578ee018fadb5e061c25ee802aab17fe70e4cf1abf0a070b336a290",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-57_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-57",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "board": "boards/2023.jpg",
+      "characters": 13,
+      "samples": [
+        {
+          "characterId": "arcee-2023",
+          "manifest": "series/变形金刚系列/characters/arcee-2023/sources.json",
+          "sha256": "322555a4063804dfda25940b8830e7022b861ae12ba699ed9accd3fb04c241a5",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-106_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-106",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "mirage-2023",
+          "manifest": "series/变形金刚系列/characters/mirage-2023/sources.json",
+          "sha256": "a3ab64a4b6f1e3bea0830671f2bff179c488692e6f6169eb8ae96e7aad04cb0a",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-141_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-141",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "wheeljack-2023",
+          "manifest": "series/变形金刚系列/characters/wheeljack-2023/sources.json",
+          "sha256": "f8b3f501303fb1778e82e3cdcd7efe185191f34983c676680dd74174d6203441",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-133_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-133",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "optimus-primal-2023",
+          "manifest": "series/变形金刚系列/characters/optimus-primal-2023/sources.json",
+          "sha256": "fac9d6c06e15819c8a5685278bd2ea0d8f4af294adb1eac10e7f120e534cd870",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-118_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-118",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "cheetor-2023",
+          "manifest": "series/变形金刚系列/characters/cheetor-2023/sources.json",
+          "sha256": "94a04ae5010438b6542f9e94e8463e0c673b45264fe0d245ffb28086d1792a91",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-108_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-108",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "rhinox-2023",
+          "manifest": "series/变形金刚系列/characters/rhinox-2023/sources.json",
+          "sha256": "05935bafc9a67887f03620441eaf6b87116e6821ee0321a5e548b6075bb9c5dd",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-113_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-113",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "airazor-2023",
+          "manifest": "series/变形金刚系列/characters/airazor-2023/sources.json",
+          "sha256": "626185686015ef552bc09308fa854d2019cfe24c0ee90a6128e06a8b1fa5b610",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-107_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-107",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "scourge-2023",
+          "manifest": "series/变形金刚系列/characters/scourge-2023/sources.json",
+          "sha256": "fcdfa4321d5ada7b17bd7461dd9cd6d3ad4e0b58dd2c66553015663ff74fd853",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-109_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-109",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "battletrap-2023",
+          "manifest": "series/变形金刚系列/characters/battletrap-2023/sources.json",
+          "sha256": "d8808217fb8d5df4ad06151d1ae1c52137c418ae908243333a8f153e1cae4697",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-104_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-104",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "nightbird-2023",
+          "manifest": "series/变形金刚系列/characters/nightbird-2023/sources.json",
+          "sha256": "e31a7f82ff2afa65706bdb33901604a138f14045a9fae2fe61fa3675a764d222",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-120_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-120",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "freezer-2023",
+          "manifest": "series/变形金刚系列/characters/freezer-2023/sources.json",
+          "sha256": "de820fd263aec8c0bd4f75d80184f9de5c957eb048de81c2404d600870b33285",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-105_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-105",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        },
+        {
+          "characterId": "apelinq-2023",
+          "manifest": "series/变形金刚系列/characters/apelinq-2023/sources.json",
+          "sha256": "64a17eda673eace5e326f67e79690c70d180b2e06a92810ba612aa7c8de4a5c3",
+          "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_ss/item_tf_ss-146_01.jpg",
+          "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_ss/ss-146",
+          "owner": "TOMY / Hasbro and respective film licensors",
+          "evidenceType": "licensed-product-supplement",
+          "fullFrame": true,
+          "displayNote": "Official product supplement; not a film frame"
+        }
+      ]
+    }
+  ]
+}

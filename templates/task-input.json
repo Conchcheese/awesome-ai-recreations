@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "replace-case-id",
+  "title": "替换案例名称",
+  "aliases": [],
+  "series": "替换系列名称",
+  "input_version": 1,
+  "status": "draft",
+  "brief": "tasks/replace-case-id/brief.md",
+  "method": "docs/精细复刻流程.md",
+  "resources": "docs/共同输入与资源.md",
+  "source_notes": "docs/参考素材与许可.md",
+  "defaults": {"visual_goal": "fidelity", "provenance": "independent"},
+  "notes": "填写原始参考的可见范围、未知项与允许偏差",
+  "references": []
+}
