@@ -1,6 +1,6 @@
 # 大黄蜂 / Bumblebee
 
-目标版本：Transformers (2007)。状态：**待复刻研究档案**，没有可运行模型或成片。
+目标版本：Transformers (2007)。本目录保留来源研究档案；已有[Codex 独立程序化研究实现](../../models/codex/bumblebee-2007/README.md)。拆分候选仍不是已证实的电影机构。
 
 [来源与实际样例元数据](sources.json) · [计划拆分结构](structure.json) · [角色库](../README.md) · [制作协议](../../工作流协议.md)
 

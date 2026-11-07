@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "bumblebee-2007",
+  "title": "大黄蜂·2007真人电影版",
+  "aliases": [
+    "大黄蜂",
+    "Bumblebee",
+    "2007大黄蜂"
+  ],
+  "series": "transformers",
+  "input_version": 1,
+  "status": "ready",
+  "brief": "tasks/bumblebee-2007/brief.md",
+  "method": "docs/精细复刻流程.md",
+  "resources": "docs/共同输入与资源.md",
+  "source_notes": "docs/参考素材与许可.md",
+  "defaults": {
+    "visual_goal": "fidelity",
+    "provenance": "independent"
+  },
+  "notes": "官方MPM-3两张外观补充图；未取得电影原帧，不证明隐藏机构或电影准确性。允许按官方原始来源补充资料并记录输入变化。",
+  "references": [
+    {
+      "path": "tasks/bumblebee-2007/references/local/mpm-3-01.jpg",
+      "sha256": "93780d650a2703cabf52b50a47e519279dc8c89cbe130c370d5f7a503f8943c5",
+      "kind": "original-reference",
+      "source_url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-3_01.jpg",
+      "source_status": "registered",
+      "source_page": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-3",
+      "rights": "TOMY / Hasbro / film licensors; local research only; redistribution permission not established",
+      "evidence_type": "licensed-product-supplement"
+    },
+    {
+      "path": "tasks/bumblebee-2007/references/local/mpm-3-02.jpg",
+      "sha256": "9e37a22fac14fcb53db99222d9b70a66379e46432a245d692fc6a700577d5951",
+      "kind": "original-reference",
+      "source_url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-3_02.jpg",
+      "source_status": "registered",
+      "source_page": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-3",
+      "rights": "TOMY / Hasbro / film licensors; local research only; redistribution permission not established",
+      "evidence_type": "licensed-product-supplement"
+    }
+  ]
+}

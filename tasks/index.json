@@ -10,6 +10,7 @@
     "tasks/hexapod/input.json",
     "tasks/bee/input.json",
     "tasks/scorpion/input.json",
-    "tasks/optimus-prime-2007/input.json"
+    "tasks/optimus-prime-2007/input.json",
+    "tasks/bumblebee-2007/input.json"
   ]
 }

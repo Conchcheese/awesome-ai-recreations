@@ -12,7 +12,7 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'));sys.path.insert(0,str(ROOT/'series/变形金刚系列/tools'))
 from catalog import recreation_plan
 from check_repo import validate_catalog
-from check_transformer_contract import validate_references
+from check_transformer_contract import validate_references, validate as validate_production
 import characters
 
 class PublicationReferenceTests(unittest.TestCase):
@@ -38,9 +38,21 @@ class PublicationReferenceTests(unittest.TestCase):
    self.assertEqual([],validate_references(refs,root));self.assertTrue(validate_references(refs,root,True));(root/'local').mkdir();(root/'local/image.jpg').write_bytes(b'changed');self.assertTrue(validate_references(refs,root))
 
 class CharacterLibraryTests(unittest.TestCase):
- def test_library_is_auditable_and_not_registered_as_finished_cases(self):
+ def test_library_is_auditable_and_finished_entries_have_separate_implementations(self):
   self.assertEqual([],characters.validate_library());data=characters.load();self.assertGreaterEqual(len(data['characters']),60)
-  finished={x['id'] for x in json.loads((ROOT/'catalog.json').read_text())['cases']};self.assertTrue(finished.isdisjoint(x['id'] for x in data['characters']))
+  # A researched character may gain a real implementation while retaining its
+  # original source archive. The archive itself must never stand in for a model.
+  finished={x['id']:x for x in json.loads((ROOT/'catalog.json').read_text())['cases']}
+  for row in data['characters']:
+   if row['id'] not in finished:continue
+   for variant in finished[row['id']]['variants']:
+    with self.subTest(character=row['id'],variant=variant['id']):
+     source=ROOT/variant['source'];archive=characters.SERIES/row['path']
+     self.assertTrue(source.is_dir());self.assertFalse(source.resolve().is_relative_to(archive.resolve()))
+     self.assertTrue(any(p.suffix in {'.js','.mjs','.ts','.py'} for p in source.rglob('*')))
+     self.assertEqual('.html',Path(variant['live']).suffix);self.assertTrue((ROOT/variant['live']).is_file())
+     base=ROOT/variant['cwd'];production=json.loads((base/'production.json').read_text())
+     self.assertEqual([],validate_production(production,base,require_ready=True))
  def test_name_resolution_and_ambiguous_name(self):
   data=characters.load();self.assertEqual('bumblebee-2007',characters.resolve('大黄蜂',data)['id']);data=copy.deepcopy(data);data['characters'][1]['title']='大黄蜂'
   with self.assertRaises(ValueError):characters.resolve('大黄蜂',data)

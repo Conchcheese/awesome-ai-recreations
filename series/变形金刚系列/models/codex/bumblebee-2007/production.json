@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "status": "study",
+  "character": {
+    "id": "bumblebee-2007",
+    "title": "大黄蜂",
+    "edition": "Transformers (2007), external look supplemented by MPM-3"
+  },
+  "provenance": "independent",
+  "visualGoal": "fidelity",
+  "paths": {
+    "references": "references/sources.json",
+    "assemblies": "records/assembly-catalog.json",
+    "source": "src",
+    "web": "index.html",
+    "film": "film.html"
+  },
+  "rig": {
+    "rootId": "scene",
+    "requiredPorts": [
+      "head",
+      "torso",
+      "left_hand",
+      "right_hand",
+      "left_foot",
+      "right_foot"
+    ],
+    "ports": {
+      "head": "head",
+      "torso": "torso",
+      "left_hand": "hand.-1",
+      "right_hand": "hand.1",
+      "left_foot": "foot.-1",
+      "right_foot": "foot.1"
+    }
+  },
+  "timeline": {
+    "sourceDuration": 22,
+    "fps": 24,
+    "transform": [
+      3.1,
+      9.5
+    ],
+    "movieDuration": 22,
+    "edit": [
+      {
+        "in": 0,
+        "out": 10,
+        "sourceIn": 0,
+        "sourceOut": 10,
+        "purpose": "transformation"
+      },
+      {
+        "in": 10,
+        "out": 13.5,
+        "sourceIn": 10,
+        "sourceOut": 13.5,
+        "purpose": "portrait"
+      },
+      {
+        "in": 13.5,
+        "out": 16,
+        "sourceIn": 13.5,
+        "sourceOut": 16,
+        "purpose": "arm"
+      },
+      {
+        "in": 16,
+        "out": 22,
+        "sourceIn": 16,
+        "sourceOut": 22,
+        "purpose": "hero"
+      }
+    ]
+  },
+  "unknown": [
+    "原始电影逐帧测量缺失；外观仍明显简化。",
+    "变形为同身份几何的展示推演；中段有交叠，未做完整碰撞。",
+    "非ILM资产；无物理运动学或承重声明。"
+  ]
+}

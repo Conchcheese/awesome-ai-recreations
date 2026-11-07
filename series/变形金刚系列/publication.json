@@ -859,6 +859,30 @@
       "containsOfficialPixels": false,
       "note": "GLM-5.3-Flash 版灰模五态接触表（t=0/0.25/0.5/0.75/1 自渲染）",
       "rights": "Original procedural-model render; character/IP rights remain with their owners. Code MIT does not relicense the character."
+    },
+    {
+      "path": "series/变形金刚系列/models/codex/bumblebee-2007/stills/hero.jpg",
+      "sha256": "479241b796161bd3a3e0e9cb51325ac02f956264de24b8601f6351278f55ffcd",
+      "kind": "self-render",
+      "rights": "Original procedural-model render decoded from the completed MP4; character/IP rights remain with their owners. Code MIT does not relicense the character."
+    },
+    {
+      "path": "series/变形金刚系列/models/codex/bumblebee-2007/stills/contact.jpg",
+      "sha256": "3265e906bc714c53c307cdd14b23777a39261e2bdf94f1bd75282154f3d2f795",
+      "kind": "self-render",
+      "rights": "Original procedural-model render decoded from the completed MP4; character/IP rights remain with their owners. Code MIT does not relicense the character."
+    },
+    {
+      "path": "series/变形金刚系列/models/codex/bumblebee-2007/stills/portrait.jpg",
+      "sha256": "62dfe780385c890e18607671afd7d1030c015018edfedb660401f2892cc20c7a",
+      "kind": "self-render",
+      "rights": "Original procedural-model render decoded from the completed MP4; character/IP rights remain with their owners. Code MIT does not relicense the character."
+    },
+    {
+      "path": "series/变形金刚系列/models/codex/bumblebee-2007/stills/vehicle.jpg",
+      "sha256": "a60a5e091bd7554f975c1c66d30bf1deed9857efb4e680e90f5c980b172c67dc",
+      "kind": "self-render",
+      "rights": "Original procedural-model render decoded from the completed MP4; character/IP rights remain with their owners. Code MIT does not relicense the character."
     }
   ]
 }

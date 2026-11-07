@@ -876,6 +876,90 @@
         }
       ],
       "task_manifest": "tasks/optimus-prime-2007/input.json"
+    },
+    {
+      "id": "bumblebee-2007",
+      "title": "大黄蜂·2007真人电影版",
+      "aliases": [
+        "大黄蜂",
+        "Bumblebee",
+        "2007大黄蜂"
+      ],
+      "series": "transformers",
+      "variants": [
+        {
+          "id": "codex",
+          "model_label": "Codex（当前会话执行；精确模型快照未知，未另调模型 API）",
+          "provenance": "independent",
+          "visual_goal": "fidelity",
+          "readme": "series/变形金刚系列/models/codex/bumblebee-2007/README.md",
+          "live": "series/变形金刚系列/models/codex/bumblebee-2007/index.html",
+          "film": "series/变形金刚系列/models/codex/bumblebee-2007/film.html",
+          "source": "series/变形金刚系列/models/codex/bumblebee-2007/src",
+          "spec": "series/变形金刚系列/models/codex/bumblebee-2007/spec.md",
+          "record": "series/变形金刚系列/models/codex/bumblebee-2007/records/实现与验证.md",
+          "references": [
+            "series/变形金刚系列/models/codex/bumblebee-2007/references"
+          ],
+          "cwd": "series/变形金刚系列/models/codex/bumblebee-2007",
+          "commands": {
+            "build": [
+              [
+                "python3",
+                "tools/run.py",
+                "build"
+              ]
+            ],
+            "check": [
+              [
+                "python3",
+                "tools/run.py",
+                "check"
+              ]
+            ],
+            "qa": [
+              [
+                "node",
+                "tools/qa.mjs"
+              ]
+            ],
+            "video": [
+              [
+                "python3",
+                "tools/run.py",
+                "render"
+              ],
+              [
+                "python3",
+                "tools/movie.py",
+                "encode"
+              ]
+            ],
+            "video-check": [
+              [
+                "python3",
+                "tools/movie.py",
+                "check"
+              ]
+            ],
+            "test": [
+              [
+                "python3",
+                "tools/test_movie.py"
+              ]
+            ]
+          },
+          "build_outputs": [
+            "series/变形金刚系列/models/codex/bumblebee-2007/index.html",
+            "series/变形金刚系列/models/codex/bumblebee-2007/film.html"
+          ],
+          "notes": "基于2张官方MPM-3外观补充图的独立程序化研究，43装配/612视觉分件；可运行离线互动与同源Cycles影片管线。Camaro曲率、头雕和车体闭合仍简化，内部机构为推演，未做电影原帧测量或完整碰撞。视频及工具缓存留artifacts，不自动发布。",
+          "movie": "series/变形金刚系列/models/codex/bumblebee-2007/artifacts/大黄蜂-2007-电影短片.mp4",
+          "online_live": null,
+          "online_film": null
+        }
+      ],
+      "task_manifest": "tasks/bumblebee-2007/input.json"
     }
   ]
 }

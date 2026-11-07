@@ -1,0 +1,176 @@
+{
+  "render": {
+    "fingerprint": "15a77360594e220437a2c27a1d9ab0f9b2c254bdc6e8ed4c33a8c730a77bd869",
+    "frames": "artifacts/frames/15a77360594e",
+    "width": 1920,
+    "height": 804,
+    "fps": 24,
+    "duration": 22,
+    "count": 528,
+    "engine": "CYCLES",
+    "samples": 12,
+    "movie_sha256": "67ce96d65f245bcbb490fd05ec76abdec73fdfda56383197f4d4601f5518d3bc",
+    "movie_bytes": 13659852
+  },
+  "video": {
+    "width": 1920,
+    "height": 804,
+    "fps": "24/1",
+    "decoded_frames": 528,
+    "duration": "22.000000",
+    "full_decode": true,
+    "unexpected_black_frames": false,
+    "one_second_freezes": false,
+    "sample_rate": "48000",
+    "channels": 2,
+    "integrated_lufs": -18.2,
+    "true_peak_dbfs": -1.3
+  },
+  "browser": {
+    "offline_file_url": true,
+    "ready": true,
+    "meshCount": 612,
+    "reentrantPose": true,
+    "vehicleControl": true,
+    "robotControl": true,
+    "greyControl": true,
+    "explosionControl": true,
+    "replayControl": true,
+    "errors": [],
+    "playback": {
+      "ended": true,
+      "currentTime": 22,
+      "duration": 22,
+      "decodedFrames": 528,
+      "droppedFrames": 0
+    }
+  },
+  "composition": {
+    "projected_mesh_bounds": [
+      {
+        "t": 0,
+        "bounds_xyxy": [
+          0.1822981983423233,
+          0.02432817406952381,
+          0.7811958193778992,
+          0.8718055486679077
+        ],
+        "whole_subject_in_frame": true,
+        "refined_meshes": []
+      },
+      {
+        "t": 1,
+        "bounds_xyxy": [
+          0.17614248394966125,
+          0.015919940546154976,
+          0.7844924330711365,
+          0.8770503401756287
+        ],
+        "whole_subject_in_frame": true,
+        "refined_meshes": []
+      },
+      {
+        "t": 3,
+        "bounds_xyxy": [
+          0.16314812004566193,
+          0.04252297058701515,
+          0.791134238243103,
+          0.887891948223114
+        ],
+        "whole_subject_in_frame": true,
+        "refined_meshes": [
+          "wheel.front1.tire"
+        ]
+      },
+      {
+        "t": 4.5,
+        "bounds_xyxy": [
+          0.2072143703699112,
+          0.015277792699635029,
+          0.723795473575592,
+          0.7906589508056641
+        ],
+        "whole_subject_in_frame": true,
+        "refined_meshes": []
+      },
+      {
+        "t": 6.3,
+        "bounds_xyxy": [
+          0.298808753490448,
+          0.17570577561855316,
+          0.656441330909729,
+          0.7953601479530334
+        ],
+        "whole_subject_in_frame": true,
+        "refined_meshes": []
+      },
+      {
+        "t": 8.9,
+        "bounds_xyxy": [
+          0.38333508372306824,
+          0.05572250112891197,
+          0.6186813116073608,
+          0.962973415851593
+        ],
+        "whole_subject_in_frame": true,
+        "refined_meshes": []
+      },
+      {
+        "t": 9.5,
+        "bounds_xyxy": [
+          0.3871879279613495,
+          0.0500112920999527,
+          0.6139298677444458,
+          0.9610552787780762
+        ],
+        "whole_subject_in_frame": true,
+        "refined_meshes": []
+      },
+      {
+        "t": 16,
+        "bounds_xyxy": [
+          0.39025017619132996,
+          0.06750098615884781,
+          0.6057190895080566,
+          0.9242620468139648
+        ],
+        "whole_subject_in_frame": true,
+        "refined_meshes": []
+      },
+      {
+        "t": 18,
+        "bounds_xyxy": [
+          0.3867596387863159,
+          0.06443271785974503,
+          0.6109278202056885,
+          0.9260107278823853
+        ],
+        "whole_subject_in_frame": true,
+        "refined_meshes": []
+      },
+      {
+        "t": 21.9,
+        "bounds_xyxy": [
+          0.39129844307899475,
+          0.04920484870672226,
+          0.6161290407180786,
+          0.9431124925613403
+        ],
+        "whole_subject_in_frame": true,
+        "refined_meshes": []
+      }
+    ],
+    "purpose": "framing only, not an artistic score"
+  },
+  "tests": {
+    "repository": 39,
+    "render_cache": 6
+  },
+  "manual_listening": false,
+  "known_limitations": [
+    "电影原帧测量缺失，Camaro与头雕明显简化",
+    "中段有交叠与悬空，未做完整碰撞或物理运动学验证",
+    "网页与Cycles光照不同；没有逐帧运动模糊"
+  ],
+  "visual_review": "实际MP4解码联系表已审看；不是电影原片同机位对比"
+}

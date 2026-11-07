@@ -1,0 +1,4271 @@
+{
+  "rootId": "scene",
+  "assemblies": [
+    {
+      "id": "torso",
+      "parent": "scene",
+      "robot": [
+        0,
+        0.08,
+        3.78
+      ],
+      "car": [
+        0,
+        0,
+        0.8
+      ],
+      "robot_rotation": [
+        0,
+        0,
+        0
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.12,
+      "evidence": "inferred / designed",
+      "parts": [
+        "torso.frame",
+        "torso.turbine",
+        "torso.turbine_rim",
+        "torso.turbine_blade0",
+        "torso.turbine_blade1",
+        "torso.turbine_blade2",
+        "torso.turbine_blade3",
+        "torso.turbine_blade4",
+        "torso.turbine_blade5",
+        "torso.turbine_blade6",
+        "torso.turbine_blade7",
+        "torso.turbine_blade8",
+        "torso.turbine_blade9",
+        "torso.turbine_blade10",
+        "torso.turbine_blade11",
+        "torso.rib-1.0",
+        "torso.rib-1.1",
+        "torso.rib-1.2",
+        "torso.rib-1.3",
+        "torso.rib-1.4",
+        "torso.strut-1",
+        "torso.fastener-1.0",
+        "torso.fastener-1.1",
+        "torso.fastener-1.2",
+        "torso.fastener-1.3",
+        "torso.fastener-1.4",
+        "torso.hydraulic-1.0",
+        "torso.hydraulic-1.1",
+        "torso.hydraulic-1.2",
+        "torso.rib1.0",
+        "torso.rib1.1",
+        "torso.rib1.2",
+        "torso.rib1.3",
+        "torso.rib1.4",
+        "torso.strut1",
+        "torso.fastener1.0",
+        "torso.fastener1.1",
+        "torso.fastener1.2",
+        "torso.fastener1.3",
+        "torso.fastener1.4",
+        "torso.hydraulic1.0",
+        "torso.hydraulic1.1",
+        "torso.hydraulic1.2"
+      ]
+    },
+    {
+      "id": "neck",
+      "parent": "scene",
+      "robot": [
+        0,
+        0.08,
+        4.99
+      ],
+      "car": [
+        0,
+        0,
+        0.64
+      ],
+      "robot_rotation": [
+        0,
+        0,
+        0
+      ],
+      "car_rotation": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "delay": 0.44,
+      "evidence": "inferred / designed",
+      "parts": [
+        "neck.rail-1",
+        "neck.rail1",
+        "neck.collar0",
+        "neck.collar1",
+        "neck.collar2",
+        "neck.collar3",
+        "neck.collar4"
+      ]
+    },
+    {
+      "id": "pelvis",
+      "parent": "scene",
+      "robot": [
+        0,
+        0.1,
+        2.94
+      ],
+      "car": [
+        0,
+        0.45,
+        0.66
+      ],
+      "robot_rotation": [
+        0,
+        0,
+        0
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.06,
+      "evidence": "inferred / designed",
+      "parts": [
+        "pelvis.housing",
+        "pelvis.front",
+        "pelvis.yellow_crest",
+        "pelvis.center_rail0",
+        "pelvis.center_rail1",
+        "pelvis.center_rail2"
+      ]
+    },
+    {
+      "id": "chest.-1",
+      "parent": "scene",
+      "robot": [
+        -0.55,
+        -0.26,
+        4.53
+      ],
+      "car": [
+        -0.51,
+        -1.84,
+        1.03
+      ],
+      "robot_rotation": [
+        0.1,
+        -0.07,
+        0.09
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.24,
+      "evidence": "inferred / designed",
+      "parts": [
+        "chest-1.body",
+        "chest-1.hood",
+        "chest-1.racing_stripe",
+        "chest-1.lamp_recess",
+        "chest-1.projector0",
+        "chest-1.glass0",
+        "chest-1.led0",
+        "chest-1.projector1",
+        "chest-1.glass1",
+        "chest-1.led1",
+        "chest-1.grille",
+        "chest-1.grille_bar0",
+        "chest-1.grille_bar1",
+        "chest-1.grille_bar2",
+        "chest-1.grille_bar3",
+        "chest-1.lower_intake",
+        "chest-1.intake_fin0",
+        "chest-1.intake_fin1",
+        "chest-1.intake_fin2",
+        "chest-1.intake_fin3",
+        "chest-1.intake_fin4",
+        "chest-1.intake_fin5",
+        "chest-1.fog",
+        "chest-1.lower_lip",
+        "chest-1.seam0",
+        "chest-1.seam1",
+        "chest-1.seam2"
+      ]
+    },
+    {
+      "id": "chest.1",
+      "parent": "scene",
+      "robot": [
+        0.55,
+        -0.26,
+        4.53
+      ],
+      "car": [
+        0.51,
+        -1.84,
+        1.03
+      ],
+      "robot_rotation": [
+        0.1,
+        0.07,
+        -0.09
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.24,
+      "evidence": "inferred / designed",
+      "parts": [
+        "chest1.body",
+        "chest1.hood",
+        "chest1.racing_stripe",
+        "chest1.lamp_recess",
+        "chest1.projector0",
+        "chest1.glass0",
+        "chest1.led0",
+        "chest1.projector1",
+        "chest1.glass1",
+        "chest1.led1",
+        "chest1.grille",
+        "chest1.grille_bar0",
+        "chest1.grille_bar1",
+        "chest1.grille_bar2",
+        "chest1.grille_bar3",
+        "chest1.lower_intake",
+        "chest1.intake_fin0",
+        "chest1.intake_fin1",
+        "chest1.intake_fin2",
+        "chest1.intake_fin3",
+        "chest1.intake_fin4",
+        "chest1.intake_fin5",
+        "chest1.fog",
+        "chest1.lower_lip",
+        "chest1.seam0",
+        "chest1.seam1",
+        "chest1.seam2"
+      ]
+    },
+    {
+      "id": "sternum",
+      "parent": "scene",
+      "robot": [
+        0,
+        -0.51,
+        4.57
+      ],
+      "car": [
+        0,
+        -2.08,
+        1.1
+      ],
+      "robot_rotation": [
+        0,
+        0,
+        0
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.3,
+      "evidence": "inferred / designed",
+      "parts": [
+        "sternum.bowtie"
+      ]
+    },
+    {
+      "id": "head",
+      "parent": "scene",
+      "robot": [
+        0,
+        -0.03,
+        5.3
+      ],
+      "car": [
+        0,
+        -0.35,
+        0.79
+      ],
+      "robot_rotation": [
+        0,
+        0,
+        0
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.46,
+      "evidence": "inferred / designed",
+      "parts": [
+        "head.inner_skull",
+        "head-1.helmet",
+        "head-1.black_helmet_stripe",
+        "head-1.brow",
+        "head-1.optic_socket",
+        "head-1.optic_lens",
+        "head-1.iris",
+        "head-1.pupil",
+        "head-1.cheek",
+        "head-1.jaw_pivot",
+        "head-1.jaw_link0",
+        "head-1.jaw_link1",
+        "head-1.jaw_link2",
+        "head-1.ear",
+        "head-1.ear_guard",
+        "head1.helmet",
+        "head1.black_helmet_stripe",
+        "head1.brow",
+        "head1.optic_socket",
+        "head1.optic_lens",
+        "head1.iris",
+        "head1.pupil",
+        "head1.cheek",
+        "head1.jaw_pivot",
+        "head1.jaw_link0",
+        "head1.jaw_link1",
+        "head1.jaw_link2",
+        "head1.ear",
+        "head1.ear_guard",
+        "head.nose",
+        "head.chin",
+        "head.forehead",
+        "head.crown_stripe"
+      ]
+    },
+    {
+      "id": "battle_mask",
+      "parent": "scene",
+      "robot": [
+        0,
+        -0.37,
+        5.12
+      ],
+      "car": [
+        0,
+        -0.35,
+        0.79
+      ],
+      "robot_rotation": [
+        0,
+        0,
+        0
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.47,
+      "evidence": "inferred / designed",
+      "parts": [
+        "mask.shell",
+        "mask.vent0",
+        "mask.vent1",
+        "mask.vent2",
+        "mask.vent3",
+        "mask.vent4"
+      ]
+    },
+    {
+      "id": "shoulder.-1",
+      "parent": "scene",
+      "robot": [
+        -1.19,
+        0.03,
+        4.56
+      ],
+      "car": [
+        -0.84,
+        -1.25,
+        0.83
+      ],
+      "robot_rotation": [
+        0,
+        -0.16,
+        0.14
+      ],
+      "car_rotation": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "delay": 0.35,
+      "evidence": "inferred / designed",
+      "parts": [
+        "shoulder-1.ball",
+        "shoulder-1.joint",
+        "shoulder-1.fender",
+        "shoulder-1.dark_inlay"
+      ]
+    },
+    {
+      "id": "front_wheel.-1",
+      "parent": "scene",
+      "robot": [
+        -1.34,
+        0.19,
+        4.34
+      ],
+      "car": [
+        -1.015,
+        -1.44,
+        0.43
+      ],
+      "robot_rotation": [
+        0,
+        0,
+        -0.08
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.38,
+      "evidence": "inferred / designed",
+      "parts": [
+        "wheel.front-1.tire",
+        "wheel.front-1.rim",
+        "wheel.front-1.rim_lip",
+        "wheel.front-1.rotor",
+        "wheel.front-1.hub",
+        "wheel.front-1.spoke0",
+        "wheel.front-1.lug0",
+        "wheel.front-1.spoke1",
+        "wheel.front-1.lug1",
+        "wheel.front-1.spoke2",
+        "wheel.front-1.lug2",
+        "wheel.front-1.spoke3",
+        "wheel.front-1.lug3",
+        "wheel.front-1.spoke4",
+        "wheel.front-1.lug4",
+        "wheel.front-1.tread0",
+        "wheel.front-1.tread1",
+        "wheel.front-1.tread2",
+        "wheel.front-1.tread3",
+        "wheel.front-1.tread4",
+        "wheel.front-1.tread5",
+        "wheel.front-1.tread6",
+        "wheel.front-1.tread7",
+        "wheel.front-1.tread8",
+        "wheel.front-1.tread9",
+        "wheel.front-1.tread10",
+        "wheel.front-1.tread11",
+        "wheel.front-1.tread12",
+        "wheel.front-1.tread13",
+        "wheel.front-1.tread14",
+        "wheel.front-1.tread15",
+        "wheel.front-1.tread16",
+        "wheel.front-1.tread17",
+        "wheel.front-1.tread18",
+        "wheel.front-1.tread19",
+        "wheel.front-1.tread20",
+        "wheel.front-1.tread21",
+        "wheel.front-1.tread22",
+        "wheel.front-1.tread23",
+        "wheel.front-1.tread24",
+        "wheel.front-1.tread25",
+        "wheel.front-1.tread26",
+        "wheel.front-1.tread27",
+        "wheel.front-1.tread28",
+        "wheel.front-1.tread29",
+        "wheel.front-1.tread30",
+        "wheel.front-1.tread31",
+        "wheel.front-1.outer_lip-1",
+        "wheel.front-1.outer_hub-1",
+        "wheel.front-1.outer_spoke-1.0",
+        "wheel.front-1.outer_spoke-1.1",
+        "wheel.front-1.outer_spoke-1.2",
+        "wheel.front-1.outer_spoke-1.3",
+        "wheel.front-1.outer_spoke-1.4",
+        "wheel.front-1.outer_lip1",
+        "wheel.front-1.outer_hub1",
+        "wheel.front-1.outer_spoke1.0",
+        "wheel.front-1.outer_spoke1.1",
+        "wheel.front-1.outer_spoke1.2",
+        "wheel.front-1.outer_spoke1.3",
+        "wheel.front-1.outer_spoke1.4",
+        "wheel.front-1.arch",
+        "wheel.front-1.quarter_panel"
+      ]
+    },
+    {
+      "id": "upper_arm.-1",
+      "parent": "scene",
+      "robot": [
+        -1.38,
+        0.015,
+        3.91
+      ],
+      "car": [
+        -0.65,
+        -0.6,
+        0.62
+      ],
+      "robot_rotation": [
+        0,
+        -0.04,
+        -0.13
+      ],
+      "car_rotation": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "delay": 0.3,
+      "evidence": "inferred / designed",
+      "parts": [
+        "upper-1.elbow",
+        "upper-1.core",
+        "upper-1.piston-1",
+        "upper-1.piston1",
+        "upper-1.rib0",
+        "upper-1.rib1",
+        "upper-1.rib2",
+        "upper-1.rib3",
+        "upper-1.outer_shell"
+      ]
+    },
+    {
+      "id": "forearm.-1",
+      "parent": "scene",
+      "robot": [
+        -1.52,
+        -0.08,
+        3.25
+      ],
+      "car": [
+        -0.57,
+        0.12,
+        0.63
+      ],
+      "robot_rotation": [
+        0.08,
+        0,
+        -0.06
+      ],
+      "car_rotation": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "delay": 0.27,
+      "evidence": "inferred / designed",
+      "parts": [
+        "fore-1.core",
+        "fore-1.gauntlet",
+        "fore-1.inlay",
+        "fore-1.chrome_rail-1",
+        "fore-1.bolt-1.0",
+        "fore-1.bolt-1.1",
+        "fore-1.bolt-1.2",
+        "fore-1.chrome_rail1",
+        "fore-1.bolt1.0",
+        "fore-1.bolt1.1",
+        "fore-1.bolt1.2"
+      ]
+    },
+    {
+      "id": "hand.-1",
+      "parent": "scene",
+      "robot": [
+        -1.55,
+        -0.1,
+        2.68
+      ],
+      "car": [
+        -0.39,
+        0.63,
+        0.68
+      ],
+      "robot_rotation": [
+        0,
+        0,
+        -0.08
+      ],
+      "car_rotation": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "delay": 0.22,
+      "evidence": "inferred / designed",
+      "parts": [
+        "hand-1.palm",
+        "hand-1.finger0.0",
+        "hand-1.knuckle0.0",
+        "hand-1.finger0.1",
+        "hand-1.knuckle0.1",
+        "hand-1.finger0.2",
+        "hand-1.knuckle0.2",
+        "hand-1.finger1.0",
+        "hand-1.knuckle1.0",
+        "hand-1.finger1.1",
+        "hand-1.knuckle1.1",
+        "hand-1.finger1.2",
+        "hand-1.knuckle1.2",
+        "hand-1.finger2.0",
+        "hand-1.knuckle2.0",
+        "hand-1.finger2.1",
+        "hand-1.knuckle2.1",
+        "hand-1.finger2.2",
+        "hand-1.knuckle2.2",
+        "hand-1.finger3.0",
+        "hand-1.knuckle3.0",
+        "hand-1.finger3.1",
+        "hand-1.knuckle3.1",
+        "hand-1.finger3.2",
+        "hand-1.knuckle3.2",
+        "hand-1.thumb0",
+        "hand-1.thumb1"
+      ]
+    },
+    {
+      "id": "door.-1",
+      "parent": "scene",
+      "robot": [
+        -1.12,
+        0.53,
+        4.58
+      ],
+      "car": [
+        -0.99,
+        0.06,
+        1.01
+      ],
+      "robot_rotation": [
+        0.14,
+        0.25,
+        0.95
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.31,
+      "evidence": "inferred / designed",
+      "parts": [
+        "door-1.skin",
+        "door-1.glass",
+        "door-1.window_frame(0, -0.39, 0.37)",
+        "door-1.window_frame(0, -0.22, 0.8)",
+        "door-1.window_frame(0, 0.2, 0.79)",
+        "door-1.handle",
+        "door-1.mirror"
+      ]
+    },
+    {
+      "id": "thigh.-1",
+      "parent": "scene",
+      "robot": [
+        -0.53,
+        0.03,
+        2.4
+      ],
+      "car": [
+        -0.4,
+        0.65,
+        0.62
+      ],
+      "robot_rotation": [
+        0,
+        -0.09,
+        0.11
+      ],
+      "car_rotation": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "delay": 0.09,
+      "evidence": "inferred / designed",
+      "parts": [
+        "thigh-1.hip",
+        "thigh-1.inner",
+        "thigh-1.piston-1",
+        "thigh-1.housing-1",
+        "thigh-1.piston1",
+        "thigh-1.housing1",
+        "thigh-1.side_lamella0",
+        "thigh-1.side_lamella1",
+        "thigh-1.side_lamella2",
+        "thigh-1.side_lamella3",
+        "thigh-1.side_lamella4",
+        "thigh-1.side_lamella5",
+        "thigh-1.guard"
+      ]
+    },
+    {
+      "id": "knee.-1",
+      "parent": "scene",
+      "robot": [
+        -0.65,
+        -0.01,
+        1.94
+      ],
+      "car": [
+        -0.43,
+        1.15,
+        0.65
+      ],
+      "robot_rotation": [
+        0,
+        0,
+        0
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.07,
+      "evidence": "inferred / designed",
+      "parts": [
+        "knee-1.gear",
+        "knee-1.plate"
+      ]
+    },
+    {
+      "id": "shin.-1",
+      "parent": "scene",
+      "robot": [
+        -0.71,
+        0.07,
+        1.19
+      ],
+      "car": [
+        -0.71,
+        1.54,
+        0.96
+      ],
+      "robot_rotation": [
+        0.04,
+        0,
+        0.06
+      ],
+      "car_rotation": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "delay": 0.02,
+      "evidence": "inferred / designed",
+      "parts": [
+        "shin-1.core",
+        "shin-1.armor",
+        "shin-1.black_panel",
+        "shin-1.rail-1",
+        "shin-1.rail1",
+        "shin-1.vent0",
+        "shin-1.vent1",
+        "shin-1.vent2",
+        "shin-1.vent3",
+        "shin-1.vent4",
+        "shin-1.vent5",
+        "shin-1.vent6",
+        "shin-1.vent7"
+      ]
+    },
+    {
+      "id": "rear_wheel.-1",
+      "parent": "scene",
+      "robot": [
+        -0.94,
+        0.17,
+        1.2
+      ],
+      "car": [
+        -1.015,
+        1.42,
+        0.43
+      ],
+      "robot_rotation": [
+        0,
+        0,
+        0
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.02,
+      "evidence": "inferred / designed",
+      "parts": [
+        "wheel.rear-1.tire",
+        "wheel.rear-1.rim",
+        "wheel.rear-1.rim_lip",
+        "wheel.rear-1.rotor",
+        "wheel.rear-1.hub",
+        "wheel.rear-1.spoke0",
+        "wheel.rear-1.lug0",
+        "wheel.rear-1.spoke1",
+        "wheel.rear-1.lug1",
+        "wheel.rear-1.spoke2",
+        "wheel.rear-1.lug2",
+        "wheel.rear-1.spoke3",
+        "wheel.rear-1.lug3",
+        "wheel.rear-1.spoke4",
+        "wheel.rear-1.lug4",
+        "wheel.rear-1.tread0",
+        "wheel.rear-1.tread1",
+        "wheel.rear-1.tread2",
+        "wheel.rear-1.tread3",
+        "wheel.rear-1.tread4",
+        "wheel.rear-1.tread5",
+        "wheel.rear-1.tread6",
+        "wheel.rear-1.tread7",
+        "wheel.rear-1.tread8",
+        "wheel.rear-1.tread9",
+        "wheel.rear-1.tread10",
+        "wheel.rear-1.tread11",
+        "wheel.rear-1.tread12",
+        "wheel.rear-1.tread13",
+        "wheel.rear-1.tread14",
+        "wheel.rear-1.tread15",
+        "wheel.rear-1.tread16",
+        "wheel.rear-1.tread17",
+        "wheel.rear-1.tread18",
+        "wheel.rear-1.tread19",
+        "wheel.rear-1.tread20",
+        "wheel.rear-1.tread21",
+        "wheel.rear-1.tread22",
+        "wheel.rear-1.tread23",
+        "wheel.rear-1.tread24",
+        "wheel.rear-1.tread25",
+        "wheel.rear-1.tread26",
+        "wheel.rear-1.tread27",
+        "wheel.rear-1.tread28",
+        "wheel.rear-1.tread29",
+        "wheel.rear-1.tread30",
+        "wheel.rear-1.tread31",
+        "wheel.rear-1.outer_lip-1",
+        "wheel.rear-1.outer_hub-1",
+        "wheel.rear-1.outer_spoke-1.0",
+        "wheel.rear-1.outer_spoke-1.1",
+        "wheel.rear-1.outer_spoke-1.2",
+        "wheel.rear-1.outer_spoke-1.3",
+        "wheel.rear-1.outer_spoke-1.4",
+        "wheel.rear-1.outer_lip1",
+        "wheel.rear-1.outer_hub1",
+        "wheel.rear-1.outer_spoke1.0",
+        "wheel.rear-1.outer_spoke1.1",
+        "wheel.rear-1.outer_spoke1.2",
+        "wheel.rear-1.outer_spoke1.3",
+        "wheel.rear-1.outer_spoke1.4",
+        "wheel.rear-1.arch"
+      ]
+    },
+    {
+      "id": "foot.-1",
+      "parent": "scene",
+      "robot": [
+        -0.74,
+        -0.14,
+        0.33
+      ],
+      "car": [
+        -0.53,
+        1.84,
+        0.67
+      ],
+      "robot_rotation": [
+        0,
+        0,
+        0.1
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0,
+      "evidence": "inferred / designed",
+      "parts": [
+        "foot-1.sole",
+        "foot-1.toe",
+        "foot-1.toe_cap",
+        "foot-1.ankle",
+        "foot-1.metatarsal0",
+        "foot-1.metatarsal1",
+        "foot-1.metatarsal2"
+      ]
+    },
+    {
+      "id": "shoulder.1",
+      "parent": "scene",
+      "robot": [
+        1.19,
+        0.03,
+        4.56
+      ],
+      "car": [
+        0.84,
+        -1.25,
+        0.83
+      ],
+      "robot_rotation": [
+        0,
+        0.16,
+        -0.14
+      ],
+      "car_rotation": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "delay": 0.35,
+      "evidence": "inferred / designed",
+      "parts": [
+        "shoulder1.ball",
+        "shoulder1.joint",
+        "shoulder1.fender",
+        "shoulder1.dark_inlay"
+      ]
+    },
+    {
+      "id": "front_wheel.1",
+      "parent": "scene",
+      "robot": [
+        1.34,
+        0.19,
+        4.34
+      ],
+      "car": [
+        1.015,
+        -1.44,
+        0.43
+      ],
+      "robot_rotation": [
+        0,
+        0,
+        0.08
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.38,
+      "evidence": "inferred / designed",
+      "parts": [
+        "wheel.front1.tire",
+        "wheel.front1.rim",
+        "wheel.front1.rim_lip",
+        "wheel.front1.rotor",
+        "wheel.front1.hub",
+        "wheel.front1.spoke0",
+        "wheel.front1.lug0",
+        "wheel.front1.spoke1",
+        "wheel.front1.lug1",
+        "wheel.front1.spoke2",
+        "wheel.front1.lug2",
+        "wheel.front1.spoke3",
+        "wheel.front1.lug3",
+        "wheel.front1.spoke4",
+        "wheel.front1.lug4",
+        "wheel.front1.tread0",
+        "wheel.front1.tread1",
+        "wheel.front1.tread2",
+        "wheel.front1.tread3",
+        "wheel.front1.tread4",
+        "wheel.front1.tread5",
+        "wheel.front1.tread6",
+        "wheel.front1.tread7",
+        "wheel.front1.tread8",
+        "wheel.front1.tread9",
+        "wheel.front1.tread10",
+        "wheel.front1.tread11",
+        "wheel.front1.tread12",
+        "wheel.front1.tread13",
+        "wheel.front1.tread14",
+        "wheel.front1.tread15",
+        "wheel.front1.tread16",
+        "wheel.front1.tread17",
+        "wheel.front1.tread18",
+        "wheel.front1.tread19",
+        "wheel.front1.tread20",
+        "wheel.front1.tread21",
+        "wheel.front1.tread22",
+        "wheel.front1.tread23",
+        "wheel.front1.tread24",
+        "wheel.front1.tread25",
+        "wheel.front1.tread26",
+        "wheel.front1.tread27",
+        "wheel.front1.tread28",
+        "wheel.front1.tread29",
+        "wheel.front1.tread30",
+        "wheel.front1.tread31",
+        "wheel.front1.outer_lip-1",
+        "wheel.front1.outer_hub-1",
+        "wheel.front1.outer_spoke-1.0",
+        "wheel.front1.outer_spoke-1.1",
+        "wheel.front1.outer_spoke-1.2",
+        "wheel.front1.outer_spoke-1.3",
+        "wheel.front1.outer_spoke-1.4",
+        "wheel.front1.outer_lip1",
+        "wheel.front1.outer_hub1",
+        "wheel.front1.outer_spoke1.0",
+        "wheel.front1.outer_spoke1.1",
+        "wheel.front1.outer_spoke1.2",
+        "wheel.front1.outer_spoke1.3",
+        "wheel.front1.outer_spoke1.4",
+        "wheel.front1.arch",
+        "wheel.front1.quarter_panel"
+      ]
+    },
+    {
+      "id": "upper_arm.1",
+      "parent": "scene",
+      "robot": [
+        1.38,
+        0.015,
+        3.91
+      ],
+      "car": [
+        0.65,
+        -0.6,
+        0.62
+      ],
+      "robot_rotation": [
+        0,
+        0.04,
+        0.13
+      ],
+      "car_rotation": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "delay": 0.3,
+      "evidence": "inferred / designed",
+      "parts": [
+        "upper1.elbow",
+        "upper1.core",
+        "upper1.piston-1",
+        "upper1.piston1",
+        "upper1.rib0",
+        "upper1.rib1",
+        "upper1.rib2",
+        "upper1.rib3",
+        "upper1.outer_shell"
+      ]
+    },
+    {
+      "id": "forearm.1",
+      "parent": "scene",
+      "robot": [
+        1.52,
+        -0.08,
+        3.25
+      ],
+      "car": [
+        0.57,
+        0.12,
+        0.63
+      ],
+      "robot_rotation": [
+        0.08,
+        0,
+        0.06
+      ],
+      "car_rotation": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "delay": 0.27,
+      "evidence": "inferred / designed",
+      "parts": [
+        "fore1.core",
+        "fore1.gauntlet",
+        "fore1.inlay",
+        "fore1.chrome_rail-1",
+        "fore1.bolt-1.0",
+        "fore1.bolt-1.1",
+        "fore1.bolt-1.2",
+        "fore1.chrome_rail1",
+        "fore1.bolt1.0",
+        "fore1.bolt1.1",
+        "fore1.bolt1.2"
+      ]
+    },
+    {
+      "id": "hand.1",
+      "parent": "scene",
+      "robot": [
+        1.55,
+        -0.1,
+        2.68
+      ],
+      "car": [
+        0.39,
+        0.63,
+        0.68
+      ],
+      "robot_rotation": [
+        0,
+        0,
+        0.08
+      ],
+      "car_rotation": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "delay": 0.22,
+      "evidence": "inferred / designed",
+      "parts": [
+        "hand1.palm",
+        "hand1.finger0.0",
+        "hand1.knuckle0.0",
+        "hand1.finger0.1",
+        "hand1.knuckle0.1",
+        "hand1.finger0.2",
+        "hand1.knuckle0.2",
+        "hand1.finger1.0",
+        "hand1.knuckle1.0",
+        "hand1.finger1.1",
+        "hand1.knuckle1.1",
+        "hand1.finger1.2",
+        "hand1.knuckle1.2",
+        "hand1.finger2.0",
+        "hand1.knuckle2.0",
+        "hand1.finger2.1",
+        "hand1.knuckle2.1",
+        "hand1.finger2.2",
+        "hand1.knuckle2.2",
+        "hand1.finger3.0",
+        "hand1.knuckle3.0",
+        "hand1.finger3.1",
+        "hand1.knuckle3.1",
+        "hand1.finger3.2",
+        "hand1.knuckle3.2",
+        "hand1.thumb0",
+        "hand1.thumb1"
+      ]
+    },
+    {
+      "id": "door.1",
+      "parent": "scene",
+      "robot": [
+        1.12,
+        0.53,
+        4.58
+      ],
+      "car": [
+        0.99,
+        0.06,
+        1.01
+      ],
+      "robot_rotation": [
+        0.14,
+        -0.25,
+        -0.95
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.31,
+      "evidence": "inferred / designed",
+      "parts": [
+        "door1.skin",
+        "door1.glass",
+        "door1.window_frame(0, -0.39, 0.37)",
+        "door1.window_frame(0, -0.22, 0.8)",
+        "door1.window_frame(0, 0.2, 0.79)",
+        "door1.handle",
+        "door1.mirror"
+      ]
+    },
+    {
+      "id": "thigh.1",
+      "parent": "scene",
+      "robot": [
+        0.53,
+        0.03,
+        2.4
+      ],
+      "car": [
+        0.4,
+        0.65,
+        0.62
+      ],
+      "robot_rotation": [
+        0,
+        0.09,
+        -0.11
+      ],
+      "car_rotation": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "delay": 0.09,
+      "evidence": "inferred / designed",
+      "parts": [
+        "thigh1.hip",
+        "thigh1.inner",
+        "thigh1.piston-1",
+        "thigh1.housing-1",
+        "thigh1.piston1",
+        "thigh1.housing1",
+        "thigh1.side_lamella0",
+        "thigh1.side_lamella1",
+        "thigh1.side_lamella2",
+        "thigh1.side_lamella3",
+        "thigh1.side_lamella4",
+        "thigh1.side_lamella5",
+        "thigh1.guard"
+      ]
+    },
+    {
+      "id": "knee.1",
+      "parent": "scene",
+      "robot": [
+        0.65,
+        -0.01,
+        1.94
+      ],
+      "car": [
+        0.43,
+        1.15,
+        0.65
+      ],
+      "robot_rotation": [
+        0,
+        0,
+        0
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.07,
+      "evidence": "inferred / designed",
+      "parts": [
+        "knee1.gear",
+        "knee1.plate"
+      ]
+    },
+    {
+      "id": "shin.1",
+      "parent": "scene",
+      "robot": [
+        0.71,
+        0.07,
+        1.19
+      ],
+      "car": [
+        0.71,
+        1.54,
+        0.96
+      ],
+      "robot_rotation": [
+        0.04,
+        0,
+        -0.06
+      ],
+      "car_rotation": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "delay": 0.02,
+      "evidence": "inferred / designed",
+      "parts": [
+        "shin1.core",
+        "shin1.armor",
+        "shin1.black_panel",
+        "shin1.rail-1",
+        "shin1.rail1",
+        "shin1.vent0",
+        "shin1.vent1",
+        "shin1.vent2",
+        "shin1.vent3",
+        "shin1.vent4",
+        "shin1.vent5",
+        "shin1.vent6",
+        "shin1.vent7"
+      ]
+    },
+    {
+      "id": "rear_wheel.1",
+      "parent": "scene",
+      "robot": [
+        0.94,
+        0.17,
+        1.2
+      ],
+      "car": [
+        1.015,
+        1.42,
+        0.43
+      ],
+      "robot_rotation": [
+        0,
+        0,
+        0
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.02,
+      "evidence": "inferred / designed",
+      "parts": [
+        "wheel.rear1.tire",
+        "wheel.rear1.rim",
+        "wheel.rear1.rim_lip",
+        "wheel.rear1.rotor",
+        "wheel.rear1.hub",
+        "wheel.rear1.spoke0",
+        "wheel.rear1.lug0",
+        "wheel.rear1.spoke1",
+        "wheel.rear1.lug1",
+        "wheel.rear1.spoke2",
+        "wheel.rear1.lug2",
+        "wheel.rear1.spoke3",
+        "wheel.rear1.lug3",
+        "wheel.rear1.spoke4",
+        "wheel.rear1.lug4",
+        "wheel.rear1.tread0",
+        "wheel.rear1.tread1",
+        "wheel.rear1.tread2",
+        "wheel.rear1.tread3",
+        "wheel.rear1.tread4",
+        "wheel.rear1.tread5",
+        "wheel.rear1.tread6",
+        "wheel.rear1.tread7",
+        "wheel.rear1.tread8",
+        "wheel.rear1.tread9",
+        "wheel.rear1.tread10",
+        "wheel.rear1.tread11",
+        "wheel.rear1.tread12",
+        "wheel.rear1.tread13",
+        "wheel.rear1.tread14",
+        "wheel.rear1.tread15",
+        "wheel.rear1.tread16",
+        "wheel.rear1.tread17",
+        "wheel.rear1.tread18",
+        "wheel.rear1.tread19",
+        "wheel.rear1.tread20",
+        "wheel.rear1.tread21",
+        "wheel.rear1.tread22",
+        "wheel.rear1.tread23",
+        "wheel.rear1.tread24",
+        "wheel.rear1.tread25",
+        "wheel.rear1.tread26",
+        "wheel.rear1.tread27",
+        "wheel.rear1.tread28",
+        "wheel.rear1.tread29",
+        "wheel.rear1.tread30",
+        "wheel.rear1.tread31",
+        "wheel.rear1.outer_lip-1",
+        "wheel.rear1.outer_hub-1",
+        "wheel.rear1.outer_spoke-1.0",
+        "wheel.rear1.outer_spoke-1.1",
+        "wheel.rear1.outer_spoke-1.2",
+        "wheel.rear1.outer_spoke-1.3",
+        "wheel.rear1.outer_spoke-1.4",
+        "wheel.rear1.outer_lip1",
+        "wheel.rear1.outer_hub1",
+        "wheel.rear1.outer_spoke1.0",
+        "wheel.rear1.outer_spoke1.1",
+        "wheel.rear1.outer_spoke1.2",
+        "wheel.rear1.outer_spoke1.3",
+        "wheel.rear1.outer_spoke1.4",
+        "wheel.rear1.arch"
+      ]
+    },
+    {
+      "id": "foot.1",
+      "parent": "scene",
+      "robot": [
+        0.74,
+        -0.14,
+        0.33
+      ],
+      "car": [
+        0.53,
+        1.84,
+        0.67
+      ],
+      "robot_rotation": [
+        0,
+        0,
+        -0.1
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0,
+      "evidence": "inferred / designed",
+      "parts": [
+        "foot1.sole",
+        "foot1.toe",
+        "foot1.toe_cap",
+        "foot1.ankle",
+        "foot1.metatarsal0",
+        "foot1.metatarsal1",
+        "foot1.metatarsal2"
+      ]
+    },
+    {
+      "id": "roof",
+      "parent": "scene",
+      "robot": [
+        0,
+        0.65,
+        4.02
+      ],
+      "car": [
+        0,
+        0.27,
+        1.73
+      ],
+      "robot_rotation": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.18,
+      "evidence": "inferred / designed",
+      "parts": [
+        "roof.enamel",
+        "roof.stripe-1",
+        "roof.stripe1"
+      ]
+    },
+    {
+      "id": "windscreen",
+      "parent": "scene",
+      "robot": [
+        0,
+        0.63,
+        3.55
+      ],
+      "car": [
+        0,
+        -0.64,
+        1.44
+      ],
+      "robot_rotation": [
+        0.15,
+        0,
+        0
+      ],
+      "car_rotation": [
+        0.68,
+        0,
+        0
+      ],
+      "delay": 0.19,
+      "evidence": "inferred / designed",
+      "parts": [
+        "windscreen.glass",
+        "windscreen.pillar-1",
+        "windscreen.pillar1"
+      ]
+    },
+    {
+      "id": "rear_deck",
+      "parent": "scene",
+      "robot": [
+        0,
+        0.73,
+        3.02
+      ],
+      "car": [
+        0,
+        1.4,
+        1.2
+      ],
+      "robot_rotation": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.12,
+      "evidence": "inferred / designed",
+      "parts": [
+        "rear_deck.enamel",
+        "rear_deck.stripe-1",
+        "rear_deck.stripe1"
+      ]
+    },
+    {
+      "id": "rear_bumper",
+      "parent": "scene",
+      "robot": [
+        0,
+        0.64,
+        2.64
+      ],
+      "car": [
+        0,
+        2.02,
+        0.89
+      ],
+      "robot_rotation": [
+        0.1,
+        0,
+        0
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.05,
+      "evidence": "inferred / designed",
+      "parts": [
+        "rear_bumper.enamel",
+        "rear_bumper.diffuser",
+        "rear_bumper.tail-1.0",
+        "rear_bumper.tail-1.1",
+        "rear_bumper.exhaust-1",
+        "rear_bumper.tail1.0",
+        "rear_bumper.tail1.1",
+        "rear_bumper.exhaust1"
+      ]
+    },
+    {
+      "id": "quarter.-1.0",
+      "parent": "scene",
+      "robot": [
+        -0.51,
+        0.21,
+        3.22
+      ],
+      "car": [
+        -0.86,
+        -0.99,
+        1.03
+      ],
+      "robot_rotation": [
+        0.15,
+        -0.25,
+        -0.12
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.14,
+      "evidence": "inferred / designed",
+      "parts": [
+        "quarter-1.0.shell"
+      ]
+    },
+    {
+      "id": "quarter.-1.1",
+      "parent": "scene",
+      "robot": [
+        -0.62,
+        0.21,
+        2.91
+      ],
+      "car": [
+        -0.86,
+        1.1,
+        1.03
+      ],
+      "robot_rotation": [
+        0.15,
+        -0.25,
+        -0.12
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.14,
+      "evidence": "inferred / designed",
+      "parts": [
+        "quarter-1.1.shell"
+      ]
+    },
+    {
+      "id": "quarter.1.0",
+      "parent": "scene",
+      "robot": [
+        0.51,
+        0.21,
+        3.22
+      ],
+      "car": [
+        0.86,
+        -0.99,
+        1.03
+      ],
+      "robot_rotation": [
+        0.15,
+        0.25,
+        0.12
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.14,
+      "evidence": "inferred / designed",
+      "parts": [
+        "quarter1.0.shell"
+      ]
+    },
+    {
+      "id": "quarter.1.1",
+      "parent": "scene",
+      "robot": [
+        0.62,
+        0.21,
+        2.91
+      ],
+      "car": [
+        0.86,
+        1.1,
+        1.03
+      ],
+      "robot_rotation": [
+        0.15,
+        0.25,
+        0.12
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.14,
+      "evidence": "inferred / designed",
+      "parts": [
+        "quarter1.1.shell"
+      ]
+    },
+    {
+      "id": "rear_window",
+      "parent": "scene",
+      "robot": [
+        0,
+        0.83,
+        3.72
+      ],
+      "car": [
+        0,
+        1.06,
+        1.47
+      ],
+      "robot_rotation": [
+        0.05,
+        0,
+        0
+      ],
+      "car_rotation": [
+        -0.85,
+        0,
+        0
+      ],
+      "delay": 0.17,
+      "evidence": "inferred / designed",
+      "parts": [
+        "rear_window.glass"
+      ]
+    },
+    {
+      "id": "sill.-1",
+      "parent": "scene",
+      "robot": [
+        -0.49,
+        0.54,
+        3.75
+      ],
+      "car": [
+        -0.92,
+        0.15,
+        0.55
+      ],
+      "robot_rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.15,
+      "evidence": "inferred / designed",
+      "parts": [
+        "sill-1.enamel"
+      ]
+    },
+    {
+      "id": "car_flank.-1",
+      "parent": "scene",
+      "robot": [
+        -0.39,
+        0.6,
+        4.25
+      ],
+      "car": [
+        -0.97,
+        0.25,
+        0.85
+      ],
+      "robot_rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.18,
+      "evidence": "inferred / designed",
+      "parts": [
+        "car_flank-1.shell"
+      ]
+    },
+    {
+      "id": "sill.1",
+      "parent": "scene",
+      "robot": [
+        0.49,
+        0.54,
+        3.75
+      ],
+      "car": [
+        0.92,
+        0.15,
+        0.55
+      ],
+      "robot_rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.15,
+      "evidence": "inferred / designed",
+      "parts": [
+        "sill1.enamel"
+      ]
+    },
+    {
+      "id": "car_flank.1",
+      "parent": "scene",
+      "robot": [
+        0.39,
+        0.6,
+        4.25
+      ],
+      "car": [
+        0.97,
+        0.25,
+        0.85
+      ],
+      "robot_rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ],
+      "car_rotation": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0.18,
+      "evidence": "inferred / designed",
+      "parts": [
+        "car_flank1.shell"
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "id": "torso.frame",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.turbine",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.turbine_rim",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.turbine_blade0",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.turbine_blade1",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.turbine_blade2",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.turbine_blade3",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.turbine_blade4",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.turbine_blade5",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.turbine_blade6",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.turbine_blade7",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.turbine_blade8",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.turbine_blade9",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.turbine_blade10",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.turbine_blade11",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.rib-1.0",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.rib-1.1",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.rib-1.2",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.rib-1.3",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.rib-1.4",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.strut-1",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.fastener-1.0",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.fastener-1.1",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.fastener-1.2",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.fastener-1.3",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.fastener-1.4",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.hydraulic-1.0",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.hydraulic-1.1",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.hydraulic-1.2",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.rib1.0",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.rib1.1",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.rib1.2",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.rib1.3",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.rib1.4",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.strut1",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.fastener1.0",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.fastener1.1",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.fastener1.2",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.fastener1.3",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.fastener1.4",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.hydraulic1.0",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.hydraulic1.1",
+      "assembly": "torso"
+    },
+    {
+      "id": "torso.hydraulic1.2",
+      "assembly": "torso"
+    },
+    {
+      "id": "neck.rail-1",
+      "assembly": "neck"
+    },
+    {
+      "id": "neck.rail1",
+      "assembly": "neck"
+    },
+    {
+      "id": "neck.collar0",
+      "assembly": "neck"
+    },
+    {
+      "id": "neck.collar1",
+      "assembly": "neck"
+    },
+    {
+      "id": "neck.collar2",
+      "assembly": "neck"
+    },
+    {
+      "id": "neck.collar3",
+      "assembly": "neck"
+    },
+    {
+      "id": "neck.collar4",
+      "assembly": "neck"
+    },
+    {
+      "id": "pelvis.housing",
+      "assembly": "pelvis"
+    },
+    {
+      "id": "pelvis.front",
+      "assembly": "pelvis"
+    },
+    {
+      "id": "pelvis.yellow_crest",
+      "assembly": "pelvis"
+    },
+    {
+      "id": "pelvis.center_rail0",
+      "assembly": "pelvis"
+    },
+    {
+      "id": "pelvis.center_rail1",
+      "assembly": "pelvis"
+    },
+    {
+      "id": "pelvis.center_rail2",
+      "assembly": "pelvis"
+    },
+    {
+      "id": "chest-1.body",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.hood",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.racing_stripe",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.lamp_recess",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.projector0",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.glass0",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.led0",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.projector1",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.glass1",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.led1",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.grille",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.grille_bar0",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.grille_bar1",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.grille_bar2",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.grille_bar3",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.lower_intake",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.intake_fin0",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.intake_fin1",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.intake_fin2",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.intake_fin3",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.intake_fin4",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.intake_fin5",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.fog",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.lower_lip",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.seam0",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.seam1",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest-1.seam2",
+      "assembly": "chest.-1"
+    },
+    {
+      "id": "chest1.body",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.hood",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.racing_stripe",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.lamp_recess",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.projector0",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.glass0",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.led0",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.projector1",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.glass1",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.led1",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.grille",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.grille_bar0",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.grille_bar1",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.grille_bar2",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.grille_bar3",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.lower_intake",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.intake_fin0",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.intake_fin1",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.intake_fin2",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.intake_fin3",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.intake_fin4",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.intake_fin5",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.fog",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.lower_lip",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.seam0",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.seam1",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "chest1.seam2",
+      "assembly": "chest.1"
+    },
+    {
+      "id": "sternum.bowtie",
+      "assembly": "sternum"
+    },
+    {
+      "id": "head.inner_skull",
+      "assembly": "head"
+    },
+    {
+      "id": "head-1.helmet",
+      "assembly": "head"
+    },
+    {
+      "id": "head-1.black_helmet_stripe",
+      "assembly": "head"
+    },
+    {
+      "id": "head-1.brow",
+      "assembly": "head"
+    },
+    {
+      "id": "head-1.optic_socket",
+      "assembly": "head"
+    },
+    {
+      "id": "head-1.optic_lens",
+      "assembly": "head"
+    },
+    {
+      "id": "head-1.iris",
+      "assembly": "head"
+    },
+    {
+      "id": "head-1.pupil",
+      "assembly": "head"
+    },
+    {
+      "id": "head-1.cheek",
+      "assembly": "head"
+    },
+    {
+      "id": "head-1.jaw_pivot",
+      "assembly": "head"
+    },
+    {
+      "id": "head-1.jaw_link0",
+      "assembly": "head"
+    },
+    {
+      "id": "head-1.jaw_link1",
+      "assembly": "head"
+    },
+    {
+      "id": "head-1.jaw_link2",
+      "assembly": "head"
+    },
+    {
+      "id": "head-1.ear",
+      "assembly": "head"
+    },
+    {
+      "id": "head-1.ear_guard",
+      "assembly": "head"
+    },
+    {
+      "id": "head1.helmet",
+      "assembly": "head"
+    },
+    {
+      "id": "head1.black_helmet_stripe",
+      "assembly": "head"
+    },
+    {
+      "id": "head1.brow",
+      "assembly": "head"
+    },
+    {
+      "id": "head1.optic_socket",
+      "assembly": "head"
+    },
+    {
+      "id": "head1.optic_lens",
+      "assembly": "head"
+    },
+    {
+      "id": "head1.iris",
+      "assembly": "head"
+    },
+    {
+      "id": "head1.pupil",
+      "assembly": "head"
+    },
+    {
+      "id": "head1.cheek",
+      "assembly": "head"
+    },
+    {
+      "id": "head1.jaw_pivot",
+      "assembly": "head"
+    },
+    {
+      "id": "head1.jaw_link0",
+      "assembly": "head"
+    },
+    {
+      "id": "head1.jaw_link1",
+      "assembly": "head"
+    },
+    {
+      "id": "head1.jaw_link2",
+      "assembly": "head"
+    },
+    {
+      "id": "head1.ear",
+      "assembly": "head"
+    },
+    {
+      "id": "head1.ear_guard",
+      "assembly": "head"
+    },
+    {
+      "id": "head.nose",
+      "assembly": "head"
+    },
+    {
+      "id": "head.chin",
+      "assembly": "head"
+    },
+    {
+      "id": "head.forehead",
+      "assembly": "head"
+    },
+    {
+      "id": "head.crown_stripe",
+      "assembly": "head"
+    },
+    {
+      "id": "mask.shell",
+      "assembly": "battle_mask"
+    },
+    {
+      "id": "mask.vent0",
+      "assembly": "battle_mask"
+    },
+    {
+      "id": "mask.vent1",
+      "assembly": "battle_mask"
+    },
+    {
+      "id": "mask.vent2",
+      "assembly": "battle_mask"
+    },
+    {
+      "id": "mask.vent3",
+      "assembly": "battle_mask"
+    },
+    {
+      "id": "mask.vent4",
+      "assembly": "battle_mask"
+    },
+    {
+      "id": "shoulder-1.ball",
+      "assembly": "shoulder.-1"
+    },
+    {
+      "id": "shoulder-1.joint",
+      "assembly": "shoulder.-1"
+    },
+    {
+      "id": "shoulder-1.fender",
+      "assembly": "shoulder.-1"
+    },
+    {
+      "id": "shoulder-1.dark_inlay",
+      "assembly": "shoulder.-1"
+    },
+    {
+      "id": "wheel.front-1.tire",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.rim",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.rim_lip",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.rotor",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.hub",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.spoke0",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.lug0",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.spoke1",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.lug1",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.spoke2",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.lug2",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.spoke3",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.lug3",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.spoke4",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.lug4",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread0",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread1",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread2",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread3",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread4",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread5",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread6",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread7",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread8",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread9",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread10",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread11",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread12",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread13",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread14",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread15",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread16",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread17",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread18",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread19",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread20",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread21",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread22",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread23",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread24",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread25",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread26",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread27",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread28",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread29",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread30",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.tread31",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.outer_lip-1",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.outer_hub-1",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.outer_spoke-1.0",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.outer_spoke-1.1",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.outer_spoke-1.2",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.outer_spoke-1.3",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.outer_spoke-1.4",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.outer_lip1",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.outer_hub1",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.outer_spoke1.0",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.outer_spoke1.1",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.outer_spoke1.2",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.outer_spoke1.3",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.outer_spoke1.4",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.arch",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "wheel.front-1.quarter_panel",
+      "assembly": "front_wheel.-1"
+    },
+    {
+      "id": "upper-1.elbow",
+      "assembly": "upper_arm.-1"
+    },
+    {
+      "id": "upper-1.core",
+      "assembly": "upper_arm.-1"
+    },
+    {
+      "id": "upper-1.piston-1",
+      "assembly": "upper_arm.-1"
+    },
+    {
+      "id": "upper-1.piston1",
+      "assembly": "upper_arm.-1"
+    },
+    {
+      "id": "upper-1.rib0",
+      "assembly": "upper_arm.-1"
+    },
+    {
+      "id": "upper-1.rib1",
+      "assembly": "upper_arm.-1"
+    },
+    {
+      "id": "upper-1.rib2",
+      "assembly": "upper_arm.-1"
+    },
+    {
+      "id": "upper-1.rib3",
+      "assembly": "upper_arm.-1"
+    },
+    {
+      "id": "upper-1.outer_shell",
+      "assembly": "upper_arm.-1"
+    },
+    {
+      "id": "fore-1.core",
+      "assembly": "forearm.-1"
+    },
+    {
+      "id": "fore-1.gauntlet",
+      "assembly": "forearm.-1"
+    },
+    {
+      "id": "fore-1.inlay",
+      "assembly": "forearm.-1"
+    },
+    {
+      "id": "fore-1.chrome_rail-1",
+      "assembly": "forearm.-1"
+    },
+    {
+      "id": "fore-1.bolt-1.0",
+      "assembly": "forearm.-1"
+    },
+    {
+      "id": "fore-1.bolt-1.1",
+      "assembly": "forearm.-1"
+    },
+    {
+      "id": "fore-1.bolt-1.2",
+      "assembly": "forearm.-1"
+    },
+    {
+      "id": "fore-1.chrome_rail1",
+      "assembly": "forearm.-1"
+    },
+    {
+      "id": "fore-1.bolt1.0",
+      "assembly": "forearm.-1"
+    },
+    {
+      "id": "fore-1.bolt1.1",
+      "assembly": "forearm.-1"
+    },
+    {
+      "id": "fore-1.bolt1.2",
+      "assembly": "forearm.-1"
+    },
+    {
+      "id": "hand-1.palm",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.finger0.0",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.knuckle0.0",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.finger0.1",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.knuckle0.1",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.finger0.2",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.knuckle0.2",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.finger1.0",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.knuckle1.0",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.finger1.1",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.knuckle1.1",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.finger1.2",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.knuckle1.2",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.finger2.0",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.knuckle2.0",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.finger2.1",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.knuckle2.1",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.finger2.2",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.knuckle2.2",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.finger3.0",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.knuckle3.0",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.finger3.1",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.knuckle3.1",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.finger3.2",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.knuckle3.2",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.thumb0",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "hand-1.thumb1",
+      "assembly": "hand.-1"
+    },
+    {
+      "id": "door-1.skin",
+      "assembly": "door.-1"
+    },
+    {
+      "id": "door-1.glass",
+      "assembly": "door.-1"
+    },
+    {
+      "id": "door-1.window_frame(0, -0.39, 0.37)",
+      "assembly": "door.-1"
+    },
+    {
+      "id": "door-1.window_frame(0, -0.22, 0.8)",
+      "assembly": "door.-1"
+    },
+    {
+      "id": "door-1.window_frame(0, 0.2, 0.79)",
+      "assembly": "door.-1"
+    },
+    {
+      "id": "door-1.handle",
+      "assembly": "door.-1"
+    },
+    {
+      "id": "door-1.mirror",
+      "assembly": "door.-1"
+    },
+    {
+      "id": "thigh-1.hip",
+      "assembly": "thigh.-1"
+    },
+    {
+      "id": "thigh-1.inner",
+      "assembly": "thigh.-1"
+    },
+    {
+      "id": "thigh-1.piston-1",
+      "assembly": "thigh.-1"
+    },
+    {
+      "id": "thigh-1.housing-1",
+      "assembly": "thigh.-1"
+    },
+    {
+      "id": "thigh-1.piston1",
+      "assembly": "thigh.-1"
+    },
+    {
+      "id": "thigh-1.housing1",
+      "assembly": "thigh.-1"
+    },
+    {
+      "id": "thigh-1.side_lamella0",
+      "assembly": "thigh.-1"
+    },
+    {
+      "id": "thigh-1.side_lamella1",
+      "assembly": "thigh.-1"
+    },
+    {
+      "id": "thigh-1.side_lamella2",
+      "assembly": "thigh.-1"
+    },
+    {
+      "id": "thigh-1.side_lamella3",
+      "assembly": "thigh.-1"
+    },
+    {
+      "id": "thigh-1.side_lamella4",
+      "assembly": "thigh.-1"
+    },
+    {
+      "id": "thigh-1.side_lamella5",
+      "assembly": "thigh.-1"
+    },
+    {
+      "id": "thigh-1.guard",
+      "assembly": "thigh.-1"
+    },
+    {
+      "id": "knee-1.gear",
+      "assembly": "knee.-1"
+    },
+    {
+      "id": "knee-1.plate",
+      "assembly": "knee.-1"
+    },
+    {
+      "id": "shin-1.core",
+      "assembly": "shin.-1"
+    },
+    {
+      "id": "shin-1.armor",
+      "assembly": "shin.-1"
+    },
+    {
+      "id": "shin-1.black_panel",
+      "assembly": "shin.-1"
+    },
+    {
+      "id": "shin-1.rail-1",
+      "assembly": "shin.-1"
+    },
+    {
+      "id": "shin-1.rail1",
+      "assembly": "shin.-1"
+    },
+    {
+      "id": "shin-1.vent0",
+      "assembly": "shin.-1"
+    },
+    {
+      "id": "shin-1.vent1",
+      "assembly": "shin.-1"
+    },
+    {
+      "id": "shin-1.vent2",
+      "assembly": "shin.-1"
+    },
+    {
+      "id": "shin-1.vent3",
+      "assembly": "shin.-1"
+    },
+    {
+      "id": "shin-1.vent4",
+      "assembly": "shin.-1"
+    },
+    {
+      "id": "shin-1.vent5",
+      "assembly": "shin.-1"
+    },
+    {
+      "id": "shin-1.vent6",
+      "assembly": "shin.-1"
+    },
+    {
+      "id": "shin-1.vent7",
+      "assembly": "shin.-1"
+    },
+    {
+      "id": "wheel.rear-1.tire",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.rim",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.rim_lip",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.rotor",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.hub",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.spoke0",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.lug0",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.spoke1",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.lug1",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.spoke2",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.lug2",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.spoke3",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.lug3",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.spoke4",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.lug4",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread0",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread1",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread2",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread3",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread4",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread5",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread6",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread7",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread8",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread9",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread10",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread11",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread12",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread13",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread14",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread15",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread16",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread17",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread18",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread19",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread20",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread21",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread22",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread23",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread24",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread25",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread26",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread27",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread28",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread29",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread30",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.tread31",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.outer_lip-1",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.outer_hub-1",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.outer_spoke-1.0",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.outer_spoke-1.1",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.outer_spoke-1.2",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.outer_spoke-1.3",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.outer_spoke-1.4",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.outer_lip1",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.outer_hub1",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.outer_spoke1.0",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.outer_spoke1.1",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.outer_spoke1.2",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.outer_spoke1.3",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.outer_spoke1.4",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "wheel.rear-1.arch",
+      "assembly": "rear_wheel.-1"
+    },
+    {
+      "id": "foot-1.sole",
+      "assembly": "foot.-1"
+    },
+    {
+      "id": "foot-1.toe",
+      "assembly": "foot.-1"
+    },
+    {
+      "id": "foot-1.toe_cap",
+      "assembly": "foot.-1"
+    },
+    {
+      "id": "foot-1.ankle",
+      "assembly": "foot.-1"
+    },
+    {
+      "id": "foot-1.metatarsal0",
+      "assembly": "foot.-1"
+    },
+    {
+      "id": "foot-1.metatarsal1",
+      "assembly": "foot.-1"
+    },
+    {
+      "id": "foot-1.metatarsal2",
+      "assembly": "foot.-1"
+    },
+    {
+      "id": "shoulder1.ball",
+      "assembly": "shoulder.1"
+    },
+    {
+      "id": "shoulder1.joint",
+      "assembly": "shoulder.1"
+    },
+    {
+      "id": "shoulder1.fender",
+      "assembly": "shoulder.1"
+    },
+    {
+      "id": "shoulder1.dark_inlay",
+      "assembly": "shoulder.1"
+    },
+    {
+      "id": "wheel.front1.tire",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.rim",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.rim_lip",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.rotor",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.hub",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.spoke0",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.lug0",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.spoke1",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.lug1",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.spoke2",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.lug2",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.spoke3",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.lug3",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.spoke4",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.lug4",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread0",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread1",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread2",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread3",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread4",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread5",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread6",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread7",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread8",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread9",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread10",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread11",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread12",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread13",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread14",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread15",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread16",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread17",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread18",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread19",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread20",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread21",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread22",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread23",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread24",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread25",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread26",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread27",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread28",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread29",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread30",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.tread31",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.outer_lip-1",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.outer_hub-1",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.outer_spoke-1.0",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.outer_spoke-1.1",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.outer_spoke-1.2",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.outer_spoke-1.3",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.outer_spoke-1.4",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.outer_lip1",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.outer_hub1",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.outer_spoke1.0",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.outer_spoke1.1",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.outer_spoke1.2",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.outer_spoke1.3",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.outer_spoke1.4",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.arch",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "wheel.front1.quarter_panel",
+      "assembly": "front_wheel.1"
+    },
+    {
+      "id": "upper1.elbow",
+      "assembly": "upper_arm.1"
+    },
+    {
+      "id": "upper1.core",
+      "assembly": "upper_arm.1"
+    },
+    {
+      "id": "upper1.piston-1",
+      "assembly": "upper_arm.1"
+    },
+    {
+      "id": "upper1.piston1",
+      "assembly": "upper_arm.1"
+    },
+    {
+      "id": "upper1.rib0",
+      "assembly": "upper_arm.1"
+    },
+    {
+      "id": "upper1.rib1",
+      "assembly": "upper_arm.1"
+    },
+    {
+      "id": "upper1.rib2",
+      "assembly": "upper_arm.1"
+    },
+    {
+      "id": "upper1.rib3",
+      "assembly": "upper_arm.1"
+    },
+    {
+      "id": "upper1.outer_shell",
+      "assembly": "upper_arm.1"
+    },
+    {
+      "id": "fore1.core",
+      "assembly": "forearm.1"
+    },
+    {
+      "id": "fore1.gauntlet",
+      "assembly": "forearm.1"
+    },
+    {
+      "id": "fore1.inlay",
+      "assembly": "forearm.1"
+    },
+    {
+      "id": "fore1.chrome_rail-1",
+      "assembly": "forearm.1"
+    },
+    {
+      "id": "fore1.bolt-1.0",
+      "assembly": "forearm.1"
+    },
+    {
+      "id": "fore1.bolt-1.1",
+      "assembly": "forearm.1"
+    },
+    {
+      "id": "fore1.bolt-1.2",
+      "assembly": "forearm.1"
+    },
+    {
+      "id": "fore1.chrome_rail1",
+      "assembly": "forearm.1"
+    },
+    {
+      "id": "fore1.bolt1.0",
+      "assembly": "forearm.1"
+    },
+    {
+      "id": "fore1.bolt1.1",
+      "assembly": "forearm.1"
+    },
+    {
+      "id": "fore1.bolt1.2",
+      "assembly": "forearm.1"
+    },
+    {
+      "id": "hand1.palm",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.finger0.0",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.knuckle0.0",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.finger0.1",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.knuckle0.1",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.finger0.2",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.knuckle0.2",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.finger1.0",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.knuckle1.0",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.finger1.1",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.knuckle1.1",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.finger1.2",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.knuckle1.2",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.finger2.0",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.knuckle2.0",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.finger2.1",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.knuckle2.1",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.finger2.2",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.knuckle2.2",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.finger3.0",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.knuckle3.0",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.finger3.1",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.knuckle3.1",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.finger3.2",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.knuckle3.2",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.thumb0",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "hand1.thumb1",
+      "assembly": "hand.1"
+    },
+    {
+      "id": "door1.skin",
+      "assembly": "door.1"
+    },
+    {
+      "id": "door1.glass",
+      "assembly": "door.1"
+    },
+    {
+      "id": "door1.window_frame(0, -0.39, 0.37)",
+      "assembly": "door.1"
+    },
+    {
+      "id": "door1.window_frame(0, -0.22, 0.8)",
+      "assembly": "door.1"
+    },
+    {
+      "id": "door1.window_frame(0, 0.2, 0.79)",
+      "assembly": "door.1"
+    },
+    {
+      "id": "door1.handle",
+      "assembly": "door.1"
+    },
+    {
+      "id": "door1.mirror",
+      "assembly": "door.1"
+    },
+    {
+      "id": "thigh1.hip",
+      "assembly": "thigh.1"
+    },
+    {
+      "id": "thigh1.inner",
+      "assembly": "thigh.1"
+    },
+    {
+      "id": "thigh1.piston-1",
+      "assembly": "thigh.1"
+    },
+    {
+      "id": "thigh1.housing-1",
+      "assembly": "thigh.1"
+    },
+    {
+      "id": "thigh1.piston1",
+      "assembly": "thigh.1"
+    },
+    {
+      "id": "thigh1.housing1",
+      "assembly": "thigh.1"
+    },
+    {
+      "id": "thigh1.side_lamella0",
+      "assembly": "thigh.1"
+    },
+    {
+      "id": "thigh1.side_lamella1",
+      "assembly": "thigh.1"
+    },
+    {
+      "id": "thigh1.side_lamella2",
+      "assembly": "thigh.1"
+    },
+    {
+      "id": "thigh1.side_lamella3",
+      "assembly": "thigh.1"
+    },
+    {
+      "id": "thigh1.side_lamella4",
+      "assembly": "thigh.1"
+    },
+    {
+      "id": "thigh1.side_lamella5",
+      "assembly": "thigh.1"
+    },
+    {
+      "id": "thigh1.guard",
+      "assembly": "thigh.1"
+    },
+    {
+      "id": "knee1.gear",
+      "assembly": "knee.1"
+    },
+    {
+      "id": "knee1.plate",
+      "assembly": "knee.1"
+    },
+    {
+      "id": "shin1.core",
+      "assembly": "shin.1"
+    },
+    {
+      "id": "shin1.armor",
+      "assembly": "shin.1"
+    },
+    {
+      "id": "shin1.black_panel",
+      "assembly": "shin.1"
+    },
+    {
+      "id": "shin1.rail-1",
+      "assembly": "shin.1"
+    },
+    {
+      "id": "shin1.rail1",
+      "assembly": "shin.1"
+    },
+    {
+      "id": "shin1.vent0",
+      "assembly": "shin.1"
+    },
+    {
+      "id": "shin1.vent1",
+      "assembly": "shin.1"
+    },
+    {
+      "id": "shin1.vent2",
+      "assembly": "shin.1"
+    },
+    {
+      "id": "shin1.vent3",
+      "assembly": "shin.1"
+    },
+    {
+      "id": "shin1.vent4",
+      "assembly": "shin.1"
+    },
+    {
+      "id": "shin1.vent5",
+      "assembly": "shin.1"
+    },
+    {
+      "id": "shin1.vent6",
+      "assembly": "shin.1"
+    },
+    {
+      "id": "shin1.vent7",
+      "assembly": "shin.1"
+    },
+    {
+      "id": "wheel.rear1.tire",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.rim",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.rim_lip",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.rotor",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.hub",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.spoke0",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.lug0",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.spoke1",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.lug1",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.spoke2",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.lug2",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.spoke3",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.lug3",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.spoke4",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.lug4",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread0",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread1",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread2",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread3",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread4",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread5",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread6",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread7",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread8",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread9",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread10",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread11",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread12",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread13",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread14",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread15",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread16",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread17",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread18",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread19",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread20",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread21",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread22",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread23",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread24",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread25",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread26",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread27",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread28",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread29",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread30",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.tread31",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.outer_lip-1",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.outer_hub-1",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.outer_spoke-1.0",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.outer_spoke-1.1",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.outer_spoke-1.2",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.outer_spoke-1.3",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.outer_spoke-1.4",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.outer_lip1",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.outer_hub1",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.outer_spoke1.0",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.outer_spoke1.1",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.outer_spoke1.2",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.outer_spoke1.3",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.outer_spoke1.4",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "wheel.rear1.arch",
+      "assembly": "rear_wheel.1"
+    },
+    {
+      "id": "foot1.sole",
+      "assembly": "foot.1"
+    },
+    {
+      "id": "foot1.toe",
+      "assembly": "foot.1"
+    },
+    {
+      "id": "foot1.toe_cap",
+      "assembly": "foot.1"
+    },
+    {
+      "id": "foot1.ankle",
+      "assembly": "foot.1"
+    },
+    {
+      "id": "foot1.metatarsal0",
+      "assembly": "foot.1"
+    },
+    {
+      "id": "foot1.metatarsal1",
+      "assembly": "foot.1"
+    },
+    {
+      "id": "foot1.metatarsal2",
+      "assembly": "foot.1"
+    },
+    {
+      "id": "roof.enamel",
+      "assembly": "roof"
+    },
+    {
+      "id": "roof.stripe-1",
+      "assembly": "roof"
+    },
+    {
+      "id": "roof.stripe1",
+      "assembly": "roof"
+    },
+    {
+      "id": "windscreen.glass",
+      "assembly": "windscreen"
+    },
+    {
+      "id": "windscreen.pillar-1",
+      "assembly": "windscreen"
+    },
+    {
+      "id": "windscreen.pillar1",
+      "assembly": "windscreen"
+    },
+    {
+      "id": "rear_deck.enamel",
+      "assembly": "rear_deck"
+    },
+    {
+      "id": "rear_deck.stripe-1",
+      "assembly": "rear_deck"
+    },
+    {
+      "id": "rear_deck.stripe1",
+      "assembly": "rear_deck"
+    },
+    {
+      "id": "rear_bumper.enamel",
+      "assembly": "rear_bumper"
+    },
+    {
+      "id": "rear_bumper.diffuser",
+      "assembly": "rear_bumper"
+    },
+    {
+      "id": "rear_bumper.tail-1.0",
+      "assembly": "rear_bumper"
+    },
+    {
+      "id": "rear_bumper.tail-1.1",
+      "assembly": "rear_bumper"
+    },
+    {
+      "id": "rear_bumper.exhaust-1",
+      "assembly": "rear_bumper"
+    },
+    {
+      "id": "rear_bumper.tail1.0",
+      "assembly": "rear_bumper"
+    },
+    {
+      "id": "rear_bumper.tail1.1",
+      "assembly": "rear_bumper"
+    },
+    {
+      "id": "rear_bumper.exhaust1",
+      "assembly": "rear_bumper"
+    },
+    {
+      "id": "quarter-1.0.shell",
+      "assembly": "quarter.-1.0"
+    },
+    {
+      "id": "quarter-1.1.shell",
+      "assembly": "quarter.-1.1"
+    },
+    {
+      "id": "quarter1.0.shell",
+      "assembly": "quarter.1.0"
+    },
+    {
+      "id": "quarter1.1.shell",
+      "assembly": "quarter.1.1"
+    },
+    {
+      "id": "rear_window.glass",
+      "assembly": "rear_window"
+    },
+    {
+      "id": "sill-1.enamel",
+      "assembly": "sill.-1"
+    },
+    {
+      "id": "car_flank-1.shell",
+      "assembly": "car_flank.-1"
+    },
+    {
+      "id": "sill1.enamel",
+      "assembly": "sill.1"
+    },
+    {
+      "id": "car_flank1.shell",
+      "assembly": "car_flank.1"
+    }
+  ]
+}

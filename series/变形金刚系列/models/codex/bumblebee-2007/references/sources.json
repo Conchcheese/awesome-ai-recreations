@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "mediaDistribution": "local-only",
+  "sources": [
+    {
+      "file": "local/mpm-3-01.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-3_01.jpg",
+      "sha256": "93780d650a2703cabf52b50a47e519279dc8c89cbe130c370d5f7a503f8943c5",
+      "type": "licensed-product-supplement",
+      "rights": "TOMY / Hasbro / film licensors; local research only; redistribution permission not established"
+    },
+    {
+      "file": "local/mpm-3-02.jpg",
+      "url": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-3_02.jpg",
+      "sha256": "9e37a22fac14fcb53db99222d9b70a66379e46432a245d692fc6a700577d5951",
+      "type": "licensed-product-supplement",
+      "rights": "TOMY / Hasbro / film licensors; local research only; redistribution permission not established"
+    }
+  ],
+  "unknown": [
+    "电影原帧缺失；官方产品图只补外观。",
+    "所有世界尺寸与隐藏机构为guess / inferred。"
+  ]
+}

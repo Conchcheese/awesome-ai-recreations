@@ -1,0 +1,27 @@
+{
+  "agent": "Codex",
+  "exact_model_id": "unknown; no separately invoked model API",
+  "visual_goal": "fidelity",
+  "provenance": "independent",
+  "input_package": "local/input-packs/bumblebee-2007-20261107",
+  "input_manifest_sha256": "bf443a4eaf97c9690e4817338cb50a60c14324f5ddd06a98702cda49a8d9c53c",
+  "human_intervention": "user request only; no manual mesh editing",
+  "method_inputs": [
+    "series general workflow protocol",
+    "series general video workflow; no prior character implementation code"
+  ],
+  "original_reference_count": 2,
+  "movie_frame_measurement": false,
+  "tool_versions": {
+    "Blender": "4.5.4 LTS",
+    "Three.js": "0.186.1",
+    "esbuild": "0.28.1",
+    "Playwright": "1.58.2"
+  },
+  "unknown": [
+    "exact model snapshot",
+    "real dimensions",
+    "film-accurate hidden topology",
+    "complete collisions"
+  ]
+}

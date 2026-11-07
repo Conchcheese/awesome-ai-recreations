@@ -21,7 +21,7 @@ https://github.com/topmindspace/awesome-ai-recreations
 
 ## 案例展示
 
-目前有 **10 个案例、17 个实现版本**。点击「互动」操作作品，点击「巡览」观看自动演示。截图来自对应案例的已有作品；同一案例的其他模型版本列在右侧。
+目前有 **11 个案例、18 个实现版本**。点击「互动」操作作品，点击「巡览」观看自动演示。截图来自对应案例的已有作品；同一案例的其他模型版本列在右侧。
 
 ### 机械复刻系列
 
@@ -42,6 +42,7 @@ https://github.com/topmindspace/awesome-ai-recreations
 | 截图 | 案例介绍 | 在线演示 |
 |---|---|---|
 | <img src="series/变形金刚系列/01-擎天柱-电影版/stills/03-英雄亮相.jpg" width="160" alt="擎天柱·2007真人电影版截图"><br><sub>截图：GPT-6.1 Sol</sub> | **擎天柱·2007真人电影版**<br>2007 真人电影版擎天柱：卡车与人形变换、局部展开和拆解重组。 | GPT-6.1 Sol：[互动](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/01-擎天柱-电影版/index.html) · [巡览](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/01-擎天柱-电影版/film.html)<br>HY4：[互动](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/hy4/optimus-prime-2007/index.html) · [巡览](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/hy4/optimus-prime-2007/film.html)<br>GLM 5.3-Flash：[互动](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/index.html) · [巡览](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/film.html) |
+| <img src="series/变形金刚系列/models/codex/bumblebee-2007/stills/hero.jpg" width="160" alt="大黄蜂程序化研究截图"><br><sub>截图：Codex / Cycles</sub> | **大黄蜂·2007真人电影版**<br>独立程序化外观研究：连续车形／人形变换、面罩与同源电影短片。 | Codex：[互动](series/变形金刚系列/models/codex/bumblebee-2007/index.html) · [巡览](series/变形金刚系列/models/codex/bumblebee-2007/film.html) · [重建与本地视频](series/变形金刚系列/models/codex/bumblebee-2007/README.md) |
 
 案例的源码、参考、规格与模型版本说明见[机械系列](series/机械复刻系列/README.md)和[变形金刚系列](series/变形金刚系列/README.md)。
 
