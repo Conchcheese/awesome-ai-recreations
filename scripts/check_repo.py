@@ -9,7 +9,7 @@ from urllib.parse import unquote, urlsplit
 import unicodedata
 
 from catalog import ROOT, load_catalog, normalize_name
-from task_inputs import LOCK, MEDIA, check_versions, prepare_task, read_json, require_lock, safe_task_path
+from task_inputs import LOCK, OLD_LOCK, MEDIA, check_versions, prepare_task, read_json, require_lock, safe_task_path
 from check_transformer_publication import validate_publication
 
 
@@ -164,44 +164,53 @@ def validate_task(case, root):
 
 
 def layout_errors(data, files):
-    """Keep active project files under models and legacy mechanical pages static."""
+    """Keep each active project under its case and reject revived model-first trees."""
     errors = []
-    releases = set()
     for case in data['cases']:
         for variant in case['variants']:
-            project = Path(variant['readme']).parent
-            key = case['id'] + '/' + variant['id']
-            if (case['id'], variant['id']) == ('optimus-prime-2007', 'cinematic-v2'):
-                expected = Path('series/变形金刚系列/01-擎天柱-电影版')
-                valid = project == expected
-            else:
-                parts = project.parts
-                valid = (len(parts) >= 4 and parts[0] == 'series' and parts[2] == 'models' and
-                         re.fullmatch(r'[a-z0-9]+(?:[.-][a-z0-9]+)*', parts[3]))
-            if not valid:
-                errors.append(f'{key} 的项目说明须位于系列 models/ 下')
-                continue
-            for field in ('source', 'spec', 'record', 'cwd'):
+            project = Path('cases', case['id'], 'models', variant['id'])
+            for field in ('readme', 'source', 'spec', 'record', 'cwd', 'live', 'film'):
                 if not Path(variant[field]).is_relative_to(project):
-                    errors.append(f'{key} 的 {field} 不在同一模型项目下')
-            for field in ('live', 'film'):
-                parts = Path(variant[field]).parts
-                if parts[:2] == ('series', '机械复刻系列') and len(parts) > 3 and parts[2] != 'models':
-                    releases.add(parts[:3])
+                    errors.append(f"{case['id']}/{variant['id']} 的 {field} 不在案例版本目录")
+            if variant['cwd'] != project.as_posix():
+                errors.append(f"{case['id']}/{variant['id']} 的运行目录须为版本根目录")
     for value in files:
         parts = Path(value).parts
-        if parts[:3] in releases and len(parts) > 3:
-            if parts[3] not in {'README.md', 'pages', 'covers'} and not re.match(r'^\d\d-', parts[3]):
-                errors.append('历史发布目录只保存发布内容：' + value)
-            elif len(parts) > 4 and Path(value).suffix not in {'.html', '.png', '.jpg', '.jpeg', '.gif', '.webp'}:
-                errors.append('历史发布目录含源码或中间产物：' + value)
+        if len(parts) > 2 and parts[0] == 'series' and (
+                parts[2] == 'models' or re.match(r'^\d\d-|.*复刻$|hunyuan直出版$', parts[2])):
+            errors.append('系列目录仅保存导航和系列资料：' + value)
     return errors
 
 
+def legacy_pages(root):
+    mapping = read_json(root, 'site/legacy-pages.json')
+    stubs = {}
+    for path in (root / 'site/redirects').glob('*.html'):
+        text = path.read_text(encoding='utf-8')
+        pattern = r'---\nlayout: legacy-demo\npermalink: ("[^"\n]+")\ntarget: ("[^"\n]+")\n---\n'
+        match = re.fullmatch(pattern, text)
+        if not match:
+            raise ValueError(f'旧演示跳转格式无效：{path.name}')
+        source, destination = (json.loads(value).removeprefix('/') for value in match.groups())
+        if source in stubs:
+            raise ValueError('旧演示跳转重复：' + source)
+        stubs[source] = destination
+    if stubs != mapping:
+        raise ValueError('旧演示跳转与发布清单不一致')
+    for source, destination in mapping.items():
+        if (not source.startswith('series/') or not source.endswith('.html') or
+                not destination.startswith('cases/') or not destination.endswith('.html') or
+                not local_path(root, destination).is_file()):
+            raise ValueError('旧演示跳转指向无效路径：' + source)
+        local_path(root, source)
+    return mapping
+
+
 def published_path_errors(old, root):
-    return [f'已发布入口在新检出中缺失：{value}'
+    mapping = legacy_pages(root)
+    return [f'已发布入口缺少文件或跳转：{value}'
             for case in old['cases'] for variant in case['variants'] for field in ('live', 'film')
-            if (value := variant.get(field)) and not local_path(root, value).is_file()]
+            if (value := variant.get(field)) and value not in mapping and not local_path(root, value).is_file()]
 
 
 def markdown_errors(file, root):
@@ -288,6 +297,7 @@ def main():
         files = sorted({f for f in files if f and ((ROOT / f).exists() or (ROOT / f).is_symlink())})
         errors = (validate_catalog(data, ROOT) + layout_errors(data, files) +
                   publication_errors(files, ROOT) + validate_publication(files, ROOT))
+        legacy_pages(ROOT)
         if args.base and args.base.strip('0'):
             base = subprocess.check_output(
                 ['git', 'rev-parse', '--verify', '--end-of-options', args.base + '^{commit}'],
@@ -302,10 +312,12 @@ def main():
             if locked != set(lock) or locked != {case['id'] for case in data['cases']}:
                 errors.append('共同任务索引与锁定清单的案例不一致')
             if base:
-                if subprocess.run(['git', 'cat-file', '-e', f'{base}:{LOCK}'], cwd=ROOT,
-                                  capture_output=True).returncode == 0:
-                    old = subprocess.check_output(['git', 'show', f'{base}:{LOCK}'], cwd=ROOT, text=True)
-                    check_versions(json.loads(old), lock)
+                for old_path in (LOCK, OLD_LOCK):
+                    if subprocess.run(['git', 'cat-file', '-e', f'{base}:{old_path}'], cwd=ROOT,
+                                      capture_output=True).returncode == 0:
+                        old = subprocess.check_output(['git', 'show', f'{base}:{old_path}'], cwd=ROOT, text=True)
+                        check_versions(json.loads(old), lock)
+                        break
         ignored = subprocess.run(
             ['git', '-c', 'core.excludesFile=/dev/null', 'check-ignore', '--no-index', '-z', '--stdin'],
             input=''.join(f + '\0' for f in files), cwd=ROOT, capture_output=True, text=True)

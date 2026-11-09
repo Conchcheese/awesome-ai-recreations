@@ -1,7 +1,7 @@
 # 仓库封面
 
-![横版封面](awesome-ai-recreations-cover.jpg)
+![擎天柱、大黄蜂与机械章鱼](awesome-ai-recreations-cover.jpg)
 
-AI 生成的 8:3 概念插画，用于主 README。风格为暖白工业设计、石墨色标题与橙色点缀；实际案例效果见各版本截图。
+8:3 横幅，由内置 ImageGen 在原封面的工业设计风格上编辑。概念场景融入擎天柱、大黄蜂和 OC-8，实际复刻画面见各案例。
 
 [生成提示词](prompt.txt) · [来源说明](../../NOTICE.md#本轮仓库封面)

@@ -6,10 +6,10 @@
   "series": "替换系列名称",
   "input_version": 1,
   "status": "draft",
-  "brief": "tasks/replace-case-id/brief.md",
-  "method": "tasks/_shared/制作与验收.md",
-  "resources": "tasks/_shared/执行边界.md",
-  "source_notes": "tasks/_shared/原始参考.md",
+  "brief": "cases/replace-case-id/task/brief.md",
+  "method": "cases/_shared/制作与验收.md",
+  "resources": "cases/_shared/执行边界.md",
+  "source_notes": "cases/_shared/原始参考.md",
   "defaults": {
     "visual_goal": "fidelity",
     "provenance": "independent"

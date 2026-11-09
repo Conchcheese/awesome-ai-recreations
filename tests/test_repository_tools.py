@@ -9,7 +9,7 @@ import subprocess
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from catalog import ROOT, get_case, load_catalog, recreation_plan, export_inputs
-from check_repo import layout_errors, local_path, markdown_errors, publication_errors, validate_catalog
+from check_repo import layout_errors, legacy_pages, local_path, markdown_errors, publication_errors, validate_catalog
 from task_inputs import INDEX, LOCK, SHARED, check_versions, freeze_tasks, load_tasks, sha256, source_file, verify_pack
 from workspace import prepare_run, run_paths
 
@@ -21,11 +21,20 @@ class RepositoryToolsTests(unittest.TestCase):
     def test_layout_rejects_source_in_a_legacy_publish_directory(self):
         data = load_catalog()
         _, variant = get_case(data, 'oc8', 'deepseek')
-        legacy = Path(*Path(variant['live']).parts[:3])
+        legacy = Path('series/机械复刻系列/deepseek复刻')
         self.assertEqual([], layout_errors(data, [variant['live']]))
         self.assertTrue(layout_errors(data, [(legacy / 'src/model.js').as_posix()]))
         variant['source'] = (legacy / 'src').as_posix()
         self.assertTrue(layout_errors(data, []))
+
+    def test_legacy_demos_point_to_canonical_cases_and_ids_still_resolve(self):
+        redirects = legacy_pages(ROOT)
+        self.assertGreaterEqual(len(redirects), 40)
+        _, optimus = get_case(load_catalog(), '擎天柱', 'cinematic-v2')
+        self.assertEqual('gpt-6-1-sol', optimus['id'])
+        _, glm = get_case(load_catalog(), 'oc8', 'glm')
+        self.assertEqual('glm-5-3-flash', glm['id'])
+        self.assertEqual(optimus['live'], redirects['series/变形金刚系列/01-擎天柱-电影版/index.html'])
 
     def test_workspace_moves_artifacts_and_refuses_to_merge(self):
         case, variant = get_case(load_catalog(), '大黄蜂', 'kimi-k3-1-pro')
@@ -55,8 +64,8 @@ class RepositoryToolsTests(unittest.TestCase):
 
     def test_bumblebee_resolves_to_the_sol_implementation(self):
         case, variant = get_case(load_catalog(), '大黄蜂', 'gpt-6-1-sol')
-        self.assertEqual('tasks/bumblebee-2007/input.json', case['task_manifest'])
-        base = Path('series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007')
+        self.assertEqual('cases/bumblebee-2007/task/input.json', case['task_manifest'])
+        base = Path('cases/bumblebee-2007/models/gpt-6-1-sol')
         self.assertEqual(base, Path(variant['cwd']))
         record = json.loads((ROOT / base / 'records/provenance.json').read_text())
         self.assertEqual('GPT-6.1 Sol', record['model_label'])
@@ -200,20 +209,20 @@ class RepositoryToolsTests(unittest.TestCase):
                                 cwd=ROOT, capture_output=True, text=True, check=True)
         plan = json.loads(result.stdout)
         self.assertEqual('oc8', plan['case_id'])
-        self.assertEqual('tasks/oc8/brief.md', plan['prompt'])
+        self.assertEqual('cases/oc8/task/brief.md', plan['prompt'])
         self.assertNotIn('variants', plan)
         self.assertNotIn('GLM版-互动页截图.jpg', result.stdout)
 
     def test_task_cli_works_with_no_results_index_or_series(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            for folder in ('scripts', 'tasks', 'templates'):
+            for folder in ('scripts', 'cases', 'templates'):
                 (root / folder).mkdir()
             for name in ('scripts/catalog.py', 'scripts/task_inputs.py', LOCK, 'templates/spec.md'):
                 shutil.copyfile(ROOT / name, root / name)
-            for name in ('oc8', '_shared'):
-                shutil.copytree(ROOT / 'tasks' / name, root / 'tasks' / name)
-            (root / INDEX).write_text(json.dumps({'tasks': ['tasks/oc8/input.json']}))
+            for name in ('oc8/task', '_shared'):
+                shutil.copytree(ROOT / 'cases' / name, root / 'cases' / name)
+            (root / INDEX).write_text(json.dumps({'tasks': ['cases/oc8/task/input.json']}))
             command = [sys.executable, 'scripts/catalog.py']
             subprocess.run([*command, 'list', '--tasks'], cwd=root, capture_output=True, check=True)
             subprocess.run([*command, 'recreate', 'oc8', '--export', 'pack', '--require-complete'],
@@ -243,8 +252,8 @@ class RepositoryToolsTests(unittest.TestCase):
     def test_missing_media_keeps_identity_but_prevents_complete_export(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            manifest = 'tasks/bumblebee-2007/input.json'
-            for name in (manifest, 'tasks/bumblebee-2007/brief.md', 'templates/spec.md', *SHARED.values()):
+            manifest = 'cases/bumblebee-2007/task/input.json'
+            for name in (manifest, 'cases/bumblebee-2007/task/brief.md', 'templates/spec.md', *SHARED.values()):
                 dest = root / name
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copyfile(ROOT / name, dest)
@@ -263,7 +272,7 @@ class RepositoryToolsTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, '缺失'):
                 verify_pack(root / 'draft')
             for row in task['references']:
-                path = root / 'local/references/tasks/bumblebee-2007' / Path(row['path']).name
+                path = root / 'local/cases/bumblebee-2007/references/task' / Path(row['path']).name
                 path.parent.mkdir(parents=True, exist_ok=True)
                 path.write_bytes(b'fixture')
             complete = export_inputs(case, root / 'pack', root, require_complete=True)
@@ -319,7 +328,7 @@ class RepositoryToolsTests(unittest.TestCase):
             with self.subTest(path=path):
                 result=subprocess.run(['git','check-ignore','--no-index','-q','--',path],cwd=ROOT)
                 self.assertEqual(0,result.returncode)
-        for path in ['series/机械复刻系列/models/glm-5.3-flash/src/kit/sfx/samples/fs-258269-mouth-pop.ogg','series/机械复刻系列/models/glm-5.3-flash/src/upstream-teardown/sfx/samples/fs-258269-mouth-pop.ogg']:
+        for path in ['shared/mechanical/kit/sfx/samples/fs-258269-mouth-pop.ogg','shared/mechanical/upstream-teardown/sfx/samples/fs-258269-mouth-pop.ogg']:
             self.assertEqual(1,subprocess.run(['git','check-ignore','--no-index','-q','--',path],cwd=ROOT).returncode)
 
     def test_publication_rejects_secret_names_and_large_files(self):

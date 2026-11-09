@@ -13,9 +13,14 @@ def validate_publication(files,root):
  errors=[]
  try:
   data=json.loads(manifest.read_text(encoding='utf-8'));assets={}
+  scopes=[PREFIX]
+  for task in root.glob('cases/*/task/input.json'):
+   if json.loads(task.read_text(encoding='utf-8')).get('series')=='transformers':
+    scopes.append(task.parent.parent.relative_to(root).as_posix()+'/models/')
+  scopes=tuple(scopes)
   for item in data['assets']:
    p=Path(item['path'])
-   if p.is_absolute() or '..' in p.parts or not str(p).startswith(PREFIX):raise ValueError('公开素材路径无效')
+   if p.is_absolute() or '..' in p.parts or not str(p).startswith(scopes):raise ValueError('公开素材路径无效')
    if item['path'] in assets:errors.append('公开素材清单重复')
    if item['kind'] not in ['self-render','cc0-environment','reference-study']:errors.append('公开素材类型不允许: '+item['path'])
    if not item.get('rights'):errors.append('公开素材缺少权利说明: '+item['path'])
@@ -36,7 +41,7 @@ def validate_publication(files,root):
   for value in assets:
    if value not in files:errors.append('公开素材未进入发布候选: '+value)
   for value in files:
-   if not value.startswith(PREFIX) or Path(value).suffix.lower() not in MEDIA:continue
+   if not value.startswith(scopes) or Path(value).suffix.lower() not in MEDIA:continue
    file=root/value
    if not file.exists():continue
    item=assets.get(value)

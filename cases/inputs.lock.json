@@ -1,0 +1,46 @@
+{
+  "bee": {
+    "input_sha256": "5d8daefdb70d70e0b26e85278077be76ab5c3e8049df516d4d48424bade5c243",
+    "input_version": 3
+  },
+  "bumblebee-2007": {
+    "input_sha256": "7b7d98d170d17e32206a6790ffd560c13c59b2222bfea204c7b02f0216435975",
+    "input_version": 3
+  },
+  "cessna337": {
+    "input_sha256": "6ebf5cfaf82d6e75ab4ba6c216187c37fc4e8a4ed3be531814dd92a48fd6d378",
+    "input_version": 3
+  },
+  "hexapod": {
+    "input_sha256": "06a8a001475e198adb62b52bd4020dcd5b9fb0c98f5e59d391c7be8574f0798d",
+    "input_version": 3
+  },
+  "jellyfish": {
+    "input_sha256": "70b8b1bc4068fa67a0679c38e5d17280322ef9b04a30604d2f6410d8e5060451",
+    "input_version": 3
+  },
+  "oc8": {
+    "input_sha256": "e549680a8829bb385d3841d287172021a13b10c959a337f01b2aa35f5828359e",
+    "input_version": 3
+  },
+  "optimus-prime-2007": {
+    "input_sha256": "0b02cdb84e8095e94ec0de638149df4fd44f06b8f81eba0570ba155303512bf2",
+    "input_version": 3
+  },
+  "sandworm": {
+    "input_sha256": "302e54149c62c6ecafd2f15cd3a5d247bd17928070a6ee26c61994dc5aa231ec",
+    "input_version": 3
+  },
+  "scorpion": {
+    "input_sha256": "b5d3f87b8180f06aea81fe3eae387b8da3d3cff5edceef9a68d2353676482256",
+    "input_version": 3
+  },
+  "strandbeest": {
+    "input_sha256": "9d6ff1c28a82899e7cd4b98d45ad02014300d0332080e620098c38e52f87efc0",
+    "input_version": 3
+  },
+  "v8": {
+    "input_sha256": "c91a151af28e93d111a1acb435a9e70b5a0f67bd8b49940946c662287d5162e5",
+    "input_version": 3
+  }
+}

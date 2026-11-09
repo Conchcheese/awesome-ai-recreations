@@ -31,7 +31,7 @@ def sample_path(base, row, value):
     if len(parts) < 2 or parts[0] != 'local':
         raise ValueError('样例必须声明 local/ 下的相对路径')
     legacy = inside(inside(base, row['path']), value)
-    stash = base.parents[1] / 'local/references/characters'
+    stash = base.parents[1] / 'local/research/characters'
     canonical = inside(stash, str(Path(row['id'], *parts[1:])))
     if canonical.exists():
         return canonical

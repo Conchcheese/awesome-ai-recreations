@@ -3,24 +3,24 @@
 import argparse
 from pathlib import Path
 import os
+import re
 
 from catalog import ROOT, get_case, load_catalog
 from task_inputs import safe_task_path
 
-DIRECTORIES = ('input-packs', 'projects', 'references', 'runs', 'deliveries', 'runtime', 'archive')
+DIRECTORIES = ('cases', 'research', 'runtime', 'archive')
+
+
+def local_variant(root, case, variant):
+    return safe_task_path(root, Path('local/cases', case['id'], 'models', variant['id']).as_posix())
 
 
 def run_paths(root, case, variant):
-    readme = Path(variant['readme'])
-    project = readme.parent
-    if project.parts[:1] != ('series',) or len(project.parts) < 3:
-        raise ValueError('成果说明必须位于 series/ 的项目目录')
-    if project.parts[2] == 'models' and len(project.parts) > 3:
-        key = Path(*project.parts[3:])
-    else:
-        key = Path(variant['id'], case['id'])
-    run = Path('local/runs', case['series'], key)
-    return safe_task_path(root, project.as_posix()) / 'artifacts', safe_task_path(root, run.as_posix())
+    project = Path('cases', case['id'], 'models', variant['id'])
+    if Path(variant['readme']).parent != project:
+        raise ValueError('成果说明须位于对应的案例版本目录')
+    entry = safe_task_path(root, project.as_posix()) / 'artifacts'
+    return entry, local_variant(root, case, variant) / 'runs'
 
 
 def prepare_run(root, case, variant):
@@ -61,12 +61,27 @@ def main():
             return
         if not args.variant:
             parser.error('查询成果的产物位置需要 --variant')
-        case, variant = get_case(load_catalog(), args.case, args.variant)
+        catalog = load_catalog()
+        case, _ = get_case(catalog, args.case)
+        try:
+            _, variant = get_case(catalog, args.case, args.variant)
+        except ValueError:
+            if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', args.variant):
+                raise
+            local = local_variant(ROOT, case, {'id': args.variant})
+            if not local.is_dir():
+                raise
+            if args.prepare:
+                raise ValueError('本地专有工程已在中心目录；--prepare 用于已登记的 Git 工程')
+            for title, kind in (('工程', 'project'), ('运行产物', 'runs'), ('本地交付', 'deliveries')):
+                print(title + ' ' + str((local / kind).relative_to(ROOT)))
+            return
         entry, destination = run_paths(ROOT, case, variant)
         if args.prepare:
             prepare_run(ROOT, case, variant)
         print('产物入口 ' + str(entry.relative_to(ROOT)))
         print('中心目录 ' + str(destination.relative_to(ROOT)))
+        print('本地交付 ' + str((local_variant(ROOT, case, variant) / 'deliveries').relative_to(ROOT)))
         if variant.get('movie'):
             print('成片 ' + variant['movie'])
     except (OSError, ValueError, KeyError) as error:

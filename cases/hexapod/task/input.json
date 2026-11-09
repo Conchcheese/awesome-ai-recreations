@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "id": "hexapod",
+  "title": "六足机器人HX-18",
+  "aliases": [
+    "六足机器人",
+    "六足",
+    "HX-18"
+  ],
+  "series": "mechanical",
+  "input_version": 3,
+  "status": "ready",
+  "brief": "cases/hexapod/task/brief.md",
+  "method": "cases/_shared/制作与验收.md",
+  "resources": "cases/_shared/执行边界.md",
+  "source_notes": "cases/_shared/原始参考.md",
+  "defaults": {
+    "visual_goal": "fidelity",
+    "provenance": "independent"
+  },
+  "notes": "仓库提供实物或概念参考，未提供完整原作演示；以这些参考还原形态和机构，自行设计的 HUD、镜头和未知动作须注明。",
+  "references": [
+    {
+      "path": "cases/hexapod/task/references/01-六足机器人-LAURON-IVc实物图.jpg",
+      "sha256": "5d34c0640f425bf78dcbaeb84d29edf3d5857fefe557995ecef088742dca8244",
+      "kind": "original-reference",
+      "source_url": null,
+      "source_status": "historical-source-incomplete"
+    },
+    {
+      "path": "cases/hexapod/task/references/02-六足机器人-STEMI实物图.png",
+      "sha256": "1d87d7fcc30eaac6dba3337b1a402906566325759707993e7fc70d78e5175feb",
+      "kind": "original-reference",
+      "source_url": null,
+      "source_status": "historical-source-incomplete"
+    },
+    {
+      "path": "cases/hexapod/task/references/03-六足机器人-多机合影.jpg",
+      "sha256": "ede1c43c768f9f3c8e8a9bc8187287e5ab5c91c1d8f5106c12550f93a4258912",
+      "kind": "original-reference",
+      "source_url": null,
+      "source_status": "historical-source-incomplete"
+    }
+  ]
+}

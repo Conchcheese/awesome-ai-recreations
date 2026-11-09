@@ -7,7 +7,7 @@ import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
 CONTRACT = ['scripts/check_transformer_contract.py',
-            'series/变形金刚系列/01-擎天柱-电影版/production.json', '--require-ready']
+            'cases/optimus-prime-2007/models/gpt-6-1-sol/production.json', '--require-ready']
 
 
 def git(cwd, *args):

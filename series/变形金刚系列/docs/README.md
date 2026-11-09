@@ -4,4 +4,4 @@
 - [经验与实践](经验与实践.md)记录来自既有成果的通用经验。
 - [发布说明](发布说明.md)列出公开媒体、权利和校验规则。
 
-[系列首页](../README.md) · [模型项目](../models/README.md) · [角色研究](../research/README.md)
+[系列首页](../README.md) · [模型项目](../README.md) · [角色研究](../research/README.md)

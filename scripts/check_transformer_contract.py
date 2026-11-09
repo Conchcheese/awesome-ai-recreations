@@ -25,19 +25,14 @@ def safe_path(base, value):
 def reference_media_path(reference_dir, value, root=ROOT):
     """Resolve version-specific media stored outside the published project."""
     legacy = safe_path(reference_dir, value)
-    prefix = root / 'series/变形金刚系列'
-    resolved = reference_dir.resolve()
     parts = Path(value).parts
-    if not resolved.is_relative_to(prefix) or len(parts) < 2 or parts[0] != 'local':
+    if not reference_dir.resolve().is_relative_to(root) or len(parts) < 2 or parts[0] != 'local':
         return legacy
-    project = resolved.relative_to(prefix).parts
-    if len(project) == 4 and project[0] == 'models' and project[-1] == 'references':
-        key = project[1:3]
-    elif project == ('01-擎天柱-电影版', 'references'):
-        key = ('cinematic-v2', 'optimus-prime-2007')
-    else:
+    project = reference_dir.resolve().relative_to(root).parts
+    if len(project) != 5 or project[0] != 'cases' or project[2] != 'models' or project[4] != 'references':
         return legacy
-    stash = Path('local/references/versions/transformers', *key, *parts[1:])
+    _, case_id, _, variant, _ = project
+    stash = Path('local/cases', case_id, 'models', variant, 'references', *parts[1:])
     canonical = safe_task_path(root, stash.as_posix())
     return legacy if legacy.is_file() and not canonical.exists() else canonical
 

@@ -1,0 +1,32 @@
+{
+  "schema_version": 2,
+  "id": "cessna337",
+  "title": "塞斯纳337起落架",
+  "aliases": [
+    "塞斯纳337",
+    "塞斯纳起落架",
+    "起落架",
+    "Cessna 337"
+  ],
+  "series": "mechanical",
+  "input_version": 3,
+  "status": "ready",
+  "brief": "cases/cessna337/task/brief.md",
+  "method": "cases/_shared/制作与验收.md",
+  "resources": "cases/_shared/执行边界.md",
+  "source_notes": "cases/_shared/原始参考.md",
+  "defaults": {
+    "visual_goal": "fidelity",
+    "provenance": "independent"
+  },
+  "notes": "仓库提供实物或概念参考，未提供完整原作演示；以这些参考还原形态和机构，自行设计的 HUD、镜头和未知动作须注明。",
+  "references": [
+    {
+      "path": "cases/cessna337/task/references/01-塞斯纳337-参考-实机照片.jpg",
+      "sha256": "d04dedd5c4ecf8d9a31645276414d770ca6ad556909b4f26b4fe47a04cc012d2",
+      "kind": "original-reference",
+      "source_url": null,
+      "source_status": "historical-source-incomplete"
+    }
+  ]
+}

@@ -8,8 +8,10 @@ import tempfile
 from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
-INDEX = 'tasks/index.json'
-LOCK = 'tasks/inputs.lock.json'
+INDEX = 'cases/index.json'
+OLD_INDEX = 'tasks/index.json'
+LOCK = 'cases/inputs.lock.json'
+OLD_LOCK = 'tasks/inputs.lock.json'
 DEFAULTS = {'visual_goal': 'fidelity', 'provenance': 'independent'}
 LEGACY = {
     'method': 'docs/精细复刻流程.md',
@@ -17,13 +19,30 @@ LEGACY = {
     'source_notes': 'docs/参考素材与许可.md',
 }
 SHARED = {
-    'method': 'tasks/_shared/制作与验收.md',
-    'resources': 'tasks/_shared/执行边界.md',
-    'source_notes': 'tasks/_shared/原始参考.md',
+    'method': 'cases/_shared/制作与验收.md',
+    'resources': 'cases/_shared/执行边界.md',
+    'source_notes': 'cases/_shared/原始参考.md',
 }
 MEDIA = {'.jpg', '.jpeg', '.png', '.gif', '.webp', '.mp4', '.webm', '.mov'}
 ORIGINAL = {'original-reference', 'original-frame', 'original-film-frame', 'original-vfx-frame'}
-MANIFEST_PATH = r'tasks/[a-z0-9]+(?:-[a-z0-9]+)*/input\.json'
+CASE_ID = r'[a-z0-9]+(?:-[a-z0-9]+)*'
+MANIFEST_PATH = rf'(?:cases/{CASE_ID}/task|tasks/{CASE_ID})/input\.json'
+
+
+def task_prefix(case_id, manifest):
+    return f'tasks/{case_id}/' if manifest.startswith('tasks/') else f'cases/{case_id}/task/'
+
+
+def shared_paths(task, manifest):
+    if task.get('schema_version') != 2:
+        return LEGACY
+    if manifest.startswith('tasks/'):
+        return {key: value.replace('cases/', 'tasks/', 1) for key, value in SHARED.items()}
+    return SHARED
+
+
+def index_path(root):
+    return INDEX if safe_task_path(root, INDEX).exists() or not safe_task_path(root, OLD_INDEX).exists() else OLD_INDEX
 START = """# 独立复刻输入包
 
 从 inputs.json 的 task.prompt 开始，按该任务的需求、目标、验收和资源边界独立完成。
@@ -53,12 +72,18 @@ def source_file(root, value):
     """Resolve a task media path from the central local stash or a legacy checkout."""
     logical = safe_task_path(root, value)
     parts = Path(value).parts
-    if len(parts) > 4 and parts[0] == 'tasks' and parts[2:4] == ('references', 'local'):
-        stash = Path('local/references/tasks', parts[1], *parts[4:]).as_posix()
-        canonical = safe_task_path(root, stash)
-        if canonical.exists() or not logical.exists():
-            return canonical
-    return logical
+    if len(parts) > 5 and parts[0] == 'cases' and parts[2:5] == ('task', 'references', 'local'):
+        tail = parts[5:]
+    elif len(parts) > 4 and parts[0] == 'tasks' and parts[2:4] == ('references', 'local'):
+        tail = parts[4:]
+    else:
+        return logical
+    canonical = safe_task_path(root, Path('local/cases', parts[1], 'references/task', *tail).as_posix())
+    previous = safe_task_path(root, Path('local/references/tasks', parts[1], *tail).as_posix())
+    for path in (canonical, logical, previous):
+        if path.exists():
+            return path
+    return canonical
 
 
 def read_json(root, path):
@@ -81,13 +106,13 @@ def digest_inventory(files):
 
 def load_tasks(root=ROOT):
     """Read task manifests without loading the results index or implementation files."""
-    manifests = read_json(root, INDEX)['tasks']
+    manifests = read_json(root, index_path(root))['tasks']
     if not isinstance(manifests, list) or len(manifests) != len(set(manifests)):
         raise ValueError('任务索引必须是无重复路径列表')
     cases = []
     for manifest in manifests:
         if not re.fullmatch(MANIFEST_PATH, manifest):
-            raise ValueError('任务索引只能指向 tasks/<case-id>/input.json')
+            raise ValueError('任务索引只能指向案例的 task/input.json')
         task = read_json(root, manifest)
         case = {key: task[key] for key in ('id', 'title', 'aliases', 'series')}
         refs = task['references']
@@ -101,9 +126,9 @@ def load_tasks(root=ROOT):
 
 def prepare_task(case, root):
     manifest = case['task_manifest']
-    base = f'tasks/{case["id"]}/'
-    if manifest != base + 'input.json' or manifest not in read_json(root, INDEX)['tasks']:
-        raise ValueError('任务清单必须登记在独立的 tasks/<id>/input.json')
+    base = task_prefix(case["id"], manifest)
+    if manifest != base + 'input.json' or manifest not in read_json(root, index_path(root))['tasks']:
+        raise ValueError('任务清单必须登记在案例的 task/input.json')
     raw = safe_task_path(root, manifest).read_bytes()
     task = json.loads(raw)
     if any(task[key] != case[key] for key in ('id', 'title', 'aliases', 'series')):
@@ -116,7 +141,7 @@ def prepare_task(case, root):
         raise ValueError('任务结构或默认执行条件无效')
     if task['brief'] != base + 'brief.md' or case['prompt'] != task['brief']:
         raise ValueError('任务书必须独立存放')
-    shared = SHARED if schema == 2 else LEGACY
+    shared = shared_paths(task, manifest)
     if any(task.get(key) != value for key, value in shared.items()):
         raise ValueError('共同方法或资源入口不一致')
     refs = task['references']
@@ -160,7 +185,7 @@ def task_lock(task, files):
 
 
 def require_lock(task, files, root):
-    if task.get('schema_version') == 2 and read_json(root, LOCK).get(task['id']) != task_lock(task, files):
+    if task.get('schema_version') == 2 and read_json(root, OLD_LOCK if index_path(root) == OLD_INDEX else LOCK).get(task['id']) != task_lock(task, files):
         raise ValueError('输入与锁定摘要不一致；更新输入须提升 input_version 并重新 freeze')
 
 
@@ -194,7 +219,7 @@ def freeze_tasks(root=ROOT):
 
 def recreation_plan(case):
     task = case.get('task', {})
-    common = SHARED if task.get('schema_version') == 2 else LEGACY
+    common = shared_paths(task, case.get('task_manifest', ''))
     plan = {
         'case_id': case['id'],
         'title': case['title'],
@@ -259,7 +284,7 @@ def verify_pack(root, expected=None):
             'recreation': {'references': [row['path'] for row in task['references']], 'notes': task['notes']}}
     if any(row.get('source_url') for row in task['references']):
         case['recreation']['reference_manifest'] = manifest
-    if (manifest != f'tasks/{task["id"]}/input.json' or
+    if (manifest != task_prefix(task["id"], manifest) + "input.json" or
             payload['input_version'] != task['input_version'] or payload['task'] != recreation_plan(case)):
         raise ValueError('输入包入口与任务清单不一致')
     plan = payload['task']

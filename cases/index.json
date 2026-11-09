@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "tasks": [
+    "cases/oc8/task/input.json",
+    "cases/v8/task/input.json",
+    "cases/cessna337/task/input.json",
+    "cases/strandbeest/task/input.json",
+    "cases/sandworm/task/input.json",
+    "cases/jellyfish/task/input.json",
+    "cases/hexapod/task/input.json",
+    "cases/bee/task/input.json",
+    "cases/scorpion/task/input.json",
+    "cases/optimus-prime-2007/task/input.json",
+    "cases/bumblebee-2007/task/input.json"
+  ]
+}

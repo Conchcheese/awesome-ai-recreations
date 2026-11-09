@@ -45,7 +45,7 @@ def get_case(data, case_id, variant_id=None):
     case = matches[0]
     if variant_id is None:
         return case, None
-    variant = next((v for v in case['variants'] if v['id'] == variant_id), None)
+    variant = next((v for v in case['variants'] if variant_id in (v['id'], *v.get('aliases', []))), None)
     if variant is None:
         raise ValueError(f'{case_id} 没有版本 {variant_id}')
     return case, variant

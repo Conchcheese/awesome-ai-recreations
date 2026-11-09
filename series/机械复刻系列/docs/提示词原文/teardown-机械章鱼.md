@@ -1,5 +1,5 @@
 # teardown 复刻机械章鱼（改写自 @elvar_official 原文 9 条提示词）
-> 历史改写模板，保留原貌；不是原作作者提示词，也不是最终规格。例子中的 12 节腕足、吸盘和尺寸含假设，不能直接当作原作事实。后续精细复刻请用[新任务书](../../prompts/oc8.md)。`/teardown` 仅在对应技能已安装时可调用，否则直接使用正文约束。
+> 历史改写模板，保留原貌；不是原作作者提示词，也不是最终规格。例子中的 12 节腕足、吸盘和尺寸含假设，不能直接当作原作事实。后续精细复刻请用[新任务书](../../../../cases/oc8/task/brief.md)。`/teardown` 仅在对应技能已安装时可调用，否则直接使用正文约束。
 
 来源：https://x.com/elvar_official/status/2116174609355571402 ；skill：github.com/elvarofficial/teardown（MIT）
 章鱼视频：@0x_fokki https://x.com/0x_fokki/status/2116289885870981296 （其本人提示词未公开）

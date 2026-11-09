@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "id": "scorpion",
+  "title": "机械蝎子SC-8",
+  "aliases": [
+    "机械蝎子",
+    "蝎子",
+    "SC-8"
+  ],
+  "series": "mechanical",
+  "input_version": 3,
+  "status": "ready",
+  "brief": "cases/scorpion/task/brief.md",
+  "method": "cases/_shared/制作与验收.md",
+  "resources": "cases/_shared/执行边界.md",
+  "source_notes": "cases/_shared/原始参考.md",
+  "defaults": {
+    "visual_goal": "fidelity",
+    "provenance": "independent"
+  },
+  "notes": "上游 teardown 演示帧/GIF 与实物参考；只看媒体，不读取同目录代码或已有规格。",
+  "references": [
+    {
+      "path": "cases/scorpion/task/references/01-scorpion-参考帧-1.png",
+      "sha256": "4a57cbbad14497a067967bf2a7baae99eb8e039f355955ccdddb18e827f801ed",
+      "kind": "original-reference",
+      "source_url": null,
+      "source_status": "historical-source-incomplete"
+    },
+    {
+      "path": "cases/scorpion/task/references/02-scorpion-参考帧-2.png",
+      "sha256": "849880a90746f2c73d62286e4a85958ff07d74fa55893acd6b65d8c9756ff3f7",
+      "kind": "original-reference",
+      "source_url": null,
+      "source_status": "historical-source-incomplete"
+    },
+    {
+      "path": "cases/scorpion/task/references/03-scorpion-参考帧-3.png",
+      "sha256": "bc4056fde22563340fcb769c753046548aed286045eaaaf46d755ad7e07520e1",
+      "kind": "original-reference",
+      "source_url": null,
+      "source_status": "historical-source-incomplete"
+    },
+    {
+      "path": "cases/scorpion/task/references/04-scorpion-机器人实拍-乌克兰IASER八足蝎机器人.jpg",
+      "sha256": "7390d92562dbb9c9870d9c1a4e906a567bdcce40e75e81063c65f8d70e1cd7d1",
+      "kind": "original-reference",
+      "source_url": null,
+      "source_status": "historical-source-incomplete"
+    },
+    {
+      "path": "cases/scorpion/task/references/05-scorpion-机器人实拍-巨型机械蝎雕塑.jpg",
+      "sha256": "946444f7ba1b39fa344fcfd39b2d97a71f26d9c79b525a2876873bd1bd38b2e4",
+      "kind": "original-reference",
+      "source_url": null,
+      "source_status": "historical-source-incomplete"
+    },
+    {
+      "path": "cases/scorpion/task/references/06-scorpion.gif",
+      "sha256": "b594fa205521545d2d0aa770dfa10c177ec4da1c8d9e501cbd1f677dbb5f62f0",
+      "kind": "original-reference",
+      "source_url": null,
+      "source_status": "historical-source-incomplete"
+    }
+  ]
+}

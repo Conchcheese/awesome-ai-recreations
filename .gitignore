@@ -47,8 +47,8 @@ artifacts
 *.aac
 *.aiff
 *.ogg
-!**/src/kit/sfx/samples/*.ogg
-!**/src/upstream-teardown/sfx/samples/*.ogg
+!shared/mechanical/kit/sfx/samples/*.ogg
+!shared/mechanical/upstream-teardown/sfx/samples/*.ogg
 *.blend
 *.glb
 *.gltf

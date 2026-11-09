@@ -19,16 +19,16 @@
           "model_label": "GPT-6.1 Sol（本轮用户指定展示名；未另行调用 API）",
           "provenance": "independent",
           "visual_goal": "fidelity",
-          "readme": "series/机械复刻系列/models/gpt-6.1-sol/README.md",
-          "live": "series/机械复刻系列/gpt-6.1-sol复刻/00-机械章鱼OC-8/机械章鱼OC-8-互动页.html",
-          "film": "series/机械复刻系列/gpt-6.1-sol复刻/00-机械章鱼OC-8/机械章鱼OC-8-影片页.html",
-          "source": "series/机械复刻系列/models/gpt-6.1-sol/src",
-          "spec": "series/机械复刻系列/models/gpt-6.1-sol/spec.md",
-          "record": "series/机械复刻系列/models/gpt-6.1-sol/records/提示词与过程.md",
+          "readme": "cases/oc8/models/gpt-6-1-sol/README.md",
+          "live": "cases/oc8/models/gpt-6-1-sol/index.html",
+          "film": "cases/oc8/models/gpt-6-1-sol/film.html",
+          "source": "cases/oc8/models/gpt-6-1-sol/src",
+          "spec": "cases/oc8/models/gpt-6-1-sol/spec.md",
+          "record": "cases/oc8/models/gpt-6-1-sol/records/提示词与过程.md",
           "references": [
-            "series/机械复刻系列/models/deepseek/references/00-机械章鱼"
+            "cases/oc8/models/deepseek/references"
           ],
-          "cwd": "series/机械复刻系列/models/gpt-6.1-sol",
+          "cwd": "cases/oc8/models/gpt-6-1-sol",
           "commands": {
             "build": [
               [
@@ -57,106 +57,113 @@
             ]
           },
           "build_outputs": [
-            "series/机械复刻系列/gpt-6.1-sol复刻/00-机械章鱼OC-8/机械章鱼OC-8-互动页.html",
-            "series/机械复刻系列/gpt-6.1-sol复刻/00-机械章鱼OC-8/机械章鱼OC-8-影片页.html"
+            "cases/oc8/models/gpt-6-1-sol/index.html",
+            "cases/oc8/models/gpt-6-1-sol/film.html"
           ],
-          "notes": "首版从零编写，V2为本版本衍生改进；此前审计接触旧实现，不称隔离盲测。当前64秒/1080p60动作完整版，补齐倾转喷进、八臂错相游动、虹膜、泵核、喷口尾流、双颚、拆解复位与离站。几何与动作仍为程序化近似。视频留在 artifacts/，不提交Git。"
+          "notes": "首版从零编写，V2为本版本衍生改进；此前审计接触旧实现，不称隔离盲测。当前64秒/1080p60动作完整版，补齐倾转喷进、八臂错相游动、虹膜、泵核、喷口尾流、双颚、拆解复位与离站。几何与动作仍为程序化近似。视频留在 artifacts/，不提交Git。",
+          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/cases/oc8/models/gpt-6-1-sol/index.html",
+          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/cases/oc8/models/gpt-6-1-sol/film.html"
         },
         {
           "id": "deepseek",
           "model_label": "DeepSeek（精确模型 ID 未归档）",
           "provenance": "independent",
           "visual_goal": "reinterpretation",
-          "readme": "series/机械复刻系列/models/deepseek/README.md",
-          "live": "series/机械复刻系列/deepseek复刻/00-机械章鱼OC-8/机械章鱼OC-8-互动页.html",
-          "film": "series/机械复刻系列/deepseek复刻/00-机械章鱼OC-8/机械章鱼OC-8-影片页.html",
-          "source": "series/机械复刻系列/models/deepseek/src/00-机械章鱼OC-8",
-          "spec": "series/机械复刻系列/models/deepseek/src/00-机械章鱼OC-8/spec.md",
-          "record": "series/机械复刻系列/models/deepseek/records/实现与验证.md",
+          "readme": "cases/oc8/models/deepseek/README.md",
+          "live": "cases/oc8/models/deepseek/index.html",
+          "film": "cases/oc8/models/deepseek/film.html",
+          "source": "cases/oc8/models/deepseek/src",
+          "spec": "cases/oc8/models/deepseek/src/spec.md",
+          "record": "cases/oc8/models/deepseek/records/实现与验证.md",
           "references": [
-            "series/机械复刻系列/models/deepseek/references/00-机械章鱼"
+            "cases/oc8/models/deepseek/references"
           ],
-          "cwd": "series/机械复刻系列/models/deepseek/src/kit",
+          "cwd": "cases/oc8/models/deepseek",
           "commands": {
             "build": [
               [
                 "node",
-                "build.mjs",
-                "00"
+                "../../../../shared/mechanical/deepseek-kit/build.mjs"
               ]
             ],
             "check": [
               [
                 "node",
-                "../00-机械章鱼OC-8/shared/check.mjs"
+                "src/shared/check.mjs"
               ]
             ],
             "qa": [
               [
                 "node",
-                "qa.mjs",
-                "00"
+                "../../../../shared/mechanical/deepseek-kit/qa.mjs"
               ]
             ]
           },
           "build_outputs": [
-            "series/机械复刻系列/deepseek复刻/00-机械章鱼OC-8/机械章鱼OC-8-互动页.html",
-            "series/机械复刻系列/deepseek复刻/00-机械章鱼OC-8/机械章鱼OC-8-影片页.html"
+            "cases/oc8/models/deepseek/index.html",
+            "cases/oc8/models/deepseek/film.html"
           ],
-          "notes": "独立重写为历史声明；中文、宝石紫与原作有设计偏差。build 会覆盖本版本的交付 HTML。"
+          "notes": "独立重写为历史声明；中文、宝石紫与原作有设计偏差。build 会覆盖本版本的交付 HTML。",
+          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/cases/oc8/models/deepseek/index.html",
+          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/cases/oc8/models/deepseek/film.html"
         },
         {
-          "id": "glm",
+          "id": "glm-5-3-flash",
           "model_label": "GLM 5.3-Flash（沿用仓库历史署名；精确调用记录未归档）",
           "provenance": "independent",
           "visual_goal": "reinterpretation",
-          "readme": "series/机械复刻系列/models/glm-5.3-flash/README.md",
-          "live": "series/机械复刻系列/glm5.3-flash复刻/pages/00-机械章鱼OC-8/机械章鱼OC-8-互动页.html",
-          "film": "series/机械复刻系列/glm5.3-flash复刻/pages/00-机械章鱼OC-8/机械章鱼OC-8-影片页.html",
-          "source": "series/机械复刻系列/models/glm-5.3-flash/src/kit/sims/octopus-shared",
-          "spec": "series/机械复刻系列/models/glm-5.3-flash/references/00-机械章鱼OC-8/spec.md",
-          "record": "series/机械复刻系列/models/glm-5.3-flash/records/00-机械章鱼OC-8.md",
+          "readme": "cases/oc8/models/glm-5-3-flash/README.md",
+          "live": "cases/oc8/models/glm-5-3-flash/index.html",
+          "film": "cases/oc8/models/glm-5-3-flash/film.html",
+          "source": "cases/oc8/models/glm-5-3-flash/src",
+          "spec": "cases/oc8/models/glm-5-3-flash/references/spec.md",
+          "record": "cases/oc8/models/glm-5-3-flash/records/实现与验证.md",
           "references": [
-            "series/机械复刻系列/models/glm-5.3-flash/references/00-机械章鱼OC-8"
+            "cases/oc8/models/glm-5-3-flash/references"
           ],
-          "cwd": "series/机械复刻系列/models/glm-5.3-flash/src/kit",
+          "cwd": "cases/oc8/models/glm-5-3-flash",
           "commands": {
             "build": [
               [
                 "node",
-                "sims/build.mjs",
-                "octopus-live",
-                "octopus-film"
+                "../../../../shared/mechanical/kit/sims/build.mjs",
+                "./src/octopus-live",
+                "./src/octopus-film"
               ]
             ],
             "check": [
               [
                 "node",
-                "sims/octopus-shared/check.mjs"
+                "src/octopus-shared/check.mjs"
               ]
             ]
           },
           "build_outputs": [
-            "series/机械复刻系列/models/glm-5.3-flash/src/kit/teardown-out/dist/octopus-live.html",
-            "series/机械复刻系列/models/glm-5.3-flash/src/kit/teardown-out/dist/octopus-film.html"
+            "cases/oc8/models/glm-5-3-flash/artifacts/teardown-out/dist/octopus-live.html",
+            "cases/oc8/models/glm-5-3-flash/artifacts/teardown-out/dist/octopus-film.html"
           ],
-          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。"
+          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。",
+          "aliases": [
+            "glm"
+          ],
+          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/cases/oc8/models/glm-5-3-flash/index.html",
+          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/cases/oc8/models/glm-5-3-flash/film.html"
         },
         {
           "id": "hy4-direct",
           "model_label": "HY4 / Tencent Hunyuan Hy（仓库展示名；精确 API 模型 ID 未归档）",
           "provenance": "independent",
           "visual_goal": "reinterpretation",
-          "readme": "series/机械复刻系列/models/hy4-direct/README.md",
-          "live": "series/机械复刻系列/hunyuan直出版/00-机械章鱼OC-8/机械章鱼OC-8-互动页.html",
-          "film": "series/机械复刻系列/hunyuan直出版/00-机械章鱼OC-8/机械章鱼OC-8-影片页.html",
-          "source": "series/机械复刻系列/models/hy4-direct/src",
-          "spec": "series/机械复刻系列/models/hy4-direct/spec.md",
-          "record": "series/机械复刻系列/models/hy4-direct/records/实现与验证.md",
+          "readme": "cases/oc8/models/hy4-direct/README.md",
+          "live": "cases/oc8/models/hy4-direct/index.html",
+          "film": "cases/oc8/models/hy4-direct/film.html",
+          "source": "cases/oc8/models/hy4-direct/src",
+          "spec": "cases/oc8/models/hy4-direct/spec.md",
+          "record": "cases/oc8/models/hy4-direct/records/实现与验证.md",
           "references": [
-            "series/机械复刻系列/models/deepseek/references/00-机械章鱼"
+            "cases/oc8/models/deepseek/references"
           ],
-          "cwd": "series/机械复刻系列/models/hy4-direct",
+          "cwd": "cases/oc8/models/hy4-direct",
           "commands": {
             "build": [
               [
@@ -179,56 +186,58 @@
             ]
           },
           "build_outputs": [
-            "series/机械复刻系列/hunyuan直出版/00-机械章鱼OC-8/机械章鱼OC-8-互动页.html",
-            "series/机械复刻系列/hunyuan直出版/00-机械章鱼OC-8/机械章鱼OC-8-影片页.html"
+            "cases/oc8/models/hy4-direct/index.html",
+            "cases/oc8/models/hy4-direct/film.html"
           ],
-          "notes": "独立重写为历史声明；HUD/色板/镜头改编，低代码相似度不能证明创作过程。 build 会覆盖本版本的交付 HTML。"
+          "notes": "独立重写为历史声明；HUD/色板/镜头改编，低代码相似度不能证明创作过程。 build 会覆盖本版本的交付 HTML。",
+          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/cases/oc8/models/hy4-direct/index.html",
+          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/cases/oc8/models/hy4-direct/film.html"
         },
         {
           "id": "hy-derived",
           "model_label": "HY4 / Tencent Hunyuan Hy（仓库展示名；精确 API 模型 ID 未归档）",
           "provenance": "derived",
           "visual_goal": "reinterpretation",
-          "readme": "series/机械复刻系列/models/hy-derived/README.md",
-          "live": "series/机械复刻系列/hunyuan复刻/00-机械章鱼OC-8/机械章鱼OC-8-互动页.html",
-          "film": "series/机械复刻系列/hunyuan复刻/00-机械章鱼OC-8/机械章鱼OC-8-影片页.html",
-          "source": "series/机械复刻系列/models/hy-derived/src",
-          "spec": "series/机械复刻系列/models/hy-derived/src/00-机械章鱼OC-8/spec.md",
-          "record": "series/机械复刻系列/models/hy-derived/records/实现与验证.md",
+          "readme": "cases/oc8/models/hy-derived/README.md",
+          "live": "cases/oc8/models/hy-derived/index.html",
+          "film": "cases/oc8/models/hy-derived/film.html",
+          "source": "cases/oc8/models/hy-derived/src",
+          "spec": "cases/oc8/models/hy-derived/src/spec.md",
+          "record": "cases/oc8/models/hy-derived/records/实现与验证.md",
           "references": [
-            "series/机械复刻系列/models/deepseek/references/00-机械章鱼"
+            "cases/oc8/models/deepseek/references"
           ],
-          "cwd": "series/机械复刻系列/models/hy-derived/src/kit",
+          "cwd": "cases/oc8/models/hy-derived",
           "commands": {
             "build": [
               [
                 "node",
-                "build.mjs",
-                "all"
+                "../../../../shared/mechanical/hy-derived-kit/build.mjs"
               ]
             ],
             "check": [
               [
                 "node",
-                "../00-机械章鱼OC-8/shared/check.mjs"
+                "src/shared/check.mjs"
               ]
             ],
             "qa": [
               [
                 "node",
-                "qa.mjs",
-                "all"
+                "../../../../shared/mechanical/hy-derived-kit/qa.mjs"
               ]
             ]
           },
           "build_outputs": [
-            "series/机械复刻系列/hunyuan复刻/00-机械章鱼OC-8/机械章鱼OC-8-互动页.html",
-            "series/机械复刻系列/hunyuan复刻/00-机械章鱼OC-8/机械章鱼OC-8-影片页.html"
+            "cases/oc8/models/hy-derived/index.html",
+            "cases/oc8/models/hy-derived/film.html"
           ],
-          "notes": "基于 DeepSeek 实现改色和重写部分几何，不作为独立模型对照。 build 会覆盖本版本的交付 HTML。"
+          "notes": "基于 DeepSeek 实现改色和重写部分几何，不作为独立模型对照。 build 会覆盖本版本的交付 HTML。",
+          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/cases/oc8/models/hy-derived/index.html",
+          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/cases/oc8/models/hy-derived/film.html"
         }
       ],
-      "task_manifest": "tasks/oc8/input.json"
+      "task_manifest": "cases/oc8/task/input.json"
     },
     {
       "id": "v8",
@@ -244,83 +253,88 @@
           "model_label": "DeepSeek（精确模型 ID 未归档）",
           "provenance": "independent",
           "visual_goal": "reinterpretation",
-          "readme": "series/机械复刻系列/models/deepseek/README.md",
-          "live": "series/机械复刻系列/deepseek复刻/01-V8发动机/V8发动机-互动页.html",
-          "film": "series/机械复刻系列/deepseek复刻/01-V8发动机/V8发动机-影片页.html",
-          "source": "series/机械复刻系列/models/deepseek/src/01-V8发动机",
-          "spec": "series/机械复刻系列/models/deepseek/src/01-V8发动机/spec.md",
-          "record": "series/机械复刻系列/models/deepseek/records/实现与验证.md",
+          "readme": "cases/v8/models/deepseek/README.md",
+          "live": "cases/v8/models/deepseek/index.html",
+          "film": "cases/v8/models/deepseek/film.html",
+          "source": "cases/v8/models/deepseek/src",
+          "spec": "cases/v8/models/deepseek/src/spec.md",
+          "record": "cases/v8/models/deepseek/records/实现与验证.md",
           "references": [
-            "series/机械复刻系列/models/deepseek/references/01-V8发动机"
+            "cases/v8/models/deepseek/references"
           ],
-          "cwd": "series/机械复刻系列/models/deepseek/src/kit",
+          "cwd": "cases/v8/models/deepseek",
           "commands": {
             "build": [
               [
                 "node",
-                "build.mjs",
-                "01"
+                "../../../../shared/mechanical/deepseek-kit/build.mjs"
               ]
             ],
             "check": [
               [
                 "node",
-                "../01-V8发动机/shared/check.mjs"
+                "src/shared/check.mjs"
               ]
             ],
             "qa": [
               [
                 "node",
-                "qa.mjs",
-                "01"
+                "../../../../shared/mechanical/deepseek-kit/qa.mjs"
               ]
             ]
           },
           "build_outputs": [
-            "series/机械复刻系列/deepseek复刻/01-V8发动机/V8发动机-互动页.html",
-            "series/机械复刻系列/deepseek复刻/01-V8发动机/V8发动机-影片页.html"
+            "cases/v8/models/deepseek/index.html",
+            "cases/v8/models/deepseek/film.html"
           ],
-          "notes": "独立重写为历史声明；中文、宝石紫与原作有设计偏差。build 会覆盖本版本的交付 HTML。"
+          "notes": "独立重写为历史声明；中文、宝石紫与原作有设计偏差。build 会覆盖本版本的交付 HTML。",
+          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/cases/v8/models/deepseek/index.html",
+          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/cases/v8/models/deepseek/film.html"
         },
         {
-          "id": "glm",
+          "id": "glm-5-3-flash",
           "model_label": "GLM 5.3-Flash（沿用仓库历史署名；精确调用记录未归档）",
           "provenance": "derived",
           "visual_goal": "reinterpretation",
-          "readme": "series/机械复刻系列/models/glm-5.3-flash/README.md",
-          "live": "series/机械复刻系列/glm5.3-flash复刻/pages/01-V8发动机/V8发动机-互动页.html",
-          "film": "series/机械复刻系列/glm5.3-flash复刻/pages/01-V8发动机/V8发动机-影片页.html",
-          "source": "series/机械复刻系列/models/glm-5.3-flash/src/kit/sims/v8-shared",
-          "spec": "series/机械复刻系列/models/glm-5.3-flash/references/01-V8发动机/spec.md",
-          "record": "series/机械复刻系列/models/glm-5.3-flash/records/01-V8发动机.md",
+          "readme": "cases/v8/models/glm-5-3-flash/README.md",
+          "live": "cases/v8/models/glm-5-3-flash/index.html",
+          "film": "cases/v8/models/glm-5-3-flash/film.html",
+          "source": "cases/v8/models/glm-5-3-flash/src",
+          "spec": "cases/v8/models/glm-5-3-flash/references/spec.md",
+          "record": "cases/v8/models/glm-5-3-flash/records/实现与验证.md",
           "references": [
-            "series/机械复刻系列/models/glm-5.3-flash/references/01-V8发动机"
+            "cases/v8/models/glm-5-3-flash/references"
           ],
-          "cwd": "series/机械复刻系列/models/glm-5.3-flash/src/kit",
+          "cwd": "cases/v8/models/glm-5-3-flash",
           "commands": {
             "build": [
               [
                 "node",
-                "sims/build.mjs",
-                "v8-live",
-                "v8-film"
+                "../../../../shared/mechanical/kit/sims/build.mjs",
+                "./src/v8-live",
+                "./src/v8-film"
               ]
             ],
             "check": [
               [
                 "node",
-                "sims/v8-shared/check.mjs"
+                "src/v8-shared/check.mjs"
               ]
             ]
           },
           "build_outputs": [
-            "series/机械复刻系列/models/glm-5.3-flash/src/kit/teardown-out/dist/v8-live.html",
-            "series/机械复刻系列/models/glm-5.3-flash/src/kit/teardown-out/dist/v8-film.html"
+            "cases/v8/models/glm-5-3-flash/artifacts/teardown-out/dist/v8-live.html",
+            "cases/v8/models/glm-5-3-flash/artifacts/teardown-out/dist/v8-film.html"
           ],
-          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。"
+          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。",
+          "aliases": [
+            "glm"
+          ],
+          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/cases/v8/models/glm-5-3-flash/index.html",
+          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/cases/v8/models/glm-5-3-flash/film.html"
         }
       ],
-      "task_manifest": "tasks/v8/input.json"
+      "task_manifest": "cases/v8/task/input.json"
     },
     {
       "id": "cessna337",
@@ -334,44 +348,50 @@
       "series": "mechanical",
       "variants": [
         {
-          "id": "glm",
+          "id": "glm-5-3-flash",
           "model_label": "GLM 5.3-Flash（沿用仓库历史署名；精确调用记录未归档）",
           "provenance": "derived",
           "visual_goal": "reinterpretation",
-          "readme": "series/机械复刻系列/models/glm-5.3-flash/README.md",
-          "live": "series/机械复刻系列/glm5.3-flash复刻/pages/02-塞斯纳337起落架/塞斯纳337起落架-互动页.html",
-          "film": "series/机械复刻系列/glm5.3-flash复刻/pages/02-塞斯纳337起落架/塞斯纳337起落架-影片页.html",
-          "source": "series/机械复刻系列/models/glm-5.3-flash/src/kit/sims/cessna-shared",
-          "spec": "series/机械复刻系列/models/glm-5.3-flash/references/02-塞斯纳337起落架/spec.md",
-          "record": "series/机械复刻系列/models/glm-5.3-flash/records/02-塞斯纳337起落架.md",
+          "readme": "cases/cessna337/models/glm-5-3-flash/README.md",
+          "live": "cases/cessna337/models/glm-5-3-flash/index.html",
+          "film": "cases/cessna337/models/glm-5-3-flash/film.html",
+          "source": "cases/cessna337/models/glm-5-3-flash/src",
+          "spec": "cases/cessna337/models/glm-5-3-flash/references/spec.md",
+          "record": "cases/cessna337/models/glm-5-3-flash/records/实现与验证.md",
           "references": [
-            "series/机械复刻系列/models/glm-5.3-flash/references/02-塞斯纳337起落架"
+            "cases/cessna337/models/glm-5-3-flash/references"
           ],
-          "cwd": "series/机械复刻系列/models/glm-5.3-flash/src/kit",
+          "cwd": "cases/cessna337/models/glm-5-3-flash",
           "commands": {
             "build": [
               [
                 "node",
-                "sims/build.mjs",
-                "cessna-live",
-                "cessna-film"
+                "../../../../shared/mechanical/kit/sims/build.mjs",
+                "./src/cessna-live",
+                "./src/cessna-film"
               ]
             ],
             "check": [
               [
                 "node",
-                "sims/cessna-shared/check.mjs"
+                "../../../../shared/mechanical/kit/sims/check.mjs",
+                "src/cessna-shared/check.mjs"
               ]
             ]
           },
           "build_outputs": [
-            "series/机械复刻系列/models/glm-5.3-flash/src/kit/teardown-out/dist/cessna-live.html",
-            "series/机械复刻系列/models/glm-5.3-flash/src/kit/teardown-out/dist/cessna-film.html"
+            "cases/cessna337/models/glm-5-3-flash/artifacts/teardown-out/dist/cessna-live.html",
+            "cases/cessna337/models/glm-5-3-flash/artifacts/teardown-out/dist/cessna-film.html"
           ],
-          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。"
+          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。",
+          "aliases": [
+            "glm"
+          ],
+          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/cases/cessna337/models/glm-5-3-flash/index.html",
+          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/cases/cessna337/models/glm-5-3-flash/film.html"
         }
       ],
-      "task_manifest": "tasks/cessna337/input.json"
+      "task_manifest": "cases/cessna337/task/input.json"
     },
     {
       "id": "strandbeest",
@@ -383,44 +403,50 @@
       "series": "mechanical",
       "variants": [
         {
-          "id": "glm",
+          "id": "glm-5-3-flash",
           "model_label": "GLM 5.3-Flash（沿用仓库历史署名；精确调用记录未归档）",
           "provenance": "derived",
           "visual_goal": "reinterpretation",
-          "readme": "series/机械复刻系列/models/glm-5.3-flash/README.md",
-          "live": "series/机械复刻系列/glm5.3-flash复刻/pages/03-海滩兽Strandbeest/海滩兽Strandbeest-互动页.html",
-          "film": "series/机械复刻系列/glm5.3-flash复刻/pages/03-海滩兽Strandbeest/海滩兽Strandbeest-影片页.html",
-          "source": "series/机械复刻系列/models/glm-5.3-flash/src/kit/sims/strandbeest-shared",
-          "spec": "series/机械复刻系列/models/glm-5.3-flash/references/03-海滩兽Strandbeest/spec.md",
-          "record": "series/机械复刻系列/models/glm-5.3-flash/records/03-海滩兽Strandbeest.md",
+          "readme": "cases/strandbeest/models/glm-5-3-flash/README.md",
+          "live": "cases/strandbeest/models/glm-5-3-flash/index.html",
+          "film": "cases/strandbeest/models/glm-5-3-flash/film.html",
+          "source": "cases/strandbeest/models/glm-5-3-flash/src",
+          "spec": "cases/strandbeest/models/glm-5-3-flash/references/spec.md",
+          "record": "cases/strandbeest/models/glm-5-3-flash/records/实现与验证.md",
           "references": [
-            "series/机械复刻系列/models/glm-5.3-flash/references/03-海滩兽Strandbeest"
+            "cases/strandbeest/models/glm-5-3-flash/references"
           ],
-          "cwd": "series/机械复刻系列/models/glm-5.3-flash/src/kit",
+          "cwd": "cases/strandbeest/models/glm-5-3-flash",
           "commands": {
             "build": [
               [
                 "node",
-                "sims/build.mjs",
-                "strandbeest-live",
-                "strandbeest-film"
+                "../../../../shared/mechanical/kit/sims/build.mjs",
+                "./src/strandbeest-live",
+                "./src/strandbeest-film"
               ]
             ],
             "check": [
               [
                 "node",
-                "sims/strandbeest-shared/check.mjs"
+                "../../../../shared/mechanical/kit/sims/check.mjs",
+                "src/strandbeest-shared/check.mjs"
               ]
             ]
           },
           "build_outputs": [
-            "series/机械复刻系列/models/glm-5.3-flash/src/kit/teardown-out/dist/strandbeest-live.html",
-            "series/机械复刻系列/models/glm-5.3-flash/src/kit/teardown-out/dist/strandbeest-film.html"
+            "cases/strandbeest/models/glm-5-3-flash/artifacts/teardown-out/dist/strandbeest-live.html",
+            "cases/strandbeest/models/glm-5-3-flash/artifacts/teardown-out/dist/strandbeest-film.html"
           ],
-          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。"
+          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。",
+          "aliases": [
+            "glm"
+          ],
+          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/cases/strandbeest/models/glm-5-3-flash/index.html",
+          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/cases/strandbeest/models/glm-5-3-flash/film.html"
         }
       ],
-      "task_manifest": "tasks/strandbeest/input.json"
+      "task_manifest": "cases/strandbeest/task/input.json"
     },
     {
       "id": "sandworm",
@@ -434,44 +460,49 @@
       "series": "mechanical",
       "variants": [
         {
-          "id": "glm",
+          "id": "glm-5-3-flash",
           "model_label": "GLM 5.3-Flash（沿用仓库历史署名；精确调用记录未归档）",
           "provenance": "independent",
           "visual_goal": "reinterpretation",
-          "readme": "series/机械复刻系列/models/glm-5.3-flash/README.md",
-          "live": "series/机械复刻系列/glm5.3-flash复刻/pages/04-仿生沙虫MK-X/仿生沙虫MK-X-互动页.html",
-          "film": "series/机械复刻系列/glm5.3-flash复刻/pages/04-仿生沙虫MK-X/仿生沙虫MK-X-影片页.html",
-          "source": "series/机械复刻系列/models/glm-5.3-flash/src/kit/sims/sandworm-shared",
-          "spec": "series/机械复刻系列/models/glm-5.3-flash/references/04-仿生沙虫MK-X/spec.md",
-          "record": "series/机械复刻系列/models/glm-5.3-flash/records/04-仿生沙虫MK-X.md",
+          "readme": "cases/sandworm/models/glm-5-3-flash/README.md",
+          "live": "cases/sandworm/models/glm-5-3-flash/index.html",
+          "film": "cases/sandworm/models/glm-5-3-flash/film.html",
+          "source": "cases/sandworm/models/glm-5-3-flash/src",
+          "spec": "cases/sandworm/models/glm-5-3-flash/references/spec.md",
+          "record": "cases/sandworm/models/glm-5-3-flash/records/实现与验证.md",
           "references": [
-            "series/机械复刻系列/models/glm-5.3-flash/references/04-仿生沙虫MK-X"
+            "cases/sandworm/models/glm-5-3-flash/references"
           ],
-          "cwd": "series/机械复刻系列/models/glm-5.3-flash/src/kit",
+          "cwd": "cases/sandworm/models/glm-5-3-flash",
           "commands": {
             "build": [
               [
                 "node",
-                "sims/build.mjs",
-                "sandworm-live",
-                "sandworm-film"
+                "../../../../shared/mechanical/kit/sims/build.mjs",
+                "./src/sandworm-live",
+                "./src/sandworm-film"
               ]
             ],
             "check": [
               [
                 "node",
-                "sims/sandworm-shared/check.mjs"
+                "src/sandworm-shared/check.mjs"
               ]
             ]
           },
           "build_outputs": [
-            "series/机械复刻系列/models/glm-5.3-flash/src/kit/teardown-out/dist/sandworm-live.html",
-            "series/机械复刻系列/models/glm-5.3-flash/src/kit/teardown-out/dist/sandworm-film.html"
+            "cases/sandworm/models/glm-5-3-flash/artifacts/teardown-out/dist/sandworm-live.html",
+            "cases/sandworm/models/glm-5-3-flash/artifacts/teardown-out/dist/sandworm-film.html"
           ],
-          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。"
+          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。",
+          "aliases": [
+            "glm"
+          ],
+          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/cases/sandworm/models/glm-5-3-flash/index.html",
+          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/cases/sandworm/models/glm-5-3-flash/film.html"
         }
       ],
-      "task_manifest": "tasks/sandworm/input.json"
+      "task_manifest": "cases/sandworm/task/input.json"
     },
     {
       "id": "jellyfish",
@@ -484,44 +515,49 @@
       "series": "mechanical",
       "variants": [
         {
-          "id": "glm",
+          "id": "glm-5-3-flash",
           "model_label": "GLM 5.3-Flash（沿用仓库历史署名；精确调用记录未归档）",
           "provenance": "independent",
           "visual_goal": "reinterpretation",
-          "readme": "series/机械复刻系列/models/glm-5.3-flash/README.md",
-          "live": "series/机械复刻系列/glm5.3-flash复刻/pages/05-机械水母MJ-9/机械水母MJ-9-互动页.html",
-          "film": "series/机械复刻系列/glm5.3-flash复刻/pages/05-机械水母MJ-9/机械水母MJ-9-影片页.html",
-          "source": "series/机械复刻系列/models/glm-5.3-flash/src/kit/sims/jellyfish-shared",
-          "spec": "series/机械复刻系列/models/glm-5.3-flash/references/05-机械水母MJ-9/spec.md",
-          "record": "series/机械复刻系列/models/glm-5.3-flash/records/05-机械水母MJ-9.md",
+          "readme": "cases/jellyfish/models/glm-5-3-flash/README.md",
+          "live": "cases/jellyfish/models/glm-5-3-flash/index.html",
+          "film": "cases/jellyfish/models/glm-5-3-flash/film.html",
+          "source": "cases/jellyfish/models/glm-5-3-flash/src",
+          "spec": "cases/jellyfish/models/glm-5-3-flash/references/spec.md",
+          "record": "cases/jellyfish/models/glm-5-3-flash/records/实现与验证.md",
           "references": [
-            "series/机械复刻系列/models/glm-5.3-flash/references/05-机械水母MJ-9"
+            "cases/jellyfish/models/glm-5-3-flash/references"
           ],
-          "cwd": "series/机械复刻系列/models/glm-5.3-flash/src/kit",
+          "cwd": "cases/jellyfish/models/glm-5-3-flash",
           "commands": {
             "build": [
               [
                 "node",
-                "sims/build.mjs",
-                "jellyfish-live",
-                "jellyfish-film"
+                "../../../../shared/mechanical/kit/sims/build.mjs",
+                "./src/jellyfish-live",
+                "./src/jellyfish-film"
               ]
             ],
             "check": [
               [
                 "node",
-                "sims/jellyfish-shared/check.mjs"
+                "src/jellyfish-shared/check.mjs"
               ]
             ]
           },
           "build_outputs": [
-            "series/机械复刻系列/models/glm-5.3-flash/src/kit/teardown-out/dist/jellyfish-live.html",
-            "series/机械复刻系列/models/glm-5.3-flash/src/kit/teardown-out/dist/jellyfish-film.html"
+            "cases/jellyfish/models/glm-5-3-flash/artifacts/teardown-out/dist/jellyfish-live.html",
+            "cases/jellyfish/models/glm-5-3-flash/artifacts/teardown-out/dist/jellyfish-film.html"
           ],
-          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。"
+          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。",
+          "aliases": [
+            "glm"
+          ],
+          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/cases/jellyfish/models/glm-5-3-flash/index.html",
+          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/cases/jellyfish/models/glm-5-3-flash/film.html"
         }
       ],
-      "task_manifest": "tasks/jellyfish/input.json"
+      "task_manifest": "cases/jellyfish/task/input.json"
     },
     {
       "id": "hexapod",
@@ -534,44 +570,49 @@
       "series": "mechanical",
       "variants": [
         {
-          "id": "glm",
+          "id": "glm-5-3-flash",
           "model_label": "GLM 5.3-Flash（沿用仓库历史署名；精确调用记录未归档）",
           "provenance": "independent",
           "visual_goal": "reinterpretation",
-          "readme": "series/机械复刻系列/models/glm-5.3-flash/README.md",
-          "live": "series/机械复刻系列/glm5.3-flash复刻/pages/06-六足机器人HX-18/六足机器人HX-18-互动页.html",
-          "film": "series/机械复刻系列/glm5.3-flash复刻/pages/06-六足机器人HX-18/六足机器人HX-18-影片页.html",
-          "source": "series/机械复刻系列/models/glm-5.3-flash/src/kit/sims/hexapod-shared",
-          "spec": "series/机械复刻系列/models/glm-5.3-flash/references/06-六足机器人HX-18/spec.md",
-          "record": "series/机械复刻系列/models/glm-5.3-flash/records/06-六足机器人HX-18.md",
+          "readme": "cases/hexapod/models/glm-5-3-flash/README.md",
+          "live": "cases/hexapod/models/glm-5-3-flash/index.html",
+          "film": "cases/hexapod/models/glm-5-3-flash/film.html",
+          "source": "cases/hexapod/models/glm-5-3-flash/src",
+          "spec": "cases/hexapod/models/glm-5-3-flash/references/spec.md",
+          "record": "cases/hexapod/models/glm-5-3-flash/records/实现与验证.md",
           "references": [
-            "series/机械复刻系列/models/glm-5.3-flash/references/06-六足机器人HX-18"
+            "cases/hexapod/models/glm-5-3-flash/references"
           ],
-          "cwd": "series/机械复刻系列/models/glm-5.3-flash/src/kit",
+          "cwd": "cases/hexapod/models/glm-5-3-flash",
           "commands": {
             "build": [
               [
                 "node",
-                "sims/build.mjs",
-                "hexapod-live",
-                "hexapod-film"
+                "../../../../shared/mechanical/kit/sims/build.mjs",
+                "./src/hexapod-live",
+                "./src/hexapod-film"
               ]
             ],
             "check": [
               [
                 "node",
-                "sims/hexapod-shared/check.mjs"
+                "src/hexapod-shared/check.mjs"
               ]
             ]
           },
           "build_outputs": [
-            "series/机械复刻系列/models/glm-5.3-flash/src/kit/teardown-out/dist/hexapod-live.html",
-            "series/机械复刻系列/models/glm-5.3-flash/src/kit/teardown-out/dist/hexapod-film.html"
+            "cases/hexapod/models/glm-5-3-flash/artifacts/teardown-out/dist/hexapod-live.html",
+            "cases/hexapod/models/glm-5-3-flash/artifacts/teardown-out/dist/hexapod-film.html"
           ],
-          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。"
+          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。",
+          "aliases": [
+            "glm"
+          ],
+          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/cases/hexapod/models/glm-5-3-flash/index.html",
+          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/cases/hexapod/models/glm-5-3-flash/film.html"
         }
       ],
-      "task_manifest": "tasks/hexapod/input.json"
+      "task_manifest": "cases/hexapod/task/input.json"
     },
     {
       "id": "bee",
@@ -584,44 +625,49 @@
       "series": "mechanical",
       "variants": [
         {
-          "id": "glm",
+          "id": "glm-5-3-flash",
           "model_label": "GLM 5.3-Flash（沿用仓库历史署名；精确调用记录未归档）",
           "provenance": "independent",
           "visual_goal": "reinterpretation",
-          "readme": "series/机械复刻系列/models/glm-5.3-flash/README.md",
-          "live": "series/机械复刻系列/glm5.3-flash复刻/pages/07-机械蜜蜂HB-7/机械蜜蜂HB-7-互动页.html",
-          "film": "series/机械复刻系列/glm5.3-flash复刻/pages/07-机械蜜蜂HB-7/机械蜜蜂HB-7-影片页.html",
-          "source": "series/机械复刻系列/models/glm-5.3-flash/src/kit/sims/bee-shared",
-          "spec": "series/机械复刻系列/models/glm-5.3-flash/references/07-机械蜜蜂HB-7/spec.md",
-          "record": "series/机械复刻系列/models/glm-5.3-flash/records/07-机械蜜蜂HB-7.md",
+          "readme": "cases/bee/models/glm-5-3-flash/README.md",
+          "live": "cases/bee/models/glm-5-3-flash/index.html",
+          "film": "cases/bee/models/glm-5-3-flash/film.html",
+          "source": "cases/bee/models/glm-5-3-flash/src",
+          "spec": "cases/bee/models/glm-5-3-flash/references/spec.md",
+          "record": "cases/bee/models/glm-5-3-flash/records/实现与验证.md",
           "references": [
-            "series/机械复刻系列/models/glm-5.3-flash/references/07-机械蜜蜂HB-7"
+            "cases/bee/models/glm-5-3-flash/references"
           ],
-          "cwd": "series/机械复刻系列/models/glm-5.3-flash/src/kit",
+          "cwd": "cases/bee/models/glm-5-3-flash",
           "commands": {
             "build": [
               [
                 "node",
-                "sims/build.mjs",
-                "bee-live",
-                "bee-film"
+                "../../../../shared/mechanical/kit/sims/build.mjs",
+                "./src/bee-live",
+                "./src/bee-film"
               ]
             ],
             "check": [
               [
                 "node",
-                "sims/bee-shared/check.mjs"
+                "src/bee-shared/check.mjs"
               ]
             ]
           },
           "build_outputs": [
-            "series/机械复刻系列/models/glm-5.3-flash/src/kit/teardown-out/dist/bee-live.html",
-            "series/机械复刻系列/models/glm-5.3-flash/src/kit/teardown-out/dist/bee-film.html"
+            "cases/bee/models/glm-5-3-flash/artifacts/teardown-out/dist/bee-live.html",
+            "cases/bee/models/glm-5-3-flash/artifacts/teardown-out/dist/bee-film.html"
           ],
-          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。"
+          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。",
+          "aliases": [
+            "glm"
+          ],
+          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/cases/bee/models/glm-5-3-flash/index.html",
+          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/cases/bee/models/glm-5-3-flash/film.html"
         }
       ],
-      "task_manifest": "tasks/bee/input.json"
+      "task_manifest": "cases/bee/task/input.json"
     },
     {
       "id": "scorpion",
@@ -634,44 +680,49 @@
       "series": "mechanical",
       "variants": [
         {
-          "id": "glm",
+          "id": "glm-5-3-flash",
           "model_label": "GLM 5.3-Flash（沿用仓库历史署名；精确调用记录未归档）",
           "provenance": "independent",
           "visual_goal": "reinterpretation",
-          "readme": "series/机械复刻系列/models/glm-5.3-flash/README.md",
-          "live": "series/机械复刻系列/glm5.3-flash复刻/pages/08-机械蝎子SC-8/机械蝎子SC-8-互动页.html",
-          "film": "series/机械复刻系列/glm5.3-flash复刻/pages/08-机械蝎子SC-8/机械蝎子SC-8-影片页.html",
-          "source": "series/机械复刻系列/models/glm-5.3-flash/src/kit/sims/scorpion-shared",
-          "spec": "series/机械复刻系列/models/glm-5.3-flash/references/08-机械蝎子SC-8/spec.md",
-          "record": "series/机械复刻系列/models/glm-5.3-flash/records/08-机械蝎子SC-8.md",
+          "readme": "cases/scorpion/models/glm-5-3-flash/README.md",
+          "live": "cases/scorpion/models/glm-5-3-flash/index.html",
+          "film": "cases/scorpion/models/glm-5-3-flash/film.html",
+          "source": "cases/scorpion/models/glm-5-3-flash/src",
+          "spec": "cases/scorpion/models/glm-5-3-flash/references/spec.md",
+          "record": "cases/scorpion/models/glm-5-3-flash/records/实现与验证.md",
           "references": [
-            "series/机械复刻系列/models/glm-5.3-flash/references/08-机械蝎子SC-8"
+            "cases/scorpion/models/glm-5-3-flash/references"
           ],
-          "cwd": "series/机械复刻系列/models/glm-5.3-flash/src/kit",
+          "cwd": "cases/scorpion/models/glm-5-3-flash",
           "commands": {
             "build": [
               [
                 "node",
-                "sims/build.mjs",
-                "scorpion-live",
-                "scorpion-film"
+                "../../../../shared/mechanical/kit/sims/build.mjs",
+                "./src/scorpion-live",
+                "./src/scorpion-film"
               ]
             ],
             "check": [
               [
                 "node",
-                "sims/scorpion-shared/check.mjs"
+                "src/scorpion-shared/check.mjs"
               ]
             ]
           },
           "build_outputs": [
-            "series/机械复刻系列/models/glm-5.3-flash/src/kit/teardown-out/dist/scorpion-live.html",
-            "series/机械复刻系列/models/glm-5.3-flash/src/kit/teardown-out/dist/scorpion-film.html"
+            "cases/scorpion/models/glm-5-3-flash/artifacts/teardown-out/dist/scorpion-live.html",
+            "cases/scorpion/models/glm-5-3-flash/artifacts/teardown-out/dist/scorpion-film.html"
           ],
-          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。"
+          "notes": "构建到 teardown-out/dist；pages 为已发布交付快照。01–03 由上游 MIT 示例改编；其他案例标注独立为历史实现来源声明，非已控制变量的模型实验。",
+          "aliases": [
+            "glm"
+          ],
+          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/cases/scorpion/models/glm-5-3-flash/index.html",
+          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/cases/scorpion/models/glm-5-3-flash/film.html"
         }
       ],
-      "task_manifest": "tasks/scorpion/input.json"
+      "task_manifest": "cases/scorpion/task/input.json"
     },
     {
       "id": "optimus-prime-2007",
@@ -686,20 +737,20 @@
       "series": "transformers",
       "variants": [
         {
-          "id": "cinematic-v2",
+          "id": "gpt-6-1-sol",
           "model_label": "GPT-6.1 Sol（用户提供；会话未暴露精确模型 ID）",
           "provenance": "derived",
           "visual_goal": "fidelity",
-          "readme": "series/变形金刚系列/01-擎天柱-电影版/README.md",
-          "live": "series/变形金刚系列/01-擎天柱-电影版/index.html",
-          "film": "series/变形金刚系列/01-擎天柱-电影版/film.html",
-          "source": "series/变形金刚系列/01-擎天柱-电影版/src",
-          "spec": "series/变形金刚系列/01-擎天柱-电影版/spec.md",
-          "record": "series/变形金刚系列/01-擎天柱-电影版/records/实现与验证.md",
+          "readme": "cases/optimus-prime-2007/models/gpt-6-1-sol/README.md",
+          "live": "cases/optimus-prime-2007/models/gpt-6-1-sol/index.html",
+          "film": "cases/optimus-prime-2007/models/gpt-6-1-sol/film.html",
+          "source": "cases/optimus-prime-2007/models/gpt-6-1-sol/src",
+          "spec": "cases/optimus-prime-2007/models/gpt-6-1-sol/spec.md",
+          "record": "cases/optimus-prime-2007/models/gpt-6-1-sol/records/实现与验证.md",
           "references": [
-            "series/变形金刚系列/01-擎天柱-电影版/references"
+            "cases/optimus-prime-2007/models/gpt-6-1-sol/references"
           ],
-          "cwd": "series/变形金刚系列/01-擎天柱-电影版",
+          "cwd": "cases/optimus-prime-2007/models/gpt-6-1-sol",
           "commands": {
             "build": [
               [
@@ -745,28 +796,31 @@
             ]
           },
           "build_outputs": [
-            "series/变形金刚系列/01-擎天柱-电影版/index.html",
-            "series/变形金刚系列/01-擎天柱-电影版/film.html"
+            "cases/optimus-prime-2007/models/gpt-6-1-sol/index.html",
+            "cases/optimus-prime-2007/models/gpt-6-1-sol/film.html"
           ],
           "notes": "电影版几何/装配/材质/摄影重写，沿用C-01构建与确定性导出方法，标derived。172活动装配节点/2200视觉分件/438渲染网格，不代表真实自由度。实时50秒巡览与28秒Cycles剪辑同源；完整碰撞、隐藏机构及原片同机位量化误差未验证。源码/演示开放发布，原始媒体不分发。",
-          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/01-擎天柱-电影版/index.html",
-          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/01-擎天柱-电影版/film.html"
+          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/cases/optimus-prime-2007/models/gpt-6-1-sol/index.html",
+          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/cases/optimus-prime-2007/models/gpt-6-1-sol/film.html",
+          "aliases": [
+            "cinematic-v2"
+          ]
         },
         {
           "id": "hy4",
           "model_label": "HY4 / Tencent Hunyuan Hy（用户指定标注；会话未暴露精确模型 ID）",
           "provenance": "independent",
           "visual_goal": "fidelity",
-          "readme": "series/变形金刚系列/models/hy4/optimus-prime-2007/README.md",
-          "live": "series/变形金刚系列/models/hy4/optimus-prime-2007/index.html",
-          "film": "series/变形金刚系列/models/hy4/optimus-prime-2007/film.html",
-          "source": "series/变形金刚系列/models/hy4/optimus-prime-2007/src",
-          "spec": "series/变形金刚系列/models/hy4/optimus-prime-2007/spec.md",
-          "record": "series/变形金刚系列/models/hy4/optimus-prime-2007/records/实现与验证.md",
+          "readme": "cases/optimus-prime-2007/models/hy4/README.md",
+          "live": "cases/optimus-prime-2007/models/hy4/index.html",
+          "film": "cases/optimus-prime-2007/models/hy4/film.html",
+          "source": "cases/optimus-prime-2007/models/hy4/src",
+          "spec": "cases/optimus-prime-2007/models/hy4/spec.md",
+          "record": "cases/optimus-prime-2007/models/hy4/records/实现与验证.md",
           "references": [
-            "series/变形金刚系列/models/hy4/optimus-prime-2007/references"
+            "cases/optimus-prime-2007/models/hy4/references"
           ],
-          "cwd": "series/变形金刚系列/models/hy4/optimus-prime-2007",
+          "cwd": "cases/optimus-prime-2007/models/hy4",
           "commands": {
             "build": [
               [
@@ -812,28 +866,30 @@
             ]
           },
           "build_outputs": [
-            "series/变形金刚系列/models/hy4/optimus-prime-2007/index.html",
-            "series/变形金刚系列/models/hy4/optimus-prime-2007/film.html"
+            "cases/optimus-prime-2007/models/hy4/index.html",
+            "cases/optimus-prime-2007/models/hy4/film.html"
           ],
           "notes": "HY4 独立精细复刻（用户指定标注 HY4 / Tencent Hunyuan Hy；会话未单独调用带版本号的 HY4 模型 API，精确模型 ID 未归档）。依据 15 份登记官方素材（8 张 Paramount/ILM 原帧 + MPM-4 官方产品图、ILM 100s/080s、Paramount 61s、8–32s 接触表、2007 研究板）建立 37 个可动装配 / 490 个命名视觉分件 / 974 Mesh 的 Three.js PBR 三维；程序化环境反射、9 类材质分区、ACES 调色与机库尺度。50 秒源时间线、8–19 秒错峰连续变形；7 镜头 / 28 秒成片时间线，其中 4–15 秒为 1:1 连续镜头完整覆盖变形。成片为同源模型按 cameraAt(i/24) 逐帧离线渲染 672 帧 PNG → 原创 48kHz 双声道 WAV → FFmpeg H.264/AAC 封装，1920×804 / 24fps / 28s；已做完整解码、黑帧与电平验收，非网页录屏、非 Cycles 路径追踪。index.html / film.html 同源自包含单文件，可离线双击运行。未验证：原片同机位量化误差、完整碰撞与拓扑真实性、GLB/Blend、Cycles、逐帧运动模糊、跨 GPU 像素一致性、窄屏与竖版；展甲/分层拆解/重组/机库/配乐为本轮 designed。原始媒体、逐帧缓存与成片仅本地保留，不分发。",
-          "movie": "series/变形金刚系列/models/hy4/optimus-prime-2007/artifacts/HY4-擎天柱-2007-电影版.mp4",
-          "score": "series/变形金刚系列/models/hy4/optimus-prime-2007/artifacts/HY4-original-score.wav"
+          "movie": "cases/optimus-prime-2007/models/hy4/artifacts/HY4-擎天柱-2007-电影版.mp4",
+          "score": "cases/optimus-prime-2007/models/hy4/artifacts/HY4-original-score.wav",
+          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/cases/optimus-prime-2007/models/hy4/index.html",
+          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/cases/optimus-prime-2007/models/hy4/film.html"
         },
         {
           "id": "glm-5-3-flash",
           "model_label": "GLM-5.3-Flash（ZCode 会话执行；账号计划 bigmodel-individual-coding-plan，会话未暴露精确快照 ID）",
           "provenance": "independent",
           "visual_goal": "fidelity",
-          "readme": "series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/README.md",
-          "live": "series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/index.html",
-          "film": "series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/film.html",
-          "source": "series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/src",
-          "spec": "series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/spec.md",
-          "record": "series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/records/实现与验证.md",
+          "readme": "cases/optimus-prime-2007/models/glm-5-3-flash/README.md",
+          "live": "cases/optimus-prime-2007/models/glm-5-3-flash/index.html",
+          "film": "cases/optimus-prime-2007/models/glm-5-3-flash/film.html",
+          "source": "cases/optimus-prime-2007/models/glm-5-3-flash/src",
+          "spec": "cases/optimus-prime-2007/models/glm-5-3-flash/spec.md",
+          "record": "cases/optimus-prime-2007/models/glm-5-3-flash/records/实现与验证.md",
           "references": [
-            "series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/references"
+            "cases/optimus-prime-2007/models/glm-5-3-flash/references"
           ],
-          "cwd": "series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007",
+          "cwd": "cases/optimus-prime-2007/models/glm-5-3-flash",
           "commands": {
             "build": [
               [
@@ -867,15 +923,15 @@
             ]
           },
           "build_outputs": [
-            "series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/index.html",
-            "series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/film.html"
+            "cases/optimus-prime-2007/models/glm-5-3-flash/index.html",
+            "cases/optimus-prime-2007/models/glm-5-3-flash/film.html"
           ],
           "notes": "从登记的 8 帧官方画面独立编写（未读取既有案例源码）；构建管线复用仓库 C-01 方法工具。72 装配/339 分件，世界尺寸 guess，变形单路径演示；完整连续片段未逐帧观看、无碰撞检测、无编码 MP4。用户最初要求标注 HY4，因 models/hy4 同案例由另一并行会话实现，按署名规则如实标执行模型。",
-          "online_live": null,
-          "online_film": null
+          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/cases/optimus-prime-2007/models/glm-5-3-flash/index.html",
+          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/cases/optimus-prime-2007/models/glm-5-3-flash/film.html"
         }
       ],
-      "task_manifest": "tasks/optimus-prime-2007/input.json"
+      "task_manifest": "cases/optimus-prime-2007/task/input.json"
     },
     {
       "id": "bumblebee-2007",
@@ -892,16 +948,16 @@
           "model_label": "GPT-6.1 Sol（用户提供；执行工具 Codex；精确模型 ID 未知）",
           "provenance": "independent",
           "visual_goal": "fidelity",
-          "readme": "series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007/README.md",
-          "live": "series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007/index.html",
-          "film": "series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007/film.html",
-          "source": "series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007/src",
-          "spec": "series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007/spec.md",
-          "record": "series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007/records/实现与验证.md",
+          "readme": "cases/bumblebee-2007/models/gpt-6-1-sol/README.md",
+          "live": "cases/bumblebee-2007/models/gpt-6-1-sol/index.html",
+          "film": "cases/bumblebee-2007/models/gpt-6-1-sol/film.html",
+          "source": "cases/bumblebee-2007/models/gpt-6-1-sol/src",
+          "spec": "cases/bumblebee-2007/models/gpt-6-1-sol/spec.md",
+          "record": "cases/bumblebee-2007/models/gpt-6-1-sol/records/实现与验证.md",
           "references": [
-            "series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007/references"
+            "cases/bumblebee-2007/models/gpt-6-1-sol/references"
           ],
-          "cwd": "series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007",
+          "cwd": "cases/bumblebee-2007/models/gpt-6-1-sol",
           "commands": {
             "build": [
               [
@@ -950,29 +1006,29 @@
             ]
           },
           "build_outputs": [
-            "series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007/index.html",
-            "series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007/film.html"
+            "cases/bumblebee-2007/models/gpt-6-1-sol/index.html",
+            "cases/bumblebee-2007/models/gpt-6-1-sol/film.html"
           ],
           "notes": "基于2张官方MPM-3外观补充图的独立程序化研究，43装配/612视觉分件；可运行离线互动与同源Cycles影片管线。Camaro曲率、头雕和车体闭合仍简化，内部机构为推演，未做电影原帧测量或完整碰撞。视频及工具缓存留artifacts，不自动发布。",
-          "movie": "series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007/artifacts/大黄蜂-2007-电影短片.mp4",
-          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007/index.html",
-          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007/film.html"
+          "movie": "cases/bumblebee-2007/models/gpt-6-1-sol/artifacts/大黄蜂-2007-电影短片.mp4",
+          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/cases/bumblebee-2007/models/gpt-6-1-sol/index.html",
+          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/cases/bumblebee-2007/models/gpt-6-1-sol/film.html"
         },
         {
           "id": "minimax-m3-1-flash",
           "model_label": "Minimax-M3.1-Flash（MCode 会话；会话未暴露可独立核验的精确快照 ID）",
           "provenance": "independent",
           "visual_goal": "fidelity",
-          "readme": "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/README.md",
-          "live": "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/index.html",
-          "film": "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/film.html",
-          "source": "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/src",
-          "spec": "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/spec.md",
-          "record": "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/records/实现与验证.md",
+          "readme": "cases/bumblebee-2007/models/minimax-m3-1-flash/README.md",
+          "live": "cases/bumblebee-2007/models/minimax-m3-1-flash/index.html",
+          "film": "cases/bumblebee-2007/models/minimax-m3-1-flash/film.html",
+          "source": "cases/bumblebee-2007/models/minimax-m3-1-flash/src",
+          "spec": "cases/bumblebee-2007/models/minimax-m3-1-flash/spec.md",
+          "record": "cases/bumblebee-2007/models/minimax-m3-1-flash/records/实现与验证.md",
           "references": [
-            "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/references"
+            "cases/bumblebee-2007/models/minimax-m3-1-flash/references"
           ],
-          "cwd": "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007",
+          "cwd": "cases/bumblebee-2007/models/minimax-m3-1-flash",
           "commands": {
             "build": [
               [
@@ -1035,29 +1091,29 @@
             ]
           },
           "build_outputs": [
-            "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/index.html",
-            "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/film.html"
+            "cases/bumblebee-2007/models/minimax-m3-1-flash/index.html",
+            "cases/bumblebee-2007/models/minimax-m3-1-flash/film.html"
           ],
           "notes": "独立程序化复刻，仅使用任务书允许的 2 张 TOMY MPM-3 官方产品图；69 装配 / 113 视觉分件 / 约 5400 三角形，同源模型驱动网页、GLB 与离线短片。本机沙箱无法启动 Chromium，短片由自研软件光栅化器逐帧渲染同源几何（非网页录屏、非路径追踪），音轨为程序合成，无采样。变形机构、镜头与时序均为推演与展示设计，未取得电影原帧，未做碰撞与承重验证；视频、逐帧与工具缓存留在 artifacts，不自动发布。",
-          "movie": "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/artifacts/大黄蜂-2007-复刻短片.mp4",
-          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/index.html",
-          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/film.html"
+          "movie": "cases/bumblebee-2007/models/minimax-m3-1-flash/artifacts/大黄蜂-2007-复刻短片.mp4",
+          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/cases/bumblebee-2007/models/minimax-m3-1-flash/index.html",
+          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/cases/bumblebee-2007/models/minimax-m3-1-flash/film.html"
         },
         {
           "id": "kimi-k3-1-pro",
           "model_label": "Kimi-K3.1-Pro（WorkBuddy 会话执行）",
           "provenance": "independent",
           "visual_goal": "fidelity",
-          "readme": "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/README.md",
-          "live": "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/index.html",
-          "film": "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/film.html",
-          "source": "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/src",
-          "spec": "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/spec.md",
-          "record": "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/records/实现与验证.md",
+          "readme": "cases/bumblebee-2007/models/kimi-k3-1-pro/README.md",
+          "live": "cases/bumblebee-2007/models/kimi-k3-1-pro/index.html",
+          "film": "cases/bumblebee-2007/models/kimi-k3-1-pro/film.html",
+          "source": "cases/bumblebee-2007/models/kimi-k3-1-pro/src",
+          "spec": "cases/bumblebee-2007/models/kimi-k3-1-pro/spec.md",
+          "record": "cases/bumblebee-2007/models/kimi-k3-1-pro/records/实现与验证.md",
           "references": [
-            "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/references"
+            "cases/bumblebee-2007/models/kimi-k3-1-pro/references"
           ],
-          "cwd": "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007",
+          "cwd": "cases/bumblebee-2007/models/kimi-k3-1-pro",
           "commands": {
             "build": [
               [
@@ -1076,7 +1132,7 @@
               ],
               [
                 "python3",
-                "../../../../../scripts/check_transformer_contract.py",
+                "../../../../scripts/check_transformer_contract.py",
                 "production.json",
                 "--require-ready"
               ]
@@ -1105,17 +1161,17 @@
             ]
           },
           "build_outputs": [
-            "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/index.html",
-            "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/film.html"
+            "cases/bumblebee-2007/models/kimi-k3-1-pro/index.html",
+            "cases/bumblebee-2007/models/kimi-k3-1-pro/film.html"
           ],
           "notes": "Kimi-K3.1-Pro 独立程序化复刻；冻结输入为2张TOMY MPM-3官方产品图。47装配/274视觉网格，同源Three.js双形态、连续变形、灰模与分层展开。20秒/24fps/1280×720 WebGL逐帧影片，480帧、原创48kHz双声道音轨；已做完整解码、黑帧、电平和本机Chrome完整播放验收。隐藏机构与动作路径为推断/展示设计；无电影原帧测量、碰撞、GLB/Blend或Cycles。视频与音轨留artifacts，不自动发布。",
-          "movie": "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/artifacts/大黄蜂-2007-Kimi-K3.1-Pro.mp4",
-          "score": "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/artifacts/大黄蜂-原创音轨.wav",
-          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/index.html",
-          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/film.html"
+          "movie": "cases/bumblebee-2007/models/kimi-k3-1-pro/artifacts/大黄蜂-2007-Kimi-K3.1-Pro.mp4",
+          "score": "cases/bumblebee-2007/models/kimi-k3-1-pro/artifacts/大黄蜂-原创音轨.wav",
+          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/cases/bumblebee-2007/models/kimi-k3-1-pro/index.html",
+          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/cases/bumblebee-2007/models/kimi-k3-1-pro/film.html"
         }
       ],
-      "task_manifest": "tasks/bumblebee-2007/input.json"
+      "task_manifest": "cases/bumblebee-2007/task/input.json"
     }
   ]
 }

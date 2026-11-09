@@ -19,7 +19,7 @@ spec.loader.exec_module(scaffold)
 
 class TransformerWorkflowTests(unittest.TestCase):
     def test_showcase_movie_revision_uses_public_record_without_local_render_logs(self):
-        module_spec=importlib.util.spec_from_file_location('showcase_inputs',SERIES/'01-擎天柱-电影版/tools/showcase_inputs.py')
+        module_spec=importlib.util.spec_from_file_location('showcase_inputs',ROOT/'cases/optimus-prime-2007/models/gpt-6-1-sol/tools/showcase_inputs.py')
         module=importlib.util.module_from_spec(module_spec);module_spec.loader.exec_module(module)
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);(root/'records').mkdir();film=root/'download.mp4';film.write_bytes(b'published render')
@@ -37,7 +37,7 @@ class TransformerWorkflowTests(unittest.TestCase):
                 'edit': [{'in': 0, 'out': 2, 'sourceIn': 0, 'sourceOut': 2, 'purpose': 'establish'}, {'in': 2, 'out': 9, 'sourceIn': 8, 'sourceOut': 19, 'purpose': 'transformation'}]}
 
     def test_current_case_contract(self):
-        path = SERIES/'01-擎天柱-电影版/production.json'
+        path = ROOT/'cases/optimus-prime-2007/models/gpt-6-1-sol/production.json'
         self.assertEqual([], validate(json.loads(path.read_text()), path.parent, require_ready=True))
 
     def test_graph_rejects_cycles_missing_parents_duplicate_and_wrong_ownership(self):
@@ -106,7 +106,7 @@ class GLBDigestTests(unittest.TestCase):
         target.write_bytes(struct.pack('<III',0x46546c67,2,12+8+len(encoded)+8+len(binary))+struct.pack('<II',len(encoded),0x4e4f534a)+encoded+struct.pack('<II',len(binary),0x004e4942)+binary)
 
     def test_resolved_digest_ignores_placement_but_detects_geometry_change(self):
-        spec=importlib.util.spec_from_file_location('glb_digest',SERIES/'01-擎天柱-电影版/tools/glb-digest.py')
+        spec=importlib.util.spec_from_file_location('glb_digest',ROOT/'cases/optimus-prime-2007/models/gpt-6-1-sol/tools/glb-digest.py')
         tool=importlib.util.module_from_spec(spec);spec.loader.exec_module(tool)
         with tempfile.TemporaryDirectory() as d:
             a,b,c=map(lambda n:Path(d)/n,['a.glb','b.glb','c.glb'])

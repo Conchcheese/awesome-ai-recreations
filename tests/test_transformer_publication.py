@@ -40,12 +40,12 @@ class PublicationReferenceTests(unittest.TestCase):
  def test_version_media_resolves_central_and_legacy_paths_without_following_links(self):
   with tempfile.TemporaryDirectory() as tmp:
    root=Path(tmp).resolve()
-   refs=root/'series/变形金刚系列/models/example/bumblebee-2007/references'
+   refs=root/'cases/bumblebee-2007/models/example/references'
    legacy=refs/'local/image.jpg'
    legacy.parent.mkdir(parents=True)
    legacy.write_bytes(b'legacy')
    self.assertEqual(legacy,reference_media_path(refs,'local/image.jpg',root))
-   central=root/'local/references/versions/transformers/example/bumblebee-2007/image.jpg'
+   central=root/'local/cases/bumblebee-2007/models/example/references/image.jpg'
    central.parent.mkdir(parents=True)
    central.write_bytes(b'central')
    self.assertEqual(central,reference_media_path(refs,'local/image.jpg',root))

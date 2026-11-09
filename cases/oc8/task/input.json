@@ -1,0 +1,89 @@
+{
+  "schema_version": 2,
+  "id": "oc8",
+  "title": "机械章鱼OC-8",
+  "aliases": [
+    "机械章鱼",
+    "章鱼",
+    "OC-8",
+    "Pelagos OC-8",
+    "octopus"
+  ],
+  "series": "mechanical",
+  "input_version": 3,
+  "status": "ready",
+  "brief": "cases/oc8/task/brief.md",
+  "method": "cases/_shared/制作与验收.md",
+  "resources": "cases/_shared/执行边界.md",
+  "source_notes": "cases/_shared/原始参考.md",
+  "defaults": {
+    "visual_goal": "fidelity",
+    "provenance": "independent"
+  },
+  "notes": "@0x_fokki 原作的九张关键帧；原视频不随库提供。按可见证据复刻，连续动作与静帧之间的时间需估算并标注。",
+  "references": [
+    {
+      "path": "cases/oc8/task/references/01-原作-00秒-主机位喷进.jpg",
+      "sha256": "ee19bae332382ffd4f5cfdc58bf3be8b31937233edbc90dd7dc1df9b83ebcc05",
+      "kind": "original-reference",
+      "source_url": "https://x.com/0x_fokki/status/2116289885870981296",
+      "source_status": "registered"
+    },
+    {
+      "path": "cases/oc8/task/references/02-原作-04秒-光学打开.jpg",
+      "sha256": "ee3ee1930728122977f9d2c5501d4e449e60000770961520590496e878866ddf",
+      "kind": "original-reference",
+      "source_url": "https://x.com/0x_fokki/status/2116289885870981296",
+      "source_status": "registered"
+    },
+    {
+      "path": "cases/oc8/task/references/03-原作-08秒-外套膜打开.jpg",
+      "sha256": "1972e8ab54116a7fbacae7b6896c02153ed526f0482aadb952fcac288395dc5a",
+      "kind": "original-reference",
+      "source_url": "https://x.com/0x_fokki/status/2116289885870981296",
+      "source_status": "registered"
+    },
+    {
+      "path": "cases/oc8/task/references/04-原作-10秒-R2臂分离.jpg",
+      "sha256": "f02c8028432c0d05feedc2321678d6e788557874a70fc535a024ff92dcfc65ec",
+      "kind": "original-reference",
+      "source_url": "https://x.com/0x_fokki/status/2116289885870981296",
+      "source_status": "registered"
+    },
+    {
+      "path": "cases/oc8/task/references/05-原作-12秒-虹吸打开.jpg",
+      "sha256": "41a600bef74fffce1ac4de6decdcae2d96101e7cec542d826c35312dbcf9ef31",
+      "kind": "original-reference",
+      "source_url": "https://x.com/0x_fokki/status/2116289885870981296",
+      "source_status": "registered"
+    },
+    {
+      "path": "cases/oc8/task/references/06-原作-14秒-保持.jpg",
+      "sha256": "1b0e5f6e21b75e6afb4288b540034bae1d1cebce6018626eb0ca01eabc2c977f",
+      "kind": "original-reference",
+      "source_url": "https://x.com/0x_fokki/status/2116289885870981296",
+      "source_status": "registered"
+    },
+    {
+      "path": "cases/oc8/task/references/07-原作-16秒-喙打开.jpg",
+      "sha256": "48aa38a93d9b3fa61ebf84a3fefe4f39f4c2a57a5ec1caa177bfbf102279f87e",
+      "kind": "original-reference",
+      "source_url": "https://x.com/0x_fokki/status/2116289885870981296",
+      "source_status": "registered"
+    },
+    {
+      "path": "cases/oc8/task/references/08-原作-20秒-整机拆解.jpg",
+      "sha256": "ad74ac345c1e8fb6aee505a95419f393e99c5ee20bca6670cd121cb3aa37b98f",
+      "kind": "original-reference",
+      "source_url": "https://x.com/0x_fokki/status/2116289885870981296",
+      "source_status": "registered"
+    },
+    {
+      "path": "cases/oc8/task/references/09-原作-24秒-离站.jpg",
+      "sha256": "e5c4f90d9becad23a1623984c4d6406bf965b0f1201933d82700d5027e6da2e6",
+      "kind": "original-reference",
+      "source_url": "https://x.com/0x_fokki/status/2116289885870981296",
+      "source_status": "registered"
+    }
+  ]
+}
