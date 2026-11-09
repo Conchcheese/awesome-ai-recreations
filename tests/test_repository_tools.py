@@ -9,13 +9,41 @@ import subprocess
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from catalog import ROOT, get_case, load_catalog, recreation_plan, export_inputs
-from check_repo import local_path, markdown_errors, publication_errors, validate_catalog
-from task_inputs import INDEX, LOCK, SHARED, check_versions, freeze_tasks, load_tasks, sha256, verify_pack
+from check_repo import layout_errors, local_path, markdown_errors, publication_errors, validate_catalog
+from task_inputs import INDEX, LOCK, SHARED, check_versions, freeze_tasks, load_tasks, sha256, source_file, verify_pack
+from workspace import prepare_run, run_paths
 
 
 class RepositoryToolsTests(unittest.TestCase):
     def test_current_catalog_paths_and_command_entries(self):
         self.assertEqual([], validate_catalog(load_catalog(), ROOT))
+
+    def test_layout_rejects_source_in_a_legacy_publish_directory(self):
+        data = load_catalog()
+        _, variant = get_case(data, 'oc8', 'deepseek')
+        legacy = Path(*Path(variant['live']).parts[:3])
+        self.assertEqual([], layout_errors(data, [variant['live']]))
+        self.assertTrue(layout_errors(data, [(legacy / 'src/model.js').as_posix()]))
+        variant['source'] = (legacy / 'src').as_posix()
+        self.assertTrue(layout_errors(data, []))
+
+    def test_workspace_moves_artifacts_and_refuses_to_merge(self):
+        case, variant = get_case(load_catalog(), '大黄蜂', 'kimi-k3-1-pro')
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            entry, destination = run_paths(root, case, variant)
+            entry.mkdir(parents=True)
+            (entry / 'frame.txt').write_text('frame')
+            destination.mkdir(parents=True)
+            with self.assertRaisesRegex(ValueError, '拒绝覆盖'):
+                prepare_run(root, case, variant)
+            self.assertFalse(entry.is_symlink())
+            destination.rmdir()
+            self.assertEqual(destination, prepare_run(root, case, variant))
+            self.assertEqual('frame', (destination / 'frame.txt').read_text())
+            self.assertTrue(entry.is_symlink())
+            self.assertEqual('frame', (entry / 'frame.txt').read_text())
+            self.assertEqual(destination, prepare_run(root, case, variant))
 
     def test_unknown_case_and_variant_fail_instead_of_guessing(self):
         data = load_catalog()
@@ -146,7 +174,7 @@ class RepositoryToolsTests(unittest.TestCase):
                     target=Path(tmp)/case['id'];payload=export_inputs(case,target)
                     self.assertFalse(any(p['path'].startswith('series/') for p in payload['files']))
                     task=json.loads((target/case['task_manifest']).read_text())
-                    expected=[r['path'] for r in task['references'] if not (ROOT/r['path']).is_file()]
+                    expected=[r['path'] for r in task['references'] if not source_file(ROOT, r['path']).is_file()]
                     self.assertEqual(expected,payload['missing_media'])
                     if case['id']=='optimus-prime-2007':
                         self.assertEqual(8,len(task['references']))
@@ -235,12 +263,13 @@ class RepositoryToolsTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, '缺失'):
                 verify_pack(root / 'draft')
             for row in task['references']:
-                path = root / row['path']
+                path = root / 'local/references/tasks/bumblebee-2007' / Path(row['path']).name
                 path.parent.mkdir(parents=True, exist_ok=True)
                 path.write_bytes(b'fixture')
             complete = export_inputs(case, root / 'pack', root, require_complete=True)
             self.assertEqual(draft['input_sha256'], complete['input_sha256'])
             self.assertEqual(complete['input_sha256'], verify_pack(root / 'pack'))
+            self.assertEqual(b'fixture', (root / 'pack' / task['references'][0]['path']).read_bytes())
 
             (root / SHARED['method']).write_text('Revised method')
             with self.assertRaisesRegex(ValueError, '提升 input_version'):
@@ -290,7 +319,7 @@ class RepositoryToolsTests(unittest.TestCase):
             with self.subTest(path=path):
                 result=subprocess.run(['git','check-ignore','--no-index','-q','--',path],cwd=ROOT)
                 self.assertEqual(0,result.returncode)
-        for path in ['series/机械复刻系列/glm5.3-flash复刻/src/kit/sfx/samples/fs-258269-mouth-pop.ogg','series/机械复刻系列/glm5.3-flash复刻/src/upstream-teardown/sfx/samples/fs-258269-mouth-pop.ogg']:
+        for path in ['series/机械复刻系列/models/glm-5.3-flash/src/kit/sfx/samples/fs-258269-mouth-pop.ogg','series/机械复刻系列/models/glm-5.3-flash/src/upstream-teardown/sfx/samples/fs-258269-mouth-pop.ogg']:
             self.assertEqual(1,subprocess.run(['git','check-ignore','--no-index','-q','--',path],cwd=ROOT).returncode)
 
     def test_publication_rejects_secret_names_and_large_files(self):

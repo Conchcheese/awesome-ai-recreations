@@ -6,11 +6,11 @@
 
 | 实现 | 范围 | 复用与署名 |
 |---|---|---|
-| [GPT-6.1 Sol](series/机械复刻系列/gpt-6.1-sol复刻/README.md) | OC-8 | 本轮从原作参考帧重新编写，新增几何/HUD/工具及原创合成音轨；展示名由用户指定，先前审计接触既有实现已披露，不作为隔离盲测 |
-| [GLM 5.3-Flash](series/机械复刻系列/glm5.3-flash复刻/README.md) | 9 台 | 01 V8 / 02 塞斯纳 337 / 03 海滩兽基于 elvarofficial/teardown 的 MIT 示例改色、汉化、重定时；00 与 04–08 为新增实现 |
-| [DeepSeek](series/机械复刻系列/deepseek复刻/README.md) | OC-8 / V8 | 历史记录为独立重写；V8 参考上游结构、参数与节拍，使用相同第三方库 |
-| [HY 宝石蓝衍生版](series/机械复刻系列/hunyuan复刻/README.md) | OC-8 | 在 DeepSeek 实现上改色、重写腕足等部分几何；HUD、调度、构建链和断言沿用，不作为独立模型实验 |
-| [HY4 独立直出版](series/机械复刻系列/hunyuan直出版/README.md) | OC-8 | 历史记录为依据参考帧和方法重写；第三方库共用不等于复用已有实现；HUD、配色、镜头属于设计改编 |
+| [GPT-6.1 Sol](series/机械复刻系列/models/gpt-6.1-sol/README.md) | OC-8 | 本轮从原作参考帧重新编写，新增几何/HUD/工具及原创合成音轨；展示名由用户指定，先前审计接触既有实现已披露，不作为隔离盲测 |
+| [GLM 5.3-Flash](series/机械复刻系列/models/glm-5.3-flash/README.md) | 9 台 | 01 V8 / 02 塞斯纳 337 / 03 海滩兽基于 elvarofficial/teardown 的 MIT 示例改色、汉化、重定时；00 与 04–08 为新增实现 |
+| [DeepSeek](series/机械复刻系列/models/deepseek/README.md) | OC-8 / V8 | 历史记录为独立重写；V8 参考上游结构、参数与节拍，使用相同第三方库 |
+| [HY 宝石蓝衍生版](series/机械复刻系列/models/hy-derived/README.md) | OC-8 | 在 DeepSeek 实现上改色、重写腕足等部分几何；HUD、调度、构建链和断言沿用，不作为独立模型实验 |
+| [HY4 独立直出版](series/机械复刻系列/models/hy4-direct/README.md) | OC-8 | 历史记录为依据参考帧和方法重写；第三方库共用不等于复用已有实现；HUD、配色、镜头属于设计改编 |
 
 模型名称沿用历史署名（HY4 / Tencent Hunyuan Hy、DeepSeek、GLM 5.3-Flash），完整精确模型 ID、工具调用与会话并未全部归档。不得由展示铭牌推断已验证身份。代码行/8-gram 相似度只能提供辅助信号，不能证明独立创作、模型来源或公平对照。
 
@@ -28,21 +28,21 @@
 | 07 | 机械蜜蜂 HB-7 | DelFlyMicro / RoboBee 等公开论文与图片 |
 | 08 | 机械蝎子 SC-8 | 蝎类与机械蝎公开形态资料 |
 
-逐项图片来源和参数依据保留在 [GLM references](series/机械复刻系列/glm5.3-flash复刻/references/)、[GLM records](series/机械复刻系列/glm5.3-flash复刻/records/)、[DeepSeek references](series/机械复刻系列/deepseek复刻/references/README.md)。公开可见不代表素材可自由再分发；使用者需按原许可处理。
+逐项图片来源和参数依据保留在 [GLM references](series/机械复刻系列/models/glm-5.3-flash/references/)、[GLM records](series/机械复刻系列/models/glm-5.3-flash/records/)、[DeepSeek references](series/机械复刻系列/models/deepseek/references/README.md)。公开可见不代表素材可自由再分发；使用者需按原许可处理。
 
 ## 上游代码与方法
 
-- [elvarofficial/teardown](https://github.com/elvarofficial/teardown)：MIT。其[快照](series/机械复刻系列/glm5.3-flash复刻/src/upstream-teardown/)保留 LICENSE 与 SKILL.md；含 V8、起落架、海滩兽示例和公共库。快照 README 的章鱼演示 GIF 不代表快照含章鱼源码。
+- [elvarofficial/teardown](https://github.com/elvarofficial/teardown)：MIT。其[快照](series/机械复刻系列/models/glm-5.3-flash/src/upstream-teardown/)保留 LICENSE 与 SKILL.md；含 V8、起落架、海滩兽示例和公共库。快照 README 的章鱼演示 GIF 不代表快照含章鱼源码。
 - [方法原始文章](https://x.com/elvar_official/status/2116174609355571402)：@elvar_official。仓库的[六条提示词](series/机械复刻系列/docs/提示词原文/teardown-机械章鱼.md)是改写材料，不是 OC-8 原作者未公开的提示词。
 - [whaleyxbt/claude-motion](https://github.com/whaleyxbt/claude-motion)：逐帧录制与音效方法来源。
 - [HuaJuan2023/teardown-codex](https://github.com/HuaJuan2023/teardown-codex)：社区移植参考。
 - Three.js、esbuild、Playwright、Inter、JetBrains Mono 分别保留其发行许可；锁文件记录版本，依赖不随库提交。构建内联代码/字体的再分发仍须遵守各自许可。
 - 内联运行库与字体的完整许可见 [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES.md)。单独分发 HTML 时也应保留对应许可。
-- 音效素材的逐项来源及许可见 [sfx/samples/SOURCES.md](series/机械复刻系列/glm5.3-flash复刻/src/kit/sfx/samples/SOURCES.md)。
+- 音效素材的逐项来源及许可见 [sfx/samples/SOURCES.md](series/机械复刻系列/models/glm-5.3-flash/src/kit/sfx/samples/SOURCES.md)。
 
 ## 对比展示与未分发内容
 
-[四宫格](series/机械复刻系列/00-机械章鱼OC-8-四模型四宫格对比/README.md)和[历史纵向](series/机械复刻系列/00-机械章鱼OC-8-四模型纵向对比/README.md)保留封面、截图和制作脚本。涉及原作的图像部分归原作者。大体积成片、原作 MP4 与音轨默认不提交；本地已有文件保留，合成须自行提供有使用权限的原视频。
+[四宫格](series/机械复刻系列/comparisons/oc8-grid/README.md)和[历史纵向](series/机械复刻系列/comparisons/oc8-vertical/README.md)保留封面、截图和制作脚本。涉及原作的图像部分归原作者。大体积成片、原作 MP4 与音轨默认不提交；本地已有文件保留，合成须自行提供有使用权限的原视频。
 
 对比片中的“Opus 5.5”等历史铭牌没有在本库归档可独立核验的模型运行证据。各格取景、HUD、输入和迭代不同，只作作品展示，不作模型能力排名。新生成铭牌使用原作作者名。
 
@@ -77,7 +77,7 @@
 
 环境为Poly Haven **Industrial Sunset 02**，作者Sergej Majboroda，CC0；来源与哈希见[素材说明](series/变形金刚系列/01-擎天柱-电影版/assets/SOURCES.md)。车漆/粗糙度/微法线纹理由确定性Canvas生成，声音为NumPy原创合成，无影视配乐/台词/第三方音频采样。Three.js 0.186.1 MIT完整许可内嵌HTML；esbuild、Playwright遵循各自许可和锁文件。Blender 4.5.4 LTS便携程序只保留在ignored local中，不随仓库分发；逐帧影片、GLB与blend仅在ignored artifacts中。
 
-[可复用工作流协议与草稿脚手架](series/变形金刚系列/工作流协议.md)是本轮新增源代码/文档，依仓库MIT。脚手架不包含角色成品、原片资产或任何再授权声明。
+[可复用工作流协议与草稿脚手架](series/变形金刚系列/docs/工作流协议.md)是本轮新增源代码/文档，依仓库MIT。脚手架不包含角色成品、原片资产或任何再授权声明。
 
 
 ## 变形金刚系列：HY4 独立版本

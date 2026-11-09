@@ -1,6 +1,6 @@
 # 大黄蜂 · 2007 真人电影版 · Minimax-M3.1-Flash 独立复刻
 
-按[变形金刚制作协议](../../../工作流协议.md)对 2007 真人电影版大黄蜂做的**独立程序化复刻**：
+按[变形金刚制作协议](../../../docs/工作流协议.md)对 2007 真人电影版大黄蜂做的**独立程序化复刻**：
 同一套模型数据同时驱动研究网页、GLB 导出和离线短片，车辆态与人形态由一条确定性时间线连接。
 
 - **执行模型**：Minimax-M3.1-Flash（本仓库案例目录 `models/minimax-m3.1-flash/`）
@@ -80,4 +80,4 @@ python3 "scripts/check_transformer_contract.py" \
 
 角色与影片权利归 Paramount / DreamWorks / Hasbro 等权利人；TOMY 产品图仅本地研究使用，
 未取得再分发许可，不随本仓库发布。程序化模型、材质与音轨由本案例代码生成；
-Three.js 为 MIT。原始参考图保留在 ignored 的 `references/local/`。
+Three.js 为 MIT。原始参考图集中在仓库根的 `local/references/versions/transformers/minimax-m3.1-flash/bumblebee-2007/`。

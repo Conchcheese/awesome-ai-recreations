@@ -49,6 +49,18 @@ def safe_task_path(root, value):
     return cursor
 
 
+def source_file(root, value):
+    """Resolve a task media path from the central local stash or a legacy checkout."""
+    logical = safe_task_path(root, value)
+    parts = Path(value).parts
+    if len(parts) > 4 and parts[0] == 'tasks' and parts[2:4] == ('references', 'local'):
+        stash = Path('local/references/tasks', parts[1], *parts[4:]).as_posix()
+        canonical = safe_task_path(root, stash)
+        if canonical.exists() or not logical.exists():
+            return canonical
+    return logical
+
+
 def read_json(root, path):
     return json.loads(safe_task_path(root, path).read_text(encoding='utf-8'))
 
@@ -120,7 +132,7 @@ def prepare_task(case, root):
     missing = []
     for row in refs:
         value, digest = row['path'], row.get('sha256', '')
-        file = safe_task_path(root, value)
+        file = source_file(root, value)
         if not value.startswith(base + 'references/') or value in files or file.suffix.lower() not in MEDIA:
             raise ValueError('原始参考必须是任务参考目录内不重复的媒体文件')
         if row.get('kind') not in ORIGINAL or not re.fullmatch('[a-f0-9]{64}', digest):
@@ -218,7 +230,7 @@ def export_inputs(case, destination, root=ROOT, require_complete=False):
         for value in files.keys() - {'TASK.md'} - set(missing):
             target = destination / value
             target.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(safe_task_path(root, value), target)
+            shutil.copyfile(source_file(root, value), target)
             if file_sha256(target) != files[value]:
                 raise ValueError('导出期间输入发生变化：' + value)
         (destination / 'inputs.json').write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n',

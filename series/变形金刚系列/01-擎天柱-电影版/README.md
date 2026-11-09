@@ -4,7 +4,7 @@
 
 以 2007 真人电影和 ILM 制作画面为参考的程序化三维研究：172 个活动装配、2200 个视觉分件，支持同一模型连续变形、局部组合展开、节点检查和拆解重组，并输出同源 Cycles 影片。模型名称 GPT-6.1 Sol 由用户提供，会话未暴露可独立核验的精确模型 ID。目标 fidelity，实现 derived；沿用 C-01 构建/导出方法，模型与摄影重写。隐藏机构和部分动作属于推演，仍有电影造型差距。
 
-[可复用协议与脚手架](../工作流协议.md) · [系列方案](../方案与工作流.md) · [电影任务书](../prompts/optimus-prime-2007.md)
+[可复用协议与脚手架](../docs/工作流协议.md) · [系列方案](../docs/方案与工作流.md) · [电影任务书](../prompts/optimus-prime-2007.md)
 
 ## 体验与下载
 
@@ -65,6 +65,6 @@ node "series/变形金刚系列/01-擎天柱-电影版/tools/playback-check.mjs"
 
 ## 发布范围
 
-[系列发布说明](../发布说明.md) · [角色素材与结构库](../characters/README.md) · [正式渲染影片Release](https://github.com/topmindspace/awesome-ai-recreations/releases/tag/transformers-study-v0.1.0)
+[系列发布说明](../docs/发布说明.md) · [角色素材与结构库](../research/characters/README.md) · [正式渲染影片Release](https://github.com/topmindspace/awesome-ai-recreations/releases/tag/transformers-study-v0.1.0)
 
 原视频、大图、依赖、便携工具、GLB/Blend、日志和逐帧缓存保留 local/artifacts。公开目录展示成品、规格与复用方法；新复刻前按 references 来源清单取材。

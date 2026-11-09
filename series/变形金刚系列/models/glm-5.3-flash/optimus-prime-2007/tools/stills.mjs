@@ -1,4 +1,4 @@
-// 静帧生成：灰模同机位五态 + 彩色关键帧；接触表由 Python 合成（stills/contact 与 records/local 对照）
+// 静帧生成：灰模同机位五态和彩色关键帧，接触表由 Python 合成。
 import { dep, root } from './deps.mjs';
 import { pathToFileURL } from 'node:url';
 import path from 'node:path';
@@ -15,7 +15,6 @@ const page = await browser.newPage({ viewport: { width: 1600, height: 1000 }, de
 const tmp = path.join(root, 'artifacts/stills');
 await fs.mkdir(tmp, { recursive: true });
 await fs.mkdir(path.join(root, 'stills'), { recursive: true });
-await fs.mkdir(path.join(root, 'records/local'), { recursive: true });
 await page.goto(pathToFileURL(path.join(root, 'index.html')).href + '?capture');
 await page.waitForFunction(() => window.study?.ready, { timeout: 30000 });
 

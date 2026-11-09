@@ -7,6 +7,8 @@ from pathlib import Path
 import re
 from urllib.parse import urlparse
 
+from task_inputs import ROOT, safe_task_path
+
 
 def safe_path(base, value):
     if not isinstance(value, str) or not value or '\\' in value or ':' in value:
@@ -18,6 +20,26 @@ def safe_path(base, value):
     if not out.is_relative_to(base.resolve()):
         raise ValueError('路径不可通过符号链接越界')
     return out
+
+
+def reference_media_path(reference_dir, value, root=ROOT):
+    """Resolve version-specific media stored outside the published project."""
+    legacy = safe_path(reference_dir, value)
+    prefix = root / 'series/变形金刚系列'
+    resolved = reference_dir.resolve()
+    parts = Path(value).parts
+    if not resolved.is_relative_to(prefix) or len(parts) < 2 or parts[0] != 'local':
+        return legacy
+    project = resolved.relative_to(prefix).parts
+    if len(project) == 4 and project[0] == 'models' and project[-1] == 'references':
+        key = project[1:3]
+    elif project == ('01-擎天柱-电影版', 'references'):
+        key = ('cinematic-v2', 'optimus-prime-2007')
+    else:
+        return legacy
+    stash = Path('local/references/versions/transformers', *key, *parts[1:])
+    canonical = safe_task_path(root, stash.as_posix())
+    return legacy if legacy.is_file() and not canonical.exists() else canonical
 
 
 def finite(value):
@@ -92,7 +114,7 @@ def validate_references(refs, reference_dir, require_local_media=False):
         if not isinstance(digest, str) or not re.fullmatch(r'[a-f0-9]{64}', digest):
             errors.append('原始参考缺少 SHA-256')
         try:
-            p = safe_path(reference_dir, row.get('file'))
+            p = reference_media_path(reference_dir, row.get('file'))
             if not p.is_file() and refs.get('mediaDistribution') == 'local-only' and not require_local_media:
                 continue
             if not p.is_file() or hashlib.sha256(p.read_bytes()).hexdigest() != digest:

@@ -17,11 +17,11 @@ Agent 可按案例名运行 `python3 scripts/catalog.py recreate "机械章鱼"`
 
 | 资料 | 内容 |
 |---|---|
-| [GPT-6.1 Sol 记录](../gpt-6.1-sol复刻/records/提示词与过程.md) | 实际任务、迭代、视频与差距 |
-| [DeepSeek 记录](../deepseek复刻/records/实现与验证.md) | 实现约定、验证与简化项 |
-| [GLM 案例记录](../glm5.3-flash复刻/records/) | 九台机器的实现记录 |
-| [HY4 记录](../hunyuan直出版/records/实现与验证.md) | 输入、运镜、偏差与审计 |
-| [HY 衍生版记录](../hunyuan复刻/records/实现与验证.md) | 复用关系与腕节实现 |
+| [GPT-6.1 Sol 记录](../models/gpt-6.1-sol/records/提示词与过程.md) | 实际任务、迭代、视频与差距 |
+| [DeepSeek 记录](../models/deepseek/records/实现与验证.md) | 实现约定、验证与简化项 |
+| [GLM 案例记录](../models/glm-5.3-flash/records/) | 九台机器的实现记录 |
+| [HY4 记录](../models/hy4-direct/records/实现与验证.md) | 输入、运镜、偏差与审计 |
+| [HY 衍生版记录](../models/hy-derived/records/实现与验证.md) | 复用关系与腕节实现 |
 | [首次长篇复盘](01-机械章鱼OC-8-teardown机器模拟器.md) | GLM 首次实现的公开摘要与历史位置 |
 | [历史改写提示词](提示词原文/teardown-机械章鱼.md) | 基于 teardown 方法的六条模板 |
 

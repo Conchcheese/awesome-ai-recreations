@@ -6,7 +6,7 @@ GPT-6.1 Sol 在 Codex 中基于两张 TOMY 官方 MPM-3 原图独立建立程序
 
 车壳曲率、Camaro 轮廓、头雕和背部收纳均有简化，内部连接和变形轨迹属于推演。细节见[规格](spec.md)和[验证记录](records/实现与验证.md)。
 
-[Sol 作品索引](../README.md) · [系列首页](../../../README.md) · [角色研究档案](../../../characters/bumblebee-2007/README.md)
+[Sol 作品索引](../README.md) · [系列首页](../../../README.md) · [角色研究档案](../../../research/characters/bumblebee-2007/README.md)
 
 ## 演示与本地成片
 
@@ -46,6 +46,6 @@ python3 tools/test_movie.py
 
 ## 来源与权利
 
-[共同任务](../../../../../tasks/bumblebee-2007/brief.md) · [来源与摘要](references/sources.json) · [实际输入与工具](records/provenance.json) · [系列方法](../../../工作流协议.md)。未读取其他角色的几何实现源码，未使用第三方成品模型。Blender 便携程序属于工具复用，不属于几何资产。
+[共同任务](../../../../../tasks/bumblebee-2007/brief.md) · [来源与摘要](references/sources.json) · [实际输入与工具](records/provenance.json) · [系列方法](../../../docs/工作流协议.md)。未读取其他角色的几何实现源码，未使用第三方成品模型。Blender 便携程序属于工具复用，不属于几何资产。
 
 角色、名称、电影与产品摄影权利仍归 Hasbro / TOMY / Paramount 等相应权利人。新增代码依仓库 MIT，不能据此再授权角色。环境几何、材质和声音由本版程序生成；没有采样原片声音。Three.js MIT 随离线 HTML 保留，完整许可见本案例 `THIRD_PARTY_LICENSES.txt`；依赖工具遵循各自许可。来源图和影片保留 local / artifacts，不自动提交或发布。

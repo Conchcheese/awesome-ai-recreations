@@ -9,6 +9,7 @@ import json
 import math
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
+from characters import sample_path
 
 SERIES=Path(__file__).resolve().parents[1]
 REPO=SERIES.parents[1]
@@ -26,7 +27,7 @@ def build(font_path):
  font=ImageFont.truetype(str(font_path),18)
  small=ImageFont.truetype(str(font_path),13)
  title=ImageFont.truetype(str(font_path),30)
- rows=json.loads((SERIES/'character-library.json').read_text())['characters']
+ rows=json.loads((SERIES/'research/character-library.json').read_text())['characters']
  out=SERIES/'references/boards';out.mkdir(parents=True,exist_ok=True)
  assets=[];index=[]
  for year in sorted({r['year'] for r in rows}):
@@ -41,7 +42,7 @@ def build(font_path):
    data=json.loads((SERIES/row['sources']).read_text());sample=next(iter(data.get('sources',[])),None)
    draw.rectangle((x,y,x+376,y+266),fill='#f5f5f5')
    if sample:
-    file=SERIES/row['path']/sample['file'];raw=file.read_bytes()
+    file=sample_path(SERIES,row,sample['file']);raw=file.read_bytes()
     if hashlib.sha256(raw).hexdigest()!=sample['sha256']:raise ValueError('Changed sample: '+row['id'])
     photo=Image.open(file).convert('RGB');photo.thumbnail((376,266),Image.Resampling.LANCZOS)
     image.paste(photo,(x+(376-photo.width)//2,y+(266-photo.height)//2))

@@ -25,7 +25,7 @@ def validate_publication(files,root):
     if not item.get('sources'):errors.append('研究板缺少逐图来源')
     for source in item.get('sources',[]):
      manifest_path=Path(source['manifest'])
-     if manifest_path.is_absolute() or '..' in manifest_path.parts or not str(manifest_path).startswith(PREFIX+'characters/'):raise ValueError('研究板来源清单越界')
+     if manifest_path.is_absolute() or '..' in manifest_path.parts or not str(manifest_path).startswith(PREFIX+'research/characters/'):raise ValueError('研究板来源清单越界')
      if not (root/manifest_path).resolve().is_relative_to(root.resolve()):raise ValueError('研究板来源清单越界')
      if not source.get('owner') or source.get('fullFrame') is not True:errors.append('研究板缺少权利人或完整画面声明')
      if any(urlsplit(source[k]).scheme!='https' or not urlsplit(source[k]).netloc for k in ['url','sourcePage']):errors.append('研究板来源URL无效')

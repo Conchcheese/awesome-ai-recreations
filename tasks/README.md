@@ -13,7 +13,7 @@ python3 scripts/catalog.py recreate oc8 --export local/input-packs/oc8-v2 --requ
 python3 scripts/catalog.py verify local/input-packs/oc8-v2
 ```
 
-`index.json` 登记已就绪的任务；`inputs.lock.json` 锁定其版本和文件摘要。各案例的 `references/local/` 供本地取材。缺少参考时先按清单补齐，再向每位执行者分发同一完整输入包。已有实现放在 [series](../series/)。
+`index.json` 登记已就绪的任务；`inputs.lock.json` 锁定其版本和文件摘要。清单中的 `references/local/` 是包内路径；本机原件集中到根目录 `local/references/tasks/<case-id>/`。缺少参考时先按清单补齐，再向每位执行者分发同一完整输入包。已有实现放在 [series](../series/)。
 
 ## 历史输入
 

@@ -163,13 +163,56 @@ def validate_task(case, root):
     return []
 
 
+def layout_errors(data, files):
+    """Keep active project files under models and legacy mechanical pages static."""
+    errors = []
+    releases = set()
+    for case in data['cases']:
+        for variant in case['variants']:
+            project = Path(variant['readme']).parent
+            key = case['id'] + '/' + variant['id']
+            if (case['id'], variant['id']) == ('optimus-prime-2007', 'cinematic-v2'):
+                expected = Path('series/变形金刚系列/01-擎天柱-电影版')
+                valid = project == expected
+            else:
+                parts = project.parts
+                valid = (len(parts) >= 4 and parts[0] == 'series' and parts[2] == 'models' and
+                         re.fullmatch(r'[a-z0-9]+(?:[.-][a-z0-9]+)*', parts[3]))
+            if not valid:
+                errors.append(f'{key} 的项目说明须位于系列 models/ 下')
+                continue
+            for field in ('source', 'spec', 'record', 'cwd'):
+                if not Path(variant[field]).is_relative_to(project):
+                    errors.append(f'{key} 的 {field} 不在同一模型项目下')
+            for field in ('live', 'film'):
+                parts = Path(variant[field]).parts
+                if parts[:2] == ('series', '机械复刻系列') and len(parts) > 3 and parts[2] != 'models':
+                    releases.add(parts[:3])
+    for value in files:
+        parts = Path(value).parts
+        if parts[:3] in releases and len(parts) > 3:
+            if parts[3] not in {'README.md', 'pages', 'covers'} and not re.match(r'^\d\d-', parts[3]):
+                errors.append('历史发布目录只保存发布内容：' + value)
+            elif len(parts) > 4 and Path(value).suffix not in {'.html', '.png', '.jpg', '.jpeg', '.gif', '.webp'}:
+                errors.append('历史发布目录含源码或中间产物：' + value)
+    return errors
+
+
+def published_path_errors(old, root):
+    return [f'已发布入口在新检出中缺失：{value}'
+            for case in old['cases'] for variant in case['variants'] for field in ('live', 'film')
+            if (value := variant.get(field)) and not local_path(root, value).is_file()]
+
+
 def markdown_errors(file, root):
     # Inline links only; historical prose and upstream snapshot have separate provenance.
     text = file.read_text(encoding='utf-8')
     text = re.sub(r'```.*?```', '', text, flags=re.S)
     errors = []
-    for match in re.finditer(r'!?\[[^\]\n]*\]\(([^\n]+?)\)', text):
-        target = match[1].strip().strip('<>')
+    links = re.findall(r'!?\[[^\]\n]*\]\(([^\n]+?)\)', text)
+    links += re.findall(r'<img\b[^>]*?\bsrc=["\']([^"\']+)', text, re.I)
+    for link in links:
+        target = link.strip().strip('<>')
         parsed = urlsplit(target)
         if parsed.scheme or parsed.netloc or not (parsed.path or parsed.fragment):
             continue
@@ -242,17 +285,23 @@ def main():
         files = subprocess.check_output(
             ['git', '-c', 'core.quotepath=false', 'ls-files', '-z', '--cached', '--others', '--exclude-standard'],
             cwd=ROOT).decode().split('\0')
-        files = sorted(set(f for f in files if f))
-        errors = validate_catalog(data, ROOT) + publication_errors(files, ROOT) + validate_publication(files, ROOT)
+        files = sorted({f for f in files if f and ((ROOT / f).exists() or (ROOT / f).is_symlink())})
+        errors = (validate_catalog(data, ROOT) + layout_errors(data, files) +
+                  publication_errors(files, ROOT) + validate_publication(files, ROOT))
+        if args.base and args.base.strip('0'):
+            base = subprocess.check_output(
+                ['git', 'rev-parse', '--verify', '--end-of-options', args.base + '^{commit}'],
+                cwd=ROOT, text=True).strip()
+            old_catalog = subprocess.check_output(['git', 'show', f'{base}:catalog.json'], cwd=ROOT, text=True)
+            errors.extend(published_path_errors(json.loads(old_catalog), ROOT))
+        else:
+            base = None
         locked = {case['id'] for case in data['cases'] if case.get('task', {}).get('schema_version') == 2}
         if locked or (ROOT / LOCK).exists():
             lock = read_json(ROOT, LOCK)
             if locked != set(lock) or locked != {case['id'] for case in data['cases']}:
                 errors.append('共同任务索引与锁定清单的案例不一致')
-            if args.base and args.base.strip('0'):
-                base = subprocess.check_output(
-                    ['git', 'rev-parse', '--verify', '--end-of-options', args.base + '^{commit}'],
-                    cwd=ROOT, text=True).strip()
+            if base:
                 if subprocess.run(['git', 'cat-file', '-e', f'{base}:{LOCK}'], cwd=ROOT,
                                   capture_output=True).returncode == 0:
                     old = subprocess.check_output(['git', 'show', f'{base}:{LOCK}'], cwd=ROOT, text=True)

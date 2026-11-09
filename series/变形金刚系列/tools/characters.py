@@ -14,7 +14,7 @@ SERIES=Path(__file__).resolve().parents[1]
 
 def read(path):return json.loads(path.read_text(encoding='utf-8'))
 def normalize(value):return re.sub(r'[\s_-]+','',value.casefold())
-def load():return read(SERIES/'character-library.json')
+def load():return read(SERIES/'research/character-library.json')
 def resolve(query, data=None):
  matches=[x for x in (data or load())['characters'] if normalize(query) in {normalize(str(x[k])) for k in ['id','title','english']}]
  if len(matches)!=1:raise ValueError('角色不存在或版本不唯一，请使用角色ID；用 list 查看清单。')
@@ -26,8 +26,26 @@ def inside(root,value):
  if not result.is_relative_to(root.resolve()):raise ValueError('符号链接越界')
  return result
 
+def sample_path(base, row, value):
+    parts = Path(value).parts
+    if len(parts) < 2 or parts[0] != 'local':
+        raise ValueError('样例必须声明 local/ 下的相对路径')
+    legacy = inside(inside(base, row['path']), value)
+    stash = base.parents[1] / 'local/references/characters'
+    canonical = inside(stash, str(Path(row['id'], *parts[1:])))
+    if canonical.exists():
+        return canonical
+    if legacy.is_file():
+        return legacy
+    if row['path'].startswith('research/characters/'):
+        previous = inside(base, row['path'].removeprefix('research/') + '/' + value)
+        if previous.is_file():
+            return previous
+    return canonical
+
+
 def validate_library(base=SERIES):
- errors=[];data=read(base/'character-library.json');ids=set()
+ errors=[];data=read(base/'research/character-library.json');ids=set()
  for row in data['characters']:
   slug=row.get('id','')
   if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*',slug) or slug in ids:errors.append('重复或无效角色ID: '+slug)
@@ -45,7 +63,7 @@ def validate_library(base=SERIES):
     u=urlsplit(example.get('url',''))
     if u.scheme!='https' or not u.netloc or not example.get('type') or not example.get('publisher'):errors.append('片段/图证来源不完整: '+slug)
    for source in sources['sources']:
-    u=urlsplit(source['url']);p=inside(folder,source['file'])
+    u=urlsplit(source['url']);p=sample_path(base,row,source['file'])
     if u.scheme!='https' or u.hostname!='tf.takaratomy.co.jp' or not source['file'].startswith('local/'):errors.append('样例必须来自已登记官方域名并只保存local: '+slug)
     if not re.fullmatch('[a-f0-9]{64}',source.get('sha256','')):errors.append('样例缺少摘要: '+slug)
     if p.exists() and hashlib.sha256(p.read_bytes()).hexdigest()!=source['sha256']:errors.append('本地样例摘要不一致: '+slug)
@@ -54,13 +72,12 @@ def validate_library(base=SERIES):
  return errors
 
 def fetch(row):
- folder=inside(SERIES,row['path']);data=read(inside(SERIES,row['sources']));count=0
+ data=read(inside(SERIES,row['sources']));count=0
  if not data['sources']:raise ValueError('此角色仅有片段/图证入口，尚无已冻结直链图片；请按 sources.json 先抽帧登记。')
  for source in data['sources']:
   url=urlsplit(source['url'])
   if url.scheme!='https' or url.hostname!='tf.takaratomy.co.jp':raise ValueError('仅获取清单中已核验的官方域名素材')
-  dest=inside(folder,source['file'])
-  if not source['file'].startswith('local/'):raise ValueError('素材只能写入local')
+  dest=sample_path(SERIES,row,source['file'])
   if dest.exists():
    if hashlib.sha256(dest.read_bytes()).hexdigest()!=source['sha256']:raise ValueError('本地文件与登记摘要不同，拒绝覆盖')
   else:

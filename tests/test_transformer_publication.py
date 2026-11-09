@@ -12,7 +12,7 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'));sys.path.insert(0,str(ROOT/'series/变形金刚系列/tools'))
 from catalog import recreation_plan
 from check_repo import validate_catalog
-from check_transformer_contract import validate_references, validate as validate_production
+from check_transformer_contract import reference_media_path, validate_references, validate as validate_production
 import characters
 
 class PublicationReferenceTests(unittest.TestCase):
@@ -36,6 +36,24 @@ class PublicationReferenceTests(unittest.TestCase):
   with tempfile.TemporaryDirectory() as tmp:
    root=Path(tmp);refs={'mediaDistribution':'local-only','sources':[{'file':'local/image.jpg','url':'https://example.com/x','sha256':hashlib.sha256(b'original').hexdigest()}]}
    self.assertEqual([],validate_references(refs,root));self.assertTrue(validate_references(refs,root,True));(root/'local').mkdir();(root/'local/image.jpg').write_bytes(b'changed');self.assertTrue(validate_references(refs,root))
+
+ def test_version_media_resolves_central_and_legacy_paths_without_following_links(self):
+  with tempfile.TemporaryDirectory() as tmp:
+   root=Path(tmp).resolve()
+   refs=root/'series/变形金刚系列/models/example/bumblebee-2007/references'
+   legacy=refs/'local/image.jpg'
+   legacy.parent.mkdir(parents=True)
+   legacy.write_bytes(b'legacy')
+   self.assertEqual(legacy,reference_media_path(refs,'local/image.jpg',root))
+   central=root/'local/references/versions/transformers/example/bumblebee-2007/image.jpg'
+   central.parent.mkdir(parents=True)
+   central.write_bytes(b'central')
+   self.assertEqual(central,reference_media_path(refs,'local/image.jpg',root))
+   central.unlink()
+   central.symlink_to(legacy)
+   with self.assertRaises(ValueError):
+    reference_media_path(refs,'local/image.jpg',root)
+
 
 class CharacterLibraryTests(unittest.TestCase):
  def test_library_is_auditable_and_finished_entries_have_separate_implementations(self):
@@ -67,7 +85,7 @@ class CharacterLibraryTests(unittest.TestCase):
     target=characters.start(characters.resolve(slug),Path(tmp),with_structure=True);ports=json.loads((target/'production.json').read_text())['rig']['requiredPorts'];self.assertIn(required,ports);self.assertNotIn('left_hand',ports)
  def test_fetch_local_hash_validation_does_not_touch_network(self):
   with tempfile.TemporaryDirectory() as tmp,patch.object(characters,'SERIES',Path(tmp)):
-   folder=Path(tmp)/'example';(folder/'local').mkdir(parents=True);(folder/'local/image.jpg').write_bytes(b'good');source={'file':'local/image.jpg','url':'https://tf.takaratomy.co.jp/image.jpg','sha256':hashlib.sha256(b'good').hexdigest()};(folder/'sources.json').write_text(json.dumps({'sources':[source]}));row={'path':'example','sources':'example/sources.json'}
+   folder=Path(tmp)/'example';(folder/'local').mkdir(parents=True);(folder/'local/image.jpg').write_bytes(b'good');source={'file':'local/image.jpg','url':'https://tf.takaratomy.co.jp/image.jpg','sha256':hashlib.sha256(b'good').hexdigest()};(folder/'sources.json').write_text(json.dumps({'sources':[source]}));row={'id':'example','path':'example','sources':'example/sources.json'}
    with patch.object(characters,'urlopen') as network:self.assertEqual(1,characters.fetch(row));network.assert_not_called()
    source['url']='https://example.com/x';(folder/'sources.json').write_text(json.dumps({'sources':[source]}))
    with patch.object(characters,'urlopen') as network:
@@ -81,7 +99,7 @@ class PublicAssetInventoryTests(unittest.TestCase):
    root=Path(tmp);folder=root/PREFIX;folder.mkdir(parents=True)
    value=PREFIX+'references/boards/2007.jpg';(root/value).parent.mkdir(parents=True);raw=b'reduced board fixture';(root/value).write_bytes(raw)
    source={'sha256':'a'*64,'url':'https://example.com/original.jpg','sourcePage':'https://example.com/product','owner':'Original owner'}
-   source_path=PREFIX+'characters/example/sources.json';(root/source_path).parent.mkdir(parents=True);(root/source_path).write_text(json.dumps({'sources':[source]}))
+   source_path=PREFIX+'research/characters/example/sources.json';(root/source_path).parent.mkdir(parents=True);(root/source_path).write_text(json.dumps({'sources':[source]}))
    item={'path':value,'sha256':hashlib.sha256(raw).hexdigest(),'kind':'reference-study','rights':'Third-party images, excluded from MIT','usage':'noncommercial-reference-research','rightsStatus':'redistribution-permission-not-established','sources':[{**source,'manifest':source_path,'fullFrame':True}]}
    def check(candidate):
     (folder/'publication.json').write_text(json.dumps({'assets':[candidate]}));return validate_publication([value],root)

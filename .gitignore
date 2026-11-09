@@ -3,7 +3,7 @@ node_modules/
 .pnpm-store/
 
 # 可重建的构建与自检产物
-teardown-out/
+teardown-out
 dist/
 _selftest/
 .cache/
@@ -30,12 +30,12 @@ Thumbs.db
 *.log
 
 # 非公开素材与可再生成的导出（保留本地文件）
-local/
-private/
-artifacts/
+# Omit the slash so ignored compatibility symlinks are excluded too.
+local
+private
+artifacts
 原视频/
 **/截图/验收/
-**/hunyuan直出版/stills/
 *.mp4
 *.mov
 *.webm

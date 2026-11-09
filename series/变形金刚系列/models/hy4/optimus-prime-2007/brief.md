@@ -3,7 +3,7 @@
 - **版本冻结**：Transformers (2007), Michael Bay；长头卡车造型。排除 G1 平头玩具外形、2009/2011/2014/2018 续集造型，不混入 C-01 机构。
 - **视觉目标** `fidelity` · **实现来源** `independent`。本轮只读任务书、`docs/精细复刻流程.md`、系列制作协议、仓库既有素材与测量记录，以及登记的官方素材；**未打开任何已有擎天柱实现的几何源码、规格或 HTML 作为建模输入**。
 - **模型署名**：`HY4 / Tencent Hunyuan Hy`（用户指定标注，沿用仓库历史署名口径）；精确模型 ID 未归档。
-- **允许输入**：[sources.json](references/sources.json) 登记的 15 份素材 —— 8 张 Paramount / ILM 精选原帧，加 MPM-4 官方产品图、ILM 100s / 080s、Paramount 61s、8–32s 变形接触表、TOMY 2007 研究板。逐份记录来源 URL、权利人、SHA-256 与观察结论。原始媒体仅存被忽略的 `references/local/`，不提交、不分发。
+- **允许输入**：[sources.json](references/sources.json) 登记的 15 份素材 —— 8 张 Paramount / ILM 精选原帧，加 MPM-4 官方产品图、ILM 100s / 080s、Paramount 61s、8–32s 变形接触表、TOMY 2007 研究板。逐份记录来源 URL、权利人、SHA-256 与观察结论。原始媒体在仓库根的 `local/references/versions/transformers/hy4/optimus-prime-2007/`，仅限本地研究。
 - **禁止输入**：未授权第三方 3D 模型、同人渲染、跨版本混用素材、已有案例的 HTML / 几何源码作为建模输入。
 - **补充素材限制**：MPM-4 是授权玩具，只补表面与分件细节；不把它当作电影比例、变形拓扑或机构证据。2007 研究板是产品图拼板，不用于轮廓测量。
 - **证据等级**：`observed`（原帧可见）/ `inferred`（机构与尺寸推断）/ `designed`（展示设计）。连续变形路径、内部避让、展甲与分层拆解均为 `inferred` 或 `designed`。

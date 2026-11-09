@@ -10,12 +10,14 @@ import sys
 from PIL import Image, ImageDraw, ImageEnhance
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT.parents[4] / 'scripts'))
+from check_transformer_contract import reference_media_path
+
 ART = ROOT / 'artifacts'
 QA = ART / 'qa'
 QA.mkdir(parents=True, exist_ok=True)
 MP4 = ART / 'HY4-擎天柱-2007-电影版.mp4'
 FRAMES = ART / 'frames'
-REF = ROOT / 'references/local'
 
 
 def decode(second: float, dest: pathlib.Path):
@@ -72,7 +74,8 @@ def storyboard():
 
 def comparison():
     """官方 029s 头胸原帧 与 成片头胸特写：不同机位/投影/光照，只作定性并排与叠图。"""
-    official = Image.open(REF / 'paramount-029s-head-chest.jpg').convert('RGB')
+    reference = reference_media_path(ROOT / 'references', 'local/paramount-029s-head-chest.jpg')
+    official = Image.open(reference).convert('RGB')
     ours = Image.open(FRAMES / '0492.png').convert('RGB')
     tw, th = 800, 450
     a = official.resize((tw, th))
