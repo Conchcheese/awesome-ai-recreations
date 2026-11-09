@@ -1,6 +1,7 @@
 import copy
 import json
 from pathlib import Path
+import shutil
 import sys
 import tempfile
 import unittest
@@ -9,6 +10,7 @@ import subprocess
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from catalog import ROOT, get_case, load_catalog, recreation_plan, export_inputs
 from check_repo import local_path, markdown_errors, publication_errors, validate_catalog
+from task_inputs import INDEX, LOCK, SHARED, check_versions, freeze_tasks, load_tasks, sha256, verify_pack
 
 
 class RepositoryToolsTests(unittest.TestCase):
@@ -107,6 +109,8 @@ class RepositoryToolsTests(unittest.TestCase):
             root=Path(tmp);folder=root/'tasks/example';(folder/'references').mkdir(parents=True)
             (folder/'brief.md').write_text('new task');raw=b'original';(folder/'references/input.jpg').write_bytes(raw)
             (root/'docs').mkdir()
+            (root/'templates').mkdir()
+            (root/'templates/spec.md').write_text('blank')
             common={'method':'docs/精细复刻流程.md','resources':'docs/共同输入与资源.md','source_notes':'docs/参考素材与许可.md'}
             for p in common.values():(root/p).write_text('generic')
             task={'id':'example','title':'Example','aliases':[],'series':'new','status':'ready','input_version':1,'brief':'tasks/example/brief.md','defaults':{'visual_goal':'fidelity','provenance':'independent'},'notes':'original only',**common,'references':[{'path':'tasks/example/references/input.jpg','sha256':hashlib.sha256(raw).hexdigest(),'kind':'original-reference'}]}
@@ -171,6 +175,86 @@ class RepositoryToolsTests(unittest.TestCase):
         self.assertEqual('tasks/oc8/brief.md', plan['prompt'])
         self.assertNotIn('variants', plan)
         self.assertNotIn('GLM版-互动页截图.jpg', result.stdout)
+
+    def test_task_cli_works_with_no_results_index_or_series(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for folder in ('scripts', 'tasks', 'templates'):
+                (root / folder).mkdir()
+            for name in ('scripts/catalog.py', 'scripts/task_inputs.py', LOCK, 'templates/spec.md'):
+                shutil.copyfile(ROOT / name, root / name)
+            for name in ('oc8', '_shared'):
+                shutil.copytree(ROOT / 'tasks' / name, root / 'tasks' / name)
+            (root / INDEX).write_text(json.dumps({'tasks': ['tasks/oc8/input.json']}))
+            command = [sys.executable, 'scripts/catalog.py']
+            subprocess.run([*command, 'list', '--tasks'], cwd=root, capture_output=True, check=True)
+            subprocess.run([*command, 'recreate', 'oc8', '--export', 'pack', '--require-complete'],
+                           cwd=root, capture_output=True, check=True)
+            subprocess.run([*command, 'verify', 'pack'], cwd=root, capture_output=True, check=True)
+
+    def test_pack_rejects_edited_media_instructions_and_unlisted_result(self):
+        case = get_case(load_tasks(), 'oc8')[0]
+        with tempfile.TemporaryDirectory() as directory:
+            pack = Path(directory) / 'pack'
+            payload = export_inputs(case, pack, require_complete=True)
+            digest = payload['input_sha256']
+            self.assertEqual(digest, verify_pack(pack, digest))
+            with self.assertRaisesRegex(ValueError, '摘要'):
+                verify_pack(pack, '0' * 64)
+            for file in ('TASK.md', case['recreation']['references'][0]):
+                target = pack / file
+                original = target.read_bytes()
+                target.write_bytes(b'changed')
+                with self.assertRaisesRegex(ValueError, '摘要'):
+                    verify_pack(pack, digest)
+                target.write_bytes(original)
+            (pack / 'other-model.html').write_text('unexpected result')
+            with self.assertRaisesRegex(ValueError, '未登记'):
+                verify_pack(pack, digest)
+
+    def test_missing_media_keeps_identity_but_prevents_complete_export(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            manifest = 'tasks/bumblebee-2007/input.json'
+            for name in (manifest, 'tasks/bumblebee-2007/brief.md', 'templates/spec.md', *SHARED.values()):
+                dest = root / name
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(ROOT / name, dest)
+            (root / INDEX).write_text(json.dumps({'tasks': [manifest]}))
+            task = json.loads((root / manifest).read_text())
+            for row in task['references']:
+                row['sha256'] = sha256(b'fixture')
+            (root / manifest).write_text(json.dumps(task))
+            freeze_tasks(root)
+            case = get_case(load_tasks(root), 'bumblebee-2007')[0]
+            draft = export_inputs(case, root / 'draft', root)
+            self.assertEqual(2, len(draft['missing_media']))
+            with self.assertRaisesRegex(ValueError, '缺少原始媒体'):
+                export_inputs(case, root / 'pack', root, require_complete=True)
+            self.assertFalse((root / 'pack').exists())
+            with self.assertRaisesRegex(ValueError, '缺失'):
+                verify_pack(root / 'draft')
+            for row in task['references']:
+                path = root / row['path']
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_bytes(b'fixture')
+            complete = export_inputs(case, root / 'pack', root, require_complete=True)
+            self.assertEqual(draft['input_sha256'], complete['input_sha256'])
+            self.assertEqual(complete['input_sha256'], verify_pack(root / 'pack'))
+
+            (root / SHARED['method']).write_text('Revised method')
+            with self.assertRaisesRegex(ValueError, '提升 input_version'):
+                freeze_tasks(root)
+            with self.assertRaisesRegex(ValueError, '锁定摘要'):
+                export_inputs(case, root / 'unlocked', root)
+            task['input_version'] += 1
+            (root / manifest).write_text(json.dumps(task))
+            old_lock = json.loads((root / LOCK).read_text())
+            freeze_tasks(root)
+            new_lock = json.loads((root / LOCK).read_text())
+            self.assertNotEqual(old_lock, new_lock)
+            with self.assertRaisesRegex(ValueError, '提升 input_version'):
+                check_versions(new_lock, old_lock)
 
     def test_recreate_does_not_claim_all_references_are_absent(self):
         result = subprocess.run([sys.executable, str(ROOT / 'scripts/catalog.py'),

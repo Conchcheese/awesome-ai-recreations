@@ -46,13 +46,30 @@
 
 对比片中的“Opus 5.5”等历史铭牌没有在本库归档可独立核验的模型运行证据。各格取景、HUD、输入和迭代不同，只作作品展示，不作模型能力排名。新生成铭牌使用原作作者名。
 
-[首次复盘](series/机械复刻系列/docs/01-机械章鱼OC-8-teardown机器模拟器.md)保留历史记录；新任务与改进方案见[系列任务书](series/机械复刻系列/prompts/oc8.md)，两者不要混称。新增案例需补充逐项来源，见 [CONTRIBUTING](CONTRIBUTING.md)。
+[首次实现回顾](series/机械复刻系列/docs/01-机械章鱼OC-8-teardown机器模拟器.md)说明首次实现范围；新实验使用[机械章鱼共同任务](tasks/oc8/brief.md)。新增案例需补充逐项来源，见 [CONTRIBUTING](CONTRIBUTING.md)。
 
 ## 本轮仓库封面
 
 [横版封面](assets/covers/awesome-ai-recreations-cover.jpg)为 imagegen 内置工具生成的概念插画，使用 topmind-cover 与 imagegen 技能，文字经过人工核对；不是仓库页面渲染或实验结果。完整[生成提示词](assets/covers/prompt.txt)随库保存。GPT-6.1 Sol 案例的正式截图与它分开标识。
 
-## 变形金刚系列：2007 真人电影版重构
+## 变形金刚系列
+
+### 大黄蜂 · Kimi-K3.1-Pro 版本（2026-11-08）
+
+- 新增 `series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/`：47 装配 / 274 视觉网格的独立程序化复刻，页面与影片明确署名 Kimi-K3.1-Pro。
+- 仅使用冻结输入包内两张 TOMY MPM-3 官方产品图；原图仅本地研究使用，不随案例再分发。没有读取其他复刻成品作为几何或动画输入。
+- 同源 Three.js 模型驱动互动与 20 秒 WebGL 逐帧影片；原创程序化音轨无电影或音乐采样。Three.js / esbuild / Playwright 保留各自许可。
+- 静帧与接触表为自渲染，角色/IP 权利仍归相应权利人。MP4、WAV 与缓存保留在被忽略的 `artifacts/`，未上传发布。
+- 隐藏机构、尺寸、变形和镜头含推断与展示设计；未做电影原帧量化、碰撞、GLB/Blend 或 Cycles，详见[实现与验证](series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/records/实现与验证.md)。
+
+### 大黄蜂 · Minimax-M3.1-Flash 版本（2026-11-08）
+
+- 新增 `series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/`：大黄蜂 2007 真人电影版的独立程序化复刻，模型署名 Minimax-M3.1-Flash。
+- 原始参考为 TOMY MPM-3 官方产品图两张，仅本地研究使用，未取得再分发许可，不随仓库发布。
+- 程序化模型、材质、镜头表与音轨由本案例代码生成；Three.js 保持 MIT 许可并见第三方声明。
+- 离线短片、逐帧缓存与工具产物保留在被忽略的 `artifacts/`，未上传发布。
+
+### 擎天柱 · 2007 真人电影版重构
 
 [电影版擎天柱](series/变形金刚系列/01-擎天柱-电影版/README.md)由当前Codex会话重写几何、分层装配、曲面装甲、材质、动作与摄影，沿用旧C-01的构建/确定性导出方法，故标 **derived / fidelity**。用户提供执行模型名称 GPT-6.1 Sol；会话未暴露精确模型 ID，未另调模型 API；实际工具与修订见案例records。以Paramount官方2007片段和ILM官方制作画面为主输入，Takara MPM-4仅为有标记的补充观察，不作为电影内部拓扑证明。原始影片、角色与制作资料归Paramount / DreamWorks / Hasbro、ILM / Lucasfilm等相应权利人；公开可访问不等于可再分发。参考清单逐文件记录原始URL、日期、尺寸和哈希，原始长视频仅留local。源码与演示公开；原始影片与高分辨率下载不分发。
 

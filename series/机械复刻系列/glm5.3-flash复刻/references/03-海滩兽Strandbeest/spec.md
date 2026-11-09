@@ -1,6 +1,6 @@
 # 海滩兽 Strandbeest SB-10 — 造型规格
 
-来源：teardown 示例 `strandbeest-*`（复刻基底），参考图 `strandbeest-参考-Theo-Jansen与海滩兽.jpg`
+来源：teardown 示例 `strandbeest-*`（复刻基底），参考图 [strandbeest-参考-Theo-Jansen与海滩兽.jpg](../../../../../tasks/strandbeest/references/01-strandbeest-参考-Theo-Jansen与海滩兽.jpg)
 （Theo Jansen 与 Strandbeest，Wikimedia Commons）。参数以 Theo Jansen 1990 年的连杆数据为真值。
 数字标注：`code`（jansen.js/beast.js 实值）| `ref`（Jansen 公开数据）| `guess`（估算）。
 

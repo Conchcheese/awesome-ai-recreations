@@ -3,12 +3,12 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {ROOT,require,browserArgs} from './deps.mjs';
 const dir=path.join(ROOT,'00-机械章鱼OC-8/stills');
-const refs=path.resolve(ROOT,'../deepseek复刻/references/00-机械章鱼');
+const refs=path.resolve(ROOT,'../../../tasks/oc8/references');
 const pairs=[
- ['01','原作-00秒-主机位喷进.jpg','静帧-V2-01-倾转喷进 · 收臂巡航.jpg','原作 0.00 s / 本版 1.20 s'],
- ['02','原作-08秒-外套膜打开.jpg','静帧-V2-04-外套膜展开 · 泵核运行.jpg','原作 8.00 s / 本版 22.00 s'],
- ['03','原作-10秒-R2臂分离.jpg','静帧-V2-05-R2 腕 · 分节拆解与回装.jpg','原作 10.00 s / 本版 28.60 s'],
- ['04','原作-20秒-整机拆解.jpg','静帧-V2-09-整机分解 · 多级装配展开.jpg','原作 20.00 s / 本版 52.00 s'],
+ ['01','01-原作-00秒-主机位喷进.jpg','静帧-V2-01-倾转喷进 · 收臂巡航.jpg','原作 0.00 s / 本版 1.20 s'],
+ ['02','03-原作-08秒-外套膜打开.jpg','静帧-V2-04-外套膜展开 · 泵核运行.jpg','原作 8.00 s / 本版 22.00 s'],
+ ['03','04-原作-10秒-R2臂分离.jpg','静帧-V2-05-R2 腕 · 分节拆解与回装.jpg','原作 10.00 s / 本版 28.60 s'],
+ ['04','08-原作-20秒-整机拆解.jpg','静帧-V2-09-整机分解 · 多级装配展开.jpg','原作 20.00 s / 本版 52.00 s'],
 ];
 const image=file=>'data:image/jpeg;base64,'+fs.readFileSync(file).toString('base64');
 const browser=await require('playwright').chromium.launch({headless:true,args:browserArgs});

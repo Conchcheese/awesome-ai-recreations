@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "status": "study",
+  "character": {
+    "id": "bumblebee-2007",
+    "title": "大黄蜂·2007真人电影版",
+    "edition": "Transformers (2007) · Chevrolet Camaro SS"
+  },
+  "provenance": "independent",
+  "visualGoal": "fidelity",
+  "paths": {
+    "references": "references/sources.json",
+    "assemblies": "records/assembly-catalog.json",
+    "source": "src",
+    "web": "index.html",
+    "film": "film.html"
+  },
+  "rig": {
+    "rootId": "scene.root",
+    "requiredPorts": [
+      "head",
+      "torso",
+      "chest",
+      "left_hand",
+      "right_hand",
+      "left_foot",
+      "right_foot",
+      "left_wing",
+      "right_wing"
+    ],
+    "ports": {
+      "head": "head.shell",
+      "torso": "core.chest",
+      "chest": "body.nose",
+      "left_hand": "hand.l",
+      "right_hand": "hand.r",
+      "left_foot": "body.wheel.fl",
+      "right_foot": "body.wheel.fr",
+      "left_wing": "body.door.l",
+      "right_wing": "body.door.r",
+      "left_thigh": "body.quarter.l",
+      "right_thigh": "body.quarter.r",
+      "left_shin": "body.rocker.l",
+      "right_shin": "body.rocker.r",
+      "left_shoulder": "body.fender.l",
+      "right_shoulder": "body.fender.r",
+      "left_forearm": "arm.fore.l",
+      "right_forearm": "arm.fore.r",
+      "pelvis": "body.tail",
+      "vehicle_body": "body.tub",
+      "vehicle_hood": "body.hood"
+    }
+  },
+  "timeline": {
+    "sourceDuration": 20.0,
+    "fps": 24,
+    "transform": [3.5, 9.5],
+    "movieDuration": 20.0,
+    "edit": [
+      { "in": 0.0, "out": 3.5, "sourceIn": 0.0, "sourceOut": 3.5, "purpose": "vehicle-establish" },
+      { "in": 3.5, "out": 9.5, "sourceIn": 3.5, "sourceOut": 9.5, "purpose": "transformation" },
+      { "in": 9.5, "out": 12.0, "sourceIn": 9.5, "sourceOut": 12.0, "purpose": "hero-reveal" },
+      { "in": 12.0, "out": 14.5, "sourceIn": 12.0, "sourceOut": 14.5, "purpose": "detail" },
+      { "in": 14.5, "out": 16.5, "sourceIn": 14.5, "sourceOut": 16.5, "purpose": "detail" },
+      { "in": 16.5, "out": 18.0, "sourceIn": 16.5, "sourceOut": 18.0, "purpose": "detail" },
+      { "in": 18.0, "out": 20.0, "sourceIn": 18.0, "sourceOut": 20.0, "purpose": "final" }
+    ]
+  },
+  "unknown": [
+    "未取得电影原帧：真实变形时序、机构连接、镜头构图均未核对",
+    "所有世界尺寸无标尺，按 1970 Camaro 公开比例推断，标为 guess",
+    "隐藏机构（头雕来源、门内手臂、发动机舱机构）为 inferred",
+    "未做碰撞与承重验证，不宣称无穿模"
+  ]
+}

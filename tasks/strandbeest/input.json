@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "strandbeest",
   "title": "海滩兽Strandbeest",
   "aliases": [
@@ -10,9 +10,9 @@
   "input_version": 2,
   "status": "ready",
   "brief": "tasks/strandbeest/brief.md",
-  "method": "docs/精细复刻流程.md",
-  "resources": "docs/共同输入与资源.md",
-  "source_notes": "docs/参考素材与许可.md",
+  "method": "tasks/_shared/制作与验收.md",
+  "resources": "tasks/_shared/执行边界.md",
+  "source_notes": "tasks/_shared/原始参考.md",
   "defaults": {
     "visual_goal": "fidelity",
     "provenance": "independent"

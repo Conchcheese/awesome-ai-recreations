@@ -883,6 +883,84 @@
       "sha256": "a60a5e091bd7554f975c1c66d30bf1deed9857efb4e680e90f5c980b172c67dc",
       "kind": "self-render",
       "rights": "Original procedural-model render decoded from the completed MP4; character/IP rights remain with their owners. Code MIT does not relicense the character."
+    },
+    {
+      "path": "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/stills/01-车辆形态.png",
+      "sha256": "85fce5e899821a5e908937cfd006fbee553daef9eab7cad4b027fa7c4014b9c3",
+      "kind": "self-render",
+      "rights": "Original procedural-model render; character/IP rights remain with their owners. Code MIT does not relicense the character."
+    },
+    {
+      "path": "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/stills/02-变形中段.png",
+      "sha256": "39391046f7fe64c559d3f71262070e86499bdc587e6fe530aee06d01924323bf",
+      "kind": "self-render",
+      "rights": "Original procedural-model render; character/IP rights remain with their owners. Code MIT does not relicense the character."
+    },
+    {
+      "path": "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/stills/03-人形亮相.png",
+      "sha256": "9435adf05547d8ae4cf3553674b3d4ed7c6cbb5794a1aaddbc1c85c0cac997dc",
+      "kind": "self-render",
+      "rights": "Original procedural-model render; character/IP rights remain with their owners. Code MIT does not relicense the character."
+    },
+    {
+      "path": "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/stills/04-头胸特写.png",
+      "sha256": "b5320fc2b7d01ad57a1d9c4b0532fbb0148399e32b24dab8b4da1fbbf57b6896",
+      "kind": "self-render",
+      "rights": "Original procedural-model render; character/IP rights remain with their owners. Code MIT does not relicense the character."
+    },
+    {
+      "path": "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/stills/05-前臂与手.png",
+      "sha256": "32149c6fe190ac2fcacda0eb75408fece891d9c6e3a51cc58b8f66b1853192fe",
+      "kind": "self-render",
+      "rights": "Original procedural-model render; character/IP rights remain with their owners. Code MIT does not relicense the character."
+    },
+    {
+      "path": "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/stills/06-下肢承重.png",
+      "sha256": "cc39c0df0ba050915c8d3895892535042d9bc9bc8e1eaefde7e792f730c637ed",
+      "kind": "self-render",
+      "rights": "Original procedural-model render; character/IP rights remain with their owners. Code MIT does not relicense the character."
+    },
+    {
+      "path": "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/stills/07-最终落幅.png",
+      "sha256": "82f62bdf62c479e01f18d954059503141d7f25dfc309cad8bdff4aa35d7cb574",
+      "kind": "self-render",
+      "rights": "Original procedural-model render; character/IP rights remain with their owners. Code MIT does not relicense the character."
+    },
+    {
+      "path": "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/assets/大黄蜂-人形.png",
+      "sha256": "82e3385591bb4827f7ff71a8d6a9fea09be9b43bc2100115d3ae46c9918e9c61",
+      "kind": "self-render",
+      "rights": "Original Kimi-K3.1-Pro procedural-model render; character/IP rights remain with their owners."
+    },
+    {
+      "path": "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/assets/大黄蜂-车辆.png",
+      "sha256": "cb15f6df3de1526fdf065218401a2569fc903ef697e1fe63bfdb3bf23ed874ff",
+      "kind": "self-render",
+      "rights": "Original Kimi-K3.1-Pro procedural-model render; character/IP rights remain with their owners."
+    },
+    {
+      "path": "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/assets/大黄蜂-变形中段.png",
+      "sha256": "eab8685d9ac3bfa20a60c3324136465ed859e29335397f77067f2eff191114e3",
+      "kind": "self-render",
+      "rights": "Original Kimi-K3.1-Pro procedural-model render; character/IP rights remain with their owners."
+    },
+    {
+      "path": "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/assets/大黄蜂-分层展开.png",
+      "sha256": "cfd2bb13ab633de8c2dda8fa3de1a8e7bc7a758ae315add622ed4094c5eafb46",
+      "kind": "self-render",
+      "rights": "Original Kimi-K3.1-Pro procedural-model render; character/IP rights remain with their owners."
+    },
+    {
+      "path": "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/assets/大黄蜂-电影巡览.png",
+      "sha256": "60629637eb0da83de09d37f4c2d2723bfd6084a7d5bd41164d00e155c1d970b6",
+      "kind": "self-render",
+      "rights": "Original Kimi-K3.1-Pro procedural-model render; character/IP rights remain with their owners."
+    },
+    {
+      "path": "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/assets/大黄蜂-影片接触表.jpg",
+      "sha256": "9d0ab8bd82ae9e61ddd1c22c9b0efd26249c7d7f0e7206be791f76c18bb1abd3",
+      "kind": "self-render",
+      "rights": "Eight frames decoded from the original Kimi-K3.1-Pro procedural-model MP4; character/IP rights remain with their owners."
     }
   ]
 }

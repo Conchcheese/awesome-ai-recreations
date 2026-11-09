@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-08T10:36:45.416Z",
+  "model": "Kimi-K3.1-Pro",
+  "engine": "Chromium / Playwright",
+  "checks": [
+    "offline file URL",
+    "47 assembly modules",
+    "vehicle and robot endpoints",
+    "continuous control",
+    "gray material toggle",
+    "mobile viewport",
+    "film deterministic seek"
+  ],
+  "errors": [],
+  "screenshots": 6
+}

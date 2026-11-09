@@ -2,7 +2,7 @@
 
 围绕同一角色版本、原始参考与目标要求，由不同智能体、模型和工具分别尝试实现，观察造型、变形、交互与成片效果，并改进可复用的制作流程。
 
-当前有 **2 个案例、4 个实现、3 个模型**。按案例选择演示，或从模型索引查找对应实现。
+当前有 **2 个案例、6 个实现、5 个模型**。按案例选择演示，或从模型索引查找对应实现。
 
 [返回首页](../../README.md) · [模型目录](models/README.md) · [角色研究库](characters/README.md) · [快速开始](../../docs/快速开始.md)
 
@@ -16,6 +16,8 @@
 | 擎天柱·2007真人电影版 | `optimus-prime-2007` | HY4 | [互动](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/hy4/optimus-prime-2007/index.html) · [巡览](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/hy4/optimus-prime-2007/film.html) | [说明与源码](models/hy4/optimus-prime-2007/README.md) |
 | 擎天柱·2007真人电影版 | `optimus-prime-2007` | GLM-5.3-Flash | [互动](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/index.html) · [巡览](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/film.html) | [说明与源码](models/glm-5.3-flash/optimus-prime-2007/README.md) |
 | 大黄蜂·2007真人电影版外观研究 | `bumblebee-2007` | GPT-6.1 Sol | [互动](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007/index.html) · [巡览](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007/film.html) | [说明、源码与本地视频](models/gpt-6.1-sol/bumblebee-2007/README.md) |
+| 大黄蜂·2007真人电影版 | `bumblebee-2007` | Minimax-M3.1-Flash | [互动](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/index.html) · [巡览](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/film.html) | [说明、源码与本地视频](models/minimax-m3.1-flash/bumblebee-2007/README.md) |
+| 大黄蜂·2007真人电影版 | `bumblebee-2007` | Kimi-K3.1-Pro | [互动](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/index.html) · [巡览](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/film.html) | [说明、源码与本地视频](models/kimi-k3.1-pro/bumblebee-2007/README.md) |
 
 ## 选择版本
 
@@ -24,6 +26,8 @@
 | GPT-6.1 Sol | 擎天柱与大黄蜂，分层装配、连续变形与同源 Cycles 短片 | [实现与用法](models/gpt-6.1-sol/README.md) |
 | HY4 | 2007 电影版：Three.js PBR、连续变形及逐帧渲染短片 | [实现与用法](models/hy4/README.md) |
 | GLM-5.3-Flash | 2007 电影版：程序化装配、连续变形、灰模与拆解研究 | [实现与用法](models/glm-5.3-flash/README.md) |
+| Minimax-M3.1-Flash | 大黄蜂双形态、同源 GLB 与软件光栅化短片 | [实现与用法](models/minimax-m3.1-flash/README.md) |
+| Kimi-K3.1-Pro | 大黄蜂双形态、47 模块、同源 20 秒有声逐帧巡览 | [实现与用法](models/kimi-k3.1-pro/README.md) |
 
 历史实现的选帧、工具、迭代和记录完整度并非完全相同；比较时应先核对各版输入边界。当前造型与隐藏机构仍有差距，不能把分件数或渲染方式当作还原度评分。
 
@@ -36,10 +40,12 @@ python3 scripts/catalog.py show optimus-prime-2007 --variant cinematic-v2
 python3 scripts/catalog.py show optimus-prime-2007 --variant hy4
 python3 scripts/catalog.py show optimus-prime-2007 --variant glm-5-3-flash
 python3 scripts/catalog.py show bumblebee-2007 --variant gpt-6-1-sol
+python3 scripts/catalog.py show bumblebee-2007 --variant minimax-m3-1-flash
+python3 scripts/catalog.py show bumblebee-2007 --variant kimi-k3-1-pro
 python3 scripts/catalog.py recreate bumblebee-2007
 ```
 
-安装和 Agent 用法见[快速开始](../../docs/快速开始.md)。新增模型或角色先建立研究草稿，达到运行与验证要求后再登记为实现；目录约定见[模型版本说明](models/README.md)。
+安装和 Agent 用法见[快速开始](../../docs/快速开始.md)。新建复刻先核验共同任务包，在独立目录实现。角色草稿和研究库用于维护者准备下一批任务；目录约定见[模型版本说明](models/README.md)。
 
 ## 参考与制作方法
 

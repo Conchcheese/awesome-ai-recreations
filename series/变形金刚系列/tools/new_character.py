@@ -13,7 +13,7 @@ def create(slug, title, edition, output_root=None, dry_run=False):
         raise ValueError('slug 仅允许小写字母、数字、单个连接符')
     if not title.strip() or not edition.strip():
         raise ValueError('角色名与具体电影/产品版本不能为空')
-    base = Path(output_root) if output_root is not None else SERIES/'experiments'
+    base = Path(output_root) if output_root is not None else SERIES/'local'/'experiments'
     target = base/slug
     if target.exists() or target.is_symlink():
         raise FileExistsError(f'拒绝覆盖: {target}')

@@ -1,0 +1,1545 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": "src/model.mjs",
+  "rootId": "scene.root",
+  "counts": {
+    "assemblies": 69,
+    "parts": 113,
+    "meshes": 51
+  },
+  "assemblies": [
+    {
+      "id": "body.frame",
+      "parent": "scene.root",
+      "system": "frame",
+      "material": "metal.dark",
+      "mesh": "body.frame",
+      "parts": [
+        "body.frame.rail.l",
+        "body.frame.rail.r",
+        "body.frame.crossmember.f1",
+        "body.frame.crossmember.f2",
+        "body.frame.crossmember.m1",
+        "body.frame.crossmember.m2",
+        "body.frame.crossmember.r"
+      ],
+      "window": [
+        5.1,
+        7.4
+      ],
+      "note": "车架纵梁 → 机器人脊柱骨架"
+    },
+    {
+      "id": "core.chest",
+      "parent": "body.frame",
+      "system": "frame",
+      "material": "metal.gun",
+      "mesh": "core.chest",
+      "parts": [
+        "core.chest.block",
+        "core.chest.spine"
+      ],
+      "window": [
+        5.1,
+        7.4
+      ],
+      "note": "胸腔内构（inferred）"
+    },
+    {
+      "id": "core.pelvis",
+      "parent": "body.frame",
+      "system": "frame",
+      "material": "metal.gun",
+      "mesh": "core.pelvis",
+      "parts": [
+        "core.pelvis.block"
+      ],
+      "window": [
+        5.1,
+        7.4
+      ],
+      "note": "骨盆内构（inferred）"
+    },
+    {
+      "id": "core.rib",
+      "parent": "core.pelvis",
+      "system": "frame",
+      "material": "metal.dark",
+      "mesh": "core.rib",
+      "parts": [
+        "core.rib.rib"
+      ],
+      "window": [
+        5.1,
+        7.4
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.tub",
+      "parent": "scene.root",
+      "system": "body",
+      "material": "metal.dark",
+      "mesh": "body.tub",
+      "parts": [
+        "body.tub.shell"
+      ],
+      "window": [
+        5.4,
+        8
+      ],
+      "note": "车身内构：车辆态是完整车身，人形态压缩为腰部块"
+    },
+    {
+      "id": "body.nose",
+      "parent": "scene.root",
+      "system": "chest",
+      "material": "paint.yellow",
+      "mesh": "body.nose",
+      "parts": [
+        "body.nose.fascia",
+        "body.nose.return.flange.l",
+        "body.nose.return.flange.r"
+      ],
+      "window": [
+        5,
+        7.3
+      ],
+      "note": "车头面 → 胸甲正面"
+    },
+    {
+      "id": "body.grille",
+      "parent": "body.nose",
+      "system": "chest",
+      "material": "paint.blackFlat",
+      "mesh": "body.grille",
+      "parts": [
+        "body.grille.surround",
+        "body.grille.slat.1",
+        "body.grille.slat.2",
+        "body.grille.slat.3",
+        "body.grille.slat.4",
+        "body.grille.slat.5"
+      ],
+      "window": [
+        5,
+        7.3
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.bowtie",
+      "parent": "body.nose",
+      "system": "chest",
+      "material": "metal.chrome",
+      "mesh": "body.bowtie",
+      "parts": [
+        "body.bowtie.bar",
+        "body.bowtie.wing.l",
+        "body.bowtie.wing.r"
+      ],
+      "window": [
+        5,
+        7.3
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.headlight.l",
+      "parent": "body.nose",
+      "system": "chest",
+      "material": "light.head",
+      "mesh": "body.headlight",
+      "parts": [
+        "body.headlight.l.body"
+      ],
+      "window": [
+        5,
+        7.3
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.headlight.r",
+      "parent": "body.nose",
+      "system": "chest",
+      "material": "light.head",
+      "mesh": "body.headlight",
+      "parts": [
+        "body.headlight.r.body"
+      ],
+      "window": [
+        5,
+        7.3
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.fog.l",
+      "parent": "body.nose",
+      "system": "chest",
+      "material": "light.head",
+      "mesh": "body.fog",
+      "parts": [
+        "body.fog.l.body"
+      ],
+      "window": [
+        5,
+        7.3
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.fog.r",
+      "parent": "body.nose",
+      "system": "chest",
+      "material": "light.head",
+      "mesh": "body.fog",
+      "parts": [
+        "body.fog.r.body"
+      ],
+      "window": [
+        5,
+        7.3
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.bumper.front",
+      "parent": "body.nose",
+      "system": "chest",
+      "material": "metal.gun",
+      "mesh": "body.bumper.front",
+      "parts": [
+        "body.bumper.front.bar",
+        "body.bumper.front.valance"
+      ],
+      "window": [
+        5,
+        7.3
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.hood",
+      "parent": "scene.root",
+      "system": "chest",
+      "material": "paint.yellow",
+      "mesh": "body.hood",
+      "parts": [
+        "body.hood.skin",
+        "body.hood.crown"
+      ],
+      "window": [
+        5.1,
+        7.4
+      ],
+      "note": "引擎盖 → 胸前横轭"
+    },
+    {
+      "id": "body.hood.stripe.l",
+      "parent": "body.hood",
+      "system": "chest",
+      "material": "paint.black",
+      "mesh": "body.hood.stripe.l",
+      "parts": [
+        "body.hood.stripe.l.stripe"
+      ],
+      "window": [
+        5.1,
+        7.4
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.hood.stripe.r",
+      "parent": "body.hood",
+      "system": "chest",
+      "material": "paint.black",
+      "mesh": "body.hood.stripe.r",
+      "parts": [
+        "body.hood.stripe.r.stripe"
+      ],
+      "window": [
+        5.1,
+        7.4
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.engine",
+      "parent": "scene.root",
+      "system": "chest",
+      "material": "metal.dark",
+      "mesh": "body.engine",
+      "parts": [
+        "body.engine.block",
+        "body.engine.head.l",
+        "body.engine.head.r",
+        "body.engine.piston.l",
+        "body.engine.piston.r"
+      ],
+      "window": [
+        4.9,
+        6.9
+      ],
+      "note": "发动机 → 胸腔机构（inferred）"
+    },
+    {
+      "id": "body.cowl.l",
+      "parent": "scene.root",
+      "system": "chest",
+      "material": "paint.yellow",
+      "mesh": "body.cowl.l",
+      "parts": [
+        "body.cowl.l.body"
+      ],
+      "window": [
+        4.7,
+        6.9
+      ],
+      "note": "前围侧板 → 肩内侧盖板"
+    },
+    {
+      "id": "body.fender.l",
+      "parent": "scene.root",
+      "system": "arm",
+      "material": "paint.yellow",
+      "mesh": "body.fender.l",
+      "parts": [
+        "body.fender.l.skin",
+        "body.fender.l.return.flange.top",
+        "body.fender.l.return.flange.bottom"
+      ],
+      "window": [
+        4.7,
+        6.9
+      ],
+      "note": "前翼子板 → 上臂外甲"
+    },
+    {
+      "id": "arm.fore.l",
+      "parent": "body.fender.l",
+      "system": "arm",
+      "material": "metal.dark",
+      "mesh": "arm.fore",
+      "parts": [
+        "arm.fore.l.body"
+      ],
+      "window": [
+        5.3,
+        7.6
+      ],
+      "note": "车门内机构 → 前臂（inferred）"
+    },
+    {
+      "id": "hand.l",
+      "parent": "arm.fore.l",
+      "system": "arm",
+      "material": "metal.gun",
+      "mesh": "hand.fist",
+      "parts": [
+        "hand.l.body"
+      ],
+      "window": [
+        5.3,
+        7.6
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.cowl.r",
+      "parent": "scene.root",
+      "system": "chest",
+      "material": "paint.yellow",
+      "mesh": "body.cowl.r",
+      "parts": [
+        "body.cowl.r.body"
+      ],
+      "window": [
+        4.7,
+        6.9
+      ],
+      "note": "前围侧板 → 肩内侧盖板"
+    },
+    {
+      "id": "body.fender.r",
+      "parent": "scene.root",
+      "system": "arm",
+      "material": "paint.yellow",
+      "mesh": "body.fender.r",
+      "parts": [
+        "body.fender.r.skin",
+        "body.fender.r.return.flange.top",
+        "body.fender.r.return.flange.bottom"
+      ],
+      "window": [
+        4.7,
+        6.9
+      ],
+      "note": "前翼子板 → 上臂外甲"
+    },
+    {
+      "id": "arm.fore.r",
+      "parent": "body.fender.r",
+      "system": "arm",
+      "material": "metal.dark",
+      "mesh": "arm.fore",
+      "parts": [
+        "arm.fore.r.body"
+      ],
+      "window": [
+        5.3,
+        7.6
+      ],
+      "note": "车门内机构 → 前臂（inferred）"
+    },
+    {
+      "id": "hand.r",
+      "parent": "arm.fore.r",
+      "system": "arm",
+      "material": "metal.gun",
+      "mesh": "hand.fist",
+      "parts": [
+        "hand.r.body"
+      ],
+      "window": [
+        5.3,
+        7.6
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.door.l",
+      "parent": "scene.root",
+      "system": "wing",
+      "material": "paint.yellow",
+      "mesh": "body.door.l",
+      "parts": [
+        "body.door.l.skin",
+        "body.door.l.return.flange.top",
+        "body.door.l.return.flange.bottom"
+      ],
+      "window": [
+        4.9,
+        7.2
+      ],
+      "note": "车门 → 背翼"
+    },
+    {
+      "id": "body.door.inner.l",
+      "parent": "body.door.l",
+      "system": "wing",
+      "material": "metal.chrome",
+      "mesh": "body.door.inner.l",
+      "parts": [
+        "body.door.inner.l.inner-skin"
+      ],
+      "window": [
+        4.9,
+        7.2
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.mirror.l",
+      "parent": "body.door.l",
+      "system": "wing",
+      "material": "paint.black",
+      "mesh": "body.mirror",
+      "parts": [
+        "body.mirror.l.body"
+      ],
+      "window": [
+        4.9,
+        7.2
+      ],
+      "note": "后视镜 → 头侧舱"
+    },
+    {
+      "id": "body.door.r",
+      "parent": "scene.root",
+      "system": "wing",
+      "material": "paint.yellow",
+      "mesh": "body.door.r",
+      "parts": [
+        "body.door.r.skin",
+        "body.door.r.return.flange.top",
+        "body.door.r.return.flange.bottom"
+      ],
+      "window": [
+        4.9,
+        7.2
+      ],
+      "note": "车门 → 背翼"
+    },
+    {
+      "id": "body.door.inner.r",
+      "parent": "body.door.r",
+      "system": "wing",
+      "material": "metal.chrome",
+      "mesh": "body.door.inner.r",
+      "parts": [
+        "body.door.inner.r.inner-skin"
+      ],
+      "window": [
+        4.9,
+        7.2
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.mirror.r",
+      "parent": "body.door.r",
+      "system": "wing",
+      "material": "paint.black",
+      "mesh": "body.mirror",
+      "parts": [
+        "body.mirror.r.body"
+      ],
+      "window": [
+        4.9,
+        7.2
+      ],
+      "note": "后视镜 → 头侧舱"
+    },
+    {
+      "id": "body.quarter.l",
+      "parent": "scene.root",
+      "system": "leg",
+      "material": "paint.yellow",
+      "mesh": "body.quarter.l",
+      "parts": [
+        "body.quarter.l.skin",
+        "body.quarter.l.return.flange.top",
+        "body.quarter.l.return.flange.bottom"
+      ],
+      "window": [
+        4.8,
+        7.1
+      ],
+      "note": "后翼子板 → 大腿外甲"
+    },
+    {
+      "id": "body.quarter.r",
+      "parent": "scene.root",
+      "system": "leg",
+      "material": "paint.yellow",
+      "mesh": "body.quarter.r",
+      "parts": [
+        "body.quarter.r.skin",
+        "body.quarter.r.return.flange.top",
+        "body.quarter.r.return.flange.bottom"
+      ],
+      "window": [
+        4.8,
+        7.1
+      ],
+      "note": "后翼子板 → 大腿外甲"
+    },
+    {
+      "id": "body.rocker.l",
+      "parent": "scene.root",
+      "system": "leg",
+      "material": "metal.dark",
+      "mesh": "body.rocker.l",
+      "parts": [
+        "body.rocker.l.skin",
+        "body.rocker.l.return.flange.top",
+        "body.rocker.l.return.flange.bottom"
+      ],
+      "window": [
+        4.6,
+        7
+      ],
+      "note": "门槛梁 → 小腿"
+    },
+    {
+      "id": "body.rocker.r",
+      "parent": "scene.root",
+      "system": "leg",
+      "material": "metal.dark",
+      "mesh": "body.rocker.r",
+      "parts": [
+        "body.rocker.r.skin",
+        "body.rocker.r.return.flange.top",
+        "body.rocker.r.return.flange.bottom"
+      ],
+      "window": [
+        4.6,
+        7
+      ],
+      "note": "门槛梁 → 小腿"
+    },
+    {
+      "id": "body.tail",
+      "parent": "scene.root",
+      "system": "pelvis",
+      "material": "paint.yellow",
+      "mesh": "body.tail",
+      "parts": [
+        "body.tail.fascia",
+        "body.tail.return.flange.l",
+        "body.tail.return.flange.r"
+      ],
+      "window": [
+        5.2,
+        7.5
+      ],
+      "note": "车尾 → 骨盆"
+    },
+    {
+      "id": "body.bumper.rear",
+      "parent": "body.tail",
+      "system": "pelvis",
+      "material": "metal.gun",
+      "mesh": "body.bumper.rear",
+      "parts": [
+        "body.bumper.rear.bar",
+        "body.bumper.rear.valance"
+      ],
+      "window": [
+        5.2,
+        7.5
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.taillight.l",
+      "parent": "body.tail",
+      "system": "pelvis",
+      "material": "light.tail",
+      "mesh": "body.taillight",
+      "parts": [
+        "body.taillight.l.body"
+      ],
+      "window": [
+        5.2,
+        7.5
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.taillight.r",
+      "parent": "body.tail",
+      "system": "pelvis",
+      "material": "light.tail",
+      "mesh": "body.taillight",
+      "parts": [
+        "body.taillight.r.body"
+      ],
+      "window": [
+        5.2,
+        7.5
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.deck",
+      "parent": "scene.root",
+      "system": "body",
+      "material": "paint.yellow",
+      "mesh": "body.deck",
+      "parts": [
+        "body.deck.skin",
+        "body.deck.crown"
+      ],
+      "window": [
+        5.6,
+        7.9
+      ],
+      "note": "后盖 → 背部装甲"
+    },
+    {
+      "id": "body.deck.stripe.l",
+      "parent": "body.deck",
+      "system": "body",
+      "material": "paint.black",
+      "mesh": "body.deck.stripe.l",
+      "parts": [
+        "body.deck.stripe.l.stripe"
+      ],
+      "window": [
+        5.6,
+        7.9
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.deck.stripe.r",
+      "parent": "body.deck",
+      "system": "body",
+      "material": "paint.black",
+      "mesh": "body.deck.stripe.r",
+      "parts": [
+        "body.deck.stripe.r.stripe"
+      ],
+      "window": [
+        5.6,
+        7.9
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.roof",
+      "parent": "scene.root",
+      "system": "head",
+      "material": "paint.yellow",
+      "mesh": "body.roof",
+      "parts": [
+        "body.roof.skin",
+        "body.roof.crown"
+      ],
+      "window": [
+        4.8,
+        7
+      ],
+      "note": "车顶 → 肩部横梁"
+    },
+    {
+      "id": "body.roof.stripe.l",
+      "parent": "body.roof",
+      "system": "head",
+      "material": "paint.black",
+      "mesh": "body.roof.stripe.l",
+      "parts": [
+        "body.roof.stripe.l.stripe"
+      ],
+      "window": [
+        4.8,
+        7
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.roof.stripe.r",
+      "parent": "body.roof",
+      "system": "head",
+      "material": "paint.black",
+      "mesh": "body.roof.stripe.r",
+      "parts": [
+        "body.roof.stripe.r.stripe"
+      ],
+      "window": [
+        4.8,
+        7
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.windshield",
+      "parent": "scene.root",
+      "system": "head",
+      "material": "glass.tint",
+      "mesh": "body.windshield",
+      "parts": [
+        "body.windshield.glass"
+      ],
+      "window": [
+        5,
+        7.1
+      ],
+      "note": "前风挡 → 胸前玻璃"
+    },
+    {
+      "id": "body.rearwindow",
+      "parent": "scene.root",
+      "system": "head",
+      "material": "glass.tint",
+      "mesh": "body.rearwindow",
+      "parts": [
+        "body.rearwindow.glass"
+      ],
+      "window": [
+        5,
+        7.1
+      ],
+      "note": "后风挡 → 背部玻璃"
+    },
+    {
+      "id": "body.pillar.a.l",
+      "parent": "scene.root",
+      "system": "head",
+      "material": "paint.yellow",
+      "mesh": "body.pillar.a",
+      "parts": [
+        "body.pillar.a.l.body"
+      ],
+      "window": [
+        5,
+        7.1
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.pillar.c.l",
+      "parent": "scene.root",
+      "system": "head",
+      "material": "paint.yellow",
+      "mesh": "body.pillar.c",
+      "parts": [
+        "body.pillar.c.l.body"
+      ],
+      "window": [
+        5,
+        7.1
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.pillar.a.r",
+      "parent": "scene.root",
+      "system": "head",
+      "material": "paint.yellow",
+      "mesh": "body.pillar.a",
+      "parts": [
+        "body.pillar.a.r.body"
+      ],
+      "window": [
+        5,
+        7.1
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.pillar.c.r",
+      "parent": "scene.root",
+      "system": "head",
+      "material": "paint.yellow",
+      "mesh": "body.pillar.c",
+      "parts": [
+        "body.pillar.c.r.body"
+      ],
+      "window": [
+        5,
+        7.1
+      ],
+      "note": ""
+    },
+    {
+      "id": "head.shell",
+      "parent": "scene.root",
+      "system": "head",
+      "material": "paint.yellow",
+      "mesh": "head.shell",
+      "parts": [
+        "head.shell.dome",
+        "head.shell.crest"
+      ],
+      "window": [
+        5.6,
+        7.8
+      ],
+      "note": "驾驶舱内收起的头盔（inferred）"
+    },
+    {
+      "id": "head.face",
+      "parent": "head.shell",
+      "system": "head",
+      "material": "metal.dark",
+      "mesh": "head.face",
+      "parts": [
+        "head.face.plate"
+      ],
+      "window": [
+        5.6,
+        7.8
+      ],
+      "note": ""
+    },
+    {
+      "id": "head.eye.l",
+      "parent": "head.face",
+      "system": "head",
+      "material": "light.eye",
+      "mesh": "head.eye",
+      "parts": [
+        "head.eye.l.body"
+      ],
+      "window": [
+        5.6,
+        7.8
+      ],
+      "note": ""
+    },
+    {
+      "id": "head.eye.r",
+      "parent": "head.face",
+      "system": "head",
+      "material": "light.eye",
+      "mesh": "head.eye",
+      "parts": [
+        "head.eye.r.body"
+      ],
+      "window": [
+        5.6,
+        7.8
+      ],
+      "note": ""
+    },
+    {
+      "id": "head.pod.l",
+      "parent": "head.shell",
+      "system": "head",
+      "material": "metal.gun",
+      "mesh": "head.pod",
+      "parts": [
+        "head.pod.l.body"
+      ],
+      "window": [
+        5.6,
+        7.8
+      ],
+      "note": ""
+    },
+    {
+      "id": "head.pod.r",
+      "parent": "head.shell",
+      "system": "head",
+      "material": "metal.gun",
+      "mesh": "head.pod",
+      "parts": [
+        "head.pod.r.body"
+      ],
+      "window": [
+        5.6,
+        7.8
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.wheel.fl",
+      "parent": "scene.root",
+      "system": "leg",
+      "material": "rubber.tire",
+      "mesh": "body.wheel",
+      "parts": [
+        "body.wheel.fl.body"
+      ],
+      "window": [
+        4.4,
+        6.8
+      ],
+      "note": "前轮 → 足底"
+    },
+    {
+      "id": "body.wheel.fl.rim",
+      "parent": "body.wheel.fl",
+      "system": "leg",
+      "material": "metal.chrome",
+      "mesh": "body.rim",
+      "parts": [
+        "body.wheel.fl.rim.body"
+      ],
+      "window": [
+        4.4,
+        6.8
+      ],
+      "note": "轮辋随轮体"
+    },
+    {
+      "id": "body.wheel.fr",
+      "parent": "scene.root",
+      "system": "leg",
+      "material": "rubber.tire",
+      "mesh": "body.wheel",
+      "parts": [
+        "body.wheel.fr.body"
+      ],
+      "window": [
+        4.4,
+        6.8
+      ],
+      "note": "前轮 → 足底"
+    },
+    {
+      "id": "body.wheel.fr.rim",
+      "parent": "body.wheel.fr",
+      "system": "leg",
+      "material": "metal.chrome",
+      "mesh": "body.rim",
+      "parts": [
+        "body.wheel.fr.rim.body"
+      ],
+      "window": [
+        4.4,
+        6.8
+      ],
+      "note": "轮辋随轮体"
+    },
+    {
+      "id": "body.wheel.rl",
+      "parent": "scene.root",
+      "system": "leg",
+      "material": "rubber.tire",
+      "mesh": "body.wheel",
+      "parts": [
+        "body.wheel.rl.body"
+      ],
+      "window": [
+        4.6,
+        7
+      ],
+      "note": "后轮 → 小腿后侧"
+    },
+    {
+      "id": "body.wheel.rl.rim",
+      "parent": "body.wheel.rl",
+      "system": "leg",
+      "material": "metal.chrome",
+      "mesh": "body.rim",
+      "parts": [
+        "body.wheel.rl.rim.body"
+      ],
+      "window": [
+        4.6,
+        7
+      ],
+      "note": "轮辋随轮体"
+    },
+    {
+      "id": "body.wheel.rr",
+      "parent": "scene.root",
+      "system": "leg",
+      "material": "rubber.tire",
+      "mesh": "body.wheel",
+      "parts": [
+        "body.wheel.rr.body"
+      ],
+      "window": [
+        4.6,
+        7
+      ],
+      "note": "后轮 → 小腿后侧"
+    },
+    {
+      "id": "body.wheel.rr.rim",
+      "parent": "body.wheel.rr",
+      "system": "leg",
+      "material": "metal.chrome",
+      "mesh": "body.rim",
+      "parts": [
+        "body.wheel.rr.rim.body"
+      ],
+      "window": [
+        4.6,
+        7
+      ],
+      "note": "轮辋随轮体"
+    },
+    {
+      "id": "foot.plate.l",
+      "parent": "body.frame",
+      "system": "leg",
+      "material": "metal.chrome",
+      "mesh": "foot.plate",
+      "parts": [
+        "foot.plate.l.body"
+      ],
+      "window": [
+        4.4,
+        6.8
+      ],
+      "note": ""
+    },
+    {
+      "id": "foot.plate.r",
+      "parent": "body.frame",
+      "system": "leg",
+      "material": "metal.chrome",
+      "mesh": "foot.plate",
+      "parts": [
+        "foot.plate.r.body"
+      ],
+      "window": [
+        4.4,
+        6.8
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.exhaust.l",
+      "parent": "body.tail",
+      "system": "body",
+      "material": "metal.chrome",
+      "mesh": "body.exhaust",
+      "parts": [
+        "body.exhaust.l.body"
+      ],
+      "window": [
+        5.2,
+        7.5
+      ],
+      "note": ""
+    },
+    {
+      "id": "body.exhaust.r",
+      "parent": "body.tail",
+      "system": "body",
+      "material": "metal.chrome",
+      "mesh": "body.exhaust",
+      "parts": [
+        "body.exhaust.r.body"
+      ],
+      "window": [
+        5.2,
+        7.5
+      ],
+      "note": ""
+    }
+  ],
+  "parts": [
+    {
+      "id": "body.frame.rail.l",
+      "assembly": "body.frame"
+    },
+    {
+      "id": "body.frame.rail.r",
+      "assembly": "body.frame"
+    },
+    {
+      "id": "body.frame.crossmember.f1",
+      "assembly": "body.frame"
+    },
+    {
+      "id": "body.frame.crossmember.f2",
+      "assembly": "body.frame"
+    },
+    {
+      "id": "body.frame.crossmember.m1",
+      "assembly": "body.frame"
+    },
+    {
+      "id": "body.frame.crossmember.m2",
+      "assembly": "body.frame"
+    },
+    {
+      "id": "body.frame.crossmember.r",
+      "assembly": "body.frame"
+    },
+    {
+      "id": "core.chest.block",
+      "assembly": "core.chest"
+    },
+    {
+      "id": "core.chest.spine",
+      "assembly": "core.chest"
+    },
+    {
+      "id": "core.pelvis.block",
+      "assembly": "core.pelvis"
+    },
+    {
+      "id": "core.rib.rib",
+      "assembly": "core.rib"
+    },
+    {
+      "id": "body.tub.shell",
+      "assembly": "body.tub"
+    },
+    {
+      "id": "body.nose.fascia",
+      "assembly": "body.nose"
+    },
+    {
+      "id": "body.nose.return.flange.l",
+      "assembly": "body.nose"
+    },
+    {
+      "id": "body.nose.return.flange.r",
+      "assembly": "body.nose"
+    },
+    {
+      "id": "body.grille.surround",
+      "assembly": "body.grille"
+    },
+    {
+      "id": "body.grille.slat.1",
+      "assembly": "body.grille"
+    },
+    {
+      "id": "body.grille.slat.2",
+      "assembly": "body.grille"
+    },
+    {
+      "id": "body.grille.slat.3",
+      "assembly": "body.grille"
+    },
+    {
+      "id": "body.grille.slat.4",
+      "assembly": "body.grille"
+    },
+    {
+      "id": "body.grille.slat.5",
+      "assembly": "body.grille"
+    },
+    {
+      "id": "body.bowtie.bar",
+      "assembly": "body.bowtie"
+    },
+    {
+      "id": "body.bowtie.wing.l",
+      "assembly": "body.bowtie"
+    },
+    {
+      "id": "body.bowtie.wing.r",
+      "assembly": "body.bowtie"
+    },
+    {
+      "id": "body.headlight.l.body",
+      "assembly": "body.headlight.l"
+    },
+    {
+      "id": "body.headlight.r.body",
+      "assembly": "body.headlight.r"
+    },
+    {
+      "id": "body.fog.l.body",
+      "assembly": "body.fog.l"
+    },
+    {
+      "id": "body.fog.r.body",
+      "assembly": "body.fog.r"
+    },
+    {
+      "id": "body.bumper.front.bar",
+      "assembly": "body.bumper.front"
+    },
+    {
+      "id": "body.bumper.front.valance",
+      "assembly": "body.bumper.front"
+    },
+    {
+      "id": "body.hood.skin",
+      "assembly": "body.hood"
+    },
+    {
+      "id": "body.hood.crown",
+      "assembly": "body.hood"
+    },
+    {
+      "id": "body.hood.stripe.l.stripe",
+      "assembly": "body.hood.stripe.l"
+    },
+    {
+      "id": "body.hood.stripe.r.stripe",
+      "assembly": "body.hood.stripe.r"
+    },
+    {
+      "id": "body.engine.block",
+      "assembly": "body.engine"
+    },
+    {
+      "id": "body.engine.head.l",
+      "assembly": "body.engine"
+    },
+    {
+      "id": "body.engine.head.r",
+      "assembly": "body.engine"
+    },
+    {
+      "id": "body.engine.piston.l",
+      "assembly": "body.engine"
+    },
+    {
+      "id": "body.engine.piston.r",
+      "assembly": "body.engine"
+    },
+    {
+      "id": "body.cowl.l.body",
+      "assembly": "body.cowl.l"
+    },
+    {
+      "id": "body.fender.l.skin",
+      "assembly": "body.fender.l"
+    },
+    {
+      "id": "body.fender.l.return.flange.top",
+      "assembly": "body.fender.l"
+    },
+    {
+      "id": "body.fender.l.return.flange.bottom",
+      "assembly": "body.fender.l"
+    },
+    {
+      "id": "arm.fore.l.body",
+      "assembly": "arm.fore.l"
+    },
+    {
+      "id": "hand.l.body",
+      "assembly": "hand.l"
+    },
+    {
+      "id": "body.cowl.r.body",
+      "assembly": "body.cowl.r"
+    },
+    {
+      "id": "body.fender.r.skin",
+      "assembly": "body.fender.r"
+    },
+    {
+      "id": "body.fender.r.return.flange.top",
+      "assembly": "body.fender.r"
+    },
+    {
+      "id": "body.fender.r.return.flange.bottom",
+      "assembly": "body.fender.r"
+    },
+    {
+      "id": "arm.fore.r.body",
+      "assembly": "arm.fore.r"
+    },
+    {
+      "id": "hand.r.body",
+      "assembly": "hand.r"
+    },
+    {
+      "id": "body.door.l.skin",
+      "assembly": "body.door.l"
+    },
+    {
+      "id": "body.door.l.return.flange.top",
+      "assembly": "body.door.l"
+    },
+    {
+      "id": "body.door.l.return.flange.bottom",
+      "assembly": "body.door.l"
+    },
+    {
+      "id": "body.door.inner.l.inner-skin",
+      "assembly": "body.door.inner.l"
+    },
+    {
+      "id": "body.mirror.l.body",
+      "assembly": "body.mirror.l"
+    },
+    {
+      "id": "body.door.r.skin",
+      "assembly": "body.door.r"
+    },
+    {
+      "id": "body.door.r.return.flange.top",
+      "assembly": "body.door.r"
+    },
+    {
+      "id": "body.door.r.return.flange.bottom",
+      "assembly": "body.door.r"
+    },
+    {
+      "id": "body.door.inner.r.inner-skin",
+      "assembly": "body.door.inner.r"
+    },
+    {
+      "id": "body.mirror.r.body",
+      "assembly": "body.mirror.r"
+    },
+    {
+      "id": "body.quarter.l.skin",
+      "assembly": "body.quarter.l"
+    },
+    {
+      "id": "body.quarter.l.return.flange.top",
+      "assembly": "body.quarter.l"
+    },
+    {
+      "id": "body.quarter.l.return.flange.bottom",
+      "assembly": "body.quarter.l"
+    },
+    {
+      "id": "body.quarter.r.skin",
+      "assembly": "body.quarter.r"
+    },
+    {
+      "id": "body.quarter.r.return.flange.top",
+      "assembly": "body.quarter.r"
+    },
+    {
+      "id": "body.quarter.r.return.flange.bottom",
+      "assembly": "body.quarter.r"
+    },
+    {
+      "id": "body.rocker.l.skin",
+      "assembly": "body.rocker.l"
+    },
+    {
+      "id": "body.rocker.l.return.flange.top",
+      "assembly": "body.rocker.l"
+    },
+    {
+      "id": "body.rocker.l.return.flange.bottom",
+      "assembly": "body.rocker.l"
+    },
+    {
+      "id": "body.rocker.r.skin",
+      "assembly": "body.rocker.r"
+    },
+    {
+      "id": "body.rocker.r.return.flange.top",
+      "assembly": "body.rocker.r"
+    },
+    {
+      "id": "body.rocker.r.return.flange.bottom",
+      "assembly": "body.rocker.r"
+    },
+    {
+      "id": "body.tail.fascia",
+      "assembly": "body.tail"
+    },
+    {
+      "id": "body.tail.return.flange.l",
+      "assembly": "body.tail"
+    },
+    {
+      "id": "body.tail.return.flange.r",
+      "assembly": "body.tail"
+    },
+    {
+      "id": "body.bumper.rear.bar",
+      "assembly": "body.bumper.rear"
+    },
+    {
+      "id": "body.bumper.rear.valance",
+      "assembly": "body.bumper.rear"
+    },
+    {
+      "id": "body.taillight.l.body",
+      "assembly": "body.taillight.l"
+    },
+    {
+      "id": "body.taillight.r.body",
+      "assembly": "body.taillight.r"
+    },
+    {
+      "id": "body.deck.skin",
+      "assembly": "body.deck"
+    },
+    {
+      "id": "body.deck.crown",
+      "assembly": "body.deck"
+    },
+    {
+      "id": "body.deck.stripe.l.stripe",
+      "assembly": "body.deck.stripe.l"
+    },
+    {
+      "id": "body.deck.stripe.r.stripe",
+      "assembly": "body.deck.stripe.r"
+    },
+    {
+      "id": "body.roof.skin",
+      "assembly": "body.roof"
+    },
+    {
+      "id": "body.roof.crown",
+      "assembly": "body.roof"
+    },
+    {
+      "id": "body.roof.stripe.l.stripe",
+      "assembly": "body.roof.stripe.l"
+    },
+    {
+      "id": "body.roof.stripe.r.stripe",
+      "assembly": "body.roof.stripe.r"
+    },
+    {
+      "id": "body.windshield.glass",
+      "assembly": "body.windshield"
+    },
+    {
+      "id": "body.rearwindow.glass",
+      "assembly": "body.rearwindow"
+    },
+    {
+      "id": "body.pillar.a.l.body",
+      "assembly": "body.pillar.a.l"
+    },
+    {
+      "id": "body.pillar.c.l.body",
+      "assembly": "body.pillar.c.l"
+    },
+    {
+      "id": "body.pillar.a.r.body",
+      "assembly": "body.pillar.a.r"
+    },
+    {
+      "id": "body.pillar.c.r.body",
+      "assembly": "body.pillar.c.r"
+    },
+    {
+      "id": "head.shell.dome",
+      "assembly": "head.shell"
+    },
+    {
+      "id": "head.shell.crest",
+      "assembly": "head.shell"
+    },
+    {
+      "id": "head.face.plate",
+      "assembly": "head.face"
+    },
+    {
+      "id": "head.eye.l.body",
+      "assembly": "head.eye.l"
+    },
+    {
+      "id": "head.eye.r.body",
+      "assembly": "head.eye.r"
+    },
+    {
+      "id": "head.pod.l.body",
+      "assembly": "head.pod.l"
+    },
+    {
+      "id": "head.pod.r.body",
+      "assembly": "head.pod.r"
+    },
+    {
+      "id": "body.wheel.fl.body",
+      "assembly": "body.wheel.fl"
+    },
+    {
+      "id": "body.wheel.fl.rim.body",
+      "assembly": "body.wheel.fl.rim"
+    },
+    {
+      "id": "body.wheel.fr.body",
+      "assembly": "body.wheel.fr"
+    },
+    {
+      "id": "body.wheel.fr.rim.body",
+      "assembly": "body.wheel.fr.rim"
+    },
+    {
+      "id": "body.wheel.rl.body",
+      "assembly": "body.wheel.rl"
+    },
+    {
+      "id": "body.wheel.rl.rim.body",
+      "assembly": "body.wheel.rl.rim"
+    },
+    {
+      "id": "body.wheel.rr.body",
+      "assembly": "body.wheel.rr"
+    },
+    {
+      "id": "body.wheel.rr.rim.body",
+      "assembly": "body.wheel.rr.rim"
+    },
+    {
+      "id": "foot.plate.l.body",
+      "assembly": "foot.plate.l"
+    },
+    {
+      "id": "foot.plate.r.body",
+      "assembly": "foot.plate.r"
+    },
+    {
+      "id": "body.exhaust.l.body",
+      "assembly": "body.exhaust.l"
+    },
+    {
+      "id": "body.exhaust.r.body",
+      "assembly": "body.exhaust.r"
+    }
+  ]
+}

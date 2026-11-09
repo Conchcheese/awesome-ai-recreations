@@ -2,10 +2,16 @@
 node_modules/
 .pnpm-store/
 
-# 构建产物（可由 src/kit 重新生成）
-src/kit/teardown-out/
+# 可重建的构建与自检产物
 teardown-out/
 dist/
+_selftest/
+.cache/
+.pytest_cache/
+.ruff_cache/
+coverage/
+playwright-report/
+test-results/
 
 # Python
 __pycache__/
@@ -51,9 +57,6 @@ artifacts/
 *.zip
 *.tar
 *.tar.gz
-.cache/
-playwright-report/
-test-results/
 
 # 凭据与机器配置
 .env
@@ -61,11 +64,18 @@ test-results/
 !.env.example
 .npmrc
 .pypirc
+.netrc
+.git-credentials
 *.pem
 *.key
 *.p12
+*.pfx
+*.kdbx
 credentials.json
+secrets.json
 id_rsa
 id_ed25519
 .codex/
+.aws/
+.ssh/
 .claude/settings.local.json

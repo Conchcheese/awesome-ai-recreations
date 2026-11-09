@@ -1,0 +1,2302 @@
+{
+  "schemaVersion": 1,
+  "model": "Kimi-K3.1-Pro",
+  "assemblies": [
+    {
+      "id": "chassis-spine",
+      "parent": "scene-root",
+      "label": "纵向承载骨架",
+      "system": "core",
+      "parts": [
+        "chassis-spine/mesh-000",
+        "chassis-spine/mesh-001",
+        "chassis-spine/mesh-002",
+        "chassis-spine/mesh-003",
+        "chassis-spine/mesh-004",
+        "chassis-spine/mesh-005",
+        "chassis-spine/mesh-006",
+        "chassis-spine/mesh-007",
+        "chassis-spine/mesh-008",
+        "chassis-spine/mesh-009",
+        "chassis-spine/mesh-010",
+        "chassis-spine/mesh-011"
+      ]
+    },
+    {
+      "id": "front-fascia",
+      "parent": "scene-root",
+      "label": "Camaro 前保险杠 / 主胸甲",
+      "system": "armor",
+      "parts": [
+        "front-fascia/mesh-000",
+        "front-fascia/mesh-001",
+        "front-fascia/mesh-002",
+        "front-fascia/mesh-003",
+        "front-fascia/mesh-004",
+        "front-fascia/mesh-005"
+      ]
+    },
+    {
+      "id": "hood-left",
+      "parent": "scene-root",
+      "label": "左引擎盖 / 胸窗甲",
+      "system": "armor",
+      "parts": [
+        "hood-left/mesh-000",
+        "hood-left/mesh-001",
+        "hood-left/mesh-002",
+        "hood-left/mesh-003"
+      ]
+    },
+    {
+      "id": "headlamp-left",
+      "parent": "scene-root",
+      "label": "左前灯",
+      "system": "detail",
+      "parts": [
+        "headlamp-left/mesh-000",
+        "headlamp-left/mesh-001",
+        "headlamp-left/mesh-002"
+      ]
+    },
+    {
+      "id": "door-left",
+      "parent": "scene-root",
+      "label": "左车门翼",
+      "system": "armor",
+      "parts": [
+        "door-left/mesh-000",
+        "door-left/mesh-001",
+        "door-left/mesh-002",
+        "door-left/mesh-003",
+        "door-left/mesh-004"
+      ]
+    },
+    {
+      "id": "side-skirt-left",
+      "parent": "scene-root",
+      "label": "左侧裙 / 骨盆侧甲",
+      "system": "armor",
+      "parts": [
+        "side-skirt-left/mesh-000",
+        "side-skirt-left/mesh-001"
+      ]
+    },
+    {
+      "id": "front-fender-left",
+      "parent": "scene-root",
+      "label": "左前翼子板",
+      "system": "armor",
+      "parts": [
+        "front-fender-left/mesh-000",
+        "front-fender-left/mesh-001"
+      ]
+    },
+    {
+      "id": "rear-fender-left",
+      "parent": "scene-root",
+      "label": "左后翼子板",
+      "system": "armor",
+      "parts": [
+        "rear-fender-left/mesh-000",
+        "rear-fender-left/mesh-001"
+      ]
+    },
+    {
+      "id": "hood-right",
+      "parent": "scene-root",
+      "label": "右引擎盖 / 胸窗甲",
+      "system": "armor",
+      "parts": [
+        "hood-right/mesh-000",
+        "hood-right/mesh-001",
+        "hood-right/mesh-002",
+        "hood-right/mesh-003"
+      ]
+    },
+    {
+      "id": "headlamp-right",
+      "parent": "scene-root",
+      "label": "右前灯",
+      "system": "detail",
+      "parts": [
+        "headlamp-right/mesh-000",
+        "headlamp-right/mesh-001",
+        "headlamp-right/mesh-002"
+      ]
+    },
+    {
+      "id": "door-right",
+      "parent": "scene-root",
+      "label": "右车门翼",
+      "system": "armor",
+      "parts": [
+        "door-right/mesh-000",
+        "door-right/mesh-001",
+        "door-right/mesh-002",
+        "door-right/mesh-003",
+        "door-right/mesh-004"
+      ]
+    },
+    {
+      "id": "side-skirt-right",
+      "parent": "scene-root",
+      "label": "右侧裙 / 骨盆侧甲",
+      "system": "armor",
+      "parts": [
+        "side-skirt-right/mesh-000",
+        "side-skirt-right/mesh-001"
+      ]
+    },
+    {
+      "id": "front-fender-right",
+      "parent": "scene-root",
+      "label": "右前翼子板",
+      "system": "armor",
+      "parts": [
+        "front-fender-right/mesh-000",
+        "front-fender-right/mesh-001"
+      ]
+    },
+    {
+      "id": "rear-fender-right",
+      "parent": "scene-root",
+      "label": "右后翼子板",
+      "system": "armor",
+      "parts": [
+        "rear-fender-right/mesh-000",
+        "rear-fender-right/mesh-001"
+      ]
+    },
+    {
+      "id": "cabin-roof",
+      "parent": "scene-root",
+      "label": "车顶 / 背部主甲",
+      "system": "armor",
+      "parts": [
+        "cabin-roof/mesh-000",
+        "cabin-roof/mesh-001",
+        "cabin-roof/mesh-002",
+        "cabin-roof/mesh-003"
+      ]
+    },
+    {
+      "id": "windscreen",
+      "parent": "scene-root",
+      "label": "前风挡 / 背部上甲",
+      "system": "glass",
+      "parts": [
+        "windscreen/mesh-000",
+        "windscreen/mesh-001",
+        "windscreen/mesh-002"
+      ]
+    },
+    {
+      "id": "rear-deck",
+      "parent": "scene-root",
+      "label": "后甲板 / 腰部背甲",
+      "system": "armor",
+      "parts": [
+        "rear-deck/mesh-000",
+        "rear-deck/mesh-001",
+        "rear-deck/mesh-002",
+        "rear-deck/mesh-003"
+      ]
+    },
+    {
+      "id": "neck-gimbal",
+      "parent": "scene-root",
+      "label": "颈部万向节",
+      "system": "head",
+      "parts": [
+        "neck-gimbal/mesh-000",
+        "neck-gimbal/mesh-001",
+        "neck-gimbal/mesh-002",
+        "neck-gimbal/mesh-003"
+      ]
+    },
+    {
+      "id": "head-cranium",
+      "parent": "scene-root",
+      "label": "黄色盔壳与战斗面罩",
+      "system": "head",
+      "parts": [
+        "head-cranium/mesh-000",
+        "head-cranium/mesh-001",
+        "head-cranium/mesh-002",
+        "head-cranium/mesh-003",
+        "head-cranium/mesh-004",
+        "head-cranium/mesh-005",
+        "head-cranium/mesh-006",
+        "head-cranium/mesh-007",
+        "head-cranium/mesh-008",
+        "head-cranium/mesh-009",
+        "head-cranium/mesh-010",
+        "head-cranium/mesh-011",
+        "head-cranium/mesh-012",
+        "head-cranium/mesh-013",
+        "head-cranium/mesh-014",
+        "head-cranium/mesh-015",
+        "head-cranium/mesh-016",
+        "head-cranium/mesh-017"
+      ]
+    },
+    {
+      "id": "abdomen",
+      "parent": "scene-root",
+      "label": "腹部机械连锁",
+      "system": "core",
+      "parts": [
+        "abdomen/mesh-000",
+        "abdomen/mesh-001",
+        "abdomen/mesh-002",
+        "abdomen/mesh-003",
+        "abdomen/mesh-004",
+        "abdomen/mesh-005",
+        "abdomen/mesh-006",
+        "abdomen/mesh-007",
+        "abdomen/mesh-008",
+        "abdomen/mesh-009",
+        "abdomen/mesh-010",
+        "abdomen/mesh-011",
+        "abdomen/mesh-012",
+        "abdomen/mesh-013",
+        "abdomen/mesh-014"
+      ]
+    },
+    {
+      "id": "pelvis",
+      "parent": "scene-root",
+      "label": "骨盆与中央护甲",
+      "system": "core",
+      "parts": [
+        "pelvis/mesh-000",
+        "pelvis/mesh-001",
+        "pelvis/mesh-002",
+        "pelvis/mesh-003",
+        "pelvis/mesh-004"
+      ]
+    },
+    {
+      "id": "wheel-front-left",
+      "parent": "scene-root",
+      "label": "左前轮 / 左肩轮",
+      "system": "wheel",
+      "parts": [
+        "wheel-front-left/mesh-000",
+        "wheel-front-left/mesh-001",
+        "wheel-front-left/mesh-002",
+        "wheel-front-left/mesh-003",
+        "wheel-front-left/mesh-004",
+        "wheel-front-left/mesh-005",
+        "wheel-front-left/mesh-006",
+        "wheel-front-left/mesh-007",
+        "wheel-front-left/mesh-008",
+        "wheel-front-left/mesh-009",
+        "wheel-front-left/mesh-010"
+      ]
+    },
+    {
+      "id": "wheel-front-right",
+      "parent": "scene-root",
+      "label": "右前轮 / 右肩轮",
+      "system": "wheel",
+      "parts": [
+        "wheel-front-right/mesh-000",
+        "wheel-front-right/mesh-001",
+        "wheel-front-right/mesh-002",
+        "wheel-front-right/mesh-003",
+        "wheel-front-right/mesh-004",
+        "wheel-front-right/mesh-005",
+        "wheel-front-right/mesh-006",
+        "wheel-front-right/mesh-007",
+        "wheel-front-right/mesh-008",
+        "wheel-front-right/mesh-009",
+        "wheel-front-right/mesh-010"
+      ]
+    },
+    {
+      "id": "wheel-rear-left",
+      "parent": "scene-root",
+      "label": "左后轮 / 左小腿轮",
+      "system": "wheel",
+      "parts": [
+        "wheel-rear-left/mesh-000",
+        "wheel-rear-left/mesh-001",
+        "wheel-rear-left/mesh-002",
+        "wheel-rear-left/mesh-003",
+        "wheel-rear-left/mesh-004",
+        "wheel-rear-left/mesh-005",
+        "wheel-rear-left/mesh-006",
+        "wheel-rear-left/mesh-007",
+        "wheel-rear-left/mesh-008",
+        "wheel-rear-left/mesh-009",
+        "wheel-rear-left/mesh-010"
+      ]
+    },
+    {
+      "id": "wheel-rear-right",
+      "parent": "scene-root",
+      "label": "右后轮 / 右小腿轮",
+      "system": "wheel",
+      "parts": [
+        "wheel-rear-right/mesh-000",
+        "wheel-rear-right/mesh-001",
+        "wheel-rear-right/mesh-002",
+        "wheel-rear-right/mesh-003",
+        "wheel-rear-right/mesh-004",
+        "wheel-rear-right/mesh-005",
+        "wheel-rear-right/mesh-006",
+        "wheel-rear-right/mesh-007",
+        "wheel-rear-right/mesh-008",
+        "wheel-rear-right/mesh-009",
+        "wheel-rear-right/mesh-010"
+      ]
+    },
+    {
+      "id": "shoulder-left",
+      "parent": "scene-root",
+      "label": "左肩部支架",
+      "system": "arm",
+      "parts": [
+        "shoulder-left/mesh-000",
+        "shoulder-left/mesh-001",
+        "shoulder-left/mesh-002"
+      ]
+    },
+    {
+      "id": "upper-arm-left",
+      "parent": "scene-root",
+      "label": "左上臂骨架",
+      "system": "arm",
+      "parts": [
+        "upper-arm-left/mesh-000",
+        "upper-arm-left/mesh-001",
+        "upper-arm-left/mesh-002",
+        "upper-arm-left/mesh-003",
+        "upper-arm-left/mesh-004",
+        "upper-arm-left/mesh-005"
+      ]
+    },
+    {
+      "id": "elbow-left",
+      "parent": "scene-root",
+      "label": "左肘关节",
+      "system": "arm",
+      "parts": [
+        "elbow-left/mesh-000",
+        "elbow-left/mesh-001",
+        "elbow-left/mesh-002"
+      ]
+    },
+    {
+      "id": "forearm-left",
+      "parent": "scene-root",
+      "label": "左前臂甲与活塞",
+      "system": "arm",
+      "parts": [
+        "forearm-left/mesh-000",
+        "forearm-left/mesh-001",
+        "forearm-left/mesh-002",
+        "forearm-left/mesh-003",
+        "forearm-left/mesh-004",
+        "forearm-left/mesh-005",
+        "forearm-left/mesh-006",
+        "forearm-left/mesh-007"
+      ]
+    },
+    {
+      "id": "hand-left",
+      "parent": "scene-root",
+      "label": "左手掌与指节",
+      "system": "arm",
+      "parts": [
+        "hand-left/mesh-000",
+        "hand-left/mesh-001",
+        "hand-left/mesh-002",
+        "hand-left/mesh-003",
+        "hand-left/mesh-004",
+        "hand-left/mesh-005",
+        "hand-left/mesh-006",
+        "hand-left/mesh-007",
+        "hand-left/mesh-008",
+        "hand-left/mesh-009",
+        "hand-left/mesh-010"
+      ]
+    },
+    {
+      "id": "hip-left",
+      "parent": "scene-root",
+      "label": "左髋关节",
+      "system": "leg",
+      "parts": [
+        "hip-left/mesh-000",
+        "hip-left/mesh-001"
+      ]
+    },
+    {
+      "id": "thigh-left",
+      "parent": "scene-root",
+      "label": "左大腿骨架",
+      "system": "leg",
+      "parts": [
+        "thigh-left/mesh-000",
+        "thigh-left/mesh-001",
+        "thigh-left/mesh-002",
+        "thigh-left/mesh-003",
+        "thigh-left/mesh-004",
+        "thigh-left/mesh-005"
+      ]
+    },
+    {
+      "id": "knee-left",
+      "parent": "scene-root",
+      "label": "左膝关节",
+      "system": "leg",
+      "parts": [
+        "knee-left/mesh-000",
+        "knee-left/mesh-001",
+        "knee-left/mesh-002"
+      ]
+    },
+    {
+      "id": "shin-left",
+      "parent": "scene-root",
+      "label": "左小腿外甲",
+      "system": "leg",
+      "parts": [
+        "shin-left/mesh-000",
+        "shin-left/mesh-001",
+        "shin-left/mesh-002",
+        "shin-left/mesh-003",
+        "shin-left/mesh-004",
+        "shin-left/mesh-005",
+        "shin-left/mesh-006"
+      ]
+    },
+    {
+      "id": "foot-left",
+      "parent": "scene-root",
+      "label": "左分趾足部",
+      "system": "leg",
+      "parts": [
+        "foot-left/mesh-000",
+        "foot-left/mesh-001",
+        "foot-left/mesh-002",
+        "foot-left/mesh-003",
+        "foot-left/mesh-004",
+        "foot-left/mesh-005"
+      ]
+    },
+    {
+      "id": "shoulder-right",
+      "parent": "scene-root",
+      "label": "右肩部支架",
+      "system": "arm",
+      "parts": [
+        "shoulder-right/mesh-000",
+        "shoulder-right/mesh-001",
+        "shoulder-right/mesh-002"
+      ]
+    },
+    {
+      "id": "upper-arm-right",
+      "parent": "scene-root",
+      "label": "右上臂骨架",
+      "system": "arm",
+      "parts": [
+        "upper-arm-right/mesh-000",
+        "upper-arm-right/mesh-001",
+        "upper-arm-right/mesh-002",
+        "upper-arm-right/mesh-003",
+        "upper-arm-right/mesh-004",
+        "upper-arm-right/mesh-005"
+      ]
+    },
+    {
+      "id": "elbow-right",
+      "parent": "scene-root",
+      "label": "右肘关节",
+      "system": "arm",
+      "parts": [
+        "elbow-right/mesh-000",
+        "elbow-right/mesh-001",
+        "elbow-right/mesh-002"
+      ]
+    },
+    {
+      "id": "forearm-right",
+      "parent": "scene-root",
+      "label": "右前臂甲与活塞",
+      "system": "arm",
+      "parts": [
+        "forearm-right/mesh-000",
+        "forearm-right/mesh-001",
+        "forearm-right/mesh-002",
+        "forearm-right/mesh-003",
+        "forearm-right/mesh-004",
+        "forearm-right/mesh-005",
+        "forearm-right/mesh-006",
+        "forearm-right/mesh-007"
+      ]
+    },
+    {
+      "id": "hand-right",
+      "parent": "scene-root",
+      "label": "右手掌与指节",
+      "system": "arm",
+      "parts": [
+        "hand-right/mesh-000",
+        "hand-right/mesh-001",
+        "hand-right/mesh-002",
+        "hand-right/mesh-003",
+        "hand-right/mesh-004",
+        "hand-right/mesh-005",
+        "hand-right/mesh-006",
+        "hand-right/mesh-007",
+        "hand-right/mesh-008",
+        "hand-right/mesh-009",
+        "hand-right/mesh-010"
+      ]
+    },
+    {
+      "id": "hip-right",
+      "parent": "scene-root",
+      "label": "右髋关节",
+      "system": "leg",
+      "parts": [
+        "hip-right/mesh-000",
+        "hip-right/mesh-001"
+      ]
+    },
+    {
+      "id": "thigh-right",
+      "parent": "scene-root",
+      "label": "右大腿骨架",
+      "system": "leg",
+      "parts": [
+        "thigh-right/mesh-000",
+        "thigh-right/mesh-001",
+        "thigh-right/mesh-002",
+        "thigh-right/mesh-003",
+        "thigh-right/mesh-004",
+        "thigh-right/mesh-005"
+      ]
+    },
+    {
+      "id": "knee-right",
+      "parent": "scene-root",
+      "label": "右膝关节",
+      "system": "leg",
+      "parts": [
+        "knee-right/mesh-000",
+        "knee-right/mesh-001",
+        "knee-right/mesh-002"
+      ]
+    },
+    {
+      "id": "shin-right",
+      "parent": "scene-root",
+      "label": "右小腿外甲",
+      "system": "leg",
+      "parts": [
+        "shin-right/mesh-000",
+        "shin-right/mesh-001",
+        "shin-right/mesh-002",
+        "shin-right/mesh-003",
+        "shin-right/mesh-004",
+        "shin-right/mesh-005",
+        "shin-right/mesh-006"
+      ]
+    },
+    {
+      "id": "foot-right",
+      "parent": "scene-root",
+      "label": "右分趾足部",
+      "system": "leg",
+      "parts": [
+        "foot-right/mesh-000",
+        "foot-right/mesh-001",
+        "foot-right/mesh-002",
+        "foot-right/mesh-003",
+        "foot-right/mesh-004",
+        "foot-right/mesh-005"
+      ]
+    },
+    {
+      "id": "car-grille",
+      "parent": "scene-root",
+      "label": "车辆格栅与车标",
+      "system": "detail",
+      "parts": [
+        "car-grille/mesh-000",
+        "car-grille/mesh-001",
+        "car-grille/mesh-002",
+        "car-grille/mesh-003",
+        "car-grille/mesh-004",
+        "car-grille/mesh-005",
+        "car-grille/mesh-006",
+        "car-grille/mesh-007",
+        "car-grille/mesh-008",
+        "car-grille/mesh-009",
+        "car-grille/mesh-010"
+      ]
+    },
+    {
+      "id": "rear-bumper",
+      "parent": "scene-root",
+      "label": "后保险杠",
+      "system": "detail",
+      "parts": [
+        "rear-bumper/mesh-000",
+        "rear-bumper/mesh-001"
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "id": "chassis-spine/mesh-000",
+      "assembly": "chassis-spine",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "chassis-spine/mesh-001",
+      "assembly": "chassis-spine",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "chassis-spine/mesh-002",
+      "assembly": "chassis-spine",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "chassis-spine/mesh-003",
+      "assembly": "chassis-spine",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "chassis-spine/mesh-004",
+      "assembly": "chassis-spine",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "chassis-spine/mesh-005",
+      "assembly": "chassis-spine",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "chassis-spine/mesh-006",
+      "assembly": "chassis-spine",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "chassis-spine/mesh-007",
+      "assembly": "chassis-spine",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "chassis-spine/mesh-008",
+      "assembly": "chassis-spine",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "chassis-spine/mesh-009",
+      "assembly": "chassis-spine",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "chassis-spine/mesh-010",
+      "assembly": "chassis-spine",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "chassis-spine/mesh-011",
+      "assembly": "chassis-spine",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "front-fascia/mesh-000",
+      "assembly": "front-fascia",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "front-fascia/mesh-001",
+      "assembly": "front-fascia",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "front-fascia/mesh-002",
+      "assembly": "front-fascia",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "front-fascia/mesh-003",
+      "assembly": "front-fascia",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "front-fascia/mesh-004",
+      "assembly": "front-fascia",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "front-fascia/mesh-005",
+      "assembly": "front-fascia",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hood-left/mesh-000",
+      "assembly": "hood-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hood-left/mesh-001",
+      "assembly": "hood-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hood-left/mesh-002",
+      "assembly": "hood-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hood-left/mesh-003",
+      "assembly": "hood-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "headlamp-left/mesh-000",
+      "assembly": "headlamp-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "headlamp-left/mesh-001",
+      "assembly": "headlamp-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "headlamp-left/mesh-002",
+      "assembly": "headlamp-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "door-left/mesh-000",
+      "assembly": "door-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "door-left/mesh-001",
+      "assembly": "door-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "door-left/mesh-002",
+      "assembly": "door-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "door-left/mesh-003",
+      "assembly": "door-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "door-left/mesh-004",
+      "assembly": "door-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "side-skirt-left/mesh-000",
+      "assembly": "side-skirt-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "side-skirt-left/mesh-001",
+      "assembly": "side-skirt-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "front-fender-left/mesh-000",
+      "assembly": "front-fender-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "front-fender-left/mesh-001",
+      "assembly": "front-fender-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "rear-fender-left/mesh-000",
+      "assembly": "rear-fender-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "rear-fender-left/mesh-001",
+      "assembly": "rear-fender-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hood-right/mesh-000",
+      "assembly": "hood-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hood-right/mesh-001",
+      "assembly": "hood-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hood-right/mesh-002",
+      "assembly": "hood-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hood-right/mesh-003",
+      "assembly": "hood-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "headlamp-right/mesh-000",
+      "assembly": "headlamp-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "headlamp-right/mesh-001",
+      "assembly": "headlamp-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "headlamp-right/mesh-002",
+      "assembly": "headlamp-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "door-right/mesh-000",
+      "assembly": "door-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "door-right/mesh-001",
+      "assembly": "door-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "door-right/mesh-002",
+      "assembly": "door-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "door-right/mesh-003",
+      "assembly": "door-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "door-right/mesh-004",
+      "assembly": "door-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "side-skirt-right/mesh-000",
+      "assembly": "side-skirt-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "side-skirt-right/mesh-001",
+      "assembly": "side-skirt-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "front-fender-right/mesh-000",
+      "assembly": "front-fender-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "front-fender-right/mesh-001",
+      "assembly": "front-fender-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "rear-fender-right/mesh-000",
+      "assembly": "rear-fender-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "rear-fender-right/mesh-001",
+      "assembly": "rear-fender-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "cabin-roof/mesh-000",
+      "assembly": "cabin-roof",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "cabin-roof/mesh-001",
+      "assembly": "cabin-roof",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "cabin-roof/mesh-002",
+      "assembly": "cabin-roof",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "cabin-roof/mesh-003",
+      "assembly": "cabin-roof",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "windscreen/mesh-000",
+      "assembly": "windscreen",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "windscreen/mesh-001",
+      "assembly": "windscreen",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "windscreen/mesh-002",
+      "assembly": "windscreen",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "rear-deck/mesh-000",
+      "assembly": "rear-deck",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "rear-deck/mesh-001",
+      "assembly": "rear-deck",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "rear-deck/mesh-002",
+      "assembly": "rear-deck",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "rear-deck/mesh-003",
+      "assembly": "rear-deck",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "neck-gimbal/mesh-000",
+      "assembly": "neck-gimbal",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "neck-gimbal/mesh-001",
+      "assembly": "neck-gimbal",
+      "evidence": "designed",
+      "geometry": "TorusGeometry"
+    },
+    {
+      "id": "neck-gimbal/mesh-002",
+      "assembly": "neck-gimbal",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "neck-gimbal/mesh-003",
+      "assembly": "neck-gimbal",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "head-cranium/mesh-000",
+      "assembly": "head-cranium",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "head-cranium/mesh-001",
+      "assembly": "head-cranium",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "head-cranium/mesh-002",
+      "assembly": "head-cranium",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "head-cranium/mesh-003",
+      "assembly": "head-cranium",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "head-cranium/mesh-004",
+      "assembly": "head-cranium",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "head-cranium/mesh-005",
+      "assembly": "head-cranium",
+      "evidence": "designed",
+      "geometry": "TorusGeometry"
+    },
+    {
+      "id": "head-cranium/mesh-006",
+      "assembly": "head-cranium",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "head-cranium/mesh-007",
+      "assembly": "head-cranium",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "head-cranium/mesh-008",
+      "assembly": "head-cranium",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "head-cranium/mesh-009",
+      "assembly": "head-cranium",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "head-cranium/mesh-010",
+      "assembly": "head-cranium",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "head-cranium/mesh-011",
+      "assembly": "head-cranium",
+      "evidence": "designed",
+      "geometry": "TorusGeometry"
+    },
+    {
+      "id": "head-cranium/mesh-012",
+      "assembly": "head-cranium",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "head-cranium/mesh-013",
+      "assembly": "head-cranium",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "head-cranium/mesh-014",
+      "assembly": "head-cranium",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "head-cranium/mesh-015",
+      "assembly": "head-cranium",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "head-cranium/mesh-016",
+      "assembly": "head-cranium",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "head-cranium/mesh-017",
+      "assembly": "head-cranium",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "abdomen/mesh-000",
+      "assembly": "abdomen",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "abdomen/mesh-001",
+      "assembly": "abdomen",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "abdomen/mesh-002",
+      "assembly": "abdomen",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "abdomen/mesh-003",
+      "assembly": "abdomen",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "abdomen/mesh-004",
+      "assembly": "abdomen",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "abdomen/mesh-005",
+      "assembly": "abdomen",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "abdomen/mesh-006",
+      "assembly": "abdomen",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "abdomen/mesh-007",
+      "assembly": "abdomen",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "abdomen/mesh-008",
+      "assembly": "abdomen",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "abdomen/mesh-009",
+      "assembly": "abdomen",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "abdomen/mesh-010",
+      "assembly": "abdomen",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "abdomen/mesh-011",
+      "assembly": "abdomen",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "abdomen/mesh-012",
+      "assembly": "abdomen",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "abdomen/mesh-013",
+      "assembly": "abdomen",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "abdomen/mesh-014",
+      "assembly": "abdomen",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "pelvis/mesh-000",
+      "assembly": "pelvis",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "pelvis/mesh-001",
+      "assembly": "pelvis",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "pelvis/mesh-002",
+      "assembly": "pelvis",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "pelvis/mesh-003",
+      "assembly": "pelvis",
+      "evidence": "designed",
+      "geometry": "SphereGeometry"
+    },
+    {
+      "id": "pelvis/mesh-004",
+      "assembly": "pelvis",
+      "evidence": "designed",
+      "geometry": "SphereGeometry"
+    },
+    {
+      "id": "wheel-front-left/mesh-000",
+      "assembly": "wheel-front-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "wheel-front-left/mesh-001",
+      "assembly": "wheel-front-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "wheel-front-left/mesh-002",
+      "assembly": "wheel-front-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "wheel-front-left/mesh-003",
+      "assembly": "wheel-front-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "wheel-front-left/mesh-004",
+      "assembly": "wheel-front-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "wheel-front-left/mesh-005",
+      "assembly": "wheel-front-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "wheel-front-left/mesh-006",
+      "assembly": "wheel-front-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "wheel-front-left/mesh-007",
+      "assembly": "wheel-front-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "wheel-front-left/mesh-008",
+      "assembly": "wheel-front-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "wheel-front-left/mesh-009",
+      "assembly": "wheel-front-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "wheel-front-left/mesh-010",
+      "assembly": "wheel-front-left",
+      "evidence": "designed",
+      "geometry": "TorusGeometry"
+    },
+    {
+      "id": "wheel-front-right/mesh-000",
+      "assembly": "wheel-front-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "wheel-front-right/mesh-001",
+      "assembly": "wheel-front-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "wheel-front-right/mesh-002",
+      "assembly": "wheel-front-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "wheel-front-right/mesh-003",
+      "assembly": "wheel-front-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "wheel-front-right/mesh-004",
+      "assembly": "wheel-front-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "wheel-front-right/mesh-005",
+      "assembly": "wheel-front-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "wheel-front-right/mesh-006",
+      "assembly": "wheel-front-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "wheel-front-right/mesh-007",
+      "assembly": "wheel-front-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "wheel-front-right/mesh-008",
+      "assembly": "wheel-front-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "wheel-front-right/mesh-009",
+      "assembly": "wheel-front-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "wheel-front-right/mesh-010",
+      "assembly": "wheel-front-right",
+      "evidence": "designed",
+      "geometry": "TorusGeometry"
+    },
+    {
+      "id": "wheel-rear-left/mesh-000",
+      "assembly": "wheel-rear-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "wheel-rear-left/mesh-001",
+      "assembly": "wheel-rear-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "wheel-rear-left/mesh-002",
+      "assembly": "wheel-rear-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "wheel-rear-left/mesh-003",
+      "assembly": "wheel-rear-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "wheel-rear-left/mesh-004",
+      "assembly": "wheel-rear-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "wheel-rear-left/mesh-005",
+      "assembly": "wheel-rear-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "wheel-rear-left/mesh-006",
+      "assembly": "wheel-rear-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "wheel-rear-left/mesh-007",
+      "assembly": "wheel-rear-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "wheel-rear-left/mesh-008",
+      "assembly": "wheel-rear-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "wheel-rear-left/mesh-009",
+      "assembly": "wheel-rear-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "wheel-rear-left/mesh-010",
+      "assembly": "wheel-rear-left",
+      "evidence": "designed",
+      "geometry": "TorusGeometry"
+    },
+    {
+      "id": "wheel-rear-right/mesh-000",
+      "assembly": "wheel-rear-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "wheel-rear-right/mesh-001",
+      "assembly": "wheel-rear-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "wheel-rear-right/mesh-002",
+      "assembly": "wheel-rear-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "wheel-rear-right/mesh-003",
+      "assembly": "wheel-rear-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "wheel-rear-right/mesh-004",
+      "assembly": "wheel-rear-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "wheel-rear-right/mesh-005",
+      "assembly": "wheel-rear-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "wheel-rear-right/mesh-006",
+      "assembly": "wheel-rear-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "wheel-rear-right/mesh-007",
+      "assembly": "wheel-rear-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "wheel-rear-right/mesh-008",
+      "assembly": "wheel-rear-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "wheel-rear-right/mesh-009",
+      "assembly": "wheel-rear-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "wheel-rear-right/mesh-010",
+      "assembly": "wheel-rear-right",
+      "evidence": "designed",
+      "geometry": "TorusGeometry"
+    },
+    {
+      "id": "shoulder-left/mesh-000",
+      "assembly": "shoulder-left",
+      "evidence": "designed",
+      "geometry": "SphereGeometry"
+    },
+    {
+      "id": "shoulder-left/mesh-001",
+      "assembly": "shoulder-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "shoulder-left/mesh-002",
+      "assembly": "shoulder-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "upper-arm-left/mesh-000",
+      "assembly": "upper-arm-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "upper-arm-left/mesh-001",
+      "assembly": "upper-arm-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "upper-arm-left/mesh-002",
+      "assembly": "upper-arm-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "upper-arm-left/mesh-003",
+      "assembly": "upper-arm-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "upper-arm-left/mesh-004",
+      "assembly": "upper-arm-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "upper-arm-left/mesh-005",
+      "assembly": "upper-arm-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "elbow-left/mesh-000",
+      "assembly": "elbow-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "elbow-left/mesh-001",
+      "assembly": "elbow-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "elbow-left/mesh-002",
+      "assembly": "elbow-left",
+      "evidence": "designed",
+      "geometry": "TorusGeometry"
+    },
+    {
+      "id": "forearm-left/mesh-000",
+      "assembly": "forearm-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "forearm-left/mesh-001",
+      "assembly": "forearm-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "forearm-left/mesh-002",
+      "assembly": "forearm-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "forearm-left/mesh-003",
+      "assembly": "forearm-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "forearm-left/mesh-004",
+      "assembly": "forearm-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "forearm-left/mesh-005",
+      "assembly": "forearm-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "forearm-left/mesh-006",
+      "assembly": "forearm-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "forearm-left/mesh-007",
+      "assembly": "forearm-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hand-left/mesh-000",
+      "assembly": "hand-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hand-left/mesh-001",
+      "assembly": "hand-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hand-left/mesh-002",
+      "assembly": "hand-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hand-left/mesh-003",
+      "assembly": "hand-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hand-left/mesh-004",
+      "assembly": "hand-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hand-left/mesh-005",
+      "assembly": "hand-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hand-left/mesh-006",
+      "assembly": "hand-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hand-left/mesh-007",
+      "assembly": "hand-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hand-left/mesh-008",
+      "assembly": "hand-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hand-left/mesh-009",
+      "assembly": "hand-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hand-left/mesh-010",
+      "assembly": "hand-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hip-left/mesh-000",
+      "assembly": "hip-left",
+      "evidence": "designed",
+      "geometry": "SphereGeometry"
+    },
+    {
+      "id": "hip-left/mesh-001",
+      "assembly": "hip-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "thigh-left/mesh-000",
+      "assembly": "thigh-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "thigh-left/mesh-001",
+      "assembly": "thigh-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "thigh-left/mesh-002",
+      "assembly": "thigh-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "thigh-left/mesh-003",
+      "assembly": "thigh-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "thigh-left/mesh-004",
+      "assembly": "thigh-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "thigh-left/mesh-005",
+      "assembly": "thigh-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "knee-left/mesh-000",
+      "assembly": "knee-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "knee-left/mesh-001",
+      "assembly": "knee-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "knee-left/mesh-002",
+      "assembly": "knee-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "shin-left/mesh-000",
+      "assembly": "shin-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "shin-left/mesh-001",
+      "assembly": "shin-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "shin-left/mesh-002",
+      "assembly": "shin-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "shin-left/mesh-003",
+      "assembly": "shin-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "shin-left/mesh-004",
+      "assembly": "shin-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "shin-left/mesh-005",
+      "assembly": "shin-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "shin-left/mesh-006",
+      "assembly": "shin-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "foot-left/mesh-000",
+      "assembly": "foot-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "foot-left/mesh-001",
+      "assembly": "foot-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "foot-left/mesh-002",
+      "assembly": "foot-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "foot-left/mesh-003",
+      "assembly": "foot-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "foot-left/mesh-004",
+      "assembly": "foot-left",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "foot-left/mesh-005",
+      "assembly": "foot-left",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "shoulder-right/mesh-000",
+      "assembly": "shoulder-right",
+      "evidence": "designed",
+      "geometry": "SphereGeometry"
+    },
+    {
+      "id": "shoulder-right/mesh-001",
+      "assembly": "shoulder-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "shoulder-right/mesh-002",
+      "assembly": "shoulder-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "upper-arm-right/mesh-000",
+      "assembly": "upper-arm-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "upper-arm-right/mesh-001",
+      "assembly": "upper-arm-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "upper-arm-right/mesh-002",
+      "assembly": "upper-arm-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "upper-arm-right/mesh-003",
+      "assembly": "upper-arm-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "upper-arm-right/mesh-004",
+      "assembly": "upper-arm-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "upper-arm-right/mesh-005",
+      "assembly": "upper-arm-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "elbow-right/mesh-000",
+      "assembly": "elbow-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "elbow-right/mesh-001",
+      "assembly": "elbow-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "elbow-right/mesh-002",
+      "assembly": "elbow-right",
+      "evidence": "designed",
+      "geometry": "TorusGeometry"
+    },
+    {
+      "id": "forearm-right/mesh-000",
+      "assembly": "forearm-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "forearm-right/mesh-001",
+      "assembly": "forearm-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "forearm-right/mesh-002",
+      "assembly": "forearm-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "forearm-right/mesh-003",
+      "assembly": "forearm-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "forearm-right/mesh-004",
+      "assembly": "forearm-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "forearm-right/mesh-005",
+      "assembly": "forearm-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "forearm-right/mesh-006",
+      "assembly": "forearm-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "forearm-right/mesh-007",
+      "assembly": "forearm-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hand-right/mesh-000",
+      "assembly": "hand-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hand-right/mesh-001",
+      "assembly": "hand-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hand-right/mesh-002",
+      "assembly": "hand-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hand-right/mesh-003",
+      "assembly": "hand-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hand-right/mesh-004",
+      "assembly": "hand-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hand-right/mesh-005",
+      "assembly": "hand-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hand-right/mesh-006",
+      "assembly": "hand-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hand-right/mesh-007",
+      "assembly": "hand-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hand-right/mesh-008",
+      "assembly": "hand-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hand-right/mesh-009",
+      "assembly": "hand-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hand-right/mesh-010",
+      "assembly": "hand-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "hip-right/mesh-000",
+      "assembly": "hip-right",
+      "evidence": "designed",
+      "geometry": "SphereGeometry"
+    },
+    {
+      "id": "hip-right/mesh-001",
+      "assembly": "hip-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "thigh-right/mesh-000",
+      "assembly": "thigh-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "thigh-right/mesh-001",
+      "assembly": "thigh-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "thigh-right/mesh-002",
+      "assembly": "thigh-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "thigh-right/mesh-003",
+      "assembly": "thigh-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "thigh-right/mesh-004",
+      "assembly": "thigh-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "thigh-right/mesh-005",
+      "assembly": "thigh-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "knee-right/mesh-000",
+      "assembly": "knee-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "knee-right/mesh-001",
+      "assembly": "knee-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "knee-right/mesh-002",
+      "assembly": "knee-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "shin-right/mesh-000",
+      "assembly": "shin-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "shin-right/mesh-001",
+      "assembly": "shin-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "shin-right/mesh-002",
+      "assembly": "shin-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "shin-right/mesh-003",
+      "assembly": "shin-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "shin-right/mesh-004",
+      "assembly": "shin-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "shin-right/mesh-005",
+      "assembly": "shin-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "shin-right/mesh-006",
+      "assembly": "shin-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "foot-right/mesh-000",
+      "assembly": "foot-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "foot-right/mesh-001",
+      "assembly": "foot-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "foot-right/mesh-002",
+      "assembly": "foot-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "foot-right/mesh-003",
+      "assembly": "foot-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "foot-right/mesh-004",
+      "assembly": "foot-right",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "foot-right/mesh-005",
+      "assembly": "foot-right",
+      "evidence": "designed",
+      "geometry": "CylinderGeometry"
+    },
+    {
+      "id": "car-grille/mesh-000",
+      "assembly": "car-grille",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "car-grille/mesh-001",
+      "assembly": "car-grille",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "car-grille/mesh-002",
+      "assembly": "car-grille",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "car-grille/mesh-003",
+      "assembly": "car-grille",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "car-grille/mesh-004",
+      "assembly": "car-grille",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "car-grille/mesh-005",
+      "assembly": "car-grille",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "car-grille/mesh-006",
+      "assembly": "car-grille",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "car-grille/mesh-007",
+      "assembly": "car-grille",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "car-grille/mesh-008",
+      "assembly": "car-grille",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "car-grille/mesh-009",
+      "assembly": "car-grille",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "car-grille/mesh-010",
+      "assembly": "car-grille",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "rear-bumper/mesh-000",
+      "assembly": "rear-bumper",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    },
+    {
+      "id": "rear-bumper/mesh-001",
+      "assembly": "rear-bumper",
+      "evidence": "designed",
+      "geometry": "RoundedBoxGeometry"
+    }
+  ]
+}

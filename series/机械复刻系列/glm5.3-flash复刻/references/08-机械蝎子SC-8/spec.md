@@ -3,8 +3,8 @@
 来源：
 - 官方面板画面 3 帧：`scorpion-参考帧-1/2/3.png`（teardown 仓库官方 docs/scorpion.gif 抽帧，操作台布局与机器形态的基准）
 - 真机参考 2 张（构图与机构参照）：
-  - `scorpion-机器人实拍-乌克兰IASER八足蝎机器人.jpg` —— https://commons.wikimedia.org/wiki/File:IASER_scorpion-robot_during_%27Nebo_2022%27_festival.jpg （VEX 伺服骨架：8 足 + 双钳 + 翘尾毒针，腿模块分对排布）
-  - `scorpion-机器人实拍-巨型机械蝎雕塑.jpg` —— https://commons.wikimedia.org/wiki/File:Scorpion_Robot_(498769883).jpg （LEGO NXT 蝎：双钳在前、8 足外张、尾链竖起）
+  - [scorpion-机器人实拍-乌克兰IASER八足蝎机器人.jpg](../../../../../tasks/scorpion/references/04-scorpion-机器人实拍-乌克兰IASER八足蝎机器人.jpg) —— https://commons.wikimedia.org/wiki/File:IASER_scorpion-robot_during_%27Nebo_2022%27_festival.jpg （VEX 伺服骨架：8 足 + 双钳 + 翘尾毒针，腿模块分对排布）
+  - [scorpion-机器人实拍-巨型机械蝎雕塑.jpg](../../../../../tasks/scorpion/references/05-scorpion-机器人实拍-巨型机械蝎雕塑.jpg) —— https://commons.wikimedia.org/wiki/File:Scorpion_Robot_(498769883).jpg （LEGO NXT 蝎：双钳在前、8 足外张、尾链竖起）
 - 本复刻为 teardown 方法的自设机械（纯函数模型），尺寸除标注外为 guess（桌面尺度自洽设计）。
 
 ## 机器设定

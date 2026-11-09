@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-08",
+  "model": "Minimax-M3.1-Flash",
+  "engine": "Electron 内置浏览器（FilePanel）/ Chromium",
+  "note": "本机 bash 沙箱内无法启动 Playwright Chromium（Mach bootstrap 权限被拒），网页检查改用会话内置浏览器完成；离线影片由自研软件光栅化器渲染，不经过浏览器。",
+  "url": "file:///.../series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/index.html",
+  "checks": [
+    "离线 file:// 直接打开，无网络依赖（three.js 已内联）",
+    "模型渲染成功，69 装配 / 113 视觉分件全部创建",
+    "控制台无脚本错误（仅 three.js 的 PCFSoftShadowMap 弃用提示）",
+    "时间轴可拖动，URL 锚点 #t=<秒>&film=1 可复现同一帧与机位",
+    "影片机位模式下 7 个镜头按 src/shots.mjs 的关键帧切换",
+    "巡览页 film.html 可播放，HUD 显示镜头名与时间码",
+    "车辆形态（t=0）与机器人形态（t=11）轮廓可读，胸甲/头雕/翼/四肢到位",
+    "灰模与系统分色开关生效",
+    "拆解滑杆生效（装配按中心推开）",
+    "点击模型可选中装配并在装配树中高亮",
+    "窄视口下相机按当前包围盒重新取景，不切掉主体"
+  ],
+  "errors": [],
+  "fixed_during_qa": [
+    "film.html 首次检查报 TypeError：film.js 引用了模板中不存在的 #bar 元素，巡览页渲染中断；改为用 scrub 滑杆本身做进度指示后复检通过"
+  ],
+  "known_limits": [
+    "内置浏览器视口宽度受限，无法出 1920 宽的网页截图；网页截图只作结构检查，不作发布素材",
+    "未做跨 GPU 逐像素比对",
+    "网页 three.js 渲染与离线软件光栅化的光照与背景不同，属于两条不同的着色路径，形状与镜头一致"
+  ]
+}

@@ -19,11 +19,11 @@ https://github.com/topmindspace/awesome-ai-recreations
 
 也可以说「复刻 V8 发动机」或「复刻 2007 电影版擎天柱」，并附上模型、交付格式等要求。Agent 会按 [AGENTS.md](AGENTS.md) 查找共同任务和原始参考，自行实现并验证；无需手动查案例 ID、挑选旧版本或整理提示词。默认对齐参考、独立实现；如需修改某个已有版本，请直接说明。
 
-部分参考媒体因发布限制需要按清单自行获取；严格对比多个 Agent 时，应向各方提供相同的完整输入包。具体操作见[快速开始](docs/快速开始.md)和[共同输入与资源](docs/共同输入与资源.md)。
+同条件比较时，组织者核验完整输入包，交给每位 Agent 同一份文件和同样的附加指示。部分参考需按清单本地取得。具体操作见[快速开始](docs/快速开始.md)和[共同输入与资源](docs/共同输入与资源.md)。
 
 ## 案例展示
 
-目前有 **11 个案例、18 个实现版本**。点击「互动」操作作品，点击「巡览」观看自动演示。截图来自对应案例的已有作品；同一案例的其他模型版本列在右侧。
+目前有 **11 个案例、20 个实现版本**。点击「互动」操作作品，点击「巡览」观看自动演示。截图来自对应案例的已有作品；同一案例的其他模型版本列在右侧。
 
 ### 机械复刻系列
 
@@ -44,7 +44,7 @@ https://github.com/topmindspace/awesome-ai-recreations
 | 截图 | 案例介绍 | 在线演示 |
 |---|---|---|
 | <img src="series/变形金刚系列/01-擎天柱-电影版/stills/03-英雄亮相.jpg" width="160" alt="擎天柱·2007真人电影版截图"><br><sub>截图：GPT-6.1 Sol</sub> | **擎天柱·2007真人电影版**<br>2007 真人电影版擎天柱：卡车与人形变换、局部展开和拆解重组。 | GPT-6.1 Sol：[互动](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/01-擎天柱-电影版/index.html) · [巡览](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/01-擎天柱-电影版/film.html)<br>HY4：[互动](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/hy4/optimus-prime-2007/index.html) · [巡览](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/hy4/optimus-prime-2007/film.html)<br>GLM 5.3-Flash：[互动](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/index.html) · [巡览](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/glm-5.3-flash/optimus-prime-2007/film.html) |
-| <img src="series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007/stills/hero.jpg" width="160" alt="大黄蜂程序化研究截图"><br><sub>截图：GPT-6.1 Sol / Cycles</sub> | **大黄蜂·2007真人电影版**<br>独立程序化外观研究，包含连续车形／人形变换、面罩与同源电影短片。 | GPT-6.1 Sol：[互动](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007/index.html) · [巡览](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007/film.html) · [重建与本地视频](series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007/README.md) |
+| <img src="series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/assets/大黄蜂-人形.png" width="160" alt="Kimi-K3.1-Pro 大黄蜂程序化研究截图"><br><sub>截图：Kimi-K3.1-Pro / WebGL</sub> | **大黄蜂·2007真人电影版**<br>独立程序化外观研究，包含连续车形／人形变换、面罩与同源电影短片。 | GPT-6.1 Sol：[互动](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007/index.html) · [巡览](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007/film.html)<br>MiniMax-M3.1-Flash：[互动](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/index.html) · [巡览](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/film.html)<br>Kimi-K3.1-Pro：[互动](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/index.html) · [巡览](https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/film.html) · [重建与本地视频](series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/README.md) |
 
 案例的源码、参考、规格与模型版本说明见[机械系列](series/机械复刻系列/README.md)和[变形金刚系列](series/变形金刚系列/README.md)。
 

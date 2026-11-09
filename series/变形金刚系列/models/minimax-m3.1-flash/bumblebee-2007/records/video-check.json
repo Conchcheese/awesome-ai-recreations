@@ -1,0 +1,38 @@
+{
+  "file": "artifacts/大黄蜂-2007-复刻短片.mp4",
+  "bytes": 9315794,
+  "container": "mov,mp4,m4a,3gp,3g2,mj2",
+  "duration": 20.0,
+  "fps": 24.0,
+  "resolution": [
+    1280,
+    720
+  ],
+  "video_codec": "h264",
+  "pixel_format": "yuv420p",
+  "nb_frames": 480,
+  "decoded_frames": 480,
+  "audio": [
+    {
+      "codec": "aac",
+      "channels": 2,
+      "sample_rate": "48000",
+      "duration": "20.000000"
+    }
+  ],
+  "levels": {
+    "mean": 71.36857604980469,
+    "min": 56.59977340698242,
+    "max": 123.5066146850586,
+    "p01": 56.679141998291016,
+    "p99": 119.09927368164062
+  },
+  "black_frames": [],
+  "frozen_frames": [
+    1,
+    192,
+    227
+  ],
+  "errors": [],
+  "warnings": []
+}

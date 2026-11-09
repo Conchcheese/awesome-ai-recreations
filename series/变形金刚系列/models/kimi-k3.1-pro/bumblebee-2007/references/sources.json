@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "mediaDistribution": "local-only",
+  "inputVersion": 1,
+  "inputPack": "local/input-packs/bumblebee-kimi-k3.1-pro",
+  "inputPackSha256": "bf443a4eaf97c9690e4817338cb50a60c14324f5ddd06a98702cda49a8d9c53c",
+  "sources": [
+    {
+      "file": "local/mpm-3-01.jpg",
+      "sourceUrl": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-3_01.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-3",
+      "sha256": "93780d650a2703cabf52b50a47e519279dc8c89cbe130c370d5f7a503f8943c5",
+      "width": 1460,
+      "height": 1000,
+      "rights": "TOMY / Hasbro / film licensors; local research only; redistribution permission not established",
+      "evidence": "licensed-product-supplement; robot exterior; not a film frame"
+    },
+    {
+      "file": "local/mpm-3-02.jpg",
+      "sourceUrl": "https://tf.takaratomy.co.jp/wordpress/wp-content/themes/tf_2025/img/products/tf_mpm/item_tf_mpm-3_02.jpg",
+      "sourcePage": "https://tf.takaratomy.co.jp/products-lineup/tf_archive_cat/tf_mpm/mpm-3",
+      "sha256": "9e37a22fac14fcb53db99222d9b70a66379e46432a245d692fc6a700577d5951",
+      "width": 1460,
+      "height": 1000,
+      "rights": "TOMY / Hasbro / film licensors; local research only; redistribution permission not established",
+      "evidence": "licensed-product-supplement; Camaro exterior; not a film frame"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "file": "artifacts/大黄蜂-2007-Kimi-K3.1-Pro.mp4",
+  "sha256": "5de2705c210b74fe73bf17ead838b47b475803733535448adfd91bed738efb67",
+  "bytes": 9035007,
+  "checks": {
+    "h264": true,
+    "1280x720": true,
+    "24fps": true,
+    "480_frames": true,
+    "20_seconds": true,
+    "aac_stereo_48khz": true,
+    "complete_decode": true,
+    "no_detected_black_interval": true
+  },
+  "blackEvents": [],
+  "volume": [
+    "[Parsed_volumedetect_0 @ 0x7bd5038a80] mean_volume: -29.2 dB",
+    "[Parsed_volumedetect_0 @ 0x7bd5038a80] max_volume: -15.0 dB"
+  ],
+  "contactSheet": "assets/大黄蜂-影片接触表.jpg",
+  "limits": "Automated media checks do not replace visual review, listening, collision or fidelity assessment."
+}

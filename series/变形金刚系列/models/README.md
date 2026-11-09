@@ -7,10 +7,12 @@
 | GPT-6.1 Sol | 擎天柱、大黄蜂 | [版本说明](gpt-6.1-sol/README.md) |
 | HY4 | 擎天柱 | [版本说明](hy4/README.md) |
 | GLM-5.3-Flash | 擎天柱 | [版本说明](glm-5.3-flash/README.md) |
+| Minimax-M3.1-Flash | 大黄蜂 | [版本说明](minimax-m3.1-flash/README.md) |
+| Kimi-K3.1-Pro | 大黄蜂 | [版本说明](kimi-k3.1-pro/README.md) |
 
 ```text
 series/变形金刚系列/
-  characters/                 # 跨模型共享的参考入口与结构候选
+  characters/                 # 来源入口与结构研究候选
   references/                 # 有来源说明的参考研究板
   models/
     gpt-6.1-sol/
@@ -18,12 +20,14 @@ series/变形金刚系列/
       bumblebee-2007/        # 大黄蜂实现
     hy4/optimus-prime-2007/
     glm-5.3-flash/optimus-prime-2007/
-  experiments/<case-id>/     # 未登记的研究草稿
+    minimax-m3.1-flash/bumblebee-2007/
+    kimi-k3.1-pro/bumblebee-2007/
+  local/                     # 忽略目录，存未登记研究草稿
   01-擎天柱-电影版/          # 既有作品的实际目录与稳定链接
   templates/、tools/          # 可复用契约与脚手架
 ```
 
-新实现放在 `models/<model-slug>/<case-id>/`，分别保存 README、源码、规格、记录与构建结果。模型目录采用小写名称，例如 `gpt-6.1-sol`。目录名和 CLI 的版本 ID 分开登记，例如大黄蜂的版本 ID 是 `gpt-6-1-sol`。可以用 `tools/characters.py start` 起研究草稿，成果具备运行与验证证据后再进入模型目录并登记。维护入口见[贡献指南](../../../CONTRIBUTING.md)。
+新实现放在 `models/<model-slug>/<case-id>/`，分别保存 README、源码、必要的规格、验收摘要与正式交付。模型目录采用小写名称，例如 `gpt-6.1-sol`。目录名和 CLI 的版本 ID 分开登记，例如大黄蜂的版本 ID 是 `gpt-6-1-sol`。可以用 `tools/characters.py start` 起研究草稿，成果具备运行与验证证据后再进入模型目录并登记。维护入口见[贡献指南](../../../CONTRIBUTING.md)。
 
 独立复刻只使用任务书允许的原始参考，声明 `independent`。复用已有实现时声明 `derived` 并注明来源。成果记录分开填写模型名称、精确模型 ID、执行工具和视觉目标，无法确认的字段标为未知。
 

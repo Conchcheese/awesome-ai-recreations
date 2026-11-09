@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "bumblebee-2007",
   "title": "大黄蜂·2007真人电影版",
   "aliases": [
@@ -8,17 +8,17 @@
     "2007大黄蜂"
   ],
   "series": "transformers",
-  "input_version": 1,
+  "input_version": 2,
   "status": "ready",
   "brief": "tasks/bumblebee-2007/brief.md",
-  "method": "docs/精细复刻流程.md",
-  "resources": "docs/共同输入与资源.md",
-  "source_notes": "docs/参考素材与许可.md",
+  "method": "tasks/_shared/制作与验收.md",
+  "resources": "tasks/_shared/执行边界.md",
+  "source_notes": "tasks/_shared/原始参考.md",
   "defaults": {
     "visual_goal": "fidelity",
     "provenance": "independent"
   },
-  "notes": "官方MPM-3两张外观补充图；未取得电影原帧，不证明隐藏机构或电影准确性。允许按官方原始来源补充资料并记录输入变化。",
+  "notes": "两张官方 MPM-3 产品图用于外观对照；电影时序、隐藏机构、绝对尺寸与其他未见角度记为未知。追加参考须按共同输入变更登记。",
   "references": [
     {
       "path": "tasks/bumblebee-2007/references/local/mpm-3-01.jpg",

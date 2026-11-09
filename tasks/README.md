@@ -1,31 +1,22 @@
 # 共同复刻任务
 
-这里保存全仓统一输入，不保存任何智能体的实现。任务可以先于成果存在：就绪任务登记到 index.json 后即可被 catalog recreate 发现，尚无成果时不增加已实现作品。
+任务可以独立于成果发布。每个案例以任务书定义目标和验收，以输入清单固定原始参考。通用方法与执行边界放在 [_shared](_shared/)，由输入锁一起校验。
 
-| 每个 tasks/<case-id>/ | 内容 |
+| 系列 | 共同任务 |
 |---|---|
-| brief.md | 需求、目标、验收要求与通用思路；不预写具体实现答案 |
-| input.json | 身份、输入版本、允许资源、参考范围、来源完整度与每个原始文件的摘要 |
-| references/ | 各案例一致的原始媒体；不放输出、测量、截图对照或代码 |
-| references/local/ | 原片等不随 Git 发布的媒体；公开来源清单，缺失时不可宣称输入齐全 |
-
-`index.json` 是全部就绪任务的索引；根 `catalog.json` 只登记成果及对应 task_manifest。旧参考位置为兼容旧作品链接保留，不再作为新任务的输入。
-
-从仓库根目录运行：
+| 机械 | [机械章鱼](oc8/brief.md) · [V8 发动机](v8/brief.md) · [塞斯纳 337](cessna337/brief.md) · [海滩兽](strandbeest/brief.md) · [仿生沙虫](sandworm/brief.md) · [机械水母](jellyfish/brief.md) · [六足机器人](hexapod/brief.md) · [机械蜜蜂](bee/brief.md) · [机械蝎子](scorpion/brief.md) |
+| 变形金刚 | [擎天柱 2007](optimus-prime-2007/brief.md) · [大黄蜂 2007](bumblebee-2007/brief.md) |
 
 ```bash
-python3 scripts/catalog.py recreate oc8 --export local/input-packs/oc8
-python3 scripts/catalog.py show oc8 --variant gpt-6-1-sol
+python3 scripts/catalog.py list --tasks
+python3 scripts/catalog.py recreate oc8 --export local/input-packs/oc8-v2 --require-complete
+python3 scripts/catalog.py verify local/input-packs/oc8-v2
 ```
 
-第一条交付一致输入，第二条运行既有成果。导出只复制任务白名单、共同方法、空白模板与原始媒体，不递归目录、不读取已有代码。
+`index.json` 登记已就绪的任务；`inputs.lock.json` 锁定其版本和文件摘要。各案例的 `references/local/` 供本地取材。缺少参考时先按清单补齐，再向每位执行者分发同一完整输入包。已有实现放在 [series](../series/)。
 
-## 增加任务或成果
+## 历史输入
 
-1. 复制 templates/task-input.json 为新任务 input.json，按同目录模板填写 brief.md，补齐原始参考和摘要。未就绪草稿不要登记。
-2. 任务就绪后登记 tasks/index.json；即使尚无模型实现，也可以开始复刻。运行仓库检查。
-3. 把同一冻结输入包交给执行者，只提供独立输出目录和允许资源。每个实现自行建立规格、结构、参数和过程。
-4. 有可运行成果后再在 catalog.json 登记案例与版本，指回同一 task_manifest；更新首页、系列索引与 NOTICE。
-5. 输入改变时增加 input_version，并保存旧输入包；新结果记录实际包摘要，不能把新标准套到旧结果上。
+当前 11 个任务使用 v2 通用说明。v1 的任务清单、通用文档与导出工具可从提交 `b231b6c0c84303da6158fe7a0278a4149560f66a` 恢复。原始媒体继续按历史清单的 SHA-256 核对，本地留存的旧输入包按各成果记录识别。新成果引用实际使用的版本，历史记录沿用当时条件。
 
-各历史实现未必采用当前任务包；其真实输入和过程以原有记录为准，不补写成已经在相同条件下完成。
+[共同输入与资源](../docs/共同输入与资源.md) · [新增任务](../CONTRIBUTING.md#新增或修订任务) · [作品首页](../README.md)

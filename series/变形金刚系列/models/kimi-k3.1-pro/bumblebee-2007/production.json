@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "status": "study",
+  "character": {"id": "bumblebee-2007", "title": "大黄蜂", "edition": "Transformers (2007)"},
+  "model": "Kimi-K3.1-Pro",
+  "provenance": "independent",
+  "visualGoal": "fidelity",
+  "paths": {"references": "references/sources.json", "assemblies": "records/assembly-catalog.json", "source": "src", "web": "index.html", "film": "film.html"},
+  "rig": {
+    "rootId": "scene-root",
+    "requiredPorts": ["head", "torso", "left_hand", "right_hand", "left_foot", "right_foot"],
+    "ports": {"head": "head-cranium", "torso": "front-fascia", "left_hand": "hand-left", "right_hand": "hand-right", "left_foot": "foot-left", "right_foot": "foot-right"}
+  },
+  "timeline": {
+    "sourceDuration": 20,
+    "fps": 24,
+    "transform": [3, 9],
+    "movieDuration": 20,
+    "edit": [
+      {"in": 0, "out": 3, "sourceIn": 0, "sourceOut": 3, "purpose": "vehicle"},
+      {"in": 3, "out": 9, "sourceIn": 3, "sourceOut": 9, "purpose": "transformation"},
+      {"in": 9, "out": 12, "sourceIn": 9, "sourceOut": 12, "purpose": "hero"},
+      {"in": 12, "out": 15, "sourceIn": 12, "sourceOut": 15, "purpose": "head-chest"},
+      {"in": 15, "out": 18, "sourceIn": 15, "sourceOut": 18, "purpose": "exploded"},
+      {"in": 18, "out": 20, "sourceIn": 18, "sourceOut": 20, "purpose": "final"}
+    ]
+  },
+  "unknown": ["电影原帧与背面测量", "真实世界尺寸", "电影隐藏机构与碰撞", "完整实体可制造性", "GLB / Blend 导出"]
+}

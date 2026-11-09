@@ -1,9 +1,9 @@
 # 机械水母 MJ-9 · 参考规格（spec）
 
-参考图（同目录）：
-- `Festo-AquaJelly-特写-正面.jpg` —— 主参考。Festo AquaJelly（2008，Bionic Learning Network）：透明半球钟罩，钟顶一块白色圆环形极板；钟罩下是灰白色耐压舱（圆柱、带端盖螺钉）；8 条聚碳酸酯触须沿钟缘分布，每条是一串半透明链节、节间夹白色 LED 方块，须端带叶状鳍片；舱体外侧 4 片竖直定位鳍。
-- `Festo-AquaJelly-三台编队巡游.jpg` —— 编队视角：能看到钟缘一圈 8 根短刚骨架 + 触须拖尾姿态，水面反光下钟体接近透明。
-- `弗吉尼亚理工-RoboJelly-水槽测试.png` —— Virginia Tech RoboJelly 水槽测试（帧抓）：钟体分段式、收缩时钟口内收、带拖缆。取其"收缩-舒张"脉动姿态与裙边内收形态。
+参考图（原始参考见共同任务）：
+- [Festo-AquaJelly-特写-正面.jpg](../../../../../tasks/jellyfish/references/02-Festo-AquaJelly-特写-正面.jpg) —— 主参考。Festo AquaJelly（2008，Bionic Learning Network）：透明半球钟罩，钟顶一块白色圆环形极板；钟罩下是灰白色耐压舱（圆柱、带端盖螺钉）；8 条聚碳酸酯触须沿钟缘分布，每条是一串半透明链节、节间夹白色 LED 方块，须端带叶状鳍片；舱体外侧 4 片竖直定位鳍。
+- [Festo-AquaJelly-三台编队巡游.jpg](../../../../../tasks/jellyfish/references/01-Festo-AquaJelly-三台编队巡游.jpg) —— 编队视角：能看到钟缘一圈 8 根短刚骨架 + 触须拖尾姿态，水面反光下钟体接近透明。
+- [弗吉尼亚理工-RoboJelly-水槽测试.png](../../../../../tasks/jellyfish/references/03-弗吉尼亚理工-RoboJelly-水槽测试.png) —— Virginia Tech RoboJelly 水槽测试（帧抓）：钟体分段式、收缩时钟口内收、带拖缆。取其"收缩-舒张"脉动姿态与裙边内收形态。
 
 ## 部件表（与几何文件对应）
 

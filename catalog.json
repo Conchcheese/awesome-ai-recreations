@@ -957,6 +957,162 @@
           "movie": "series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007/artifacts/大黄蜂-2007-电影短片.mp4",
           "online_live": "https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007/index.html",
           "online_film": "https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/gpt-6.1-sol/bumblebee-2007/film.html"
+        },
+        {
+          "id": "minimax-m3-1-flash",
+          "model_label": "Minimax-M3.1-Flash（MCode 会话；会话未暴露可独立核验的精确快照 ID）",
+          "provenance": "independent",
+          "visual_goal": "fidelity",
+          "readme": "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/README.md",
+          "live": "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/index.html",
+          "film": "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/film.html",
+          "source": "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/src",
+          "spec": "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/spec.md",
+          "record": "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/records/实现与验证.md",
+          "references": [
+            "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/references"
+          ],
+          "cwd": "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007",
+          "commands": {
+            "build": [
+              [
+                "node",
+                "tools/build.mjs"
+              ],
+              [
+                "node",
+                "tools/export.mjs"
+              ]
+            ],
+            "check": [
+              [
+                "node",
+                "tools/check.mjs"
+              ],
+              [
+                "python3",
+                "tools/contract-check.py"
+              ]
+            ],
+            "stills": [
+              [
+                "python3",
+                "tools/stills.py"
+              ]
+            ],
+            "sound": [
+              [
+                "python3",
+                "tools/sound.py"
+              ]
+            ],
+            "video": [
+              [
+                "python3",
+                "tools/render/render_film.py",
+                "--scene",
+                "artifacts/scene",
+                "--out-dir",
+                "artifacts/frames",
+                "--out-mp4",
+                "artifacts/大黄蜂-2007-复刻短片.mp4",
+                "--workers",
+                "8",
+                "--ss",
+                "2",
+                "--grain",
+                "0.012"
+              ]
+            ],
+            "video-check": [
+              [
+                "python3",
+                "tools/video-check.py",
+                "artifacts/大黄蜂-2007-复刻短片.mp4",
+                "--expect-frames",
+                "480"
+              ]
+            ]
+          },
+          "build_outputs": [
+            "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/index.html",
+            "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/film.html"
+          ],
+          "notes": "独立程序化复刻，仅使用任务书允许的 2 张 TOMY MPM-3 官方产品图；69 装配 / 113 视觉分件 / 约 5400 三角形，同源模型驱动网页、GLB 与离线短片。本机沙箱无法启动 Chromium，短片由自研软件光栅化器逐帧渲染同源几何（非网页录屏、非路径追踪），音轨为程序合成，无采样。变形机构、镜头与时序均为推演与展示设计，未取得电影原帧，未做碰撞与承重验证；视频、逐帧与工具缓存留在 artifacts，不自动发布。",
+          "movie": "series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/artifacts/大黄蜂-2007-复刻短片.mp4",
+          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/index.html",
+          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/minimax-m3.1-flash/bumblebee-2007/film.html"
+        },
+        {
+          "id": "kimi-k3-1-pro",
+          "model_label": "Kimi-K3.1-Pro（WorkBuddy 会话执行）",
+          "provenance": "independent",
+          "visual_goal": "fidelity",
+          "readme": "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/README.md",
+          "live": "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/index.html",
+          "film": "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/film.html",
+          "source": "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/src",
+          "spec": "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/spec.md",
+          "record": "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/records/实现与验证.md",
+          "references": [
+            "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/references"
+          ],
+          "cwd": "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007",
+          "commands": {
+            "build": [
+              [
+                "node",
+                "tools/build.mjs"
+              ],
+              [
+                "node",
+                "tools/export-contract.mjs"
+              ]
+            ],
+            "check": [
+              [
+                "node",
+                "tools/check-model.mjs"
+              ],
+              [
+                "python3",
+                "../../../../../scripts/check_transformer_contract.py",
+                "production.json",
+                "--require-ready"
+              ]
+            ],
+            "qa": [
+              [
+                "node",
+                "tools/capture.mjs"
+              ]
+            ],
+            "video": [
+              [
+                "node",
+                "tools/render-video.mjs"
+              ]
+            ],
+            "video-check": [
+              [
+                "python3",
+                "tools/video-check.py"
+              ],
+              [
+                "node",
+                "tools/playback-check.mjs"
+              ]
+            ]
+          },
+          "build_outputs": [
+            "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/index.html",
+            "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/film.html"
+          ],
+          "notes": "Kimi-K3.1-Pro 独立程序化复刻；冻结输入为2张TOMY MPM-3官方产品图。47装配/274视觉网格，同源Three.js双形态、连续变形、灰模与分层展开。20秒/24fps/1280×720 WebGL逐帧影片，480帧、原创48kHz双声道音轨；已做完整解码、黑帧、电平和本机Chrome完整播放验收。隐藏机构与动作路径为推断/展示设计；无电影原帧测量、碰撞、GLB/Blend或Cycles。视频与音轨留artifacts，不自动发布。",
+          "movie": "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/artifacts/大黄蜂-2007-Kimi-K3.1-Pro.mp4",
+          "score": "series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/artifacts/大黄蜂-原创音轨.wav",
+          "online_live": "https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/index.html",
+          "online_film": "https://topmindspace.github.io/awesome-ai-recreations/series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/film.html"
         }
       ],
       "task_manifest": "tasks/bumblebee-2007/input.json"

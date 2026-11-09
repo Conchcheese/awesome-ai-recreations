@@ -1,11 +1,11 @@
 # 仿生沙虫 MK-X · 复刻规格书
 
-参考图（同目录）：
-- `沙虫-参考-电影剧照2021.jpg` — 《沙丘》2021 电影剧照（Wikimedia Commons，File:Dune 2021-Sandworm.jpg）：
+参考图（原始参考见共同任务）：
+- [沙虫-参考-电影剧照2021.jpg](../../../../../tasks/sandworm/references/03-沙虫-参考-电影剧照2021.jpg) — 《沙丘》2021 电影剧照（Wikimedia Commons，File:Dune 2021-Sandworm.jpg）：
   圆形巨口，数十根针齿向圆心辐射，体壁分节环清晰 → **颚环 + 针齿数量 frame**。
-- `沙虫-参考-概念图.png` — 沙虫概念图（Wikimedia Commons，File:Sandworm of Dune, Midjourney by Vishchun.png）：
+- [沙虫-参考-概念图.png](../../../../../tasks/sandworm/references/01-沙虫-参考-概念图.png) — 沙虫概念图（Wikimedia Commons，File:Sandworm of Dune, Midjourney by Vishchun.png）：
   全身环状分节（annulus），体表一圈圈棱环，弧线钻出沙面 → **环段数 / 棱环纹理 frame**。
-- `沙虫-参考-沙面钻出.png` — 沙面钻出图（Wikimedia Commons，File:Dune Sandworm.png）：
+- [沙虫-参考-沙面钻出.png](../../../../../tasks/sandworm/references/02-沙虫-参考-沙面钻出.png) — 沙面钻出图（Wikimedia Commons，File:Dune Sandworm.png）：
   头段破沙而出的沙脊形态、喷溅的沙粒 → **沙脊 / 头部隆包 frame**。
 
 ## 原作设定 → 桌面缩放

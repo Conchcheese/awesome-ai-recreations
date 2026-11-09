@@ -1,6 +1,6 @@
 # 塞斯纳 337 起落架（主起落架收放机构）— 造型规格
 
-来源：teardown 示例 `cessna-*`（复刻基底，结构不改），参考图 `塞斯纳337-参考-实机照片.jpg`
+来源：teardown 示例 `cessna-*`（复刻基底，结构不改），参考图 [塞斯纳337-参考-实机照片.jpg](../../../../../tasks/cessna337/references/01-塞斯纳337-参考-实机照片.jpg)
 （Cessna 337 实机照片，Wikimedia Commons 2537×1573）。
 每个数字标注来源：`code`（gear.js/flight.js 代码实值）| `ref`（真实飞机公开数据/文章手算）| `guess`（估算）。
 
