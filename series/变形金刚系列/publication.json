@@ -5,6 +5,18 @@
   "releaseMediaPolicy": "The original 28-second rendered MP4 is a GitHub Release asset, excluded from Git history. No sampled film audio.",
   "assets": [
     {
+      "path": "cases/optimus-prime-2007/models/gpt-6-2-sol/stills/余烬信号-剧照.jpg",
+      "sha256": "22a7e76ef169f743f34bf79590aeba00d78b00ce31a9bca0eaefbd25d0ea1120",
+      "kind": "self-render",
+      "rights": "Original GPT-6.2 Sol study render; character and film design rights remain with their respective owners."
+    },
+    {
+      "path": "cases/bumblebee-2007/models/gpt-6-2-sol/stills/午夜回波-剧照.jpg",
+      "sha256": "c582e22fd142d920accf5c485889fd86fb3c78004b64a20ccb976712e5da4768",
+      "kind": "self-render",
+      "rights": "Original GPT-6.2 Sol study render; character and film design rights remain with their respective owners."
+    },
+    {
       "path": "cases/optimus-prime-2007/models/gpt-6-1-sol/assets/industrial_sunset_02_2k.hdr",
       "sha256": "79932a707cd0269e289638b181cdcaa13071556e0ec30ceadbf070da8bb457f8",
       "kind": "cc0-environment",

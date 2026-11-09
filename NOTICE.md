@@ -54,6 +54,10 @@
 
 ## 变形金刚系列
 
+### GPT-6.2 Sol 本地短片
+
+两部短片由 Codex 制作，模型署名由用户确认。公开版本说明与本轮渲染剧照，成片、Blender 工程及第三方参考原图存于本地。角色与影视设计权利归相应权利人。[擎天柱·余烬信号](cases/optimus-prime-2007/models/gpt-6-2-sol/README.md) · [大黄蜂·午夜回波](cases/bumblebee-2007/models/gpt-6-2-sol/README.md)
+
 ### 大黄蜂 · Kimi-K3.1-Pro 版本（2026-11-08）
 
 - 新增 `series/变形金刚系列/models/kimi-k3.1-pro/bumblebee-2007/`：47 装配 / 274 视觉网格的独立程序化复刻，页面与影片明确署名 Kimi-K3.1-Pro。

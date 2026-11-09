@@ -4,10 +4,10 @@
 
 ## 变形金刚
 
-| 案例 | 共同任务 | 已发布版本 |
+| 案例 | 共同任务 | 版本与交付 |
 |---|---|---|
-| [擎天柱·2007真人电影版](optimus-prime-2007/README.md) | [任务书](optimus-prime-2007/task/brief.md) · [清单](optimus-prime-2007/task/input.json) | 3 |
-| [大黄蜂·2007真人电影版](bumblebee-2007/README.md) | [任务书](bumblebee-2007/task/brief.md) · [清单](bumblebee-2007/task/input.json) | 3 |
+| [擎天柱·2007真人电影版](optimus-prime-2007/README.md) | [任务书](optimus-prime-2007/task/brief.md) · [清单](optimus-prime-2007/task/input.json) | 3 个在线版本 · [GPT-6.2 Sol 本地短片](optimus-prime-2007/models/gpt-6-2-sol/README.md) |
+| [大黄蜂·2007真人电影版](bumblebee-2007/README.md) | [任务书](bumblebee-2007/task/brief.md) · [清单](bumblebee-2007/task/input.json) | 3 个在线版本 · [GPT-6.2 Sol 本地短片](bumblebee-2007/models/gpt-6-2-sol/README.md) |
 
 ## 机械复刻
 
