@@ -235,6 +235,41 @@
           "notes": "基于 DeepSeek 实现改色和重写部分几何，不作为独立模型对照。 build 会覆盖本版本的交付 HTML。",
           "online_live": "https://topmindspace.github.io/awesome-ai-recreations/cases/oc8/models/hy-derived/index.html",
           "online_film": "https://topmindspace.github.io/awesome-ai-recreations/cases/oc8/models/hy-derived/film.html"
+        },
+        {
+          "id": "workbuddy",
+          "model_label": "WorkBuddy 会话（模型 Claude，Anthropic；用户监督验收）",
+          "provenance": "independent",
+          "visual_goal": "fidelity",
+          "readme": "cases/oc8/models/workbuddy/README.md",
+          "live": "cases/oc8/models/workbuddy/index.html",
+          "source": "cases/oc8/models/workbuddy/src",
+          "spec": "cases/oc8/models/workbuddy/src/spec.md",
+          "record": "cases/oc8/models/workbuddy/records/实现与验证.md",
+          "references": [
+            "cases/oc8/task/references"
+          ],
+          "cwd": "cases/oc8/models/workbuddy",
+          "commands": {
+            "build": [
+              [
+                "node",
+                "src/build.mjs"
+              ]
+            ],
+            "check": [
+              [
+                "node",
+                "src/check.mjs"
+              ]
+            ]
+          },
+          "build_outputs": [
+            "cases/oc8/models/workbuddy/index.html",
+            "cases/oc8/models/workbuddy/film.html"
+          ],
+          "notes": "单文件 three.js r148 程序化实现，无构建步骤；film.html 为 25s 自动巡览（复用互动页全局状态驱动）。颚部/虹吸动作未逐一复现，README 内照实标注。",
+          "film": "cases/oc8/models/workbuddy/film.html"
         }
       ],
       "task_manifest": "cases/oc8/task/input.json"

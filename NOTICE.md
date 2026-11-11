@@ -11,6 +11,7 @@
 | [DeepSeek](shared/mechanical/deepseek-kit/README.md) | OC-8 / V8 | 历史记录为独立重写；V8 参考上游结构、参数与节拍，使用相同第三方库 |
 | [HY 宝石蓝衍生版](cases/oc8/models/hy-derived/README.md) | OC-8 | 在 DeepSeek 实现上改色、重写腕足等部分几何；HUD、调度、构建链和断言沿用，不作为独立模型实验 |
 | [HY4 独立直出版](cases/oc8/models/hy4-direct/README.md) | OC-8 | 历史记录为依据参考帧和方法重写；第三方库共用不等于复用已有实现；HUD、配色、镜头属于设计改编 |
+| [WorkBuddy 版](cases/oc8/models/workbuddy/README.md) | OC-8 | 依据参考帧由 WorkBuddy 会话（Claude 模型，Anthropic）独立编写，用户监督验收；three.js r148 UMD 本地打包，无共享构建链 |
 
 模型名称沿用历史署名（HY4 / Tencent Hunyuan Hy、DeepSeek、GLM 5.3-Flash），完整精确模型 ID、工具调用与会话并未全部归档。不得由展示铭牌推断已验证身份。代码行/8-gram 相似度只能提供辅助信号，不能证明独立创作、模型来源或公平对照。
 

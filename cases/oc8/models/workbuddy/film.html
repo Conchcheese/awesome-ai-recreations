@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PELAGOS OC-8 · 自动巡览</title>
+<style>
+  :root{
+    --ink:#2b2926; --dim:#8a8378; --line:#ddd6c9; --acc:#e8541e; --acc2:#3f9e63;
+    --panel:#fbf9f4;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:100%;height:100%;overflow:hidden;background:#f2efe8;
+    font-family:"JetBrains Mono",Consolas,"Microsoft YaHei",ui-monospace,monospace;color:var(--ink)}
+  canvas{display:block}
+  .hud{position:fixed;pointer-events:none;user-select:none}
+  /* ---------- 顶部栏 ---------- */
+  #topbar{top:0;left:0;right:0;height:58px;display:flex;align-items:center;gap:18px;
+    padding:0 20px;border-bottom:1px solid var(--line);background:rgba(251,249,244,.82);backdrop-filter:blur(4px)}
+  .logo{width:38px;height:38px;border:2px solid var(--acc);border-radius:50%;display:flex;
+    align-items:center;justify-content:center;color:var(--acc);font-weight:700;font-size:15px}
+  .title{font-size:20px;font-weight:700;letter-spacing:.05em}
+  .title small{font-size:10px;color:var(--dim);font-weight:400;letter-spacing:.18em;display:block;margin-top:2px}
+  .tblock{font-size:9px;color:var(--dim);letter-spacing:.14em;line-height:1.5}
+  .tblock b{display:block;color:var(--ink);font-size:12px;font-weight:600}
+  .loadwrap{flex:1;max-width:420px}
+  .loadlbl{display:flex;justify-content:space-between;font-size:9px;color:var(--dim);letter-spacing:.14em}
+  .loadlbl b{color:var(--acc);font-size:11px}
+  .loadbar{height:9px;margin-top:3px;display:flex;gap:2px}
+  .loadbar i{flex:1;background:#e5dfd2;border-radius:1px}
+  .loadbar i.on{background:var(--ink)}
+  .loadbar i.acc{background:var(--acc)}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--acc);display:inline-block;margin-right:6px;
+    animation:blink 1.2s infinite}
+  @keyframes blink{50%{opacity:.25}}
+  /* ---------- 左侧面板 ---------- */
+  .panel{background:var(--panel);border:1px solid var(--line);padding:10px 12px;width:190px}
+  .panel h4{font-size:9px;color:var(--dim);letter-spacing:.16em;font-weight:600;margin-bottom:8px;
+    display:flex;justify-content:space-between}
+  .panel h4 em{font-style:normal;color:var(--acc)}
+  #leftcol{left:20px;top:78px;display:flex;flex-direction:column;gap:10px}
+  .big{font-size:26px;font-weight:700;line-height:1}
+  .big small{font-size:11px;color:var(--dim);font-weight:400}
+  .kv{display:flex;justify-content:space-between;font-size:10px;line-height:1.9;color:var(--dim)}
+  .kv b{color:var(--ink);font-weight:600}
+  .segbar{height:8px;display:flex;gap:2px;margin:4px 0}
+  .segbar i{flex:1;background:#e5dfd2}
+  .segbar i.on{background:var(--acc2)}
+  .curlrow{display:flex;align-items:center;gap:6px;font-size:9px;line-height:1.9;color:var(--dim)}
+  .curlrow .nm{width:20px}
+  .curlrow .bar{flex:1;height:5px;background:#e5dfd2;position:relative}
+  .curlrow .bar b{position:absolute;left:0;top:0;bottom:0;background:var(--acc)}
+  .curlrow .pc{width:32px;text-align:right;color:var(--ink)}
+  /* ---------- 右侧面板 ---------- */
+  #rightcol{right:20px;top:78px;display:flex;flex-direction:column;gap:10px;width:200px}
+  .chip{font-size:8.5px;letter-spacing:.08em;padding:3px 7px;border:1px solid var(--line);
+    border-radius:2px;color:var(--dim);background:#fff}
+  .chip.on{background:var(--acc);border-color:var(--acc);color:#fff}
+  .chip.g{background:var(--acc2);border-color:var(--acc2);color:#fff}
+  .chiprow{display:flex;flex-wrap:wrap;gap:4px}
+  .sysrow{display:flex;justify-content:space-between;align-items:center;font-size:9px;line-height:2.1;color:var(--dim)}
+  .sysrow .nm{color:var(--ink)}
+  .sysrow .nm small{color:var(--dim);font-size:8px;display:block;line-height:1.2}
+  /* ---------- 底部 ---------- */
+  #bottombar{left:20px;right:20px;bottom:14px;height:64px;border:1px solid var(--line);
+    background:rgba(251,249,244,.85);backdrop-filter:blur(4px);display:flex;align-items:center;padding:0 18px;gap:16px}
+  .oplog{font-size:9px;color:var(--dim);letter-spacing:.14em;line-height:1.7;min-width:220px}
+  .oplog b{color:var(--acc);letter-spacing:.2em;font-size:10px}
+  .timeline{flex:1;position:relative;height:22px}
+  .timeline .rail{position:absolute;top:10px;left:0;right:0;height:2px;background:#ddd6c9}
+  .timeline .tick{position:absolute;top:7px;width:1px;height:8px;background:#c9c2b4}
+  .timeline .cursor{position:absolute;top:2px;width:2px;height:18px;background:var(--acc);transition:left .5s linear}
+  .btnrow{display:flex;gap:8px;pointer-events:auto}
+  button{font-family:inherit;font-size:11px;font-weight:600;letter-spacing:.1em;padding:8px 14px;
+    border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;border-radius:2px;
+    transition:all .15s}
+  button:hover{background:var(--ink);color:#fff}
+  button.hot{background:var(--acc);border-color:var(--acc);color:#fff}
+  button.hot:hover{background:#c94312}
+  button.on{background:var(--ink);color:#fff}
+  /* 模式标语 */
+  #modeTag{left:220px;bottom:92px;font-size:22px;font-weight:700;letter-spacing:.24em;color:var(--acc);
+    text-transform:uppercase;opacity:0;transition:opacity .4s}
+  #modeTag.show{opacity:1}
+  #modeTag small{display:block;font-size:9px;color:var(--dim);letter-spacing:.18em;font-weight:400;margin-top:3px}
+  #hint{right:20px;bottom:88px;font-size:9px;color:var(--dim);letter-spacing:.12em;text-align:right;line-height:1.8}
+</style>
+</head>
+<body>
+<div id="topbar" class="hud">
+  <div class="logo">🐙</div>
+  <div class="title">PELAGOS OC-8<small>软臂机械章鱼 · 复刻版 RECREATION</small></div>
+  <div class="loadwrap">
+    <div class="loadlbl"><span>喷射负载 JET LOAD</span><b id="v-load">0%</b></div>
+    <div class="loadbar" id="loadbar"></div>
+  </div>
+  <div class="tblock">SIM ID<b>OC8-0731</b></div>
+  <div class="tblock">运行时长<b id="v-run">00:00</b></div>
+  <div class="tblock"><span class="dot"></span>状态 STATUS<b id="v-status">喷射 JETTING</b></div>
+</div>
+
+<div id="leftcol" class="hud">
+  <div class="panel">
+    <h4>01 · 外套膜压力 <em>JET</em></h4>
+    <div class="big"><span id="v-kpa">76</span> <small>kPa</small></div>
+    <div class="kv"><span>推力</span><b><span id="v-thrust">172</span> N</b></div>
+    <div class="kv"><span>脉冲</span><b>1.8 HZ</b></div>
+  </div>
+  <div class="panel">
+    <h4>02 · 电力 <em>POWER</em></h4>
+    <div class="big"><span id="v-batt">87</span><small>%</small></div>
+    <div class="segbar" id="battbar"></div>
+    <div class="kv"><span>功耗</span><b><span id="v-watt">45.7</span> W</b></div>
+    <div class="kv"><span>电芯 / 电机</span><b>3.72 V / <span id="v-temp">22</span>°C</b></div>
+  </div>
+  <div class="panel">
+    <h4>03 · 臂卷曲 <em id="curlTag">TRAILING</em></h4>
+    <div id="curlrows"></div>
+  </div>
+</div>
+
+<div id="rightcol" class="hud">
+  <div class="panel">
+    <h4>04 · 深度 <em>DEPTH</em></h4>
+    <div class="kv"><span>深度</span><b><span id="v-depth">11.96</span> M</b></div>
+    <div class="kv"><span>垂速 / 速度</span><b><span id="v-vs">-0.54</span> / <span id="v-spd">2.87</span> M/S</b></div>
+    <div class="kv"><span>姿态</span><b><span id="v-pitch">-72.7</span>° PITCH</b></div>
+  </div>
+  <div class="panel">
+    <h4>05 · 部件 ISOLATE</h4>
+    <div class="chiprow">
+      <span class="chip on">HERO</span><span class="chip" id="c-optics">OPTICS</span>
+      <span class="chip" id="c-mantle">MANTLE</span><span class="chip">ARM R2</span>
+      <span class="chip">SIPHON</span><span class="chip">BEAK</span>
+    </div>
+  </div>
+  <div class="panel">
+    <h4>06 · 显示 DISPLAY</h4>
+    <div class="chiprow">
+      <span class="chip on">标签</span><span class="chip" id="c-explode">拆解</span>
+      <span class="chip on" id="c-wire2">实心</span><span class="chip on" id="c-turn">转台</span>
+    </div>
+  </div>
+  <div class="panel">
+    <h4>07 · 子系统 SUBSYSTEMS</h4>
+    <div class="sysrow"><span class="nm">光学阵列<small>Ø82 · 10 叶光圈 · 850NM</small></span><span class="chip g" id="s-optics">追踪</span></div>
+    <div class="sysrow"><span class="nm">泵核<small>反应环 · 7 活塞</small></span><span class="chip" id="s-pump">工作</span></div>
+    <div class="sysrow"><span class="nm">臂链<small>8 臂 · 25 节 · 玻璃连杆</small></span><span class="chip g" id="s-arms">8/8 在线</span></div>
+    <div class="sysrow"><span class="nm">虹吸<small>Ø38 · 6 瓣 · 涡轮</small></span><span class="chip" id="s-siphon">工作</span></div>
+    <div class="sysrow"><span class="nm">喙<small>齿舌环 · Ø90</small></span><span class="chip g" id="s-beak">密封</span></div>
+  </div>
+</div>
+
+<div id="bottombar" class="hud">
+  <div class="oplog">操作日志 OPERATION LOG<br><b id="v-op">首次接触 · 喷射辅助</b></div>
+  <div class="timeline" id="timeline">
+    <div class="rail"></div>
+    <div class="cursor" id="cursor"></div>
+  </div>
+  <div class="btnrow">
+    <button id="b-pulse" class="hot">起搏 ON</button>
+    <button id="b-explode">拆解 ARMOR</button>
+    <button id="b-wire">线框 WIRE</button>
+    <button id="b-turn" class="on">转台</button>
+    <button id="b-sound">声音</button>
+  </div>
+</div>
+
+<div id="modeTag" class="hud">JETTING<small>工作模式 · 1.8 HZ</small></div>
+<div id="hint" class="hud">拖动旋转 · 滚轮缩放<br>点击「拆解」看内部 · 起搏可让心跳停止</div>
+
+<script src="lib/three.min.js"></script>
+<script src="src/main.js"></script>
+
+<script>
+/* ===== 自动巡览：25s 一轮，时间轴 0/3.5/7.5/10/12.5/14.5/16/18.5/21.5 ===== */
+(function(){
+  const q = id => document.getElementById(id);
+  const badge = document.createElement('div');
+  badge.textContent = 'FILM · AUTO TOUR 25s';
+  badge.style.cssText = 'position:fixed;right:16px;bottom:14px;z-index:9;font-size:10px;letter-spacing:.2em;color:#e8541e;border:1px solid #e8541e;padding:4px 10px;border-radius:3px;background:rgba(251,249,244,.85)';
+  document.body.appendChild(badge);
+
+  const acts = [
+    [3.5,  () => q('b-explode').onclick()],
+    [7.5,  () => q('b-wire').onclick()],
+    [12.5, () => q('b-wire').onclick()],
+    [18.5, () => q('b-explode').onclick()],
+  ];
+
+  let ft = 0, last = performance.now();
+  const fired = {};
+
+  function frame(now){
+    const dt = Math.min((now - last) / 1000, 0.05); last = now;
+    const prevLap = Math.floor(ft / 25);
+    ft += dt;
+    const curLap = Math.floor(ft / 25);
+    const tt = ft % 25;
+    if (curLap !== prevLap) for (const k in fired) delete fired[k];
+
+    // 相机：连续环绕 + 特写段（14.5-18.5s）拉近抬角
+    orbit.az = 0.85 + tt * 0.075;
+    if (tt >= 14.5 && tt < 18.5) {
+      orbit.r += (11 - orbit.r) * 0.03;
+      orbit.el += (0.42 - orbit.el) * 0.03;
+    } else {
+      orbit.r += (25 - orbit.r) * 0.02;
+      orbit.el += (0.18 - orbit.el) * 0.02;
+    }
+
+    for (const [t0, fn] of acts){
+      const key = t0 + ':' + curLap;
+      if (tt >= t0 && tt < t0 + 0.4 && !fired[key]){ fired[key] = 1; fn(); }
+    }
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>

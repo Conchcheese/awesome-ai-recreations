@@ -6,7 +6,7 @@
 
 | 案例 | 共同任务 | 模型版本与交付 |
 |---|---|---|
-| [机械章鱼OC-8](../../cases/oc8/README.md) | [需求、目标与参考](../../cases/oc8/task/brief.md) | [GPT-6.1 Sol](../../cases/oc8/models/gpt-6-1-sol/README.md) · [DeepSeek](../../cases/oc8/models/deepseek/README.md) · [GLM 5.3-Flash](../../cases/oc8/models/glm-5-3-flash/README.md) · [HY4 直出版](../../cases/oc8/models/hy4-direct/README.md) · [HY 衍生版](../../cases/oc8/models/hy-derived/README.md) |
+| [机械章鱼OC-8](../../cases/oc8/README.md) | [需求、目标与参考](../../cases/oc8/task/brief.md) | [GPT-6.1 Sol](../../cases/oc8/models/gpt-6-1-sol/README.md) · [DeepSeek](../../cases/oc8/models/deepseek/README.md) · [GLM 5.3-Flash](../../cases/oc8/models/glm-5-3-flash/README.md) · [HY4 直出版](../../cases/oc8/models/hy4-direct/README.md) · [HY 衍生版](../../cases/oc8/models/hy-derived/README.md) · [WorkBuddy 版](../../cases/oc8/models/workbuddy/README.md) |
 | [V8发动机](../../cases/v8/README.md) | [需求、目标与参考](../../cases/v8/task/brief.md) | [DeepSeek](../../cases/v8/models/deepseek/README.md) · [GLM 5.3-Flash](../../cases/v8/models/glm-5-3-flash/README.md) |
 | [塞斯纳337起落架](../../cases/cessna337/README.md) | [需求、目标与参考](../../cases/cessna337/task/brief.md) | [GLM 5.3-Flash](../../cases/cessna337/models/glm-5-3-flash/README.md) |
 | [海滩兽Strandbeest](../../cases/strandbeest/README.md) | [需求、目标与参考](../../cases/strandbeest/task/brief.md) | [GLM 5.3-Flash](../../cases/strandbeest/models/glm-5-3-flash/README.md) |
